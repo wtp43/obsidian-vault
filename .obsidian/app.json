@@ -1,0 +1,7 @@
+{
+  "showInlineTitle": true,
+  "spellcheck": true,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "./attachments",
+  "readableLineLength": false
+}

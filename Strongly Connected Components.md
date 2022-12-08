@@ -1,0 +1,1 @@
+- A directed graph is strongly connected if there is a directed path between any two vertices
