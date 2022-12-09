@@ -1,13 +1,32 @@
+---
+tags:
+- graph
+- adjacency-matrix
+- adjacency-list
+- edge-list
+---
 ## Adjacency Matrix
 ![[Pasted image 20221202190928.png]]
-
+Pros
 - Useful for dense graphs with many edges
 - Allows for matrix operations
-- VxV space requirement is very expensive
+-  Edge weight lookup is O(1)
+Cons
+- O($V^2$) space requirement
+- Iterating over all edges takes O($V^2$) time
 
 ## Adjacency List
 ![[Pasted image 20221202190703.png]]
-- Useful for when vertices are far from each other
+Pros
+- Space efficient for sparse graphs
+- Iterating over all edges
+Cons
+- Edge weight lookup is O(E) although rare in practice
+- Less space efficient for denser graphs (overhead in linked list structure)
+
+## Edge List
+- Unordered list of edges: `[(u1,v1,w1), (u2,v2,w2)]`
+- Seldomly used because of its lack of structure
 
 # Implementation
 
@@ -125,3 +144,5 @@ print(graph.get_edges())
 print(graph.get_vertice())
 ```
 
+# Related
+[[Graph Theory]]

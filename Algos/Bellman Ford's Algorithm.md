@@ -1,3 +1,8 @@
+---
+tags:
+- graph
+- shortest-path
+---
 >[!note]
 Bellman Ford iteratively relaxes the distance from u to v 
 **Complexity**: O(VE) Intuitively, |V-1| iterations are needed because that's the largest amount of stops the longest possible shortest path from source s to destination v can have. 
@@ -32,4 +37,8 @@ def bellman_ford(graph, start):
 	return dist, prev
 ```
 
-_```
+### Backlinks
+---
+
+[[Graph Theory]]
+[[Floyd-Warshall's Algorithm]]

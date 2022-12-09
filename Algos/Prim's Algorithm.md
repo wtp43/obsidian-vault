@@ -26,7 +26,6 @@ Complexity O($V^2$) instead of O(VE) since we don't iterate all edges
 - dist stores the cost of adding the vertex to the tree
 - Keep track of cheapest edge linking very non-tree vertex in the tree
 - The cheapest such edge over all remaining no-tree vertices gets added in the next iteration
-- 
 
 ```python
 def prim(graph, start):

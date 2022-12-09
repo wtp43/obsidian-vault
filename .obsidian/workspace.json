@@ -4,71 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "63a9dc772576547b",
+        "id": "5a61ab6515b4eaf6",
         "type": "tabs",
         "children": [
           {
-            "id": "cadb21f258377cf3",
+            "id": "c536667022864e73",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algos/Prim's Algorithm.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "808979ff4cfadd7b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos/Prim's Algorithm.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4f017bba7b0090c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DS/Graph Structures.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ab13c997d2f4080e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "To Do/Floyd Warshall Algorithm.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ba2e39773a66874b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "To Do/Topological Sort.md",
+                "file": "Algos/Circular Queue.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -135,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DS/Graph Structures.md",
+                "file": "Algos/Circular Queue.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DS/Graph Structures.md",
+                "file": "Algos/Circular Queue.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DS/Graph Structures.md"
+                "file": "Algos/Circular Queue.md"
               }
             }
           },
@@ -187,25 +138,24 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "4f017bba7b0090c1",
+  "active": "c536667022864e73",
   "lastOpenFiles": [
-    "Algos/Prim's Algorithm.md",
+    "Algos/LC-174. Dungeon Game.md",
+    "Algos/Circular Queue.md",
+    "To Do/BFS.md",
+    "DS/Matrix Traversals.md",
     "Algos/Kruskal's Algorithm.md",
-    "Algos/Kadane's Algorithm.md",
-    "Finance/Economics/Central Banking 101.md",
-    "DS/Graph Structures.md",
-    "To Do/Floyd Warshall Algorithm.md",
-    "Strongly Connected Components.md",
-    "DS/Graphs.md",
-    "To Do/Topological Sort.md",
-    "DS/Union Find (Disjoint Sets).md"
+    "Algos/Binary Search and Bisects.md",
+    "DS/Graph Theory.md",
+    "To Do/Floyd-Warshall's Algorithm.md",
+    "Algos/Bellman Ford's Algorithm.md",
+    "Algos/Dynamic Programming.md"
   ]
 }
