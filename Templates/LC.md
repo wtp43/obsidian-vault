@@ -22,7 +22,6 @@ created: <% tp.date.now("YYYY-MM-DD") %>
 >max_depth:6
 >```
 
-
 # Description
 
 

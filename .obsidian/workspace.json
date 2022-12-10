@@ -18,65 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "2d21c1e2a9605acf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "To Do/Topological Sort.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d327beb68976b50c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Templates/Algos.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "eff893b4e6f3c7ae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Templates/LC.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cdb4fc9bb130d6e1",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "5f66cfb628ad06e9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Leetcode Questions/LC-1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -143,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Templates/LC.md",
+                "file": "DS/D-ary Heap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Templates/LC.md",
+                "file": "DS/D-ary Heap.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templates/LC.md"
+                "file": "DS/D-ary Heap.md"
               }
             }
           },
@@ -203,17 +146,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "eff893b4e6f3c7ae",
+  "active": "1ab631e6e51d8140",
   "lastOpenFiles": [
+    "To Do/Topological Sort.md",
     "Templates/Algos.md",
     "Templates/LC.md",
     "Leetcode Questions/LC-1.md",
+    "asdf.md",
+    "DS/D-ary Heap.md",
     "To Do/Two Pointers.md",
-    "To Do/Topological Sort.md",
     "To Do/Quick Sort.md",
     "DS/DFS.md",
-    "Leetcode Questions/LC-641. Design Circular Deque.md",
-    "DS/D-ary Heap.md",
-    "Templates/Callout.md"
+    "Leetcode Questions/LC-641. Design Circular Deque.md"
   ]
 }

@@ -17,10 +17,11 @@ created: <% tp.date.now("YYYY-MM-DD") %>
 
 >[!summary]+ Contents
 >```toc
->style: number
->min_depth:1
->max_depth:6
+style: number
+min_depth:1
+max_depth:6 
 >```
+
 
 # <%* tR += result %>
 
@@ -34,9 +35,9 @@ created: <% tp.date.now("YYYY-MM-DD") %>
 
 ## Optimized Complexity
 
->[!Time Complexity]
+>[!Time Complexity]+
 
->[!Space Complexity]
+>[!Space Complexity]+
 
 
 

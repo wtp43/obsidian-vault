@@ -1,7 +1,6 @@
 ---
 title:  "LC 1"
 tags:
-- lc-
 
 created: 2022-12-10
 ---
