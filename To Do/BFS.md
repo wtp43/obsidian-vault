@@ -4,6 +4,9 @@ tags:
 - tree-traversal
 ---
 
+## A note on State Representation
+- Instead of storing positions as (x,y) pairs which require an array/object wrapper to store the coordinate values, one can directly enqueue coordinates in one queue. This avoids the overhead of packing and unpacking the coordinates
+- Keeping everything in one queue will preserve memory locality (sequential accesses in the same area of memory, likely in the same cache read), while having to access 3 different queues every iteration will likely be a performance hit as they cause cache misses (which, even if they're contiguous, would be inevitable above a certain number of vertices), and quite possibly be worse than packing/unpacking a structure depending on how the compiler optimizes that as an alternative, if you want your queues to just be primitives without any packing, just push x,y,z sequentially onto the same queue, and dequeue them 3 at a time as well. it's not any more complex than managing 3 queues at once, avoids packing, and most importantly doesn't require both allocating and accessing multiple data structures.
 ## Pros vs DFS
 - Able to find shortest path in an undirected graph
 
@@ -11,6 +14,8 @@ tags:
 O($b^d$) where $b$ is the branching factor, $d$ is the depth of the tree
 
 ## Space Complexity
+
+# Implementation
 
 ```python
 def bfs(graph: Dict[int, List[int]], start: int):

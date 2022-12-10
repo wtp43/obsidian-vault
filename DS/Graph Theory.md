@@ -59,7 +59,7 @@ Does there exist a path between node A and node B?
 - [[BFS]]
 - [[DFS]] 
 ## [[Strongly Connected Components]]
-1. [[Tarjan's Algorithm]]
+1. [[Tarjan's Strongy Connected Component Algorithm]]
 2. [[Kosaraju's Algorithm]]
 
 ## Negative Cycles
@@ -82,7 +82,7 @@ Does my weighted digraph have any negative cycles? If so, where?
 Algorithms used in the [[Traveling Salesman Problem]]
 1. [[Held-karp]]
 
-## Bridges
+## [[Bridges Algorithm]]
 - A bridge / cut edge is any edge in a graph whose removal increases the number of connected components
 - Often important in graph theory because they hint at weak points, bottlenecks or vulnerabilities in a graph
 ## Articulation Point 

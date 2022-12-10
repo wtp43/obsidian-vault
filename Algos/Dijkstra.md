@@ -1,1 +1,0 @@
-- Looks only to the immediate neighbors of a vertex (while Bellman Ford goes through each edge in every iteration)

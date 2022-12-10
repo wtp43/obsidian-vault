@@ -61,7 +61,16 @@ min_val = h.del_min()
 
 ```
 
+# Heapq in Python
 
+```python
+import heapq
+
+pq = []
+heapq.heapify(pq)
+heapq.heappush(pq, 1)
+heapq.heappop(pq)
+```
 
 >[!Applications]
 >Build priority queue with get_min and insert in O(logn)
