@@ -4,5 +4,8 @@
   "obsidian-style-settings",
   "darlal-switcher-plus",
   "tag-wrangler",
-  "obsidian-git"
+  "obsidian-git",
+  "templater-obsidian",
+  "obsidian-dynamic-toc",
+  "dataview"
 ]

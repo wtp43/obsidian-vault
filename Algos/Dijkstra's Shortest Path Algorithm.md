@@ -16,7 +16,7 @@ tags:
 1. Initialize `dist` array to `math.inf` with `dist[start]=0` 
 2. Maintain priority queue (PQ) of key-value pairs `(node index, distance)`
 3. Insert `(start,0)` into PQ and loop while PQ is not empty
-4. Iterate over all edges outwards from current node and relax each edge appending 
+4. Iterate over all edges outwards from current node and relax each edge appending the neighbouring node if it was relaxed,
 
 
 # Implementation

@@ -1,11 +1,19 @@
 ---
+title:  "Quick Select"
 tags:
+- algo
+created: 2022-12-10
 ---
 
->[!intuition]
->Useful for
+```toc 
+style: number 
+min_depth: 1 
+max_depth: 6
+```
 
+# Quick Select
 
+# Implementation
 
 ```python
 def findKthLargest(self, nums: List[int], k: int) -> int:
@@ -36,3 +44,15 @@ def findKthLargest(self, nums: List[int], k: int) -> int:
 
     return qselect(nums, 0, len(nums) - 1, len(nums) - k)
 ```
+
+## Optimizations
+
+## Optimized Complexity
+
+>[!Time Complexity]
+
+>[!Space Complexity]
+
+
+
+# Related

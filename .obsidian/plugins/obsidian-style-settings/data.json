@@ -16,5 +16,6 @@
   "minimal-style@@h2-l": false,
   "minimal-style@@h2-size": "1.125em",
   "minimal-style@@h1-size": "1.25em",
-  "minimal-style@@minimal-code-scroll": false
+  "minimal-style@@minimal-code-scroll": false,
+  "minimal-advanced@@styled-scrollbars": false
 }

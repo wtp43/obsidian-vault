@@ -1,8 +1,8 @@
 ---
-title:  "Linked LIst"
+title:  "Bloom Filter"
 tags:
-- ds 
-- linked-list
+- hashmap
+- ds
 created: 2022-12-10
 ---
 
@@ -12,7 +12,7 @@ min_depth: 1
 max_depth: 6
 ```
 
-# Linked List
+# Bloom Filter
 
 # Implementation
 
