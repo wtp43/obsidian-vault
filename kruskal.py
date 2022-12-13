@@ -88,6 +88,8 @@ class Graph:
         heapq.heapify(pq)
         while pq:
             index, min_value = heapq.heappop(pq)
+            if index in seen:
+                continue
             if dist[index] < min_value:
                 continue
             seen.add(index)

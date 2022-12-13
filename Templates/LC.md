@@ -30,7 +30,9 @@ created: <% tp.date.now("YYYY-MM-DD") %>
 >[!danger]+ Intuition
 
 # Implementation
+```python
 
+```
 
 >[!example]+ 
 

@@ -41,6 +41,8 @@ def dijkstra(self, start):
 	heapq.heapify(pq)
 	while pq:
 		index, min_value = heapq.heappop(pq)
+		if index in seen:
+			continue
 		if dist[index] < min_value:
 			continue
 		seen.add(index)
@@ -51,17 +53,6 @@ def dijkstra(self, start):
 				prev[v] = u
 				heapq.heappush(pq, (v, new_dist))
 	return dist, prev
-
-def find_shortest_path(self, start, end):
-	dist, prev = self.dijkstra(start, end)
-	path = []
-	while end:
-		path.append(end)
-		end = prev[end]
-	if path[-1] != start:
-		return None
-	path.reverse()
-	return path
 
 ```
 
@@ -75,8 +66,65 @@ def find_shortest_path(self, start, end):
 		- Thus, the PQ contains node 1 twice
 
 # Finding the Optimal Path 
+- Keep finding the parent of end and reverse the list 
+- If the last parent is equal to start, there exists a path
+```python
+def find_shortest_path(self, start, end):
+	dist, prev = self.dijkstra(start, end)
+	path = []
+	while end:
+		path.append(end)
+		end = prev[end]
+	if path[-1] != start:
+		return None
+	path.reverse()
+	return path
+```
 
-# Eager Dijkstra's Algorithm
+# Stopping Early
+
+> [!question]+ 
+> **Suppose you know the destination node you're trying to reach is 'e' and you start at node 's', do you still have to visit every node in the graph?**
+> 
+> Yes, in the worst case. However, it is possible to stop early once you have finished visiting the destination node. The main idea for stopping early is that Dijkstra's algorithm processes each next most promising node in order. So if the destination node has been visited, its shortest distance will not change as more future nodes are visited.
+
+```python
+import heapq
+
+def dijkstra(self, start, end):
+	n = len(self.get_vertices())
+	dist = defaultdict(lambda:math.inf)
+	prev = defaultdict(lambda:None)
+	dist[start] = 0
+	seen = set()
+	pq = [(start, 0)]
+	heapq.heapify(pq)
+	while pq:
+		index, min_value = heapq.heappop(pq)
+		if index in seen:
+			continue
+		if dist[index] < min_value:
+			continue
+		seen.add(index)
+		for u,v,w in self.get_edges(index):
+			new_dist = dist[index] + w
+			if new_dist < dist[v]:
+				dist[v] = new_dist
+				prev[v] = u
+				heapq.heappush(pq, (v, new_dist))
+
+	# stop early
+	if index == end:
+		return dist[end]
+	return math.inf
+```
+# Eager Dijkstra's Algorithm using Indexed Priority Queue
+
+
+> [!important]+ [[Indexed Priority Queue (IPQ)]]
+	> Allows us to avoid duplicated duplicate key-value pairs. Supports efficient value updates in O(logn)
+
+
 
 # Optimizations
 ## Heap optimization with [[D-ary Heap]]

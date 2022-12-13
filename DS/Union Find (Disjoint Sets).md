@@ -3,8 +3,23 @@
 
 ## Union Find Optimizations
 
-- Keep track of size to keep balanced trees
+- Weighted union: Keep track of size to keep balanced trees. Root of subtree with lesser number of nodes points towards the root of subtree with larger amount of nodes which leads to reduction of tree's height
+	- These will not necessarily result in binary trees
+	- This limits the total depth of the tree to O(logn) because the depth of nodes only in the smaller tree will now increase by one and the depth of the deepest node in the combined tree can only be at most one deeper than the deepest node before the trees were combined. The total number of nodes in the combined tree is therefore at least twice the number in the smaller subtree. Thus the depth of any node can be increased at most logn times where n equivalences are processed (since each addition to the depth must be accompanied by at least doubling the size of the tree).
+	- https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/UnionFind.html
 - Path compression when finding parents
+- Weighted Union by Rank
+	- Instead of saving the size, save the rank/height of the trees
+```python
+# x and y are not in same set, so we merge them
+if xRoot.rank < yRoot.rank 
+  xRoot.parent := yRoot 
+else if xRoot.rank > yRoot.rank
+  yRoot.parent := xRoot
+else
+ xRoot.parent := yRoot
+ yRoot.rank   := yRoot.rank + 1
+```
 
 ## Disjoint Sets to find longest consecutive sequence in a set
 
@@ -29,13 +44,13 @@ class Union_find:
 		
 		if i == j:
 			return
-
+		# bigger parent stays the parent
 		if self.size[i] < self.size[j]:
-			self.parent[j] = i
-			self.size[i] += self.size[j]
-		else:
-			self.parent[i] = self.parent[j]
+			self.parent[i] = j
 			self.size[j] += self.size[i]
+		else:
+			self.parent[j] = self.parent[i]
+			self.size[i] += self.size[j]
 ```
 
 ```python

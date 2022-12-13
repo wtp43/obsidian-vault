@@ -1,8 +1,15 @@
->[!Complexity]
+---
+tags:
+- 
+---
+
+>[!Time complexity to build heap]
 >O(n) to build using sift_down starting from the last parent
 
-Parent::[[Table of Contents]]
-Category::[[DS]]
+# Implementation
+
+- This implementation of a min_heap is one-indexed for simplicity.
+- In the case of zero-indexing, the parent of a child `i` is located at `p = (i-1)//2`
 
 ```python
 class min_heap:
@@ -17,10 +24,11 @@ class min_heap:
 		self.sift_up(self.size)
 		
 	def sift_up(self, i):
-		while i//2 > 0:
-			if self.heap[i] < self.heap[i//2]:
-				self.swap(i, i//2)
-			i = i//2
+		while i > 1:
+			p = i//2
+			if self.heap[i] < self.heap[p]:
+				self.swap(i, p)
+			i = p
 			
 	def sift_down(self, i):
 		while i*2 > self.size:
