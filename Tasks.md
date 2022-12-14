@@ -13,9 +13,15 @@
 - [ ] Merge Sort
 - [ ] Hashmap collisions
 - [ ] Topological Sort
+- [ ] Fenwick tree
+- [ ] AVL Tree
+- [ ] Redblack tree
+- [ ] Doubly linked list
+
 
 # Review
 - [ ] Linked list operations/traversals
+- [ ] Binary heap deletion
 
 # Low Priority
 - Graham scan for convex hull

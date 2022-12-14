@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "95a3282147b1aa6c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tasks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "22c6143114c86a58",
             "type": "leaf",
             "state": {
@@ -30,8 +18,57 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2a66f479116d7fc3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algos/Dijkstra's Shortest Path Algorithm.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "07eb290839680af6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DS/Indexed D-ary Heap.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "45e2a02a4dabd76a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algos/Bucket Sort.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "75f2fd87b7de33f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DS/D-ary Heap.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -81,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -97,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tasks.md",
+                "file": "Algos/Bucket Sort.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tasks.md",
+                "file": "Algos/Bucket Sort.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tasks.md"
+                "file": "Algos/Bucket Sort.md"
               }
             }
           },
@@ -157,17 +195,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "95a3282147b1aa6c",
+  "active": "602e749129210847",
   "lastOpenFiles": [
-    "Algos/Topological Sort.md",
-    "To Do/Floyd-Warshall's Algorithm.md",
-    "Tasks.md",
-    "To Do/Tarjan's Strongy Connected Component Algorithm.md",
-    "To Do/Cycle Detection in Directed Graphs.md",
+    "DS/Fibonacci Heap.md",
+    "DS/D-ary Heap.md",
+    "DS/Indexed D-ary Heap.md",
     "Algos/Dijkstra's Shortest Path Algorithm.md",
-    "Leetcode Questions/LC-684. Redundant Connection.md",
-    "DS/Graph Structures.md",
+    "Tasks.md",
     "Algos/Indexed Priority Queue (IPQ).md",
-    "DS/Heaps.md"
+    "DS/Heaps.md",
+    "Leetcode Questions/LC-902. Numbers At Most N Given Digit Set.md",
+    "Algos/Interpolation Search.md",
+    "To Do/Hashmap.md"
   ]
 }

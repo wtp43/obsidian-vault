@@ -7,5 +7,6 @@
   "obsidian-git",
   "templater-obsidian",
   "obsidian-dynamic-toc",
-  "dataview"
+  "dataview",
+  "auto-note-mover"
 ]

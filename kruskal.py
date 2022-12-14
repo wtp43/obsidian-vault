@@ -84,20 +84,21 @@ class Graph:
         dist = defaultdict(lambda:math.inf)
         dist[start] = 0
         seen = set()
-        pq = [(start, 0)]
+        pq = [(0, start)]
         heapq.heapify(pq)
         while pq:
-            index, min_value = heapq.heappop(pq)
-            if index in seen:
-                continue
+            min_value, index = heapq.heappop(pq)
             if dist[index] < min_value:
                 continue
             seen.add(index)
             for u,v,w in self.get_edges(index):
+                if v in seen:
+                    continue
                 new_dist = dist[index] + w
                 if new_dist < dist[v]:
                     dist[v] = new_dist
-                    heapq.heappush(pq, (v, new_dist))
+                    heapq.heappush(pq, (new_dist, v))
+            print(pq)
         return dist     
 
 def kruskal(graph):

@@ -14,7 +14,7 @@ max_depth:6
 >```
 
 
-# Indexed Priority Queue
+# Indexed Priority Queue (Binary)
 1. Assign index values to all the keys forming a bidirectional mapping using a bidirectional hashtable (maintain two dictionaries)
 
 ## Swap(i, j)
@@ -57,12 +57,18 @@ im: node index (heap) -> ki
 ```python
 class IPQ:
 	def __init__(self, n):
-		#position map
-		self.pm = [0]
-		#inverse map
-		self.im = [0]
-		self.val = [0]
+		#position map (key index -> node index)
+		self.pm = [None] * (n+1)
+		#inverse map (node index -> key index)
+		self.im = [None] * (n+1)
+		self.val = [None] * (n+1)
 		self.size = n
+
+	def size():
+		return self.size
+
+	def contains(self, ki):
+		return self.val[ki] != None
 
 	def insert(self, ki, value):
 		values[ki] = value
@@ -104,8 +110,6 @@ class IPQ:
 		self.sink(i)
 		self.swim(i)
 		self.values[ki] = null
-		self.pm[ki] = -1
-		self.im[ki] = -1
 
 	def sink(self, i):
 		while true:
@@ -126,6 +130,17 @@ class IPQ:
 		self.sink(i)
 		self.swim(i)
 
+	def peek(self, i):
+		ki = im[i]
+		return ki, self.val[ki]
+
+	def poll(self):
+		ki = im[1]
+		i = self.pm[ki]
+		min_val = self.peek(i)
+		self.remove(ki)
+		return ki, min_val
+
 	# The functions below assumes ki and value are valid 
 	# inputs and we are dealing with a min indexed binary heap
 	
@@ -138,6 +153,16 @@ class IPQ:
 		if less(self.values[ki], value):
 			self.values[ki] = value
 			self.sink(pm[ki])
+
+	def make_heap(self, arr):
+		self.size = len(arr)
+		p = self.size//2
+		self.values = arr
+		self.pm = [i for i in range(self.size + 1)]
+		self.im = [i for i in range(self.size + 1)]
+		while p > 0:
+			self.sink(p)
+			p -= 1
 	
 ```
 
@@ -146,9 +171,14 @@ class IPQ:
 ## Optimized Complexity
 
 >[!Time Complexity]+
+>Sink/Swim: O(logn)
+>Update/decrease_key/increase_key: O(logn)
+>Build heap: O(n)
+
+
+
 
 >[!Space Complexity]+
 
-
-
 # Related
+

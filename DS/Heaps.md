@@ -1,6 +1,6 @@
 ---
 tags:
-- 
+- ds
 ---
 
 >[!Time complexity to build heap]
@@ -42,7 +42,7 @@ class min_heap:
 			return i*2
 		return i*2+1
 		
-	def del_min(self):
+	def poll(self):
 		min_val = self.heap[1]
 		self.heap[1] = self.heap[-1]
 		self.heap.pop()
@@ -65,7 +65,7 @@ class min_heap:
 h = min_heap()
 h.insert(1)
 h.insert(2)
-min_val = h.del_min()
+min_val = h.poll()
 
 ```
 
@@ -83,3 +83,8 @@ heapq.heappop(pq)
 >[!Applications]
 >Build priority queue with get_min and insert in O(logn)
 
+
+# Related
+- [[D-ary Heap]]
+- [[Indexed Priority Queue (IPQ)]]
+- [[Indexed D-ary Heap]]

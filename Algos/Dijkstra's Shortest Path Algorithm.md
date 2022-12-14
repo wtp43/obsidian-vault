@@ -2,6 +2,7 @@
 tags:
 - shortest-path
 - greedy-algo
+- algo
 ---
 - Looks only to the immediate neighbors of a vertex (while Bellman Ford goes through each edge in every iteration)
 - Dijkstra's algorithm is a [[Shortest and Longest Path on DAG#Single Source Shortest Path (1 root)|SSSP]] algorithm for graphs with **non-negative edge weights**. However, in the real word, many applications can be modelled as graphs with non-negative weights
@@ -31,27 +32,26 @@ tags:
 ```python
 import heapq
 
-def dijkstra(self, start):
+def lazy_dijkstra(self, start):
 	n = len(self.get_vertices())
-	dist = defaultdict(lambda:math.inf)
-	prev = defaultdict(lambda:None)
+	dist = [math.inf] * n
+	prev = [None] * n
 	dist[start] = 0
-	seen = set()
+	seen = [0] * n
 	pq = [(start, 0)]
 	heapq.heapify(pq)
 	while pq:
-		index, min_value = heapq.heappop(pq)
-		if index in seen:
-			continue
+		min_value, index = heapq.heappop(pq)
 		if dist[index] < min_value:
 			continue
 		seen.add(index)
 		for u,v,w in self.get_edges(index):
+			if vis[v]: continue
 			new_dist = dist[index] + w
 			if new_dist < dist[v]:
 				dist[v] = new_dist
 				prev[v] = u
-				heapq.heappush(pq, (v, new_dist))
+				heapq.heappush(pq, (new_dist, v))
 	return dist, prev
 
 ```
@@ -91,27 +91,26 @@ def find_shortest_path(self, start, end):
 ```python
 import heapq
 
-def dijkstra(self, start, end):
+def lazy_dijkstra(self, start, end):
 	n = len(self.get_vertices())
-	dist = defaultdict(lambda:math.inf)
-	prev = defaultdict(lambda:None)
+	dist = [math.inf] * n
+	prev = [None] * n
 	dist[start] = 0
-	seen = set()
-	pq = [(start, 0)]
+	seen = [0] * n
+	pq = [(0, start)]
 	heapq.heapify(pq)
 	while pq:
-		index, min_value = heapq.heappop(pq)
-		if index in seen:
-			continue
+		min_value, index = heapq.heappop(pq)
 		if dist[index] < min_value:
 			continue
 		seen.add(index)
 		for u,v,w in self.get_edges(index):
+			if vis[v]: continue
 			new_dist = dist[index] + w
 			if new_dist < dist[v]:
 				dist[v] = new_dist
 				prev[v] = u
-				heapq.heappush(pq, (v, new_dist))
+				heapq.heappush(pq, (new_dist, v))
 
 	# stop early
 	if index == end:
@@ -120,11 +119,54 @@ def dijkstra(self, start, end):
 ```
 # Eager Dijkstra's Algorithm using Indexed Priority Queue
 
-
 > [!important]+ [[Indexed Priority Queue (IPQ)]]
 	> Allows us to avoid duplicated duplicate key-value pairs. Supports efficient value updates in O(logn)
 
+```python
+def dijkstra(self, start):
+	n = len(self.get_vertices())
+	dist = [math.inf] * n
+	prev = [None] * n
+	vis = [0] * n
+	dist[0] = 0
+	ipq = IPQ()
+	ipq.insert((s, 0))
+
+	while ipq.size():
+		index, min_val = ipq.poll()
+		vis[index] = 1
+		if dist[index] < min_val: continue
+		for u,v,w in self.get_edges(index):
+			if v[index]: continue
+			new_dist = dist[index] + min_val
+			if ipq.contains(v):
+				ipq.decrease_key(v, new_dist)
+			else:
+				ipq.insert(v, new_dist)
+	return dist
+	
+
+```
 
 
-# Optimizations
-## Heap optimization with [[D-ary Heap]]
+# Heap optimization with [[D-ary Heap]]
+When executing Dijkstra's algorithm, especially on dense graphs, there are a lot more updates (decrease_key operations) to key-value pairs than there are dequeue (poll) operations.
+
+A D-ary heap speeds up decrease key operations at the expense of more costly removals. 
+
+> [!danger]+ Intuition
+> More children means a flatter tree with smaller depth.
+> This means it requires less work to swim but more work to sink since you have to check the parent node against D children.
+
+
+## Optimal D-ary Heap degree
+
+
+> [!question]+ Question
+> **What is the optimal D-ary heap degree to maximize performance of Dijkstra's algorithm?**
+> 
+> A: In general $D = E/V$ is the best degree to use balance removals against decrease\_key operations improving Dijkstra's time complexity to $O(E \log_{E/V}(V))$ which is much better especially for dense graphs which have lots of decrease_key operations
+
+
+# Heap optimization with [[Fibonacci Heap]]
+Fibonacci heap gives Dijkstra's algorithm a time complexity of $O(E + Vlog(V))$. However, in practice, Fibonacci heaps are very difficult to implement and have a large enough constant amortized overhead to make them impractical unless your graph is quite large.
