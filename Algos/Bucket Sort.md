@@ -61,14 +61,14 @@ def bucket_sort(nums, n_buckets):
 
 ## Optimizations
 
-A degenerate case of bucket sort ([[Count Sort#Unstable version (without cumulative sum), works only for integers|unstable count sort]]) runs in o(n) time.
+A degenerate case of bucket sort ([[Counting Sort#Unstable version (without cumulative sum), works only for integers|unstable count sort]]) runs in o(n) time.
 
 
 ## Optimized Complexity
 
 >[!Time Complexity]+
 >O($nlogn$), occurs if elements are all placed into the same buckets.
->Best case: O(n+k), occurs when elements are uniformly distributed and using [[Insertion Sort]]
+>Average case: O(n+k), occurs when elements are uniformly distributed and using [[Insertion Sort]]
 
 >[!Space Complexity]+
 >O(n+k) where n is the number of elements and k is the number of buckets formed.

@@ -14,7 +14,7 @@ max_depth:6
 >```
 
 
-# Count Sort
+# Counting Sort
 Stable sort. Count occurrences of each unique element in array and stores it in an auxiliary array. Then calculate the cumulative sum of the elements of the count array. Use the cumulative sum to place the numbers in the correct position.
 
 ![[Pasted image 20221215155937.png]]
@@ -28,7 +28,7 @@ Stable sort. Count occurrences of each unique element in array and stores it in 
 ## Unstable version (without cumulative sum), works only for integers
 ```python
 # Saves space but doing lots of addition/subtraction
-def count_sort(nums):
+def counting_sort(nums):
 	min_val = math.inf
 	max_val = -math.inf
 	for val in nums:
@@ -74,7 +74,7 @@ def count_sort(nums):
 
 
 ```python
-def count_sort(nums):
+def counting_sort(nums):
 	n = len(nums)
 	k = max(nums) + 1
 	count = [0] * k
@@ -100,7 +100,7 @@ def count_sort(nums):
 ``count[nums[i] - min_val] += 1``
 
 ```python
-def count_sort(nums):
+def counting_sort(nums):
     n = len(nums)
     min_val = min(nums)
     k = max(nums) - min_val + 1
@@ -130,7 +130,5 @@ def count_sort(nums):
 >[!Space Complexity]+
 >O(n + max_val - min_val)
 
-
-
-
 # Related
+- [[Radix Sort]]

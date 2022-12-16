@@ -56,51 +56,19 @@
             }
           },
           {
-            "id": "a34be74482165668",
+            "id": "9e42926fde74ab6b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DS/LRU Cache.md",
+                "file": "DS/Sparse Table.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "3dce430976b89135",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DS/Fibonacci Heap.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f90fff71d2e2cf83",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos/Radix Sort.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ad8aa66ccad33dc0",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -167,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algos/Radix Sort.md",
+                "file": "DS/Sparse Table.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algos/Radix Sort.md",
+                "file": "DS/Sparse Table.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -207,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algos/Radix Sort.md"
+                "file": "DS/Sparse Table.md"
               }
             }
           },
@@ -226,17 +194,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f90fff71d2e2cf83",
+  "active": "9e42926fde74ab6b",
   "lastOpenFiles": [
+    "DS/D-ary Heap.md",
+    "Leetcode Questions/LC-706. Design HashMap.md",
+    "Appendix/Range Minimum Query Problem.md",
+    "DS/Sparse Table.md",
+    "DS/LRU Cache.md",
     "DS/Fibonacci Heap.md",
     "Algos/Radix Sort.md",
-    "Leetcode Questions/LC-743. Network Delay Time.md",
-    "DS/Kosaraju's Algorithm.md",
-    "DS/D-ary Heap.md",
-    "DS/Bloom Filter.md",
-    "DS/Strongly Connected Components.md",
-    "Algos/Dijkstra's Shortest Path Algorithm.md",
-    "Leetcode Questions/Python.md",
-    "DS/LRU Cache.md"
+    "Algos/Bucket Sort.md",
+    "Algos/Counting Sort.md",
+    "Leetcode Questions/LC-743. Network Delay Time.md"
   ]
 }
