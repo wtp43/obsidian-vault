@@ -51,7 +51,90 @@ A binomial tree with k nodes means the max degree is $log_2(k)$
 # Implementation
 
 ```python
+import math
 
+class FibonacciTree:
+	def __init__(self, val):
+		self.val = val
+		self.child = []
+		self.degree = 0
+
+	# Adding tree at the end of the tree
+	def add_at_end(self, t):
+		self.child.append(t)
+		self.degree += 1
+
+class FibonacciHeap:
+	def __init__(self):
+		self.trees = []
+		self.least = None
+		self.count = 0
+
+	def insert_node(self, val):
+		new_tree = FibonacciTree(val)
+		self.trees.append(new_tree)
+		if self.least is None or val < self.least.value:
+			self.least = new_tree
+		self.count += 1
+
+	def get_min(self):
+		if self.least:
+			return self.least.value
+		return None
+
+	def extract_min(self):
+		smallest = self.least
+		if not smallest:
+			return None
+		for child in smallest.child:
+			self.trees.append(child)
+		self.trees.remove(smallest)
+		if self.trees == []:
+			self.least = None
+		else:
+			self.least = self.trees[0]
+			self.consolidate()
+		self.count -= 1
+		return smallest.value
+
+	def consolidate(self):
+		aux = (floor_log(self.count) + 1) * [None]
+		while self.trees:
+			x = self.trees[0]
+			order = x.order
+			self.trees.remove(x)
+			while aux[order]:
+				y = aux[order]
+				if x.value > y.value:
+					x, y = y, x
+				x.add_at_end(y)
+				aux[order] = None
+				order += 1
+			aux[order] = x
+
+		self.least = None
+		for k in aux:
+			if k:
+				self.trees.append(k)
+				if not self.least or k.value < self.value:
+					self.least = k
+
+	# Returns mantissa and exponent as a pair (m, e) value of a given number x.
+	def floor_log(x):
+		return math.frexp(x)[1] - 1
+				
+
+fibonacci_heap = FibonacciHeap()
+
+fibonacci_heap.insert_node(7)
+fibonacci_heap.insert_node(3)
+fibonacci_heap.insert_node(17)
+fibonacci_heap.insert_node(24)
+
+print('the minimum value of the fibonacci heap: {}'.format(fibonacci_heap.get_min()))
+
+print('the minimum value removed: {}'.format(fibonacci_heap.extract_min()))
+	
 ```
 
 ## Optimizations
@@ -59,6 +142,16 @@ A binomial tree with k nodes means the max degree is $log_2(k)$
 ## Optimized Complexity
 
 >[!Time Complexity]+
+>
+| Operation    | Complexity |
+| ------------ | ---------- |
+| Insertion    | O(1)       |
+| Find Min     | O(1)       |
+| Union        | O(1)       |
+| Extract Min  | O(logn)    |
+| Decrease Key | O(1)       |
+| Delet eNode   | O(logn)    | 
+
 
 >[!Space Complexity]+
 

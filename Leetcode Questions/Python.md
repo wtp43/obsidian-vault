@@ -19,5 +19,6 @@ M2 = [[0 for j in range(10)] for i in range(10)]
 
 ```python
 arr.sort()
-arr.count(1)
+arr.count(x)
+arr.remove(x)
 ```

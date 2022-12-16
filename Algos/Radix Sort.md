@@ -15,6 +15,7 @@ max_depth:6
 
 
 # Radix Sort
+Sorts by first grouping the individual digits of the same **place value**. 
 
 # Implementation
 
