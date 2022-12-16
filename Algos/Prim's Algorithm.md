@@ -62,7 +62,7 @@ Complexity O(E log V)
 
 1. Start from an arbitrary vertex
 2. Heapify all the outgoing edges from the starting vertex
-3. Get 
+3. Get the next edge with the least cost
 
 ```python
 from collections import default dict
@@ -81,6 +81,7 @@ def prim(graph, start):
 		if v2 not in seen:
 			seen.add(v2)
 			mst[v1].add(v2)
+			
 			total_cost += cost
 			for v3, cost in graph.get_neighbors(v2):
 				if v3 not in visited:
@@ -115,6 +116,29 @@ def prim(graph, start):
 - Suppose we know that the cost for every edge is bounded by U
 - Instead of using a priority queue (heap), a bucket sort can be implemented in 
 
+# Prim vs Dikjstra
+Prim's algorithm constructs a [minimum spanning tree](http://en.wikipedia.org/wiki/Minimum_spanning_tree) for the graph, which is a tree that connects all nodes in the graph and has the least total cost among all trees that connect all the nodes. However, the length of a path between any two nodes in the MST might not be the shortest path between those two nodes in the original graph. MSTs are useful, for example, if you wanted to physically wire up the nodes in the graph to provide electricity to them at the least total cost. It doesn't matter that the path length between two nodes might not be optimal, since all you care about is the fact that they're connected.
+
+Dijkstra's algorithm constructs a [shortest path tree](http://en.wikipedia.org/wiki/Shortest_path_tree) starting from some source node. A shortest path tree is a tree that connects all nodes in the graph back to the source node and has the property that the length of any path from the source node to any other node in the graph is minimized. This is useful, for example, if you wanted to build a road network that made it as efficient as possible for everyone to get to some major important landmark. However, the shortest path tree is not guaranteed to be a minimum spanning tree, and the sum of the costs on the edges of a shortest-path tree can be much larger than the cost of an MST.
+
+Another important difference concerns what types of graphs the algorithms work on. Prim's algorithm works on undirected graphs only, since the concept of an MST assumes that graphs are inherently undirected. (There is something called a "minimum spanning arborescence" for directed graphs, but algorithms to find them are much more complicated). Dijkstra's algorithm will work fine on directed graphs, since shortest path trees can indeed be directed. Additionally, Dijkstra's algorithm [does not necessarily yield the correct solution in graphs containing negative edge weights](https://stackoverflow.com/questions/6799172/negative-weights-using-dijkstra-algorithm/6799344#6799344), while Prim's algorithm can handle this. (https://stackoverflow.com/questions/14144279/difference-between-prims-and-dijkstras-algorithms)
+
+
+The main difference is here: for Prim `graph[u][v] < key[v]`, and for Dijkstra `dist[u]+graph[u][v] < dist[v]`
+
+Dijkstra's algorithm doesn't create a MST, it finds the shortest path.
+
+Consider this graph
+
+```
+       5     5
+  s *-----*-----* t
+     \         /
+       -------
+         9
+```
+
+The shortest path is 9, while the MST is a different 'path' at 10.
 
 ### References
 https://bradfieldcs.com/algos/graphs/prims-spanning-tree-algorithm/

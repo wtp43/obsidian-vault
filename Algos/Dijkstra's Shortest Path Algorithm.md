@@ -8,7 +8,7 @@ tags:
 - Dijkstra's algorithm is a [[Shortest and Longest Path on DAG#Single Source Shortest Path (1 root)|SSSP]] algorithm for graphs with **non-negative edge weights**. However, in the real word, many applications can be modelled as graphs with non-negative weights
 - This constraint is imposed to ensure that once a node has been visited, its optimal distance cannot be improved
 - Works on graphs with cycles SSSP using [[Topological Sort]]
-- 
+
 
 >[!Intuition]
 >Greedy algorithms work because once the next 'node' has been visited, it's optimal distance cannot be improved

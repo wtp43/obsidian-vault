@@ -10,13 +10,14 @@
 - [ ] Quick Sort
 - [ ] Cyclic sort
 - [ ] Quick Select (and when to use)
-- [ ] Merge Sort
+- [x] Merge Sort
 - [ ] Hashmap collisions
 - [ ] Topological Sort
 - [ ] Fenwick tree
 - [ ] AVL Tree
 - [ ] Redblack tree
 - [ ] Doubly linked list
+
 
 
 # Review
@@ -26,6 +27,8 @@
 # Low Priority
 - Graham scan for convex hull
 - Bit manipulation
+- Traveling salesman problem
+- Knapsack problem
 
 
 ```dataviewjs
