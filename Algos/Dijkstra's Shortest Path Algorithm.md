@@ -9,7 +9,6 @@ tags:
 - This constraint is imposed to ensure that once a node has been visited, its optimal distance cannot be improved
 - Works on graphs with cycles SSSP using [[Topological Sort]]
 
-
 >[!Intuition]
 >Greedy algorithms work because once the next 'node' has been visited, it's optimal distance cannot be improved
 
