@@ -78,7 +78,7 @@ def counting_sort(nums):
 	n = len(nums)
 	k = max(nums) + 1
 	count = [0] * k
-	output = [0]* n
+	output = [0] * n
 	
 	# store count
 	for i in range(n):
@@ -90,6 +90,7 @@ def counting_sort(nums):
 
 	# place nums backwards to ensure stableness
 	for num in reversed(nums):
+		# count[num] -=1 because this stores the count but the index of the output is 0-based
 		count[num] -= 1
 		output[count[num]] = num
 	return output

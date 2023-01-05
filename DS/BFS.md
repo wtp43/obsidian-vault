@@ -15,7 +15,7 @@ O($b^d$) where $b$ is the branching factor, $d$ is the depth of the tree
 
 ## Space Complexity
 
-# Implementation
+# BFS Implementation
 
 ```python
 def bfs(graph: Dict[int, List[int]], start: int):
@@ -49,6 +49,12 @@ def reconstruct_path(start, end, prev):
 	return []
 ```
 - the prev array allows us to reconstruct the shortest path
+
+# Multisource BFS
+Append all sources to a q and iterate the q in chunks/layers.
+
+[[LC-286. Walls and Gates]]
+[[LC-994. Rotting Oranges]]
 
 
 # Related Problems

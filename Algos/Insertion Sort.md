@@ -21,6 +21,7 @@ Places an unsorted element at its suitable place in each iteration.
 > The insertion sort is useful when:
 > - the array is has a small number of elements
 > - there are only a few elements left to be sorted
+> - the array is almost sorted
 
 # Implementation
 
