@@ -6,6 +6,8 @@ Discover and solve simpler analogous problems
 
 
 1. Understand the Problem
+	- What is given by the problem? 
+	- Can we group different data points from some unique characteristic?
 2. Devise a plan
 	-  Eliminate possibilities
 	- Use symmetry
