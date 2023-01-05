@@ -15,23 +15,9 @@ max_depth:6
 
 
 # Sweep Line
-Useful for problems in geometry
+Sweep over different input elements from left to right and perform a specific processing for each element.
 
+Useful for problems in geometry including problems concerning intervals (ie one-dimensional geometric objects). 
 
-# Implementation
-
-```python
-
-```
-
-## Optimizations
-
-## Optimized Complexity
-
->[!Time Complexity]+
-
->[!Space Complexity]+
-
-
-
-# Related
+# Applications
+[[Intersection of Intervals]]

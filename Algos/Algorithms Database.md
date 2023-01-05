@@ -5,7 +5,7 @@
 
 ## [[Greedy Algorithm]]
 
-## Graph Theory
+[[Graph Theory]] 
 
 # Arrays
 
