@@ -30,57 +30,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "f4eb42b72ee97af9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "netlify.toml.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "434184975882d3af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "netlify.toml.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b73c42c22ffc3f8e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "To Do/Fenwick (Segment) Tree.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4f6d0d2c31bd5c4c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Templates/Algos.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -130,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -146,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "netlify.toml.md",
+                "file": "DS/Trie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "netlify.toml.md",
+                "file": "DS/Trie.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "netlify.toml.md"
+                "file": "DS/Trie.md"
               }
             }
           },
@@ -219,17 +172,17 @@
       "publish:Publish changes": false
     }
   },
-  "active": "602e749129210847",
+  "active": "8aefb304d44aa9b5",
   "lastOpenFiles": [
-    "home.md",
-    "netlify.toml.md",
-    "DS/Trie.md",
-    "To Do/Fenwick (Segment) Tree.md",
-    "Algos/Intersection of Intervals.md",
     "Templates/Algos.md",
+    "To Do/Fenwick (Segment) Tree.md",
+    "DS/Matrix Traversals.md",
+    "DS/Trie.md",
+    "netlify.toml.md",
+    "home.md",
+    "Algos/Intersection of Intervals.md",
     "Algos/Topological Sort.md",
     "Algos/Dijkstra's Shortest Path Algorithm.md",
-    "Algos/Dynamic Programming.md",
-    "Algos/Sorts.md"
+    "Algos/Dynamic Programming.md"
   ]
 }
