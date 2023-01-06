@@ -6,7 +6,7 @@
   "tag-wrangler",
   "obsidian-git",
   "templater-obsidian",
-  "obsidian-dynamic-toc",
   "dataview",
-  "auto-note-mover"
+  "auto-note-mover",
+  "obsidian-dynamic-toc"
 ]

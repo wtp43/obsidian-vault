@@ -1,7 +1,8 @@
 ---
-title:  "Fenwick (Segment) Tree"
+title:  "Greedy Algorithm"
 tags:
-
+- algo
+- greedy
 created: 2023-01-06
 ---
 
@@ -13,8 +14,8 @@ max_depth:6
 >```
 
 
-# Fenwick (Segment) Tree
-
+# Greedy Algorithm
+We want to take the biggest amount at every step. Track this to help solve the problem.
 # Implementation
 
 ```python

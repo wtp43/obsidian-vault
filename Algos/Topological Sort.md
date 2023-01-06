@@ -13,9 +13,12 @@ max_depth: 6
 
 
 # Topological Sort
+Topological sort simply involves **running DFS on an entire graph and adding each node to the global ordering of nodes, but only after all of a node's children are visited**. This ensures that parent nodes will be ordered before their child nodes, and honours the forward direction of edges in the ordering.
+
 - Orders the vertices on a line such that all directed edges go from left to right
 - Such an ordering cannot exist if the graph contains a directed cycle
 - Each [[Graph Theory#Directed Acyclic Graphs (DAG)|DAG]] has at least one topological sort, they are not unique
+
 
 >[!Purpose]
 >Gives an ordering where each vertex can be processed before it's successors. This allows us to seek the shortest/longest path from x to y in a DAG
@@ -56,8 +59,8 @@ def dfs_topsort(self, graph, node, vis, ordering):
 		raise CycleError
 	vis[node] = 1
 	for neighbor in graph.get_neighbors(node):
-		self.dfs_topsort(neighbor, seen, ordering)
-	order.appendleft(node)
+		self.dfs_topsort(neighbor, vis, ordering)
+	ordering.appendleft(node)
 	vis[node] = 2
 ```
 

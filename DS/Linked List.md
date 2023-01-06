@@ -1,7 +1,7 @@
 ---
 title:  "Linked LIst"
 tags:
-- ds 
+- ds
 - linked-list
 created: 2022-12-10
 ---

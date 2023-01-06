@@ -1,3 +1,21 @@
+---
+title:  "Binary Search and Bisects"
+tags:
+- algo
+- binary-search
+created: 2023-01-06
+---
+
+>[!summary]+ Contents
+>```toc
+style: number
+min_depth:1
+max_depth:6 
+>```
+
+
+# Binary Search and Bisects
+
 >[!Note]
 >Binary Search should be equal to Bisect_left in the case of no duplicates
 
@@ -32,3 +50,21 @@ def bisect_right(arr, x):
 		else:
 			j = mid - 1
 	return i
+
+# Implementation
+
+```python
+
+```
+
+## Optimizations
+
+## Optimized Complexity
+
+>[!Time Complexity]+
+
+>[!Space Complexity]+
+
+
+
+# Related

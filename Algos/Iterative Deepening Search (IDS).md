@@ -3,6 +3,8 @@ title:  "Iterative Deepening Search (IDS)"
 tags:
 - dfs
 - bfs
+- algo
+- graph
 created: 2022-12-10
 ---
 

@@ -1,7 +1,8 @@
 ---
-title:  "Fenwick (Segment) Tree"
+title:  "Graham Scan"
 tags:
-
+- algo
+- convex-hull
 created: 2023-01-06
 ---
 
@@ -13,7 +14,7 @@ max_depth:6
 >```
 
 
-# Fenwick (Segment) Tree
+# Graham Scan
 
 # Implementation
 

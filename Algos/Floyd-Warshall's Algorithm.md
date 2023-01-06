@@ -1,7 +1,8 @@
 ---
-title:  "Fenwick (Segment) Tree"
+title:  "Floyd Warshall's Algorithm"
 tags:
-
+- algo
+- graph
 created: 2023-01-06
 ---
 
@@ -13,7 +14,7 @@ max_depth:6
 >```
 
 
-# Fenwick (Segment) Tree
+# Floyd Warshall's Algorithm
 
 # Implementation
 

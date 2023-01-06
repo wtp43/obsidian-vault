@@ -45,7 +45,8 @@ def lazy_dijkstra(self, start):
 			continue
 		seen.add(index)
 		for u,v,w in self.get_edges(index):
-			if vis[v]: continue
+			if vis[v]: 
+				continue
 			new_dist = dist[index] + w
 			if new_dist < dist[v]:
 				dist[v] = new_dist
@@ -136,7 +137,8 @@ def dijkstra(self, start):
 		vis[index] = 1
 		if dist[index] < min_val: continue
 		for u,v,w in self.get_edges(index):
-			if v[index]: continue
+			if v[index]: 
+				continue
 			new_dist = dist[index] + min_val
 			if ipq.contains(v):
 				ipq.decrease_key(v, new_dist)

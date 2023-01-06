@@ -6,11 +6,41 @@ tags:
 created: 2022-12-10
 ---
 
-```toc 
-style: number 
-min_depth: 1 
-max_depth: 6
+---
+title:  "Hashmap"
+tags:
+
+created: 2023-01-06
+---
+
+>[!summary]+ Contents
+>```toc
+style: number
+min_depth:1
+max_depth:6 
+>```
+
+
+# Hashmap
+
+# Implementation
+
+```python
+
 ```
+
+## Optimizations
+
+## Optimized Complexity
+
+>[!Time Complexity]+
+
+>[!Space Complexity]+
+
+
+
+# Related
+
 
 # Hashmap
 - Note that a hash table is slightly different than a hash map. A hash table is a structure for storing arbitrary data not necessarily consisting of a separate key and value. A hashmap is a particular type of hashtable which has distinct keys and values

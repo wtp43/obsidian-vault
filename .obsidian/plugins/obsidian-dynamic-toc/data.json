@@ -4,7 +4,5 @@
   "max_depth": 6,
   "externalStyle": "None",
   "supportAllMatchers": false,
-  "allow_inconsistent_headings": false,
-  "title": "",
-  "delimiter": "-"
+  "allow_inconsistent_headings": false
 }

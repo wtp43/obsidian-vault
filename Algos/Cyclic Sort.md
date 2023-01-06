@@ -1,7 +1,7 @@
 ---
-title:  "Fenwick (Segment) Tree"
+title:  "Cyclic Sort"
 tags:
-
+- algo
 created: 2023-01-06
 ---
 
@@ -13,7 +13,7 @@ max_depth:6
 >```
 
 
-# Fenwick (Segment) Tree
+# Cyclic Sort
 
 # Implementation
 
