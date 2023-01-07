@@ -1,5 +1,5 @@
 ---
-title:  "Binary Search and Bisects"
+title:  "Binary Search and Bisect"
 tags:
 - algo
 - binary-search
