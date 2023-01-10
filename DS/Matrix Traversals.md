@@ -3,6 +3,7 @@ tags:
 - dfs
 - bfs
 - grids
+- matrix
 ---
 
 ## Direction Vectors

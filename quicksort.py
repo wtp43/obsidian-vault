@@ -9,6 +9,9 @@ def qsort(nums: list[int]) -> None:
         qsort_helper(nums, p + 1, r)
 
     def partition(nums: list[int], l: int, r: int) -> int:
+			
+		#p_ind is the index of the first number greater than the pivot
+		
         p_ind = l
         pivot = nums[r]
         for i in range(l, r):

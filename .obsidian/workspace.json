@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DS/LRU Cache.md",
+                "file": "Leetcode Questions/LC-39. Combination Sum.md",
                 "mode": "source",
                 "source": false
               }
@@ -66,21 +66,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "962635c6ed733b71",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Leetcode Questions/LC-56. Merge Intervals.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -147,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Leetcode Questions/LC-56. Merge Intervals.md",
+                "file": "Leetcode Questions/LC-39. Combination Sum.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Leetcode Questions/LC-56. Merge Intervals.md",
+                "file": "Leetcode Questions/LC-39. Combination Sum.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Leetcode Questions/LC-56. Merge Intervals.md"
+                "file": "Leetcode Questions/LC-39. Combination Sum.md"
               }
             }
           },
@@ -220,17 +208,17 @@
       "publish:Publish changes": false
     }
   },
-  "active": "962635c6ed733b71",
+  "active": "6e05777e3e055945",
   "lastOpenFiles": [
-    "DS/LFU Cache.md",
-    "Leetcode Questions/LC-57. Insert Interval.md",
-    "Leetcode Questions/LC-56. Merge Intervals.md",
-    "Algos/Intersection of Intervals.md",
-    "Algos/Sweep Line.md",
+    "Algos/Backtracking.md",
+    "Leetcode Questions/LC-39. Combination Sum.md",
     "DS/LRU Cache.md",
-    "Algos/Quick Sort.md",
-    "DS/Graph Theory.md",
-    "Algos/Topological Sort.md",
-    "Algos/Cycle Detection in Directed Graphs.md"
+    "Code/Virtual Env.md",
+    "DS/LFU Cache.md",
+    "Leetcode Questions/LC-252. Meeting Rooms.md",
+    "Code/Docker.md",
+    "Leetcode Questions/LC-56. Merge Intervals.md",
+    "DS/Matrix Traversals.md",
+    "Leetcode Questions/LC-986. Interval List Intersections.md"
   ]
 }
