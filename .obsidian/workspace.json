@@ -37,14 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algos/Quick Sort.md",
+                "file": "Leetcode Questions/LC-46. Permutations.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6e05777e3e055945",
+            "id": "91a71ef800a9fbe1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Leetcode Questions/LC-174. Dungeon Game.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "63c9e941958f3565",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -68,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -135,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Leetcode Questions/LC-39. Combination Sum.md",
+                "file": "Leetcode Questions/LC-46. Permutations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Leetcode Questions/LC-39. Combination Sum.md",
+                "file": "Leetcode Questions/LC-46. Permutations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Leetcode Questions/LC-39. Combination Sum.md"
+                "file": "Leetcode Questions/LC-46. Permutations.md"
               }
             }
           },
@@ -208,17 +220,17 @@
       "publish:Publish changes": false
     }
   },
-  "active": "6e05777e3e055945",
+  "active": "f4d960d5ee37cd28",
   "lastOpenFiles": [
-    "Algos/Backtracking.md",
+    "Algos/Quick Sort.md",
+    "Leetcode Questions/LC-216. Combination Sum III.md",
     "Leetcode Questions/LC-39. Combination Sum.md",
+    "Leetcode Questions/LC-174. Dungeon Game.md",
+    "Algos/Backtracking.md",
     "DS/LRU Cache.md",
     "Code/Virtual Env.md",
     "DS/LFU Cache.md",
     "Leetcode Questions/LC-252. Meeting Rooms.md",
-    "Code/Docker.md",
-    "Leetcode Questions/LC-56. Merge Intervals.md",
-    "DS/Matrix Traversals.md",
-    "Leetcode Questions/LC-986. Interval List Intersections.md"
+    "Code/Docker.md"
   ]
 }
