@@ -20,7 +20,7 @@ Stable sort. Count occurrences of each unique element in array and stores it in 
 ![[Pasted image 20221215155937.png]]
 
 > [!danger]+ Intuition
-> Useful for keys are integers. I.e. [('msft', 1), ('aapl', 2)] or [-3,-2, 1, -20]
+> Useful for keys are integers. I.e. [('msft', 1), ('aapl', 2)] or [-3,-2, 1, -20]. Linear in the range of the elements.
 
 
 # Implementation

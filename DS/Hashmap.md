@@ -197,3 +197,4 @@ class MyHashMap:
 # Related
 
 - [[LC-706. Design HashMap]]
+- https://runestone.academy/ns/books/published/pythonds/SortSearch/Hashing.html
