@@ -159,7 +159,6 @@ LC-Medium
 	- [ ] https://emre.me/computer-science/bit-manipulation-tricks/
 	- [ ] https://emre.me/computer-science/binary-computation-and-bitwise-operators/
 - [ ] Traveling salesman problem
-
 - [ ] Combinatorics
 	- [ ] https://cp-algorithms.com/algebra/factorial-divisors.html
 - [ ] Numerical Methods
@@ -173,6 +172,9 @@ LC-Medium
 	- [ ] https://cp-algorithms.com/geometry/convex-hull.html
 - [ ] Knapsack problemRoadmap Resources
 	- [ ] https://docs.google.com/document/d/1-7Co93b504uyXyMjjE8bnLJP3d3QXvp_m1UjvbvdR2Y/edit
+
+- [ ] **System and OO design Principles (sometimes)**
+    - Some compaines ask Object Oriented questions. A great great resource for this is the book "Clean Architecture" by Robert C. Martin. I also highly recommend his book "Clean Code" but it won't help you for interviews (but will make you a better programmer)
 
 # Problem Solving
 ## List all Possibilities we need to account for
