@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode Questions/LC-46. Permutations.md",
+                "file": "Comprehensive List.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,14 +73,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DS/LFU Cache.md",
+                "file": "Comprehensive List.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -130,7 +130,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -146,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Leetcode Questions/LC-46. Permutations.md",
+                "file": "Comprehensive List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Leetcode Questions/LC-46. Permutations.md",
+                "file": "Comprehensive List.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Leetcode Questions/LC-46. Permutations.md"
+                "file": "Comprehensive List.md"
               }
             }
           },
@@ -219,17 +220,17 @@
       "publish:Publish changes": false
     }
   },
-  "active": "f4d960d5ee37cd28",
+  "active": "27bec66a0fed0e3b",
   "lastOpenFiles": [
+    "DS/LFU Cache.md",
+    "Comprehensive List.md",
+    "Leetcode Questions/LC-46. Permutations.md",
     "Algos/Quick Sort.md",
     "Leetcode Questions/LC-216. Combination Sum III.md",
     "Leetcode Questions/LC-39. Combination Sum.md",
     "Leetcode Questions/LC-174. Dungeon Game.md",
     "Algos/Backtracking.md",
     "DS/LRU Cache.md",
-    "Code/Virtual Env.md",
-    "DS/LFU Cache.md",
-    "Leetcode Questions/LC-252. Meeting Rooms.md",
-    "Code/Docker.md"
+    "Code/Virtual Env.md"
   ]
 }

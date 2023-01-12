@@ -127,9 +127,11 @@ LC-Hard
 LC-Medium
 - [ ] https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/
 
-# Design
+# Design (More Advanced Data structures)
 - [ ] https://leetcode.com/problems/insert-delete-getrandom-o1/
-
+- [ ] [[LRU Cache]]
+- [ ] LFU Cache
+- [ ] Trie Problems
 # Competitive Programming
 
 
