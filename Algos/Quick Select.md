@@ -55,3 +55,5 @@ def findKthLargest(self, nums: List[int], k: int) -> int:
 
 
 # Related
+https://leetcode.com/problems/k-closest-points-to-origin/solutions/1590679/k-closest-points-to-origin/?orderBy=most_votes
+

@@ -119,10 +119,14 @@
 	- [ ] https://cp-algorithms.com/data_structures/sparse-table.html
 # Improving Intuition
 
+- When there is no obvious solution, try brute forcing
+	- How to determine if current word in path (word``[i:j]``) is a palindrome? Sol: Iterate the entirety of the word instead of determining the palindrome concurrently with DFS
+	- Make Number of Distinct Characters Equal: Swap every character in each word with each other
 
 LC-Hard
 - [ ] https://leetcode.com/problems/longest-path-with-different-adjacent-characters/
 - [ ] https://leetcode.com/problems/number-of-islands-ii/description/
+- [ ] https://leetcode.com/problems/word-search-ii/description/
 
 LC-Medium
 - [ ] https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/
@@ -132,6 +136,9 @@ LC-Medium
 - [ ] [[LRU Cache]]
 - [ ] LFU Cache
 - [ ] Trie Problems
+# Recognizing NP-Hard Problems
+Subset Sum if finding all subsets
+- Reduced to O(sum$*$n) using DP if using just finding one
 # Competitive Programming
 
 

@@ -8,79 +8,63 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ec0c6af2c4057589",
+            "id": "e4a598757d69718a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algos/Intersection of Intervals.md",
+                "file": "Algos/Subset Sum.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "043e6fcaa14bea9a",
+            "id": "3790d147920a96ab",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DS/Graph Theory.md",
+                "file": "Algos/Quick Select.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f4d960d5ee37cd28",
+            "id": "dd5362dd7b5e1b29",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comprehensive List.md",
+                "file": "Templates/Algos.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "91a71ef800a9fbe1",
+            "id": "fce7b5eb3d575cf8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode Questions/LC-174. Dungeon Game.md",
+                "file": "Algos/Top K Numbers.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "63c9e941958f3565",
+            "id": "80640d31d236e624",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Leetcode Questions/LC-39. Combination Sum.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "27bec66a0fed0e3b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Comprehensive List.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -130,8 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -147,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Comprehensive List.md",
+                "file": "Algos/Quick Select.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Comprehensive List.md",
+                "file": "Algos/Quick Select.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Comprehensive List.md"
+                "file": "Algos/Quick Select.md"
               }
             }
           },
@@ -220,17 +203,17 @@
       "publish:Publish changes": false
     }
   },
-  "active": "27bec66a0fed0e3b",
+  "active": "3790d147920a96ab",
   "lastOpenFiles": [
-    "DS/LFU Cache.md",
+    "Templates/Algos.md",
+    "DS/Union Find (Disjoint Sets).md",
+    "Algos/Quick Select.md",
+    "Algos/Subset Sum.md",
+    "Algos/Top K Numbers.md",
+    "Leetcode Questions/LC-1007. Minimum Domino Rotations For Equal Row.md",
     "Comprehensive List.md",
-    "Leetcode Questions/LC-46. Permutations.md",
-    "Algos/Quick Sort.md",
-    "Leetcode Questions/LC-216. Combination Sum III.md",
-    "Leetcode Questions/LC-39. Combination Sum.md",
-    "Leetcode Questions/LC-174. Dungeon Game.md",
-    "Algos/Backtracking.md",
-    "DS/LRU Cache.md",
-    "Code/Virtual Env.md"
+    "Leetcode Questions/LC-131. Palindrome Partitioning.md",
+    "Leetcode Questions/LC-23. Merge k Sorted Lists.md",
+    "Algos/Cyclic Sort.md"
   ]
 }

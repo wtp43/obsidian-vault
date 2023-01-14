@@ -28,6 +28,7 @@ Stable if the underlying sort is stable
 
 # Implementation for floats ranging between 0 and 1
 Make 10 buckets
+Nums are decimals between 0 and 1 hence the * 10
 ```python
 def bucket_sort(nums):
 	b = [[] for i in range(len(nums))]
