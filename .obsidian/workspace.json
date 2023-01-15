@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algos/Subset Sum.md",
+                "file": "Leetcode Questions/LC-1007. Minimum Domino Rotations For Equal Row.md",
                 "mode": "source",
                 "source": false
               }
@@ -63,8 +63,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -130,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algos/Quick Select.md",
+                "file": "Leetcode Questions/LC-1007. Minimum Domino Rotations For Equal Row.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algos/Quick Select.md",
+                "file": "Leetcode Questions/LC-1007. Minimum Domino Rotations For Equal Row.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algos/Quick Select.md"
+                "file": "Leetcode Questions/LC-1007. Minimum Domino Rotations For Equal Row.md"
               }
             }
           },
@@ -203,12 +202,12 @@
       "publish:Publish changes": false
     }
   },
-  "active": "3790d147920a96ab",
+  "active": "e4a598757d69718a",
   "lastOpenFiles": [
+    "Algos/Subset Sum.md",
+    "Algos/Quick Select.md",
     "Templates/Algos.md",
     "DS/Union Find (Disjoint Sets).md",
-    "Algos/Quick Select.md",
-    "Algos/Subset Sum.md",
     "Algos/Top K Numbers.md",
     "Leetcode Questions/LC-1007. Minimum Domino Rotations For Equal Row.md",
     "Comprehensive List.md",
