@@ -23,7 +23,8 @@
   "enabled_templates_hotkeys": [
     "Templates/Callout.md",
     "Templates/Algos.md",
-    "Templates/LC.md"
+    "Templates/LC.md",
+    "Templates/Default.md"
   ],
   "startup_templates": [
     ""

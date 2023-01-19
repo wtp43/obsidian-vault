@@ -33,5 +33,14 @@
       ],
       "key": "U"
     }
+  ],
+  "templater-obsidian:Templates/Default.md": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod"
+      ],
+      "key": "G"
+    }
   ]
 }

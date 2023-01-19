@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode Questions/LC-1007. Minimum Domino Rotations For Equal Row.md",
+                "file": "Projects/Dynamic Todo App (SwiftUI).md",
                 "mode": "source",
                 "source": false
               }
@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Leetcode Questions/LC-1007. Minimum Domino Rotations For Equal Row.md",
+                "file": "Projects/Dynamic Todo App (SwiftUI).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Leetcode Questions/LC-1007. Minimum Domino Rotations For Equal Row.md",
+                "file": "Projects/Dynamic Todo App (SwiftUI).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Leetcode Questions/LC-1007. Minimum Domino Rotations For Equal Row.md"
+                "file": "Projects/Dynamic Todo App (SwiftUI).md"
               }
             }
           },
@@ -204,15 +204,15 @@
   },
   "active": "e4a598757d69718a",
   "lastOpenFiles": [
-    "Algos/Subset Sum.md",
-    "Algos/Quick Select.md",
-    "Templates/Algos.md",
-    "DS/Union Find (Disjoint Sets).md",
-    "Algos/Top K Numbers.md",
     "Leetcode Questions/LC-1007. Minimum Domino Rotations For Equal Row.md",
-    "Comprehensive List.md",
-    "Leetcode Questions/LC-131. Palindrome Partitioning.md",
-    "Leetcode Questions/LC-23. Merge k Sorted Lists.md",
-    "Algos/Cyclic Sort.md"
+    "Code/SwiftUI/Navigation Stack.md",
+    "Code/SwiftUI/Floating Action Button.md",
+    "Projects/Dynamic Todo App (SwiftUI).md",
+    "Code/SwiftUI/GroupBox.md",
+    "Code/SwiftUI/Codable Color Protocol.md",
+    "Code/SwiftUI/Shortcuts.md",
+    "Code/SwiftUI/SwiftUI ForEach not updating in List view.md",
+    "Code/SwiftUI/ObservableObject, EnvironmentObject.md",
+    "Code/SwiftUI/Array of Structs.md"
   ]
 }
