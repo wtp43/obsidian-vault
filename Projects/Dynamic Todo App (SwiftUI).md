@@ -11,7 +11,6 @@ https://apps.apple.com/us/app/zenti-meditation-timer/id1587887322
 	- https://betterprogramming.pub/build-a-to-do-app-in-swiftui-using-the-new-ios-15-features-afe5650a24a9
 
 # Features
-- delete doesnt work 
 - Heap 
 	- https://www.kodeco.com/586-swift-algorithm-club-heap-and-priority-queue-data-structure
 	- Update priority on move (newPriority = previousitem.priority)
