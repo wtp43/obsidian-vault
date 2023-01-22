@@ -13,6 +13,8 @@ def kruskal(graph):
 		if uf.find(u) != uf.find(v):
 			mst.append([u,v,cost])
 			uf.union(u,v)
+		else:
+			raise CycleDetected
 	return mst
 
 mst_weight = sum(t[2] for t in mst)

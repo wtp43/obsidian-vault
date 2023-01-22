@@ -34,7 +34,7 @@ def missingNumber(self, nums: List[int]) -> int:
             if num < len(nums) and num != start:
                 nums[start], nums[num] = nums[num], nums[start]
             else:
-                start += 1
+                start += 1,
 
         for i in range(len(nums)):
             if nums[i] != i:

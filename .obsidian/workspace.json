@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Dynamic Todo App (SwiftUI).md",
+                "file": "Leetcode Questions/LC-51. N-Queens.md",
                 "mode": "source",
                 "source": false
               }
@@ -32,35 +32,15 @@
             }
           },
           {
-            "id": "dd5362dd7b5e1b29",
+            "id": "9de4116f70f2ea01",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Algos.md",
+                "file": "Leetcode Questions/LC-647. Palindromic Substrings.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "fce7b5eb3d575cf8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos/Top K Numbers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "80640d31d236e624",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           }
         ]
@@ -113,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -129,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/Dynamic Todo App (SwiftUI).md",
+                "file": "Leetcode Questions/LC-51. N-Queens.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/Dynamic Todo App (SwiftUI).md",
+                "file": "Leetcode Questions/LC-51. N-Queens.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/Dynamic Todo App (SwiftUI).md"
+                "file": "Leetcode Questions/LC-51. N-Queens.md"
               }
             }
           },
@@ -204,15 +185,15 @@
   },
   "active": "e4a598757d69718a",
   "lastOpenFiles": [
-    "Leetcode Questions/LC-1007. Minimum Domino Rotations For Equal Row.md",
-    "Code/SwiftUI/Navigation Stack.md",
-    "Code/SwiftUI/Floating Action Button.md",
+    "Leetcode Questions/LC-647. Palindromic Substrings.md",
+    "Algos/Quick Select.md",
+    "Leetcode Questions/LC-17. Letter Combinations of a Phone Number.md",
+    "Leetcode Questions/LC-131. Palindrome Partitioning.md",
+    "Algos/Palindromes.md",
+    "Algos/Cyclic Sort.md",
+    "Leetcode Questions/LC-51. N-Queens.md",
+    "Comprehensive List.md",
     "Projects/Dynamic Todo App (SwiftUI).md",
-    "Code/SwiftUI/GroupBox.md",
-    "Code/SwiftUI/Codable Color Protocol.md",
-    "Code/SwiftUI/Shortcuts.md",
-    "Code/SwiftUI/SwiftUI ForEach not updating in List view.md",
-    "Code/SwiftUI/ObservableObject, EnvironmentObject.md",
-    "Code/SwiftUI/Array of Structs.md"
+    "Leetcode Questions/LC-2246. Longest Path With Different Adjacent Characters.md"
   ]
 }

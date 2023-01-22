@@ -9,7 +9,7 @@
 - [ ] Backtracking
 	- [ ] N Queen
 	- [ ] Maze Solving 
-	- [ ] Knigh'ts Tour
+	- [ ] Knights Tour
 	- [ ] Hamiltonian Paths
 - [ ] Binary Search
 	- [ ] https://leetcode.com/problems/search-a-2d-matrix-ii/description/
@@ -156,6 +156,17 @@ Subset Sum if finding all subsets
 # Competitive Programming
 
 
+# How to Approach a Problem During an Interview
+- Ask about the input data
+	- What are it's characteristics?
+	- Can we assume that it is 
+		- unique
+		- sorted
+		- Type of Data? Integer, String
+
+# Practicing Time Complexity
+https://leetcode.com/discuss/interview-question/3055778/how-to-calculate-runtime-of-backtracking-algorithm-in-interview
+
 # Review
 - [ ] Linked list operations/traversals
 - [ ] Binary heap deletion
@@ -182,6 +193,7 @@ Subset Sum if finding all subsets
 
 - [ ] **System and OO design Principles (sometimes)**
     - Some compaines ask Object Oriented questions. A great great resource for this is the book "Clean Architecture" by Robert C. Martin. I also highly recommend his book "Clean Code" but it won't help you for interviews (but will make you a better programmer)
+    - https://leetcode.com/discuss/interview-question/1140451/Helpful-list-of-LeetCode-Posts-on-System-Design-at-Facebook-Google-Amazon-Uber-Microsoft
 
 # Problem Solving
 ## List all Possibilities we need to account for
