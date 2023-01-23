@@ -136,8 +136,7 @@ class IPQ:
 
 	def poll(self):
 		ki = im[1]
-		i = self.pm[ki]
-		min_val = self.peek(i)
+		min_val = val[ki]
 		self.remove(ki)
 		return ki, min_val
 
