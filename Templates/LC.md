@@ -11,7 +11,7 @@
 %>
 title:  <%* tR += "\"" + result + "\"" %>
 tags:
-<% tp.file.cursor(1) %>
+- <% tp.file.cursor(1) %>
 created: <% tp.date.now("YYYY-MM-DD") %>
 ---
 
@@ -24,7 +24,7 @@ created: <% tp.date.now("YYYY-MM-DD") %>
 
 # Description
 
-
+# Brute Force
 # Intuition
 
 >[!danger]+ Intuition
