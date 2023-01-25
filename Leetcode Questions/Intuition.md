@@ -117,6 +117,15 @@ Aside from scheduling which requires sorting, most of these problems take advant
 After every pop, it's important to update our results and if need be, push the updated results back onto the stack.
 This is common when merging intervals (stock span, largest rectangle in histogram).
 
+Always remember to clear non empty stack at the end of loops
+
+## Useful tools we can make with stacks
+- Monotonically inc/dec stacks
+- Strictly inc/dec stacks
+	- We build stacks in such a way that the top of the stack guarantees that we have the smallest/largest number
+- Min/max stacks
+	- Augmented stack that tells us the minimum/maximum in the history
+
 [[LC-84. Largest Rectangle in Histogram]]
 - Greedy algorithm:
 	- We want to use as many bars as possible
@@ -163,6 +172,40 @@ class StockSpanner:
         return span
 ```
 - It's important to push the span back (update) after every pop. 
+
+[[LC-456. 132 Pattern]] (Preprocessing min stack + strictly decreasing stack)
+- Since we want i < j < k and nums[i] < nums[k] < nums[j], it would be useful to have the minimum nums[i] at each iteration. 
+- Then we iterate the array backwards 
+	- if nums[j] <= min_array[j]
+		- continue, because we dont have a valid nums[i] to use
+	- while our stack of nums[k] <= min_array[j]
+		- stack.pop() until we have a valid nums[k]
+		- because the solution we are searching for requires nums[k] < nums[j], we know that our stack is a in min stack otherwise we would have found a solution already
+	- check if stack and stack[-1] < nums[j]. Then we have a valid k and i
+	- Append the current j to the stack
+
+[[LC-394. Decode String]]
+- To convert a string '100' to integer: k = k * 10 + int(c)
+	- Another way is to store the a num stack with delimiter [#,1,0,0,#]
+- The hard part is dealing with nested strings
+	- Every time we reach a ``'['``  , we need to push the current string back onto the stack
+	- When we reach ``']'``, we need to process both the current string and the string on the top of the stack together
+
+[[LC-1209. Remove All Adjacent Duplicates in String II]]
+Bruteforce: O($n^2$/k)
+- We scan the string no more than n/k times
+	iterate through the string:
+-   If the current character is the same as the one before, increase the count.
+    -   Otherwise, reset the count to `1`.
+-   If the count equals `k`, erase last `k` characters.
+- If the length of the string was changed, repeat starting from the first step.
+What are some generic string properties?
+- Index, consecutive frequency, character
+Character and consecutive frequency will be useful here to help us rebuild the string
+One property to note is that, it is not possible for multiple merges after one delete
+- ie: bbb - bb - ccc - b, for k = 3
+- This is because bbb would have already been deleted. Thus, we only have to look at the top of the stack after deleting
+
 # Intervals/Scheduling
 
 
@@ -172,6 +215,9 @@ class StockSpanner:
 - Find K largest numbers (quickselect): O(N) but worst case O(N^2)
 - Sort by (nums[i], i) then sort again by the index i and return the largest k elements: O(NlogN)
 - Keep a heap of the largest k items (nums[i], i). If cur num is smaller than the top of the heap, continue. If it is bigger, pop the top of the heap and insert the cur num: O(NlogK)
+
+# Heap
+To make a max heap, push -x for x in array onto a min heap.
 
 
 
