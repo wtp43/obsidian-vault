@@ -3,11 +3,15 @@
 - [ ] Prim's Algorithm
 - [ ] Indexed Priority Queue
 - [x] Cycle detection in DAG (3 coloring) with topological sort
+- [ ] 
+# Behavioural 
+
+https://www.techinterviewhandbook.org/behavioral-interview/
 
 # Topics
 
 - [ ] Backtracking
-	- [ ] N Queen
+	- [x] N Queen
 	- [ ] Maze Solving 
 	- [ ] Knights Tour
 	- [ ] Hamiltonian Paths
@@ -166,6 +170,9 @@ Subset Sum if finding all subsets
 
 # Practicing Time Complexity
 https://leetcode.com/discuss/interview-question/3055778/how-to-calculate-runtime-of-backtracking-algorithm-in-interview
+
+# Generating Test Cases
+- After writing code, review the edge cases
 
 # Review
 - [ ] Linked list operations/traversals

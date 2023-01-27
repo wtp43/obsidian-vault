@@ -13,73 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Comprehensive List.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1f7ead35073167de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LC Hard Todo.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0c02f9185d1094cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Leetcode Questions/Intuition.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "daaee74a639c5b4f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Leetcode Questions/LC-394. Decode String.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "05f4dd01fe4e4eaf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Leetcode Questions/LC-456. 132 Pattern.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "820bf7a5b1f15b0a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Leetcode Questions/LC-901. Online Stock Span.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "eae13338d49a7a1c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Leetcode Questions/LC-994. Rotting Oranges.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ec396b3d94bc1b9b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Leetcode Questions/LC-286. Walls and Gates.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -108,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#graph",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -125,8 +90,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -200,11 +164,11 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -220,17 +184,17 @@
       "publish:Publish changes": false
     }
   },
-  "active": "1b59b98f7fe517cd",
+  "active": "0c02f9185d1094cf",
   "lastOpenFiles": [
-    "Leetcode Questions/LC-394. Decode String.md",
+    "Leetcode Questions/LC-153. Find Minimum in Rotated Sorted Array.md",
     "Leetcode Questions/Intuition.md",
-    "Leetcode Questions/LC-456. 132 Pattern.md",
-    "DS/Maximum Frequency Stack.md",
-    "Leetcode Questions/LC-901. Online Stock Span.md",
-    "Leetcode Questions/LC-994. Rotting Oranges.md",
-    "Leetcode Questions/LC-286. Walls and Gates.md",
-    "Leetcode Questions/LC-323. Number of Connected Components in an Undirected Graph.md",
-    "Leetcode Questions/LC-684. Redundant Connection.md",
-    "Leetcode Questions/LC-200. Number of Islands.md"
+    "Leetcode Questions/LC-33. Search in Rotated Sorted Array.md",
+    "LC Hard Todo.md",
+    "Comprehensive List.md",
+    "Leetcode Questions/LC-74. Search a 2D Matrix.md",
+    "Leetcode Questions/LC-977. Squares of a Sorted Array.md",
+    "Leetcode Questions/LC-367. Valid Perfect Square.md",
+    "Math/Calculus/Newton's Method.md",
+    "Math/Untitled.md"
   ]
 }

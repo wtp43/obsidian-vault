@@ -7,108 +7,191 @@
 
 Here, we are interested in building our intuition. In other words, our ability to reduce a hard problem to a simpler one. 
 
-# Sliding Window
-In an array of size N, there are N - k + 1 windows.
+# Backtracking
 
-General Template
+[[LC-131. Palindrome Partitioning]]
+- We want to partition a string s such that every substring of the partition is a palindrome
+- When backtracking, it's important to determine if we are at a valid step. Only if we are do we proceed to the next step (continue recursing).
+- 
+https://leetcode.com/problems/palindromic-substrings/description/
+
+# Brainteasers
+
+[[LC-1007. Minimum Domino Rotations For Equal Row]]
+- We have to immediately recognize that it doesn't matter where we check but that every single domino must have at least one of the two numbers present.
+- So if any domino doesn't have the top or bottom number of the first domino, no rotations are possible
+
+# Binary Search
+[[LC-153. Find Minimum in Rotated Sorted Array]]
+https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/solutions/166875/find-minimum-in-rotated-sorted-array/
+
+[[LC-33. Search in Rotated Sorted Array]]
+https://leetcode.com/problems/search-in-rotated-sorted-array/
+
+[[LC-74. Search a 2D Matrix]]
+# Dynamic Programming
+https://leetcode.com/problems/minimum-cost-to-split-an-array/description/
+https://leetcode.com/problems/minimum-cost-to-split-an-array/solutions/3083850/python3-dp/
+
+https://leetcode.com/problems/concatenated-words/solutions/2822170/concatenated-words/?orderBy=most_votes
+Why sliding window wouldn't work here:
+- There is no window of k for our solution
+	- The size of k will not encompass all the substrings that a word may contain
+	- we need to do more comparisons
+- Sorting does not allow us to find the answer in O(1)
+	- we realize that we have to check more than just the word at the start of the window
+
+# Data Structures (Advanced)
+[[LFU Cache]]
+https://leetcode.com/problems/lfu-cache/solutions/2815229/lfu-cache/
+# Enumerate Options
+https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/solutions/3083831/java-c-python-1-line-check-1/?orderBy=most_votes
+
+
+# Graphs
+## Union Find (Cycle detection)
+Works for undirected graphs
+[[LC-684. Redundant Connection]]
+- This is the case where the tree has no cycles and is an undirected graph. Then we just need to remove one of the two edges that make up the node with indegree 2.
+- Use union find to detect if nodes u,v in the edge (u,v) have the same parent. If they do, this edge is redundant
+
+[[LC-685. Redundant Connection II]]
+-  A valid graph in this context is a single rooted tree (directed graph) with no cycles. This graph is given a single extra edge.
+- An edge that is redundant if it is one of two edges that enter the same node or an edge in a cycle. In the case that both scenario happens, we need to remove the edge inside the cycle otherwise it only solves one of the two problems.
+- Since we are not sure which edge to remove to ensure that the node has indegree of 1, we have to keep track both edges. We want to remove the edge that is part of a cycle if there exists one. 
+- It will help to store the previous node of each node in a dictionary.
+- Union find will help us detect the cycle
+
+[[LC-261. Graph Valid Tree]]
+- A valid tree has 1 connected component with no cycles
+- Reduces to redundant connection
+- An extra check is required at the end to see if the edges have connected all the components
+
+[[LC-323. Number of Connected Components in an Undirected Graph]]
+- Union find
+- Reduce the number of connected components every time we take the union of nodes u and v
+
+
+## DFS
+Start DFS for every connected component. Make sure to mark connected components
+When building out adjacency lists  for directed graphs, we need to make sure the directions are correct. In the case of course schedule, we want the courses to point to prerequisites because this tells us which prerequisites are needed.
+
+In BFS, we need to do a check prior to adding the node to the queue. In DFS, it may not always be necessary to do a pre-check, we can check in the base case of the function call.
+
+[[LC-200. Number of Islands]]
+- '1' is marked as land while '0' is water
+- Start DFS at every '1' while marking them as '0' to indicate they are visited
+- Increment number of islands every time dfs is started at '1'
+
+[[LC-695. Max Area of Island]]
+- Start DFS at every '1' and mark them as visited
+- Recursively sum up the area of the island by returning 1 + dfs(all dirs)
+
+
+[[LC-417. Pacific Atlantic Water Flow]] (Starting dfs such that the results can be reused in the next dfs call)
+- Find all the squares that flow to and from the pacific/atlantic
+The naive approach would be to BFS from each cell. It repeats computation because any result can only be applied to that cell. Start from the ocean(outer borders) and work backwards. The results here are used for multiple cells because every cell we visit must be connected to the ocean. 
+
+[[LC-994. Rotting Oranges]] (Parallel BFS)
+- Since one fresh orange can be affected by multiple oranges, we want to find the shortest time in which it will be affected. 
+- We need to modify our BFS to run in parallel. We can do this by keeping track of which iteration we are on using a delimiter in the queue and starting BFS at all rotten oranges. 
+- Instead of a delimiter, we can also iterate the length of the current queue.
+
+[[LC-207. Course Schedule]]
+- Cycle detection but in a directed graph
+- We can use topological sort which implements DFS
+	- We have three states: unvisited, currently visiting, visited
+	- A cycle is detected if we reach a node that we are currently visiting
+- Append, the 
+- Direction is important: Since this is a one to many relationship ``[course, prerequisite1], we need to build our edges directed in this way: graph[i].append(j)
+
+[[LC-286. Walls and Gates]] (Parallel BFS)
+- We want to find the distance from every empty cell to the nearest gate. 
+- Instead of running DFS from every gate and taking the min (this results in extra computation), run BFS in parallel starting from each gate. 
+- Thus we are guaranteed the shortest route. The distance to the cell is only updated if it is not inf and in the case it isn't, we know we have already visited it taking a shorter path.
+- To run BFS in parallel, use a for loop to pop all items in the q at the current state with dist = i. After all these are popped increment dist
 ```python
-start = counter = 0
-res = 0
-for end in range(n):
-	counter += nums[end]
+while q:
+	for _ in  range(len(q)):
+		next = q.pop()
+		cell[i][j] = dist
+		seen.add((i,j))
+		for x,y in dirs:
+			row = i+x
+			col = j+y
+			if (row,col) in seen or (row and col out of bounds):
+				continue
+			q.append((row,col))
+			seen.append((row,col))
 
-	if start-end >= k-1:
-		res = max(res, counter)
-		counter -= nums[start]
-		start += 1
+	dist += 1
+	
 ```
 
-Maximum Sum Subarray of Size K
-- Keep track of where the current window starts and ends
-- Build a window of size k
-- Loop for all window_ends (for i in range(len(nums)))
-- `counter += nums[i]
-- When we have reached the last element of the window (k-1), 
-	- Update maximum 
-	- `counter -= nums[start]
-	- start += 1
+## BFS (Shortest path)
+BFS is more useful than DFS in cases where we are interested in the shortest path.
 
-[[LC-209. Minimum Size Subarray Sum]]
-- Find the smallest window where sum is at least target
-- First find a window, then make it smaller while still satisfying the constraints.
+[[LC-787. Cheapest Flights Within K Stops]]
+Dijkstra wouldn't be the best solution here because we are limited to k steps.
+We can run BFS: O(N + EK). In BFS: we have to pass the distance to the queue otherwise we may accidentally use the shortest distance ``(dist[city])`` that takes a different path because ``dist[city]`` may have been updated earlier by a different node.
+This is also similar to Bellman Ford but relaxing only k+1 times: O((N+E)K) The N comes from swapping the temp and dist array after each round of relaxing all edges. If we do not store our previous result, we will accidentally use more than K steps.
 
+## Shortest Path
+https://leetcode.com/problems/network-delay-time/description/
 
-[[LC-239. Sliding Window Maximum]]
-- Find the maximum of all k sized windows
-- Brute force: iterate all k sized windows. Time complexity: N-k+1 windows and k elements in each window = O(NK)
-- Keep a monotonic decreasing stack of elements
-	- For every new element, pop all elements smaller than it in the deque
-	- Add the new element
-	- If the left index is greater than q[0] (the greatest element), pop q[0]
-- What we are doing here is reducing a heap
-	- We don't need a full heap because we are only interested in the biggest item in a window of size k
-	- This is possible because we don't need all the items 
+# Heap
+To make a max heap, push -x for x in array onto a min heap.
 
-[[LC-340. Longest Substring with At Most K Distinct Characters]]
-- Keep track of all frequencies of characters. 
-- When you reach a window containing k+1 characters, move start up until len(frequency) = k.  
-- O(n)
+https://leetcode.com/problems/task-scheduler/description/
 
-[[LC-904. Fruit Into Baskets]] (Reduction of LC-340)
-- Window size can only have 2 distinct characters instead of k
-- Brute force:
-	- O(n^3)
-	- Loop on the left index, the right index, and the current index in between left and right
-- Keep track of frequencies in the current sliding window. The moment we exceed the frequencies, move the start of the window up and decrement for each of the elements until we reach the valid number of frequencies again.
-- Update the max_count during every iteration (not just until we reach k+1 sized windows)
-- O(n)
-
-[[LC-424. Longest Repeating Character Replacement]]
-How is the biggest window made?
->It is the window containing the most number of repeated character (character with the highest frequency) + k other letters
+# Advanced Heaps: IPQ, Fibonacci Heap
+https://www.geeksforgeeks.org/fibonacci-heap-set-1-introduction/
 
 
-[[LC-3. Longest Substring Without Repeating Characters]]
-- Keep set of seen letters
-- If current letter has already appeared, move the start of the window up while simultaneously deleting the letter at index: start
 
-[[LC-567. Permutation in String]]
-- Check if s2 contains a permutation of s1
--  self.dictEquals(d1,d2) while moving up the sliding window and updating d2 (decrement the frequency of the previous window start, increment the current char)
-- If we use Counter(), we can compare them directly (d1 == d2) instead of rewriting a dictionary comparison function
+# Intervals/Scheduling
+https://leetcode.com/problems/remove-covered-intervals/
+https://leetcode.com/problems/task-scheduler/description/
 
-[[LC-438. Find All Anagrams in a String]]
-- Similar to permutation in string
-- Keep counters of all characters
-- Increment current letter, move window up, decrement the character at the previous start
+# Linked List
 
-[[LC-76. Minimum Window Substring]]
-- Find the smallest window that contains all letters of t in s including duplicates. (This can be reduced to permutation in string)
+[[LC-138. Copy List with Random Pointer]]
+- Make all the new nodes first and store them in a dictionary
+- Traverse the original linked list and set the corresponding links using the dictionary on the new nodes.
 
-For minimum window strategies:
-- Find a valid window first
-	- Iteratively make the window smaller by moving up the start index
-	- Check if the current smaller window still satisfies the constraints and update the minimum window
+```python
+def copyRandomList(self, head: "Node") -> "Node":
+        oldToCopy = {None: None}
+        cur = head
+        while cur:
+            copy = Node(cur.val)
+            oldToCopy[cur] = copy
+            cur = cur.next
+        cur = head
+        while cur:
+            copy = oldToCopy[cur]
+            copy.next = oldToCopy[cur.next]
+            copy.random = oldToCopy[cur.random]
+            cur = cur.next
+        return oldToCopy[head]
+```
 
-# Two pointers
-## TwoSum: 
-Find two elements in an array that sum to the target
-- Sort then two pointers
-- Or, store the complement in hashset and iterate
-- O(n)
-## ThreeSum (Reduces to TwoSum): 
-Find three elements in an array that sum to the target
-- Sort then run TwoSum starting at i+1 for i in range(n)
-- Again, hashset the complement
-- O(n)
+# Maze  Solving Algorithms
 
-# Fast and Slow Pointers
 
-[[LC-876. Middle of the Linked List]]
-- Use two pointers that both start at the head
-- While p2 and p2.next, move p1 up by one while p2 up by 2
-- The middle will be at p1
+# Knapsack 01 and Fractional Knapsack
+https://www.geeksforgeeks.org/difference-between-0-1-knapsack-problem-and-fractional-knapsack-problem/?ref=rp
 
+# K Problems
+## Quick Select
+[[LC-973. K Closest Points to Origin]]
+https://leetcode.com/problems/k-closest-points-to-origin/solutions/1590679/k-closest-points-to-origin/?orderBy=most_votes
+https://leetcode.com/problems/top-k-frequent-words/solutions/2516165/top-k-frequent-words/
+# Sort
+[[2099. Find Subsequence of Length K With the Largest Sum]]
+- Find K largest numbers (quickselect): O(N) but worst case O(N^2)
+- Sort by (nums[i], i) then sort again by the index i and return the largest k elements: O(NlogN)
+- Keep a heap of the largest k items (nums[i], i). If cur num is smaller than the top of the heap, continue. If it is bigger, pop the top of the heap and insert the cur num: O(NlogK)
 
 # Stack
 Problems that require a stack are generally greedy.
@@ -193,6 +276,7 @@ class StockSpanner:
 
 [[LC-1209. Remove All Adjacent Duplicates in String II]]
 Bruteforce: O($n^2$/k)
+- Time complexity: Think about what happens after k deletions? How long will the string be?: n-k. How many deletions can we do?: n/k. In the worst case, we do n/k deletions and we have to start from the beginning to see if new adjacent duplicates were created because of the deletion.
 - We scan the string no more than n/k times
 	iterate through the string:
 -   If the current character is the same as the one before, increase the count.
@@ -206,124 +290,147 @@ One property to note is that, it is not possible for multiple merges after one d
 - ie: bbb - bb - ccc - b, for k = 3
 - This is because bbb would have already been deleted. Thus, we only have to look at the top of the stack after deleting
 
-# Intervals/Scheduling
+[[LC-32. Longest Valid Parentheses]]
+What is important? Where the last valid open bracket was.
+Thus, we should store the index.
+When we can update the longest valid parenthesis?
+When we have popped an open bracket off the stack.
+How do we know we've popped an open bracket?
+We store the last invalid index before the next opening bracket at the start of the stack.
+Length = j-i+1
+This is because j and i are indices. (j-i) just gives us the difference.
+
+[[LC-85. Maximal Rectangle]]
+![](https://assets.leetcode.com/uploads/2020/09/14/maximal.jpg)
+Similar to [[LC-84. Largest Rectangle in Histogram]]. The first step is to recognize the [[Best Theoretical Time Complexity (BTTC)]]
+
+To find all the rectangles, we have to look at every possible i,j. So the BTTC is O(NM).
+To build our bars for the histogram, we can set the current row as the y axis and use DP. If the current cell is a 0, we cannot reuse the height form the previous rows, otherwise we can extend the bar.
 
 
 
-# Sort
-[[2099. Find Subsequence of Length K With the Largest Sum]]
-- Find K largest numbers (quickselect): O(N) but worst case O(N^2)
-- Sort by (nums[i], i) then sort again by the index i and return the largest k elements: O(NlogN)
-- Keep a heap of the largest k items (nums[i], i). If cur num is smaller than the top of the heap, continue. If it is bigger, pop the top of the heap and insert the cur num: O(NlogK)
+# Sliding Window
+In an array of size N, there are N - k + 1 windows.
 
-# Heap
-To make a max heap, push -x for x in array onto a min heap.
-
-
-
-# Enumerate Options
-https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/solutions/3083831/java-c-python-1-line-check-1/?orderBy=most_votes
-
-
-# Dynamic Programming
-https://leetcode.com/problems/minimum-cost-to-split-an-array/description/
-https://leetcode.com/problems/minimum-cost-to-split-an-array/solutions/3083850/python3-dp/
-
-https://leetcode.com/problems/concatenated-words/solutions/2822170/concatenated-words/?orderBy=most_votes
-Why sliding window wouldn't work here:
-- There is no window of k for our solution
-	- The size of k will not encompass all the substrings that a word may contain
-	- we need to do more comparisons
-- Sorting does not allow us to find the answer in O(1)
-	- we realize that we have to check more than just the word at the start of the window
-# Knapsack 01 and Fractional Knapsack
-https://www.geeksforgeeks.org/difference-between-0-1-knapsack-problem-and-fractional-knapsack-problem/?ref=rp
-
-# Advanced Heaps: IPQ, Fibonacci Heap
-https://www.geeksforgeeks.org/fibonacci-heap-set-1-introduction/
-
-
-
-# Graphs
-## Union Find (Cycle detection)
-Works for undirected graphs
-[[LC-684. Redundant Connection]]
-- This is the case where the tree has no cycles and is an undirected graph. Then we just need to remove one of the two edges that make up the node with indegree 2.
-- Use union find to detect if nodes u,v in the edge (u,v) have the same parent. If they do, this edge is redundant
-
-[[LC-685. Redundant Connection II]]
--  A valid graph in this context is a single rooted tree (directed graph) with no cycles. This graph is given a single extra edge.
-- An edge that is redundant if it is one of two edges that enter the same node or an edge in a cycle. In the case that both scenario happens, we need to remove the edge inside the cycle otherwise it only solves one of the two problems.
-- Since we are not sure which edge to remove to ensure that the node has indegree of 1, we have to keep track both edges. We want to remove the edge that is part of a cycle if there exists one. 
-- It will help to store the previous node of each node in a dictionary.
-- Union find will help us detect the cycle
-
-[[LC-261. Graph Valid Tree]]
-- A valid tree has 1 connected component with no cycles
-- Reduces to redundant connection
-- An extra check is required at the end to see if the edges have connected all the components
-
-[[LC-323. Number of Connected Components in an Undirected Graph]]
-- Union find
-- Reduce the number of connected components every time we take the union of nodes u and v
-
-
-## DFS/BFS
-Start DFS for every connected component. Make sure to mark connected components
-When building out adjacency lists  for directed graphs, we need to make sure the directions are correct. In the case of course schedule, we want the courses to point to prerequisites because this tells us which prerequisites are needed.
-
-In BFS, we need to do a check prior to adding the node to the queue. In DFS, it may not always be necessary to do a pre-check, we can check in the base case of the function call.
-
-[[LC-200. Number of Islands]]
-- '1' is marked as land while '0' is water
-- Start DFS at every '1' while marking them as '0' to indicate they are visited
-- Increment number of islands every time dfs is started at '1'
-
-[[LC-695. Max Area of Island]]
-- Start DFS at every '1' and mark them as visited
-- Recursively sum up the area of the island by returning 1 + dfs(all dirs)
-
-
-[[LC-417. Pacific Atlantic Water Flow]] (Starting dfs such that the results can be reused in the next dfs call)
-- Find all the squares that flow to and from the pacific/atlantic
-The naive approach would be to BFS from each cell. It repeats computation because any result can only be applied to that cell. Start from the ocean(outer borders) and work backwards. The results here are used for multiple cells because every cell we visit must be connected to the ocean. 
-
-[[LC-994. Rotting Oranges]] (Parallel BFS)
-- Since one fresh orange can be affected by multiple oranges, we want to find the shortest time in which it will be affected. 
-- We need to modify our BFS to run in parallel. We can do this by keeping track of which iteration we are on using a delimiter in the queue and starting BFS at all rotten oranges. 
-- Instead of a delimiter, we can also iterate the length of the current queue.
-
-[[LC-207. Course Schedule]]
-- Cycle detection but in a directed graph
-- We can use topological sort which implements DFS
-	- We have three states: unvisited, currently visiting, visited
-	- A cycle is detected if we reach a node that we are currently visiting
-- Append, the 
-- Direction is important: Since this is a one to many relationship ``[course, prerequisite1], we need to build our edges directed in this way: graph[i].append(j)
-
-[[LC-286. Walls and Gates]] (Parallel BFS)
-- We want to find the distance from every empty cell to the nearest gate. 
-- Instead of running DFS from every gate and taking the min (this results in extra computation), run BFS in parallel starting from each gate. 
-- Thus we are guaranteed the shortest route. The distance to the cell is only updated if it is not inf and in the case it isn't, we know we have already visited it taking a shorter path.
-- To run BFS in parallel, use a for loop to pop all items in the q at the current state with dist = i. After all these are popped increment dist
+General Template
 ```python
-while q:
-	for _ in  range(len(q)):
-		next = q.pop()
-		cell[i][j] = dist
-		seen.add((i,j))
-		for x,y in dirs:
-			row = i+x
-			col = j+y
-			if (row,col) in seen or (row and col out of bounds):
-				continue
-			q.append((row,col))
-			seen.append((row,col))
+start = counter = 0
+res = 0
+for end in range(n):
+	counter += nums[end]
 
-	dist += 1
-	
+	if start-end >= k-1:
+		res = max(res, counter)
+		counter -= nums[start]
+		start += 1
 ```
 
-# Backtracking
+Maximum Sum Subarray of Size K
+- Keep track of where the current window starts and ends
+- Build a window of size k
+- Loop for all window_ends (for i in range(len(nums)))
+- `counter += nums[i]
+- When we have reached the last element of the window (k-1), 
+	- Update maximum 
+	- `counter -= nums[start]
+	- start += 1
 
-# Maze  Solving Algorithms
+[[LC-209. Minimum Size Subarray Sum]]
+- Find the smallest window where sum is at least target
+- First find a window, then make it smaller while still satisfying the constraints.
+
+
+[[LC-239. Sliding Window Maximum]]
+- Find the maximum of all k sized windows
+- Brute force: iterate all k sized windows. Time complexity: N-k+1 windows and k elements in each window = O(NK)
+- Keep a monotonic decreasing stack of elements
+	- For every new element, pop all elements smaller than it in the deque
+	- Add the new element
+	- If the left index is greater than q[0] (the greatest element), pop q[0]
+- What we are doing here is reducing a heap
+	- We don't need a full heap because we are only interested in the biggest item in a window of size k
+	- This is possible because we don't need all the items 
+
+[[LC-340. Longest Substring with At Most K Distinct Characters]]
+- Keep track of all frequencies of characters. 
+- When you reach a window containing k+1 characters, move start up until len(frequency) = k.  
+- O(n)
+
+[[LC-904. Fruit Into Baskets]] (Reduction of LC-340)
+- Window size can only have 2 distinct characters instead of k
+- Brute force:
+	- O(n^3)
+	- Loop on the left index, the right index, and the current index in between left and right
+- Keep track of frequencies in the current sliding window. The moment we exceed the frequencies, move the start of the window up and decrement for each of the elements until we reach the valid number of frequencies again.
+- Update the max_count during every iteration (not just until we reach k+1 sized windows)
+- O(n)
+
+[[LC-424. Longest Repeating Character Replacement]]
+How is the biggest window made?
+>It is the window containing the most number of repeated character (character with the highest frequency) + k other letters
+
+
+[[LC-3. Longest Substring Without Repeating Characters]]
+- Keep set of seen letters
+- If current letter has already appeared, move the start of the window up while simultaneously deleting the letter at index: start
+
+[[LC-567. Permutation in String]]
+- Check if s2 contains a permutation of s1
+-  self.dictEquals(d1,d2) while moving up the sliding window and updating d2 (decrement the frequency of the previous window start, increment the current char)
+- If we use Counter(), we can compare them directly (d1 == d2) instead of rewriting a dictionary comparison function
+
+[[LC-438. Find All Anagrams in a String]]
+- Similar to permutation in string
+- Keep counters of all characters
+- Increment current letter, move window up, decrement the character at the previous start
+
+[[LC-76. Minimum Window Substring]]
+- Find the smallest window that contains all letters of t in s including duplicates. (This can be reduced to permutation in string)
+
+For minimum window strategies:
+- Find a valid window first
+	- Iteratively make the window smaller by moving up the start index
+	- Check if the current smaller window still satisfies the constraints and update the minimum window
+
+# Subset Sum
+https://leetcode.com/problems/partition-equal-subset-sum/description/
+https://leetcode.com/discuss/interview-question/1279773/google-interview-question-array-subset-sum-equals-k
+https://leetcode.com/problems/partition-to-k-equal-sum-subsets/
+
+# Two pointers
+## TwoSum: 
+Find two elements in an array that sum to the target
+- Sort then two pointers
+- Or, store the complement in hashset and iterate
+- O(n)
+## ThreeSum (Reduces to TwoSum): 
+Find three elements in an array that sum to the target
+- Sort then run TwoSum starting at i+1 for i in range(n)
+- Again, hashset the complement
+- O(n)
+
+[[LC-189. Rotate Array]]
+- k = k mod n
+- reverse the entire array
+- reverse the first k (0->k-1)
+- reverse the last k
+
+Valid Palindrome
+- Works for both even and odd length palindromes: while i < j
+- Check the first and last character, if they don't match it's not a palindrome
+
+[[LC-977. Squares of a Sorted Array]]
+- We have a list` [-10,-5,0,1,2,20]` and require a list of squares in sorted order
+- Two pointers is very useful here because the list is sorted, and either we take from the front or the back of the list
+
+# Fast and Slow Pointers
+
+[[LC-876. Middle of the Linked List]]
+- Use two pointers that both start at the head
+- While p2 and p2.next, move p1 up by one while p2 up by 2
+- The middle will be at p1
+
+# Mathematics
+
+[[LC-367. Valid Perfect Square]]
+- The sqrt of a num is always <= num/2
