@@ -13,26 +13,34 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comprehensive List.md",
+                "file": "Leetcode Questions/LC-17. Letter Combinations of a Phone Number.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1f7ead35073167de",
+            "id": "cc358cff143d737f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LC Hard Todo.md",
+                "file": "Memory/Task Switching.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "0c02f9185d1094cf",
+            "id": "ff9eb29ac7841408",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "bb3ef56e1c350c31",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -43,8 +51,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +80,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#backtracking",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,12 +97,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -111,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Leetcode Questions/Intuition.md",
+                "file": "Leetcode Questions/LC-17. Letter Combinations of a Phone Number.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Leetcode Questions/Intuition.md",
+                "file": "Leetcode Questions/LC-17. Letter Combinations of a Phone Number.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +147,7 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "frequency",
+                "sortOrder": "alphabetical",
                 "useHierarchy": true
               }
             }
@@ -151,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Leetcode Questions/Intuition.md"
+                "file": "Leetcode Questions/LC-17. Letter Combinations of a Phone Number.md"
               }
             }
           },
@@ -164,14 +171,16 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
+      "darlal-switcher-plus:Open in Headings Mode": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": false,
@@ -184,17 +193,17 @@
       "publish:Publish changes": false
     }
   },
-  "active": "0c02f9185d1094cf",
+  "active": "1b59b98f7fe517cd",
   "lastOpenFiles": [
-    "Leetcode Questions/LC-153. Find Minimum in Rotated Sorted Array.md",
-    "Leetcode Questions/Intuition.md",
-    "Leetcode Questions/LC-33. Search in Rotated Sorted Array.md",
-    "LC Hard Todo.md",
+    "Leetcode Questions/LC-79. Word Search.md",
+    "Leetcode Questions/LC-46. Permutations.md",
+    "Leetcode Questions/LC-34. Find First and Last Position of Element in Sorted Array.md",
+    "DS/Union Find (Disjoint Sets).md",
     "Comprehensive List.md",
-    "Leetcode Questions/LC-74. Search a 2D Matrix.md",
-    "Leetcode Questions/LC-977. Squares of a Sorted Array.md",
-    "Leetcode Questions/LC-367. Valid Perfect Square.md",
-    "Math/Calculus/Newton's Method.md",
-    "Math/Untitled.md"
+    "Leetcode Questions/LC-33. Search in Rotated Sorted Array.md",
+    "Leetcode Questions/LC-45. Jump Game II.md",
+    "Leetcode Questions/LC-134. Gas Station.md",
+    "Leetcode Questions/LC-252. Meeting Rooms.md",
+    "Leetcode Questions/LC-904. Fruit Into Baskets.md"
   ]
 }

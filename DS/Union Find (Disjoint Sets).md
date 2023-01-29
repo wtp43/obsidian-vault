@@ -51,6 +51,17 @@ class Union_find:
 		else:
 			self.parent[j] = self.parent[i]
 			self.size[i] += self.size[j]
+			
+	def union(self, x, y):
+        xr, yr = self.find(x), self.find(y)
+        if xr == yr:
+            return False
+        if self.sz[xr] < self.sz[yr]:
+            xr, yr = yr, xr
+        self.par[yr] = xr
+        self.sz[xr] += self.sz[yr]
+        self.sz[yr] = self.sz[xr]
+        return True
 ```
 
 ```python

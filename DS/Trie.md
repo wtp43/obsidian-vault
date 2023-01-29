@@ -62,6 +62,11 @@ class Trie:
         return True
 ```
 
+# Pre Order Traversal
+To find all words in sorted order, iterate the alphabet instead of sorting the words.
+Then we are guaranteed O(n) instead of O(nlogn) for the sort.
+
+
 ## Optimizations
 
 ## Optimized Complexity

@@ -8,5 +8,6 @@
   "templater-obsidian",
   "dataview",
   "auto-note-mover",
-  "obsidian-dynamic-toc"
+  "obsidian-dynamic-toc",
+  "highlightr-plugin"
 ]

@@ -7,6 +7,25 @@
 
 Here, we are interested in building our intuition. In other words, our ability to reduce a hard problem to a simpler one. 
 
+
+# Arrays
+
+[[LC-128. Longest Consecutive Sequence]] T: O(n)
+- For an unsorted array 3,100,200,2,1,4, the longest consecutive subsequence is 1234
+- The start of the sequence cannot have a number to its left
+- We do not have to iterate duplicates: for n in num_set
+- Store every number in the sequence in a set.
+- If he number to the left of the current number doesn't exist, we can try to build a subsequence
+- Another possible solution is using union_find
+
+[[LC-14. Longest Common Prefix]]: T(O(len()))
+- Find the longest common prefix that exists among all strings
+- Update the common prefix after checking all strings in each loop
+- 
+https://leetcode.com/problems/is-subsequence/description/
+https://leetcode.com/problems/unique-email-addresses/
+https://leetcode.com/problems/distinct-subsequences/
+
 # Backtracking
 
 [[LC-131. Palindrome Partitioning]]
@@ -15,20 +34,58 @@ Here, we are interested in building our intuition. In other words, our ability t
 - 
 https://leetcode.com/problems/palindromic-substrings/description/
 
+https://leetcode.com/problems/robot-room-cleaner/solutions/265763/robot-room-cleaner/?orderBy=most_votes
+
+knights tour
+
 # Brainteasers
 
 [[LC-1007. Minimum Domino Rotations For Equal Row]]
 - We have to immediately recognize that it doesn't matter where we check but that every single domino must have at least one of the two numbers present.
 - So if any domino doesn't have the top or bottom number of the first domino, no rotations are possible
 
+
 # Binary Search
+[[LC-1752. Check if Array Is Sorted and Rotated]] (Find the pivot if sorted array is rotated)
+- Important to note that the first and last num are connected
+- Check if the next number is bigger: This can only happen once if sorted and rotated
+	- nums[i] > nums[(1+i)%n]
+
+
 [[LC-153. Find Minimum in Rotated Sorted Array]]
-https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/solutions/166875/find-minimum-in-rotated-sorted-array/
+- Update the min every loop. The min will not always land on j or always on i
+- `If nums[j] > nums[mid]: the min has to be on the left
+
 
 [[LC-33. Search in Rotated Sorted Array]]
-https://leetcode.com/problems/search-in-rotated-sorted-array/
+
+>[!danger]+ Intuition
+>   enumerate possibilities
+> 
+1. `we are in the left portion ([6789] 123)
+	    - `target > nums[mid]: i=mid+1
+	    - ``nums[i] <= target < nums[mid] j=mid-1
+	    - `target < nums[i]: i=mid+1
+2. `we are in right portion (78 [123])
+		- `target < num[mid]: j=mid-1
+		- `nums[mid] < target <= nums[j]: i=mid+1
+		- `target > nums[j]: j=mid-1
 
 [[LC-74. Search a 2D Matrix]]
+
+[[LC-981. Time Based Key-Value Store]]
+- We want to store multiple values with different timestamps for the same key
+- We notice that since time is strictly increasing, our list of values will in sorted order
+- Create a dictionary of lists and binary search on the list
+[[LC-34. Find First and Last Position of Element in Sorted Array]]
+- Left and right bisect essentially move the same way when target != `nums[mid]
+- The only difference is when the target == `nums[mid]
+- Left bisect will set j = mid-1 and move left 
+- Right bisect will set i = mid+1 and move right
+
+[[LC-1268. Search Suggestions System]]
+- Suggest at most 3 words based on the prefix
+- Sort strings then bisect left on the prefix 
 # Dynamic Programming
 https://leetcode.com/problems/minimum-cost-to-split-an-array/description/
 https://leetcode.com/problems/minimum-cost-to-split-an-array/solutions/3083850/python3-dp/
@@ -139,6 +196,14 @@ This is also similar to Bellman Ford but relaxing only k+1 times: O((N+E)K) The 
 ## Shortest Path
 https://leetcode.com/problems/network-delay-time/description/
 
+# Greedy
+https://leetcode.com/problems/maximum-price-to-fill-a-bag/solutions/3103917/python-exchange-argument/?orderBy=most_votes
+
+# Hashing
+https://leetcode.com/problems/strings-differ-by-one-character/solutions/801825/python-clean-set-string-hashing-solution-from-o-nm-2-to-o-nm/?orderBy=most_votes
+Hashing a path: Robot cleaner
+[[]]
+
 # Heap
 To make a max heap, push -x for x in array onto a min heap.
 
@@ -154,6 +219,16 @@ https://leetcode.com/problems/remove-covered-intervals/
 https://leetcode.com/problems/task-scheduler/description/
 
 # Linked List
+
+[[LC-206. Reverse Linked List]]
+- The 3 components we need are prev, cur, and tmp. We need to store the next link because it is being updated.
+
+[[LC-234. Palindrome Linked List]] <mark style="background: #10912e;">TODO</mark>
+
+- Fast slow pointer to find the middle of the linked list
+- Reverse the 2nd half of the linked list
+
+<mark style="background: #FF5582A6;">[[LC-]]</mark>
 
 [[LC-138. Copy List with Random Pointer]]
 - Make all the new nodes first and store them in a dictionary
@@ -192,6 +267,15 @@ https://leetcode.com/problems/top-k-frequent-words/solutions/2516165/top-k-frequ
 - Find K largest numbers (quickselect): O(N) but worst case O(N^2)
 - Sort by (nums[i], i) then sort again by the index i and return the largest k elements: O(NlogN)
 - Keep a heap of the largest k items (nums[i], i). If cur num is smaller than the top of the heap, continue. If it is bigger, pop the top of the heap and insert the cur num: O(NlogK)
+
+[[LC-853. Car Fleet]]
+- Finding intersections
+- Sort by starting position and traverse backwards
+	- We want to traverse backwards because the last car starts in a fleet of its own.
+	- It gives us more information than the first car (we don't know how fast this fleet will end up going because we don't know when the cars in front will stop merging)
+- Find the total time that the current car will take to get to the end: time_to_dest = (target-pos)/speed
+- If time it takes to get to the end < max_time: we have a new fleet
+- If time it takes to get to the end < max_time: the car is going faster and must join the fleet in front of it
 
 # Stack
 Problems that require a stack are generally greedy.
@@ -392,6 +476,9 @@ For minimum window strategies:
 	- Iteratively make the window smaller by moving up the start index
 	- Check if the current smaller window still satisfies the constraints and update the minimum window
 
+# String Matching
+Rabin Karp
+https://leetcode.com/problems/strings-differ-by-one-character/solutions/802871/rabin-karp-o-nm/
 # Subset Sum
 https://leetcode.com/problems/partition-equal-subset-sum/description/
 https://leetcode.com/discuss/interview-question/1279773/google-interview-question-array-subset-sum-equals-k
@@ -423,6 +510,26 @@ Valid Palindrome
 - We have a list` [-10,-5,0,1,2,20]` and require a list of squares in sorted order
 - Two pointers is very useful here because the list is sorted, and either we take from the front or the back of the list
 
+[[LC-1268. Search Suggestions System]]
+- Keep a left and right pointer that have the prefix 
+
+# Tree
+
+Zero based
+- parent = (i-1)//2
+- child1: 2i+1
+- child2: 2i+2
+one-based
+- parent = i//2
+- child1 = 2i
+- child2 = 2i +1
+
+# Trie
+[[LC-1268. Search Suggestions System]]
+- Preorder traversal of a trie
+	- Do not sort. Loop the alphabet instead
+
+
 # Fast and Slow Pointers
 
 [[LC-876. Middle of the Linked List]]
@@ -431,6 +538,9 @@ Valid Palindrome
 - The middle will be at p1
 
 # Mathematics
+
+To get the number of items in a range ``[l,r]``: 
+- size = r-l+1
 
 [[LC-367. Valid Perfect Square]]
 - The sqrt of a num is always <= num/2

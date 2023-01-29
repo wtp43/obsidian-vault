@@ -22,6 +22,7 @@ max_depth:6
 ## Bisect Left
 - Returns the index of the first num $\leq$ x
 - Repeatedly move right border towards the left if there are duplicates
+-  ``If target == arr[mid]: j = mid-1
 
 ```python
 def bisect_left(arr, x):
@@ -38,6 +39,7 @@ def bisect_left(arr, x):
 
 ## Bisect Right
 - Returns the index + 1 of the first num > x
+- ``If target == arr[mid]: i = mid+1
 
 ```python
 def bisect_right(arr, x):
@@ -56,6 +58,38 @@ def bisect_right(arr, x):
 ```python
 
 ```
+
+```python
+# leftBias=[True/False], if false, res is rightBiased
+    def binSearch(self, nums, target, leftBias):
+        l, r = 0, len(nums) - 1
+        i = -1
+        while l <= r:
+            m = (l + r) // 2
+            if target > nums[m]:
+                l = m + 1
+            elif target < nums[m]:
+                r = m - 1
+            else:
+                i = m
+                if leftBias:
+                    r = m - 1
+                else:
+                    l = m + 1
+        return i
+```
+
+Copy
+
+**Close**
+
+# 
+
+[](https://www.youtube.com/watch?v=)
+
+Linked List
+
+(8 / 24)
 
 ## Optimizations
 
