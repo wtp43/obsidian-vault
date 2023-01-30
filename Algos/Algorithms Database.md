@@ -1,7 +1,7 @@
 
 
 
-# [[ Dynamic Programming]]
+# [[ Algos/Dynamic Programming]]
 
 ## [[Greedy Algorithm]]
 

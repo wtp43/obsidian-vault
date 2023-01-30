@@ -6,11 +6,11 @@
         "type": "split",
         "children": [
           {
-            "id": "8d8656c9e6aac5ca",
+            "id": "96eaaca334bd2b9c",
             "type": "tabs",
             "children": [
               {
-                "id": "1b59b98f7fe517cd",
+                "id": "8889829cfeb721c6",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -22,19 +22,19 @@
                 }
               },
               {
-                "id": "1f7ead35073167de",
+                "id": "0432d397f76c2d4d",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "LC Hard Todo.md",
+                    "file": "Leetcode Questions/Advanced Questions.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               },
               {
-                "id": "0c02f9185d1094cf",
+                "id": "699dddc2da292527",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -46,7 +46,7 @@
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -112,7 +112,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Leetcode Questions/Intuition.md",
+                    "file": "Leetcode Questions/Advanced Questions.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -129,7 +129,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Leetcode Questions/Intuition.md",
+                    "file": "Leetcode Questions/Advanced Questions.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -152,7 +152,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Leetcode Questions/Intuition.md"
+                    "file": "Leetcode Questions/Advanced Questions.md"
                   }
                 }
               },
@@ -169,11 +169,12 @@
           }
         ],
         "direction": "horizontal",
-        "width": 300,
-        "collapsed": true
+        "width": 300
       },
       "left-ribbon": {
         "hiddenItems": {
+          "darlal-switcher-plus:Open in Headings Mode": false,
+          "darlal-switcher-plus:Open Symbols for the active editor": false,
           "table-editor-obsidian:Advanced Tables Toolbar": false,
           "templater-obsidian:Templater": false,
           "switcher:Open quick switcher": false,
@@ -186,7 +187,7 @@
           "publish:Publish changes": false
         }
       },
-      "active": "0c02f9185d1094cf"
+      "active": "0432d397f76c2d4d"
     }
   },
   "active": "LC"

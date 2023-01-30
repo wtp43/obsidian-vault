@@ -97,7 +97,6 @@ https://www.techinterviewhandbook.org/behavioral-interview/
 	- [ ] https://leetcode.com/problems/substring-with-largest-variance/solutions/2579146/weird-kadane-intuition-solution-explained/
 - [ ] Linked List
 	- [ ] Cycle Detection
-	- [ ] In-place reversal
 - [ ] Sets
 	- [ ] https://leetcode.com/problems/find-smallest-common-element-in-all-rows/solutions/
 - [ ] Sliding Window
@@ -141,10 +140,6 @@ https://www.techinterviewhandbook.org/behavioral-interview/
 	- How to determine if current word in path (word``[i:j]``) is a palindrome? Sol: Iterate the entirety of the word instead of determining the palindrome concurrently with DFS
 	- Make Number of Distinct Characters Equal: Swap every character in each word with each other
 
-LC-Hard
-- [ ] https://leetcode.com/problems/longest-path-with-different-adjacent-characters/
-- [ ] https://leetcode.com/problems/number-of-islands-ii/description/
-- [ ] https://leetcode.com/problems/word-search-ii/description/
 
 LC-Medium
 - [ ] https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/

@@ -8,7 +8,7 @@
 Here, we are interested in building our intuition. In other words, our ability to reduce a hard problem to a simpler one. 
 
 
-# Arrays
+# Arrays 
 
 [[LC-128. Longest Consecutive Sequence]] T: O(n)
 - For an unsorted array 3,100,200,2,1,4, the longest consecutive subsequence is 1234
@@ -86,6 +86,19 @@ knights tour
 [[LC-1268. Search Suggestions System]]
 - Suggest at most 3 words based on the prefix
 - Sort strings then bisect left on the prefix 
+
+# Combinatorics
+https://leetcode.com/problems/count-collisions-of-monkeys-on-a-polygon/description/
+- There are n monkeys at pos i in an array. 
+- Each monkey must move once
+- If they move in opposite directions, a collision happens.
+- Return the number of collisions
+- Is it easier to count the number of collisions or no collisions?
+- No collisions = 2 for any n, because monkeys can all move cw or ccw
+- Situations with collisions = $2^n - 2$
+
+
+
 # Dynamic Programming
 https://leetcode.com/problems/minimum-cost-to-split-an-array/description/
 https://leetcode.com/problems/minimum-cost-to-split-an-array/solutions/3083850/python3-dp/
@@ -106,6 +119,7 @@ https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/sol
 
 
 # Graphs
+
 ## Union Find (Cycle detection)
 Works for undirected graphs
 [[LC-684. Redundant Connection]]
@@ -130,10 +144,24 @@ Works for undirected graphs
 
 
 ## DFS
+
+
 Start DFS for every connected component. Make sure to mark connected components
 When building out adjacency lists  for directed graphs, we need to make sure the directions are correct. In the case of course schedule, we want the courses to point to prerequisites because this tells us which prerequisites are needed.
 
 In BFS, we need to do a check prior to adding the node to the queue. In DFS, it may not always be necessary to do a pre-check, we can check in the base case of the function call.
+
+[[LC-1971. Find if Path Exists in Graph]] (Valid Path)
+- Union find and connect all edges. 
+	- Check if find(source) == find(destination) are the same. Don't check the parents because the path may not have been flattened yet.
+- DFS
+	- return True if cur_node == destination
+	- For all neighbors of cur_node
+		- if dfs(neighbor)
+			- return True
+	- return False
+
+
 
 [[LC-200. Number of Islands]]
 - '1' is marked as land while '0' is water
@@ -201,8 +229,7 @@ https://leetcode.com/problems/maximum-price-to-fill-a-bag/solutions/3103917/pyth
 
 # Hashing
 https://leetcode.com/problems/strings-differ-by-one-character/solutions/801825/python-clean-set-string-hashing-solution-from-o-nm-2-to-o-nm/?orderBy=most_votes
-Hashing a path: Robot cleaner
-[[]]
+Distinct islands
 
 # Heap
 To make a max heap, push -x for x in array onto a min heap.
@@ -476,6 +503,31 @@ For minimum window strategies:
 	- Iteratively make the window smaller by moving up the start index
 	- Check if the current smaller window still satisfies the constraints and update the minimum window
 
+[[LC-713. Subarray Product Less Than K]]
+- We notice there are only positive numbers.
+- First determine what an invalid state for the window would be
+- For each new window, we can make j-i+1 windows that end on the element j
+	- The only new windows we can add are only the ones that include the new element j.
+	- Previous windows not including j would have been accounted for
+
+[[LC-1493. Longest Subarray of 1's After Deleting One Element]]
+- Given a binary array `nums`, you should delete one element from it.
+- Return _the size of the longest non-empty subarray containing only_ `1`_'s in the resulting array_. Return `0` if there is no such subarray.
+
+[[LC-1004. Max Consecutive Ones III]]
+- Problem solving: 
+	- What is the input? Does the input have negatives?
+- We can use a non-shrinkable sliding window (we are finding maximum window not subset of windows)
+- First figure out invalid state:
+	- invalid: zeros > k
+
+[[LC-581. Shortest Unsorted Continuous Subarray]]
+- Approach 1: Finding the first and last out of place nums
+	- create a sorted copy of nums
+	- Find the first and last index where they differ to get the unsorted portion
+	- In fact, we don't need to sort the entire array. 
+- Approach 2: 
+
 # String Matching
 Rabin Karp
 https://leetcode.com/problems/strings-differ-by-one-character/solutions/802871/rabin-karp-o-nm/
@@ -544,3 +596,11 @@ To get the number of items in a range ``[l,r]``:
 
 [[LC-367. Valid Perfect Square]]
 - The sqrt of a num is always <= num/2
+
+
+# Questions for the Interviewer (Assumptions)
+
+## Graphs
+- Can we assume there are no cycles?
+	- Not needed if structure is a tree
+- 

@@ -93,9 +93,9 @@ Start music
 
 # LC Checklist
 - Review previous questions: 30 mins
-- Build Intuition (Read hard questions): 1 hour
-- Practice: (2 hours)
-- Learn new concepts: (1.5 hours)
+- Build Intuition (Read hard questions): 2 hour
+- Practice: (1.5 hours)
+- Learn new concepts: (1 hours)
 Total: 5 hours
 
 # Project Checklist

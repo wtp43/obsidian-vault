@@ -23,6 +23,9 @@ def dfs(graph: Dict[int, List[int]], cur: int):
 ```
 - Alternatively, graph and seen can be set as global variables. 
 - 'seen' does not need to be marked as `global` inside `dfs` to modify it because we are not reassigning its value using `=`
+# Brute Force
+We can traverse in a DFS fashion by linearly searching for the child nodes.
+This will take O(n) to search for each child and in the worst case, the depth is n, time complexity will be O($n^n$).
 
 # Use Cases
 
