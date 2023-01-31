@@ -8,79 +8,33 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8889829cfeb721c6",
+            "id": "aee41ba20c941c50",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algos Practice/Comprehensive List.md",
+                "file": "Projects/ML.md",
                 "mode": "source",
+                "backlinks": false,
                 "source": false
               }
             }
           },
           {
-            "id": "3e8dd31a9d4a01fd",
+            "id": "25357589decd5d5a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algos Practice/Intuition/Advanced Questions.md",
+                "file": "Algos Practice/Intuition/Progress.md",
                 "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4b6c20f71e400fb8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos Practice/Intuition.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "216a78f9db945083",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos Practice/Intuition/Dynamic Programming.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "560e3c6ab0368662",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos Practice/Intuition/Combinatorics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "138c714a3f624c49",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos Practice/Intuition/Backtracking.md",
-                "mode": "source",
+                "backlinks": false,
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -130,7 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 203.50043487548828
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -146,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algos Practice/Intuition/Dynamic Programming.md",
+                "file": "Algos Practice/Intuition/Progress.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algos Practice/Intuition/Dynamic Programming.md",
+                "file": "Algos Practice/Intuition/Progress.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algos Practice/Intuition/Dynamic Programming.md"
+                "file": "Algos Practice/Intuition/Progress.md"
               }
             }
           },
@@ -203,7 +157,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -221,17 +176,17 @@
       "publish:Publish changes": false
     }
   },
-  "active": "216a78f9db945083",
+  "active": "25357589decd5d5a",
   "lastOpenFiles": [
-    "Algos Practice/Intuition.md",
-    "Algos Practice/Intuition/Backtracking.md",
-    "Algos Practice/Intuition/Advanced Questions.md",
-    "Algos Practice/Intuition/Combinatorics.md",
-    "Algos Practice/Intuition/Brainteasers.md",
-    "Algos Practice/Intuition/Binary Search.md",
-    "Algos Practice/Intuition/Untitled.md",
-    "Algos Practice/Intuition/Mathematics.md",
-    "Leetcode Questions/Python.md",
-    "Algos Practice/Intuition/Two Pointers.md"
+    "Algos Practice/Intuition/Progress.md",
+    "Projects/ML.md",
+    "Algos Practice/Intuition/Dynamic Programming.md",
+    "Leetcode Questions/LC-2218. Maximum Value of K Coins From Piles.md",
+    "Projects/ML Kanban.md",
+    "Projects/Make XGB model with new data.md",
+    "Algos/Graham Scan.md",
+    "DS/Graph Theory.md",
+    "Algos/Bucket Sort.md",
+    "Algos/Backtracking.md"
   ]
 }

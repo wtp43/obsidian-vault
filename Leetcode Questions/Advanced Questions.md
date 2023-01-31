@@ -24,6 +24,8 @@ https://leetcode.com/problems/split-array-largest-sum/description/
 
 https://leetcode.com/problems/concatenated-words/description/
 https://leetcode.com/problems/distinct-subsequences/
+- [ ] https://leetcode.com/problems/4sum/submissions/
+- [ ] https://leetcode.com/problems/word-ladder/description/
 
 # Graphs
 
@@ -185,10 +187,3 @@ https://leetcode.com/problems/word-ladder/description/
 
 
 
-# Progress
-
-Table
-
-
-Sliding Window
-<progress max=100 value=10> </progress> 10

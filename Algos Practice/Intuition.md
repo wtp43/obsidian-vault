@@ -250,12 +250,10 @@ https://leetcode.com/problems/task-scheduler/description/
 [[LC-206. Reverse Linked List]]
 - The 3 components we need are prev, cur, and tmp. We need to store the next link because it is being updated.
 
-[[LC-234. Palindrome Linked List]] <mark style="background: #10912e;">TODO</mark>
+[[LC-234. Palindrome Linked List]] 
 
 - Fast slow pointer to find the middle of the linked list
 - Reverse the 2nd half of the linked list
-
-<mark style="background: #FF5582A6;">[[LC-]]</mark>
 
 [[LC-138. Copy List with Random Pointer]]
 - Make all the new nodes first and store them in a dictionary

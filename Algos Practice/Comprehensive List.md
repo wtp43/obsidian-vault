@@ -203,9 +203,8 @@ https://leetcode.com/discuss/interview-question/3055778/how-to-calculate-runtime
 # More Questions
 https://seanprashad.com/leetcode-patterns/
 
-```dataviewjs
+dataviewjs
 dv.taskList(dv.pages('-"Templates"').file.tasks
 .where(t => !t.completed && !t.text.includes("@frank") &&
 !t.text.includes("#task")
 ))
-```

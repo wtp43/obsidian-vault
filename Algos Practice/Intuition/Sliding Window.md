@@ -77,7 +77,7 @@ public:
 };
 ```
 
-
+- [ ] https://leetcode.com/problems/substring-with-concatenation-of-all-words/
 - [ ] [[LC-2302. Count Subarrays With Score Less Than K]]
 
 - [ ]   1425.  [Constrained Subsequence Sum](https://leetcode.com/problems/constrained-subsequence-sum/discuss/597751/JavaC++Python-O(N)-Decreasing-Deque)

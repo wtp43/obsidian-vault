@@ -1,5 +1,5 @@
 # Backtracking
-- [x] <mark style="background: #cc085d;">[[LC-51. N-Queens]]</mark>
+- [x] <mark style="background: #cc085d;">+</mark> [[LC-51. N-Queens]]
 - [ ] Maze Solving 
 - [ ] Knights Tour
 - [ ] Hamiltonian Paths

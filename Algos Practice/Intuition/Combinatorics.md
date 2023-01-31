@@ -7,3 +7,5 @@
 - Is it easier to count the number of collisions or no collisions?
 - No collisions = 2 for any n, because monkeys can all move cw or ccw
 - Situations with collisions = $2^n - 2$
+
+- [ ] https://leetcodethehardway.com/tutorials/math/combinatorics
