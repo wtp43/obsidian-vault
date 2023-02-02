@@ -20,3 +20,10 @@
 - Find the total time that the current car will take to get to the end: time_to_dest = (target-pos)/speed
 - If time it takes to get to the end < max_time: we have a new fleet
 - If time it takes to get to the end < max_time: the car is going faster and must join the fleet in front of it
+
+- [ ] [[LC-953. Verifying an Alien Dictionary]]
+	- sort words based on new ordering
+	- Store an order_map
+	- Compare all adjacent pairs
+		- not sorted if: `j >= words[i][j+1]` or 
+			- (`words[i][j] != words[i+1][j] and order_map[words[i][j]] > order_map[words[i + 1][j]])

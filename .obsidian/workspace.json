@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "96eaaca334bd2b9c",
+        "id": "0a1e2f4ce1d1a56c",
         "type": "tabs",
         "children": [
           {
-            "id": "aee41ba20c941c50",
+            "id": "1e48afaff7c581b9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/ML.md",
+                "file": "Math/Problem Solving Strategy.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,12 +21,64 @@
             }
           },
           {
-            "id": "25357589decd5d5a",
+            "id": "306896468da55a42",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algos Practice/Intuition/Progress.md",
+                "file": "Algos Practice/Intuition/Dynamic Programming.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6ddd253a851df382",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algos Practice/Intuition/Sliding Window.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c192763efd48d6ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algos Practice/Intuition/Prefix Sums.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d1cb289b0d5fd527",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algos/LC-560. Subarray Sum Equals K.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "571de3dbe25cb7e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Leetcode Questions/LC-523. Continuous Subarray Sum.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -34,7 +86,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -63,7 +115,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "bellman",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,7 +136,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 203.50043487548828
+    "width": 375.5
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -100,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algos Practice/Intuition/Progress.md",
+                "file": "Algos Practice/Intuition/Prefix Sums.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algos Practice/Intuition/Progress.md",
+                "file": "Algos Practice/Intuition/Prefix Sums.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algos Practice/Intuition/Progress.md"
+                "file": "Algos Practice/Intuition/Prefix Sums.md"
               }
             }
           },
@@ -176,17 +228,17 @@
       "publish:Publish changes": false
     }
   },
-  "active": "25357589decd5d5a",
+  "active": "c192763efd48d6ae",
   "lastOpenFiles": [
-    "Algos Practice/Intuition/Progress.md",
-    "Projects/ML.md",
+    "Algos/LC-560. Subarray Sum Equals K.md",
+    "Algos Practice/Intuition/Prefix Sums.md",
+    "Leetcode Questions/LC-523. Continuous Subarray Sum.md",
+    "Algos Practice/Intuition/Sliding Window.md",
+    "Math/Problem Solving Strategy.md",
     "Algos Practice/Intuition/Dynamic Programming.md",
-    "Leetcode Questions/LC-2218. Maximum Value of K Coins From Piles.md",
-    "Projects/ML Kanban.md",
-    "Projects/Make XGB model with new data.md",
-    "Algos/Graham Scan.md",
-    "DS/Graph Theory.md",
-    "Algos/Bucket Sort.md",
-    "Algos/Backtracking.md"
+    "Leetcode Questions/LC-474. Ones and Zeroes.md",
+    "Algos/Prefix Sums.md",
+    "Leetcode Questions/LC-416. Partition Equal Subset Sum.md",
+    "Appendix/Range Minimum Query Problem.md"
   ]
 }

@@ -20,6 +20,9 @@ max_depth:6
 ## Palindrome Partitioning (Backtracking since we have to check all characters to reach a valid set of substrings)
 - [[LC-131. Palindrome Partitioning]]
 
+# Expand around the Center approach
+O($N^2$)
+
 # Implementation
 
 ```python

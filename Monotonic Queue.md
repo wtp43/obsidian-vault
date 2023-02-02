@@ -1,4 +1,22 @@
-## Monotonic Queue
+---
+tags: 
+- monoqueue
+---
+# Monotonic Queue
+MQ is mostly used as a dynamic programming optimization technique and for some problems where it is applicable we can reduce the reasoning to finding the nearest (biggest, smallest) element.
+Before stepping into more interesting problems let’s glance at a different approach to search for nearest values. We will be using an array to keep indexes of nearest biggest values. This algorithm was invented not too long ago by Jérémy Barbay and Johannes Fischer, you can find a paper describing it in full [here](https://arxiv.org/abs/1009.5863).
+
+The idea is to store the index j of the preceding smaller value of the ith value A[i] in P[i], where P is an array of preceding smaller value indexes:
+
+for i from 1 to n:  
+    j = i-1  
+    while A[j] >= A[i]:  
+        j = P[j]  
+    P[i] = j
+
+Before actually adding an element to the queue, we remove values which are smaller than the current value, this way we can keep a non-increasing sequence.
+
+- [ ] [[LC-739. Daily Temperatures]]
 
 - [ ] [[LC-862. Shortest Subarray with Sum at Least K]] (MONOQUEUE + PREFIX SUM)
 - subarray is contiguous
@@ -30,6 +48,15 @@ Because in the sliding window when we move `start` (typically when we incremen
             d.append([i + 1, cur])
         return res if res < float('inf') else -1
 ```
+
+
+- [ ] [[LC-1425. Constrained Subsequence Sum]]
+	- Find the maximum sum of a non-empty subsequence such that every two consecutive integers in the subsequence nums(i) and nums(j) for i < j satisfies j-i <= k
+	- This reduces to a DP problem. Include or not include the current num. Try to find a recurrence relation
+	- The recurrence relation is ``dp[i+K] = nums[i+K] + max(0, dp[i], dp[i+1], ..., dp[i+K-1])``
+	- It will be useful for us to find the maximum sums for the last k-1 subsequences that end on i for i in range(i,k)
+	- Monoqueue is able to optimize the DP solution because we are limited to finding the nearest value(maximum or minimum) in building 
+	- Longest Palindromic Substring must expand around the center for n centers
 
 
 https://medium.com/algorithms-and-leetcode/monotonic-queue-explained-with-leetcode-problems-7db7c530c1d6

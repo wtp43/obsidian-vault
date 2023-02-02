@@ -26,9 +26,16 @@ Discover and solve simpler analogous problems
 	- Look for more elegant solutions
 
 # Understanding the Question
-Enumerate all the possibilities
+## Enumerate all the possibilities
 Can we determine a function for the valid actions?
 x: f(x) -> ?
+
+
+## Base cases
+What are the base cases?
+- Check that the array is nonempty
+if not nums:
+	return 0
 
 
 
@@ -90,3 +97,7 @@ Is our list of data going to be non-static?
 Do we need to keep an updated sorted list?
 
 ## Stack
+
+
+
+

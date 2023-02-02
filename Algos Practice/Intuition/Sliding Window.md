@@ -2,6 +2,8 @@
 - Sum of window and prefix sums are useful
 - <mark style="background: #FFB86CA6;">What is the state of the window we need to keep track of?</mark>
 
+Generally, sliding window only works for positive numbers. 
+
 Check validity of window
 
 ## Template 1: Sliding Window (Shrinkable)
