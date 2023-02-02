@@ -8,85 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1e48afaff7c581b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Math/Problem Solving Strategy.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "306896468da55a42",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos Practice/Intuition/Dynamic Programming.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6ddd253a851df382",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos Practice/Intuition/Sliding Window.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c192763efd48d6ae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos Practice/Intuition/Prefix Sums.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d1cb289b0d5fd527",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos/LC-560. Subarray Sum Equals K.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "571de3dbe25cb7e6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode Questions/LC-523. Continuous Subarray Sum.md",
+                "file": "Algos/Floyd's Cycle Finding Algorithm.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -136,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 375.5
+    "width": 375.5,
+    "collapsed": true
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -152,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algos Practice/Intuition/Prefix Sums.md",
+                "file": "Algos/Floyd's Cycle Finding Algorithm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algos Practice/Intuition/Prefix Sums.md",
+                "file": "Algos/Floyd's Cycle Finding Algorithm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algos Practice/Intuition/Prefix Sums.md"
+                "file": "Algos/Floyd's Cycle Finding Algorithm.md"
               }
             }
           },
@@ -228,17 +163,17 @@
       "publish:Publish changes": false
     }
   },
-  "active": "c192763efd48d6ae",
+  "active": "571de3dbe25cb7e6",
   "lastOpenFiles": [
+    "Leetcode Questions/LC-256. Paint House.md",
+    "Algos Practice/Intuition/Dynamic Programming.md",
+    "Leetcode Questions/LC-198. House Robber.md",
+    "Algos/Floyd's Cycle Finding Algorithm.md",
+    "Leetcode Questions/LC-523. Continuous Subarray Sum.md",
+    "Leetcode Questions/LC-740. Delete and Earn.md",
     "Algos/LC-560. Subarray Sum Equals K.md",
     "Algos Practice/Intuition/Prefix Sums.md",
-    "Leetcode Questions/LC-523. Continuous Subarray Sum.md",
     "Algos Practice/Intuition/Sliding Window.md",
-    "Math/Problem Solving Strategy.md",
-    "Algos Practice/Intuition/Dynamic Programming.md",
-    "Leetcode Questions/LC-474. Ones and Zeroes.md",
-    "Algos/Prefix Sums.md",
-    "Leetcode Questions/LC-416. Partition Equal Subset Sum.md",
-    "Appendix/Range Minimum Query Problem.md"
+    "Leetcode Questions/LC-120. Triangle.md"
   ]
 }

@@ -55,6 +55,25 @@ for i in reversed(range(n)):
 - In this case # of 0s...m, # of 1s...n
 - We also want to iterate backwards, range(n,`A[0]`-1,-1), because we do not want to rewrite previous calculations by including the previous string. Doing this bottom up may result in duplicated count of the current word
 
+[[LC-120. Triangle]]
+- <mark style="background: #cc085d;">Prove validity of assumptions!! </mark>
+- This immediately suggests that we should be working from top to bottom. But is this actually necessary? Could we go from bottom to top instead? Going top to bottom results in paths where some cells can take two paths while others only one. Going bottom up, every cell will have two paths they can take. 
+
+[[LC-740. Delete and Earn]]
+- Reduces to [[LC-198. House Robber]]
+- If we take `nums[i]`, we delete all `nums[i-1], nums[i+1]`
+- Key takeaway: We never have to worry about `nums[i+1]`
+	- Always only use the past. Never worry about the future results.
+	- If we take `nums[i+1]`  in the future, that step wouldn't let us take `nums[i-1]` which is our current num
+- Think about which nums would be optimal?
+	- Suppose we take `nums[i]`, which number should we take next?
+		- It would make sense to take all numbers=`nums[i]` since we paid the cost of deleting it's adjacent numbers.
+- How do we access the previous key of a dictionary since we can't index it?
+	- Store all the keys in an array
+
+[[LC-256. Paint House]]
+
+
 # Pattern Recognition
 Generally we want to find some kind of pattern that holds true in every subset.
 Then prove it (by induction).
@@ -69,5 +88,15 @@ Always consider the state of each `dp[i][j]`
 - To avoid duplicates, we have to iterate backwards when updating max subsets
 - Otherwise, if we do it bottom up, we may end up using the same word twice
 
-Usually, if we want the reuse the 
+Usually, if we want the reuse the input array, we have to traverse backwards.
+
+
+**Interview Tip: In-place Algorithms**
+
+In-place algorithms overwrite the input to save space, but sometimes this can cause problems. Here are a couple of situations where an in-place algorithm might not be suitable.
+
+1. The algorithm needs to run in a _multi-threaded_ environment, without exclusive access to the array. Other threads might need to read the array too, and might not expect it to be modified.
+2. Even if there is only a single thread, or the algorithm has exclusive access to the array while running, the array might need to be reused later or by another thread once the lock has been released.
+
+In an interview, you should always check whether or not the interviewer minds you overwriting the input. Be ready to explain the pros and cons of doing so if asked!
 
