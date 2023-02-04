@@ -27,3 +27,7 @@ def copyRandomList(self, head: "Node") -> "Node":
             copy.random = oldToCopy[cur.random]
             cur = cur.next
         return oldToCopy[head]
+```
+
+https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/description/
+https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/

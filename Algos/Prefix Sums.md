@@ -1,7 +1,7 @@
 ---
 title:  "Prefix Sums"
 tags:
-- algos
+- algo
 - prefix-sums
 created: 2023-02-02
 ---

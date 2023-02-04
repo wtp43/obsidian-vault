@@ -1,7 +1,7 @@
 ---
 title:  "Insertion Sort"
 tags:
-- algos
+- algo
 created: 2022-12-15
 ---
 

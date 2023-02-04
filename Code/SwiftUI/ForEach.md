@@ -16,3 +16,12 @@ Better is to use a custom struct with an unique `id` conforming to `Identifia
 
 
 ForEach returns a list of views vs for x in which is just a loop.
+
+
+# enumerated()
+
+```swift
+ForEach(Array(array.enumerated()), id: \.offset) { index, element in
+  // ...
+}
+```

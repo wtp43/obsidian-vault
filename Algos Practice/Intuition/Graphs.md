@@ -132,3 +132,11 @@ BFS is more useful than DFS in cases where we are interested in the shortest pat
 
 ## Shortest Path
 - [ ] https://leetcode.com/problems/network-delay-time/description/
+
+# Connected Components
+[[LC-305. Number of Islands II]] (Connected Components)
+- grid of 0's initially, Perform land operations which turns water to land, Return number of islands
+- Instead of storing parents as a 2d grid, we can store their land position as $i*n + m$
+- Components: either dfs or union find (faster than dfs)
+- Initializing the parent and rank arrays is O(mn)
+- Store the number of connected components and decrement it every time a valid union-set is completed.

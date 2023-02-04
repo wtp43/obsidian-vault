@@ -21,7 +21,7 @@ Divide and conquer. Unstable sort (due to the swapping). Studies show quicksort 
 1. Divide array into subarrays using a pivot element.
 	- Elements less than pivot are moved to the left, while elements greater are moved to the right
 2. Repeat divide and conquer until subarray contains a single element
-
+![[Pasted image 20230203155122.png]]
 
 > [!example]+ 
 > ![[Pasted image 20230106161914.png]]

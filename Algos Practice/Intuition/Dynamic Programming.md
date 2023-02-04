@@ -72,6 +72,31 @@ for i in reversed(range(n)):
 	- Store all the keys in an array
 
 [[LC-256. Paint House]]
+- First determine the recurrence relation:
+	- `dp[i][j] = min(dp[i], costs[i][j] + min(dp[i])`
+
+- [ ] [[LC-1143. Longest Common Subsequence]]
+	- It's important to recognize that the rows and cols are interchangeable here.
+	- To optimize space, we only need to store 2 rows with min(len(s1), len(s2)) cols.
+	- If s1(i) == s2(i): we can increment `dp[i-1][j-1]`
+	- else: `max(dp[i%2][j-1], dp[(i-1)%2][j])`
+	- `return dp[n%2][m]` : Make sure to check whether to return (n%2) or (n-1)%2. Do an example (len(s1) == 1 vs len(s1) == 0)
+- [ ] [[LC-518. Coin Change II]]
+	- to optimize space, we realize that we only need a 1D array with length amount+1
+	- we cannot loop the amount by all coins (coins in the inner loop) because we would get permutations
+		- consider amount = 7 with coins `[2,5]`: using all coins, `dp[7] = dp[7-5] + dp[7-2]`
+		- by looping on coins first, we preserve the above DP definition as `dp[j]="number of ways to get sum 'j' using 'previous /first i coins'
+		- by looping coins first, we are fixing the order of the coins in the combination
+		- Note: the loop order doesn't matter if we use a 2D array. 
+- [[LC-377. Combination Sum IV]]
+	- Get permutation of coins that make the sum
+	- We can optimize this by sorting the coins in ascending order and breaking out of the inner loop if the amount is smaller than the current coin
+
+# Advanced DP
+
+- [ ] [[LC-2218. Maximum Value of K Coins From Piles]]
+- https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/1889647/python-bottom-up-dp-solution/
+- https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/1887010/java-c-python-top-down-dp-solution/?orderBy=most_votes
 
 
 # Pattern Recognition
@@ -100,3 +125,8 @@ In-place algorithms overwrite the input to save space, but sometimes this can ca
 
 In an interview, you should always check whether or not the interviewer minds you overwriting the input. Be ready to explain the pros and cons of doing so if asked!
 
+
+
+# DP + Sliding Window
+
+https://leetcode.com/problems/maximize-win-from-two-segments/solutions/3141449/java-c-python-dp-sliding-segment-o-n/?orderBy=most_votes

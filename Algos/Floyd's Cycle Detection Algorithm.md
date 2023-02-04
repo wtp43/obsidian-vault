@@ -1,10 +1,9 @@
 ---
-title:  "Floyd's Cycle Finding Algorithm"
+title:  "Floyd's Cycle Detection Algorithm"
 tags:
 - algo
-- fast-slow-pointer
-- cycle-detection
 - linked-list
+- cycle-detection
 created: 2023-02-02
 ---
 
@@ -16,10 +15,9 @@ max_depth:6
 >```
 
 
-# Floyd's Cycle Finding Algorithm
+# Floyd's Cycle Detection Algorithm
 
 # Implementation
-
 ```python
 def detectLoop(head):
     slowPointer = head
@@ -48,44 +46,23 @@ The fast pointer has traveled $X + Y + f * C$ distance, where f is any positive 
 
 
 Since the fast pointer is moving twice as fast as the slow pointer, we can say that the fast pointer covered twice the distance the slow pointer covered. Therefore:
-$$X + Y + f * C = 2 * (X + Y + s * C)$$
-Rearrange to get:
-We can say that,
 
-f * C – 2 * s * C = (some integer) * C
+$X + Y + f * C = 2(X + Y + s*c)$
+$(f - 2c) * C = X + Y$
 
-                         = K * C
+Thus:
+$X = K * C - Y$ 
 
-Thus,
+Now if reset the slow pointer to the head(starting position) and move both fast and slow pointer by one unit at a time, one can observe from 1st and 2nd equation that both of them will meet after traveling X distance at the starting of the loop because after resetting the slow pointer and moving it X distance, at the same time from the loop meeting point the fast pointer will also travel K * C – Y distance(because it already has traveled Y distance).
+The next meeting point will be the start of the cycle.
 
-X + Y = K * C       – ( 1 )
-
-X = K * C – Y        – ( 2 )
-
-Where K is some positive constant.    We can say that,
-
-f * C – 2 * s * C = (some integer) * C
-
-                         = K * C
-
-Thus,
-
-X + Y = K * C       **– ( 1 )**
-
-X = K * C – Y        **– ( 2 )**
-
-Where K is some positive constant.We can say that,
-
-f * C – 2 * s * C = (some integer) * C
-
-                         = K * C
-
-Thus,
-
-X + Y = K * C       – ( 1 )
-
-X = K * C – Y        – ( 2 )
-
-Where K is some positive constant.    
+```python
+# reset slow pointer to head and traverse again
+        slowPointer = head;
+        while (slowPointer != fastPointer): 
+            slowPointer = slowPointer.next;
+            fastPointer = fastPointer.next;
+		return slowPointer
+```
 
 # Related
