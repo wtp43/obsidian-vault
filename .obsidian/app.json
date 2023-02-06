@@ -4,5 +4,6 @@
   "newFileLocation": "current",
   "attachmentFolderPath": "./attachments",
   "readableLineLength": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "vimMode": false
 }

@@ -1,7 +1,7 @@
 # To do
 Day 1
-- [ ] Set up conda environment from environment.yaml
-- [ ] Make XGB model with new data	<br>- replace odds data in old file with new 
+- [x] Set up conda environment from environment.yaml
+- [x] Make XGB model with new data	<br>- replace odds data in old file with new 
 - [ ] Make trading simulation (backtest)
 	- [ ] Python script
 	- [ ] Show profit graph
@@ -15,7 +15,6 @@ Day 2-5
 
 Day 6+
 Backend (Prediction API)
-
 
 
 # In Progress

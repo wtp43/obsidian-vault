@@ -13,7 +13,7 @@ max_depth:6
 >```
 
 
-# Teaching RL Model to Game with Q Learning
+# Teaching RL Model to Gamble with Q Learning
 - Create simulation environment
 - Algorithm uses a set of S states for each simulating scenario with a set of A actions.
 - An agent takes these actions to permeate through the states
