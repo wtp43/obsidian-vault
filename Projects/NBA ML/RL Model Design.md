@@ -20,6 +20,7 @@
 		- calculate underdog winning ratio for underdogs with odds > 3
 			- cap probability based on this
 			- we should also consider the total player rating difference
+			- here we should also separate massive underdogs and coinflip matches (we should find the distinction through data analysis: at what point of the odds do the probability of underdog winning have a sharp drop)
 	- Now with an edge, we can use kelly criterion
 - We are essentially looking for which lines look "sketchy", not which lines are priced correctly
 	- this leads us to betting more favourably on mispriced underdogs
@@ -28,8 +29,29 @@
 
 - How much edge does a team really have if the given odds are 1.3 vs 1.8
 	- when the odds are too close, 1.4 vs 1.6, we should avoid since this is essentially a coin flip without much edge
+- The goal is not to predict the winner but harvest inefficiencies in the odds
 
 - Trends are meaningless without context
+
+Over and under spread gives an idea of what variance should be
+
+Step 1:
+- Can I observe the edge? We want edges so big and obvious we can screw up the implementation and still make money (because we know we're gonna screw up the implementation.)
+	- Give up on things quickly
+	- The best trade ideas are bleeding obvious
+- Core Idea: 
+	- Underdogs are usually mispriced
+	- 
+
+
+
+# Baseline Model
+- We will bet only on underdogs
+- Kelly criterion sized bet
+	- let p = hardcapped minimum probability of a win for the underdog
+- We skip matches that are too close in odds (ie: 1.4 vs 1.6)
+
+
 # RL Model 
 # Environment
 Imagine each bet as a roadblock which we navigate through

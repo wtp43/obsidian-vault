@@ -65,7 +65,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sports Betting/Betting Strategies.md",
+                "file": "Sports Betting/Betting Strategies (Algobet).md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -78,7 +78,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/RL Model Design.md",
+                "file": "Sports Betting/Betting Strategies (Algobet).md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "45b7c6b2386f62db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/NBA ML/Exploratory Data Analysis.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -152,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/RL Model Design.md",
+                "file": "Sports Betting/Betting Strategies (Algobet).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +182,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/RL Model Design.md",
+                "file": "Sports Betting/Betting Strategies (Algobet).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,7 +205,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/RL Model Design.md"
+                "file": "Sports Betting/Betting Strategies (Algobet).md"
               }
             }
           },
@@ -229,15 +242,15 @@
   },
   "active": "dd79a0806c51bb99",
   "lastOpenFiles": [
-    "Sports Betting/Betting Strategies.md",
+    "Sports Betting/Kelly Criterion.md",
+    "Sports Betting/Betting Strategies (Algobet).md",
+    "Projects/NBA ML/RL Model Design.md",
+    "Projects/NBA ML/Exploratory Data Analysis.md",
+    "Projects/NBA ML/ML.md",
     "Algos Practice/Interview Prep.md",
     "Algos/Cyclic Sort.md",
     "Algos Practice/Intuition/Sort.md",
     "Algos Practice/Intuition/Progress.md",
-    "ML/Reinforcement Learning/Policy.md",
-    "Projects/ML.md",
-    "Projects/RL Model Design.md",
-    "Sports Betting/Kelly Criterion.md",
-    "ML/Reinforcement Learning/Teaching RL Model to Gamble with Q-Learning.md"
+    "ML/Reinforcement Learning/Policy.md"
   ]
 }
