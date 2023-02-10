@@ -104,6 +104,7 @@ The naive approach would be to BFS from each cell. It repeats computation becaus
 - Instead of running DFS from every gate and taking the min (this results in extra computation), run BFS in parallel starting from each gate. 
 - Thus we are guaranteed the shortest route. The distance to the cell is only updated if it is not inf and in the case it isn't, we know we have already visited it taking a shorter path.
 - To run BFS in parallel, use a for loop to pop all items in the q at the current state with dist = i. After all these are popped increment dist
+- We need to add the neighbor to the visited set immediately, before we actually visit it or we will end up visiting it twice. For example, the first layer adds 1 as the last neighbor. In the second layer, the first node can add 1 to the queue again because 1 hasn't been visited. This means we are not using the shortest path. 
 ```python
 while q:
 	for _ in  range(len(q)):
@@ -116,6 +117,7 @@ while q:
 			if (row,col) in seen or (row and col out of bounds):
 				continue
 			q.append((row,col))
+			# ADD NODE BEFORE WE VISIT IT
 			seen.append((row,col))
 
 	dist += 1

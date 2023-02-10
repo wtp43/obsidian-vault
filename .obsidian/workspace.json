@@ -21,46 +21,7 @@
             }
           },
           {
-            "id": "bf2de4d61bcba26c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos Practice/Intuition/Sort.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "101723482a3b791f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos/Cyclic Sort.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "606eee0bb8005d84",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos Practice/Interview Prep.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "49332a365a3b6ec8",
+            "id": "7edbff738d6c9c3d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -73,12 +34,38 @@
             }
           },
           {
-            "id": "dd79a0806c51bb99",
+            "id": "4a5d9a714ad5255b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sports Betting/Betting Strategies (Algobet).md",
+                "file": "ML/Reinforcement Learning/Reinforcement Learning.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1908078cd2d117b1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Finance/TLAQ/Basic.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c5fb750efe630c29",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Finance/TLAQ/How to Lose at Trading.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -99,7 +86,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -149,7 +136,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -240,17 +228,17 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "dd79a0806c51bb99",
+  "active": "7edbff738d6c9c3d",
   "lastOpenFiles": [
-    "Sports Betting/Kelly Criterion.md",
-    "Sports Betting/Betting Strategies (Algobet).md",
+    "ML/Reinforcement Learning/Reinforcement Learning Environment.md",
+    "ML/Reinforcement Learning/Reinforcement Learning.md",
     "Projects/NBA ML/RL Model Design.md",
+    "Sports Betting/Betting Strategies (Algobet).md",
+    "ML/Reinforcement Learning/Policy.md",
+    "Finance/TLAQ/Basic.md",
+    "Finance/TLAQ/How to Lose at Trading.md",
+    "Finance/TLAQ/Good Places to Find +EV.md",
     "Projects/NBA ML/Exploratory Data Analysis.md",
-    "Projects/NBA ML/ML.md",
-    "Algos Practice/Interview Prep.md",
-    "Algos/Cyclic Sort.md",
-    "Algos Practice/Intuition/Sort.md",
-    "Algos Practice/Intuition/Progress.md",
-    "ML/Reinforcement Learning/Policy.md"
+    "Algos Practice/Intuition/Graphs.md"
   ]
 }

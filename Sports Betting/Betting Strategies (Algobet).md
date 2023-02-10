@@ -12,6 +12,8 @@ Another thing is that once we move away from 50/50 wagers there is a lot less hi
 
 
 https://harbourfronts.com/system-lowest-risk-ruin/#:~:text=We%20can%20see%20from%20the,systems%20are%20in%20this%20category.
+- risk of ruin is high if we bet on low odd games or on high odd games 
+- practically, we want 50/50 games
 
 We need to find which range of bets is the most profitable
 
@@ -22,3 +24,77 @@ https://vegapit.com/article/numerically_solve_kelly_criterion_multiple_simultane
 only bet on home in the 50/50 games
 
 bet on underdog games where underdog is at home
+
+
+In a gambling situation where the odds are against you, your best strategy is usually to make as few bets large as possible, in order to increase the variance in the outcome. The more/smaller bets you make, the closer your fraction of wins is going to be to the probability of winning on any one bet.
+
+
+
+- team consistency statistic is important
+	- will they play good against underdogs?
+	- recent performance is important
+	- should take into account winning margin
+
+When do you bet on underdogs?
+- high o/u (> 220)
+- odds have to have difference of at least 0.2
+- small spread (< 5)
+
+How should we identify a low spread high o/u?
+
+
+When do you bet on favorites?
+- high consistency statistic over last 3 games (past week)
+- low variance (high spread, high o/u)
+
+When would you skip a bet?
+- low spread, low o/u or high o/u
+- Evenly matched games with equal odds
+	- Games will have low spread, even odds, 
+	- No edge here
+
+
+
+# Forget about Predicting Match Winner
+A really common failure model in trading/investing is focusing on things that don't matter much because you think you could do better, so you think you should. But stuff gets complicated real fast whatever you do, so you have to be pretty ruthless about focusing on the things that actually matter and keeping everything else as simple as possible imo. Zen is in getting really good at the 20% that matters and letting the nerds waste their energy arguing about the 80% that does not. - Robotjames
+
+# Buy cheap sell rich
+- Where do we expect cheaper 
+- We are limited to buying and don't have opportunities to sell
+
+# Mean reversion?
+
+# Unpredictable Randomness is a defining feature of financial market returns
+- Another source of variance in trade returns is being wrong about edge
+
+# Bet Sizing
+- Some form of historical volatility to determine risk size
+
+# Volatility forecast?
+- point spread
+- o/u spread
+- odds difference
+- we want to find out probability of upset
+
+
+# MDP 
+
+p(home_team_win) = bookie odds - vig/2
+- can possibly use a supervised machine learning model with features
+	- (leave roster changes to bookie, they will be reflected in the odds)
+	- point spread
+	- ou spread
+	- team consistency
+	- bookie odds
+
+What if this probability is not optimal. We don't use it as the true probability of a team winning
+## State
+- better's capital
+
+## Actions
+- Bet amount (stake)
+- a = {0,...,threshold}
+
+## Reward
+- The reward is zero on all transitions except those on which the sport better reach is his goal when it is +1
+- what is a reward function?
