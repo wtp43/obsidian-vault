@@ -22,7 +22,9 @@ max_depth:6
 ## Bisect Left
 - Returns the index of the first num $\leq$ x
 - Repeatedly move right border towards the left if there are duplicates
--  ``If target == arr[mid]: j = mid-1
+- ``if target == arr[mid]: j = mid-1
+- `if target > arr[-1]: i = len(arr)
+- `if target < arr[0]: i = 0
 
 ```python
 def bisect_left(arr, x):
@@ -39,7 +41,9 @@ def bisect_left(arr, x):
 
 ## Bisect Right
 - Returns the index + 1 of the first num > x
-- ``If target == arr[mid]: i = mid+1
+- ``if target == arr[mid]: i = mid+1
+- `if target > arr[-1]: i = len(arr)
+- `if target < arr[0]: i = 0`
 
 ```python
 def bisect_right(arr, x):
@@ -52,11 +56,6 @@ def bisect_right(arr, x):
 		else:
 			j = mid - 1
 	return i
-
-# Implementation
-
-```python
-
 ```
 
 ```python
@@ -78,27 +77,5 @@ def bisect_right(arr, x):
                     l = m + 1
         return i
 ```
-
-Copy
-
-**Close**
-
-# 
-
-[](https://www.youtube.com/watch?v=)
-
-Linked List
-
-(8 / 24)
-
-## Optimizations
-
-## Optimized Complexity
-
->[!Time Complexity]+
-
->[!Space Complexity]+
-
-
 
 # Related

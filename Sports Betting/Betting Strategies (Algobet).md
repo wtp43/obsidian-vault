@@ -78,7 +78,7 @@ A really common failure model in trading/investing is focusing on things that do
 
 
 # MDP 
-
+https://github.com/llSourcell/sports_betting_with_reinforcement_learning/blob/master/value_iteration_for_sports.py
 p(home_team_win) = bookie odds - vig/2
 - can possibly use a supervised machine learning model with features
 	- (leave roster changes to bookie, they will be reflected in the odds)
@@ -98,3 +98,10 @@ What if this probability is not optimal. We don't use it as the true probability
 ## Reward
 - The reward is zero on all transitions except those on which the sport better reach is his goal when it is +1
 - what is a reward function?
+
+
+# Model Performance
+- What if we skip some matches?
+# Feature Engineering
+ - using social engagement to determine edge?
+ - 

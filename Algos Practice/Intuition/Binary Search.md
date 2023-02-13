@@ -40,3 +40,9 @@
 - [ ] [[LC-1268. Search Suggestions System]]
 - Suggest at most 3 words based on the prefix
 - Sort strings then bisect left on the prefix 
+
+- [ ] [[LC-2563. Count the Number of Fair Pairs]]
+	- Find pairs (i,j) where lower <= nums[i] + nums[j] <= upper
+	- Bisect_left and bisect_right on index i+1 with upper-nums[i] and lower-nums[i]
+	- res += r-l
+	- 

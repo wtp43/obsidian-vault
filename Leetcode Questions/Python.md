@@ -22,3 +22,10 @@ arr.sort()
 arr.count(x)
 arr.remove(x)
 ```
+
+# Math
+
+```python
+# if x is a float
+int(x) == floor(x)
+```

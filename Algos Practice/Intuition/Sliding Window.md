@@ -90,4 +90,4 @@ public:
 - [ ]   930.  [Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/discuss/186683/)
 - [ ]   992.  [Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/discuss/523136/JavaC%2B%2BPython-Sliding-Window)
 
-# [[Algos Practice/Intuition/Dynamic Programming#DP + Sliding Window]]
+# [[Dynamic Programming (DP)#DP + Sliding Window]]

@@ -132,6 +132,13 @@ BFS is more useful than DFS in cases where we are interested in the shortest pat
 	- We can run BFS: O(N + EK). In BFS: we have to pass the distance to the queue otherwise we may accidentally use the shortest distance ``(dist[city])`` that takes a different path because ``dist[city]`` may have been updated earlier by a different node.
 	- This is also similar to Bellman Ford but relaxing only k+1 times: O((N+E)K) The N comes from swapping the temp and dist array after each round of relaxing all edges. If we do not store our previous result, we will accidentally use more than K steps.
 
+- [ ] [[LC-1129. Shortest Path with Alternating Colors]]
+- BFS since we want the shortest path from source=0 to all vertices
+- Since we can only take alternating edges, we need to store the prev color of the edge that took us to the current node
+	- u,prev_col = q.popleft()
+- trick: we can visit a node twice either through a red edge or blue edge
+- then we should store (v,col) in seen instead of just v
+
 ## Shortest Path
 - [ ] https://leetcode.com/problems/network-delay-time/description/
 

@@ -12,6 +12,8 @@ tags:
 
 ## Time Complexity
 O($b^d$) where $b$ is the branching factor, $d$ is the depth of the tree
+equivalen to
+O(E + V)
 
 ## Space Complexity
 
