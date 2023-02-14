@@ -29,6 +29,32 @@
             }
           },
           {
+            "id": "660b9df6967ad357",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algos Practice/Intuition/Tree.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "425da2587aa61d78",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DS/Trees.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "6909fb6cdad84893",
             "type": "leaf",
             "state": {
@@ -68,7 +94,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -135,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algos/Binary Search and Bisect.md",
+                "file": "Sports Betting/Betting Strategies (Algobet).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algos/Binary Search and Bisect.md",
+                "file": "Sports Betting/Betting Strategies (Algobet).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algos/Binary Search and Bisect.md"
+                "file": "Sports Betting/Betting Strategies (Algobet).md"
               }
             }
           },
@@ -210,17 +236,17 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "6909fb6cdad84893",
+  "active": "8b55f42bb889181b",
   "lastOpenFiles": [
+    "DS/Trees.md",
+    "Algos Practice/Intuition/Tree.md",
+    "Sports Betting/Betting Strategies (Algobet).md",
+    "Algos/Binary Search and Bisect.md",
     "Leetcode Questions/LC-2563. Count the Number of Fair Pairs.md",
     "Algos Practice/Intuition/Mathematics.md",
     "Leetcode Questions/Python.md",
     "Algos/Topological Sort.md",
     "Algos Practice/Intuition/Binary Search.md",
-    "Sports Betting/Betting Strategies (Algobet).md",
-    "Algos/Binary Search and Bisect.md",
-    "ML/Reinforcement Learning/Reinforcement Learning.md",
-    "Algos/Range Queries.md",
-    "Leetcode Questions/LC-2386. Find the K-Sum of an Array.md"
+    "ML/Reinforcement Learning/Reinforcement Learning.md"
   ]
 }

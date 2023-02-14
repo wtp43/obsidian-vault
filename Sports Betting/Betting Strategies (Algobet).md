@@ -98,10 +98,26 @@ What if this probability is not optimal. We don't use it as the true probability
 ## Reward
 - The reward is zero on all transitions except those on which the sport better reach is his goal when it is +1
 - what is a reward function?
-
-
+# Neural Networks (custom loss function)
+https://towardsdatascience.com/machine-learning-for-sports-betting-not-a-basic-classification-problem-b42ae4900782
 # Model Performance
 - What if we skip some matches?
 # Feature Engineering
  - using social engagement to determine edge?
- - 
+ - Team resilience
+	 - Ability to come back from a deficit
+	 - requires exact history of points scored
+	 - https://onlinelibrary.wiley.com/doi/10.1111/sms.14295
+
+# Bet Sizing
+- Kelly criterion for multiple simultaneous bets
+https://vegapit.com/article/numerically_solve_kelly_criterion_multiple_simultaneous_bets
+
+
+# Sorting bet opportunities
+- Equal +EV != equal profitability
+- CLT: https://www.scribbr.com/statistics/central-limit-theorem/#:~:text=The%20central%20limit%20theorem%20says,the%20mean%20will%20be%20normal.
+- Normal Distribution: https://www.probabilitycourse.com/chapter4/4_2_3_normal.php#:~:text=The%20CDF%20of%20the%20standard%20normal%20distribution%20is%20denoted%20by,is%20widely%20used%20in%20probability.
+
+Quant finance: portfolio optimization
+- https://towardsdatascience.com/finrl-for-quantitative-finance-tutorial-for-portfolio-allocation-9b417660c7cd
