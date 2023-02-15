@@ -8,15 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b2999e8ca6e58367",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "8b55f42bb889181b",
+            "id": "4a0a26ce999892dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -29,64 +21,12 @@
             }
           },
           {
-            "id": "660b9df6967ad357",
+            "id": "15097398fc477d34",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algos Practice/Intuition/Tree.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "425da2587aa61d78",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DS/Trees.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6909fb6cdad84893",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos/Binary Search and Bisect.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5695a0ddd5d0b0f0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos/Topological Sort.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7fcc5ddb122e902e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Leetcode Questions/Python.md",
+                "file": "Finance/AlgoTrading/Some Basic Strategies-Implementations.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -144,8 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -161,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sports Betting/Betting Strategies (Algobet).md",
+                "file": "Finance/AlgoTrading/Some Basic Strategies-Implementations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sports Betting/Betting Strategies (Algobet).md",
+                "file": "Finance/AlgoTrading/Some Basic Strategies-Implementations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sports Betting/Betting Strategies (Algobet).md"
+                "file": "Finance/AlgoTrading/Some Basic Strategies-Implementations.md"
               }
             }
           },
@@ -236,17 +175,17 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "8b55f42bb889181b",
+  "active": "15097398fc477d34",
   "lastOpenFiles": [
-    "DS/Trees.md",
-    "Algos Practice/Intuition/Tree.md",
     "Sports Betting/Betting Strategies (Algobet).md",
-    "Algos/Binary Search and Bisect.md",
-    "Leetcode Questions/LC-2563. Count the Number of Fair Pairs.md",
-    "Algos Practice/Intuition/Mathematics.md",
     "Leetcode Questions/Python.md",
     "Algos/Topological Sort.md",
+    "Algos Practice/Intuition/Arrays.md",
+    "Algos Practice/Intuition/Tree.md",
+    "DS/Trees.md",
+    "Leetcode Questions/LC-2563. Count the Number of Fair Pairs.md",
     "Algos Practice/Intuition/Binary Search.md",
-    "ML/Reinforcement Learning/Reinforcement Learning.md"
+    "Algos/Binary Search and Bisect.md",
+    "Algos Practice/Intuition/Sliding Window.md"
   ]
 }

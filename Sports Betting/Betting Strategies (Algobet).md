@@ -69,6 +69,7 @@ A really common failure model in trading/investing is focusing on things that do
 
 # Bet Sizing
 - Some form of historical volatility to determine risk size
+- Wins Above Seeding”, that measures both how well a team resists being upset and how good a team is at upsetting higher seeds.
 
 # Volatility forecast?
 - point spread

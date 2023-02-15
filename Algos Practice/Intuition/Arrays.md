@@ -1,3 +1,5 @@
+Number of items in an array = j-i+1
+
 # Arrays 
 
 - [x] [[LC-128. Longest Consecutive Sequence]] T: O(n)

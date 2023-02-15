@@ -4,7 +4,8 @@
 
 Generally, sliding window only works for positive numbers. 
 
-Check validity of window
+Check validity of window.
+The number of starting positions for the window is the number of elements in the array = j-i+1
 
 ## Template 1: Sliding Window (Shrinkable)
 - The window is kept valid at the end of each outer for loop

@@ -44,5 +44,5 @@
 - [ ] [[LC-2563. Count the Number of Fair Pairs]]
 	- Find pairs (i,j) where lower <= nums[i] + nums[j] <= upper
 	- Bisect_left and bisect_right on index i+1 with upper-nums[i] and lower-nums[i]
-	- res += r-l
+	- res += r-l. There isn't a +1 here because r is the first index where i is > upper-nums[i]
 	- 
