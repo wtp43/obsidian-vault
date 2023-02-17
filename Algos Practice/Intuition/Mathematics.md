@@ -14,11 +14,19 @@ def findTheArrayConcVal(self, nums: List[int]) -> int:
         i,j = 0,len(nums)-1
         while i <= j:
             if i < j:
-                res += nums[i] * pow(10, floor(log10(nums[j]))+1) + nums[j]
+                res += nums[i] * pow(10, int(log10(nums[j]))+1)+nums[j]
             else:
                 res += nums[i]
             i += 1
             j -= 1
         return res
             
+```
+
+- Add two integers into array form
+```python
+def addToArrayForm(self, num: List[int], k: int) -> List[int]:
+        for i in range(len(num) - 1, -1, -1):
+            k, num[i] = divmod(num[i] + k, 10)
+        return [int(i) for i in str(k)] + num if k else num
 ```
