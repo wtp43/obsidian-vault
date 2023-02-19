@@ -16,3 +16,8 @@ max_depth:6
 
 # 
 
+
+
+
+
+At its core, the volatility cycle is intimately tied to the credit cycle. . As banks lend more, investors become more vulnerable to a market shock. They have debts to pay off.

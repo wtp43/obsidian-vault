@@ -45,3 +45,30 @@
 - Assume things won't go the way you expect them to
 - The more rules and parameters you add to a trading strategy, the more brittle it is likely to be and the less likely it is to be profitable in a range of future outcomes
 	- An overly specific implementation of a good idea can lose money even if the core idea is sound
+
+
+# 1
+Get rid of all the Technical Analysis books and just go through all the US stocks and go back as far as you can to see how they move.
+If you have a tiny account which is under 1 million, you should be focusing more on the small/micro cap stocks.. because there’s a lot more opportunity there.
+
+Best runs in the indices are fuelled by low volume.
+Best runs in the individuals are fuelled by high volume.
+
+10% stop loss stocks
+15% stop loss options
+- on the current price
+
+Get a sense of how stocks move
+
+
+A truly successful trader focuses on their ability to get out of a losing trade as soon as possible. Most losing traders focus their determination to hang on to a losing trade and hope that it comes back. A great trader takes out the trash (losing trades) as soon as possible.
+
+"selling your winners and holding your losers is like cutting the flowers and watering the weeds" - Berkshire Hathaway [$brk](https://twitter.com/search?q=%24brk&src=cashtag_click) annual letter, originally from Peter Lynch's "One Up on Wall Street"
+
+Beginning traders want to predict the future on their charts. Winning to them means they are correct, and they feel like genius. When they lose, they feel horrible. Profitable traders trade what they see, not what they think. They are present and not thinking about the future.
+
+# Keep it Simple
+Trending/Momentum based strategies on small caps
+
+
+Sell vol 

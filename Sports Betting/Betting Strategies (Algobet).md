@@ -122,3 +122,42 @@ https://vegapit.com/article/numerically_solve_kelly_criterion_multiple_simultane
 
 Quant finance: portfolio optimization
 - https://towardsdatascience.com/finrl-for-quantitative-finance-tutorial-for-portfolio-allocation-9b417660c7cd
+
+
+# Neural Network Betting 
+https://github.com/charlesmalafosse/sports-betting-customloss/blob/master/notebook/BetSentiment_SportsBetting_CustomLossFunction.ipynb
+https://towardsdatascience.com/machine-learning-for-sports-betting-not-a-basic-classification-problem-b42ae4900782
+
+https://medium.com/re-hoop-per-rate/training-a-neural-network-to-fill-out-my-march-madness-bracket-2e5ee562eab1
+
+
+# Binary Classification Problems
+Meta Labeling
+ 
+Binary classification problems present a trade-off between type-I errors (false positives) and type-II errors (false negatives). In general, increasing the true positive rate of a binary classifier will tend to increase its false positive rate. The receiver operating characteristic (ROC) curve of a binary classifier measures the cost of increasing the true positive rate, in terms of accepting higher false positive rates.
+
+## Modular Structure
+By decoupling the side prediction from the size prediction, meta labeling enables sophisticated strategy structures.
+For instance, consider that the features driving a rally may differ from the features driving a sell-off. In that case, you may want to develop an ML strategy exclusively for long positions, based on the buy recommendations of a primary model, and an ML strategy exclusively for short positions, based on the sell recommendations of an entirely different primary model.
+
+Achieving high accuracy on small bets and low accuracy on large bets will ruin you. As important as identifying good opportunities is to size them properly, so it makes sense to develop an ML algorithm solely focused on getting that critical decision (sizing) right. In my experience, meta labeling ML models can deliver more robust and reliable outcomes than standard labeling models.
+![[Pasted image 20230218160314.png]]
+## Process
+- Train binary classification primary model that has high recall
+	- Adjust threshold to increase recall
+- Concatenate the predictions to the features from the first model from first model into a new feature set for the secondary model
+- Meta labels are used as the target variable in the second model
+- Fit the second model
+	- The secondary model will reduce false negatives
+- Filter predictions 
+	- If the primary model predicts a 3 and your secondary model says you have a high probability of the primary model being correct, then the final prediction is a 3 else not a 3
+
+
+https://hudsonthames.org/meta-labeling-a-toy-example/
+
+
+# Bet sizing from Predicted Probabilities
+
+For two possible outcomes $x \in \{-1,1\}$, we would like to test the null hypothesis $H_0 : P[x=1] = 1/2$. We compute the test statistic $$z = \frac{P[x=1]-\frac{1}{2}}{\sqrt{P[x=1](1-P[x=1])}}$$
+This is derived using z score for standard normal distribution and the standard deviation is estimated using binomial distribution
+
