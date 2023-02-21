@@ -130,7 +130,19 @@ https://towardsdatascience.com/machine-learning-for-sports-betting-not-a-basic-c
 
 https://medium.com/re-hoop-per-rate/training-a-neural-network-to-fill-out-my-march-madness-bracket-2e5ee562eab1
 
+When exactly can XGBoost get a better result than deep learning?
 
+](https://www.quora.com/When-exactly-can-XGBoost-get-a-better-result-than-deep-learning)
+
+When the features are heterogeneous.
+
+Deep Learning is the state of the art for images, video, audio and natural language processing. In all those tasks the features for each observation are homogeneous in the sense that they have the same scale and unit of measure: pixels in an image, frames in a video, words in text, etc.
+
+When your data is made of heterogeneous columns such as age, weight, number of times the client called, average time of a call, etc then Xgboost is usually better than Deep Learning.
+
+The reason for this is that tree-based methods treat features independently of each other and build rules based on the values for those features. In simpler words a tree-based algorithm will try to answer if a person is going to fill a complain based on things such as “is the time of the call greater than 5 minutes? is the client older than 40?, etc” while a NN would try to do something such as “risk of complain = w1 * age + w2 * time of call”. It can be seen that with heterogeneous columns linearly mixing things that are very different is not an easy task. This explanation is oversimplified but should work to show the point.
+
+PS!: If you find a case where a NN performs better than XGBoost for heterogeneous data please let me know I’m looking for examples.
 # Binary Classification Problems
 Meta Labeling
  
@@ -161,3 +173,21 @@ https://hudsonthames.org/meta-labeling-a-toy-example/
 For two possible outcomes $x \in \{-1,1\}$, we would like to test the null hypothesis $H_0 : P[x=1] = 1/2$. We compute the test statistic $$z = \frac{P[x=1]-\frac{1}{2}}{\sqrt{P[x=1](1-P[x=1])}}$$
 This is derived using z score for standard normal distribution and the standard deviation is estimated using binomial distribution
 
+# Triple Barrier Method Adapted to Bets
+- Dynamically function that calculates the rolling threshold based on recent win/rate
+	- Low win_rate -> bigger threshold (mimic volatility)
+	- Use EMA
+
+
+When you size positions you can't just simply use the model's confidence. You should look at the distribution of the outcomes to size positions. If most of the outcomes range between 0.4-0.6, it's not really going to improve the position sizing component at all, An easy way to do this, is to use the ECDF of the training set to size the positions. You should also look at outcomes of the average loss and win rates, to determine the threshold to trade. It won't make sense if you have symmetric pay-offs and still trade if the model's confidence is 0.2, leading to a negative EV. You can also use probability calibration to bring the outcomes closer to true probabilities and then size positions
+
+My thesis is that the meta-model makes more sense where the underlying signal is not ML generated and would benefit from a ML layer so this case is actually a good one.
+https://www.quantconnect.com/forum/discussion/14706/why-meta-labeling-is-not-a-silver-bullet/p1
+
+https://www.youtube.com/watch?v=hUSJtevWw6M
+
+
+https://colab.research.google.com/drive/1FmnCJ1CI98khBu88kezLXKqvS7U8Nw_h?usp=sharing#scrollTo=k6s5ZC0eGEbW
+
+
+# 
