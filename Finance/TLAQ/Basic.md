@@ -29,6 +29,10 @@
 		- We need to find out why it sucks - because we want to know why we can compete at it
 		- **_If you’ve found an opportunity and can’t identify what sucks about it, then you probably haven’t found an opportunity._**
 
+# Focusing on what matters
+
+A really common failure model in trading/investing is focusing on things that don't matter much because you think you could do better, so you think you should. But stuff gets complicated real fast whatever you do, so you have to be pretty ruthless about focusing on the things that actually matter and keeping everything else as simple as possible imo. Zen is in getting really good at the 20% that matters and letting the nerds waste their energy arguing about the 80% that does not. - Robotjames
+
 # What is a Good trade
 - A good trade isn't one that makes money
 - A bad trade isn't one that loses money
@@ -72,3 +76,8 @@ Trending/Momentum based strategies on small caps
 
 
 Sell vol 
+
+# Allocation
+50% very safe
+50% very risky
+no moderate risk plays

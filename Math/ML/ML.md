@@ -17,4 +17,4 @@ Precision and Recall
 
 -   Precision = TruePositives / (TruePositives + FalsePositives)
 
-
+Fully Connected Neural Networks

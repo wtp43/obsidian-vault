@@ -97,6 +97,7 @@ for i in reversed(range(n)):
 - [ ] [[LC-2218. Maximum Value of K Coins From Piles]]
 - https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/1889647/python-bottom-up-dp-solution/
 - https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/1887010/java-c-python-top-down-dp-solution/?orderBy=most_votes
+- https://leetcode.com/problems/split-array-largest-sum/description/
 
 
 # Pattern Recognition

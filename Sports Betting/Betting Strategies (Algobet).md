@@ -54,10 +54,6 @@ When would you skip a bet?
 	- No edge here
 
 
-
-# Forget about Predicting Match Winner
-A really common failure model in trading/investing is focusing on things that don't matter much because you think you could do better, so you think you should. But stuff gets complicated real fast whatever you do, so you have to be pretty ruthless about focusing on the things that actually matter and keeping everything else as simple as possible imo. Zen is in getting really good at the 20% that matters and letting the nerds waste their energy arguing about the 80% that does not. - Robotjames
-
 # Buy cheap sell rich
 - Where do we expect cheaper 
 - We are limited to buying and don't have opportunities to sell
@@ -190,4 +186,20 @@ https://www.youtube.com/watch?v=hUSJtevWw6M
 https://colab.research.google.com/drive/1FmnCJ1CI98khBu88kezLXKqvS7U8Nw_h?usp=sharing#scrollTo=k6s5ZC0eGEbW
 
 
-# 
+# Feature Extraction (Human factor)
+- days since last game
+- number of games played in the last week
+- number of away games
+- distance of away game to home game
+- confidence/overconfidence?
+	- Was the last game an upset
+	- % of games against favorites won after an upset
+	- % of games against underdogs won after an upset
+	- relative victory frequency
+- Performance volatility
+	- variance of points/min, etc
+- team can have high winning rate but also high volatility
+	- spreads might be +ev
+	- we want to check movl margin^2
+- Time of game
+- 

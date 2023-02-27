@@ -45,4 +45,12 @@
 	- Find pairs (i,j) where lower <= nums[i] + nums[j] <= upper
 	- Bisect_left and bisect_right on index i+1 with upper-nums[i] and lower-nums[i]
 	- res += r-l. There isn't a +1 here because r is the first index where i is > upper-nums[i]
-	- 
+
+https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/solutions/2934252/capacity-to-ship-packages-within-d-days/
+
+[Koko eating bananas](https://leetcode.com/problems/koko-eating-bananas/)  
+[Minimum number of days to make m bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/)  
+[Magnetic force between two balls](https://leetcode.com/problems/magnetic-force-between-two-balls/)  
+[Split array largest sum](https://leetcode.com/problems/split-array-largest-sum/)  
+[Divide chocolate (for premium users only)](https://leetcode.com/problems/divide-chocolate/)  
+[Cutting ribbons (for premium users only)](https://leetcode.com/problems/cutting-ribbons/)
