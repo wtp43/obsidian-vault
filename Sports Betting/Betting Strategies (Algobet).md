@@ -105,6 +105,49 @@ https://towardsdatascience.com/machine-learning-for-sports-betting-not-a-basic-c
 	 - Ability to come back from a deficit
 	 - requires exact history of points scored
 	 - https://onlinelibrary.wiley.com/doi/10.1111/sms.14295
+- player performances
+	- groupby.rolling
+	- shift(-1
+ - team top 5 players mean(PER, PPG) over the last 40 games
+	 - instead of per try crossing all factors
+		 - divide by time
+ - prev 5 games mean(pace x fga)
+	- **Pace** - Pace Factor (available since the 1973-74 season in the NBA); the formula is 48 * (([Tm](https://www.basketball-reference.com/about/glossary.html#team) [Poss](https://www.basketball-reference.com/about/glossary.html#poss) + [Opp](https://www.basketball-reference.com/about/glossary.html#opp_id) [Poss](https://www.basketball-reference.com/about/glossary.html#poss)) / (2 * ([Tm](https://www.basketball-reference.com/about/glossary.html#team) [MP](https://www.basketball-reference.com/about/glossary.html#mp) / 5))). Pace factor is an estimate of the number of possessions per 48 minutes by a team. (Note: 40 minutes is used in the calculation for the WNBA.)
+	- **Poss** - Possessions (available since the 1973-74 season in the NBA); the formula for teams is 0.5 * (([Tm](https://www.basketball-reference.com/about/glossary.html#team) [FGA](https://www.basketball-reference.com/about/glossary.html#fga) + 0.4 * [Tm](https://www.basketball-reference.com/about/glossary.html#team) [FTA](https://www.basketball-reference.com/about/glossary.html#fta) - 1.07 * ([Tm](https://www.basketball-reference.com/about/glossary.html#team) [ORB](https://www.basketball-reference.com/about/glossary.html#orb) / ([Tm](https://www.basketball-reference.com/about/glossary.html#team) [ORB](https://www.basketball-reference.com/about/glossary.html#orb) + [Opp](https://www.basketball-reference.com/about/glossary.html#opp_id) [DRB](https://www.basketball-reference.com/about/glossary.html#drb))) * ([Tm](https://www.basketball-reference.com/about/glossary.html#team) [FGA](https://www.basketball-reference.com/about/glossary.html#fga) - [Tm](https://www.basketball-reference.com/about/glossary.html#team) [FG](https://www.basketball-reference.com/about/glossary.html#fg)) + [Tm](https://www.basketball-reference.com/about/glossary.html#team) [TOV](https://www.basketball-reference.com/about/glossary.html#tov)) + ([Opp](https://www.basketball-reference.com/about/glossary.html#opp_id) [FGA](https://www.basketball-reference.com/about/glossary.html#fga) + 0.4 * [Opp](https://www.basketball-reference.com/about/glossary.html#opp_id) [FTA](https://www.basketball-reference.com/about/glossary.html#fta) - 1.07 * ([Opp](https://www.basketball-reference.com/about/glossary.html#opp_id) [ORB](https://www.basketball-reference.com/about/glossary.html#orb) / ([Opp](https://www.basketball-reference.com/about/glossary.html#opp_id) [ORB](https://www.basketball-reference.com/about/glossary.html#orb) + [Tm](https://www.basketball-reference.com/about/glossary.html#team) [DRB](https://www.basketball-reference.com/about/glossary.html#drb))) * ([Opp](https://www.basketball-reference.com/about/glossary.html#opp_id) [FGA](https://www.basketball-reference.com/about/glossary.html#fga) - [Opp](https://www.basketball-reference.com/about/glossary.html#opp_id) [FG](https://www.basketball-reference.com/about/glossary.html#fg)) + [Opp](https://www.basketball-reference.com/about/glossary.html#opp_id) [TOV](https://www.basketball-reference.com/about/glossary.html#tov))). This formula estimates possessions based on both the team's statistics and their opponent's statistics, then averages them to provide a more stable estimate. Please see the article [Calculating Individual Offensive and Defensive Ratings](https://www.basketball-reference.com/about/ratings.html) for more information.
+ - point_spread x o/u
+ - team four factors
+	 - efg%
+	 - tov%
+	 - orb%
+	 - ft/fga
+	 - ortg
+- uncertainty
+	- adjusting for luck
+- meta-labeling
+	- using bookie predictions (odds)
+- fatigue
+	- days since last game x nth away game
+- exclude data from 2020
+- cross (eFG%, TOV%, ORB%, FT/FGA)
+- home or away game
+- momentum
+	- A noticeable pattern that distinguishes the results in Tables [5](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9041568/table/T0005/) and [7](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9041568/table/T0007/) is the reversed relationship between the environmental and technical variables. In Table [7](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9041568/table/T0007/), turnovers become the leading factor, followed by rebounds. This is a very interesting finding: for teams that want to extend their momentum, it is not only about scoring more points directly; less eye-catching moments, such as getting the rebounds and minimizing turnovers, are actually more important.
+	- winning streak (-ve for losing streak)
+- confidence interval
+- % of underdogs that win with odds > x
+	- plot 
+- risk of ruin
+	- https://vegapit.com/article/bet-sizing-using-risk-of-ruin-indicator
+	- ((1 – (W – L)) / (1 + (W – L)))U
+# Don't use monte carlo
+0 https://www.reddit.com/r/statistics/comments/f12eqx/discussion_monte_carlo_simulations_to_simulate/
+
+# Why a model highly correlated to the bookmaker's model is bad
+Consider a situation where the bettor’s learned model coincides with the bookmakers model. Then any betting opportunity promising from the viewpoint of an estimated high outcome probability $\hat{p_i}$ = $\bar{p_i}$ is made unfavorable by the odds set lower than $\frac{1}{\bar{p_i}}$ . Therefore, even a highly accurate predictive model is useless as long as it coincides with the bookmaker’s model.
+
+This motivates the objective to learn a predictive model under two criteria of quality: high accuracy on empirical data, and adequately low correlation with the bookmaker’s model.
+
+Unless the bookmaker’s odds are systematically biased, which they are not (Hubacek, 2017), a model considering odds as the only input feature would have no choice but to coincide perfectly with the bookmaker, inevitably doomed to end up with negative returns directly proportional to the margin.
 
 # Bet Sizing
 - Kelly criterion for multiple simultaneous bets
@@ -119,8 +162,12 @@ https://vegapit.com/article/numerically_solve_kelly_criterion_multiple_simultane
 Quant finance: portfolio optimization
 - https://towardsdatascience.com/finrl-for-quantitative-finance-tutorial-for-portfolio-allocation-9b417660c7cd
 
-
+# Neural Network Loss Function
+- Should take into account risk of ruin (size of bet vs reward)
+# EDA
+https://www.youtube.com/watch?v=egTylm6C2is
 # Neural Network Betting 
+- pace of teams for over/under
 https://github.com/charlesmalafosse/sports-betting-customloss/blob/master/notebook/BetSentiment_SportsBetting_CustomLossFunction.ipynb
 https://towardsdatascience.com/machine-learning-for-sports-betting-not-a-basic-classification-problem-b42ae4900782
 

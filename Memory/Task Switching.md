@@ -99,7 +99,7 @@ Start music
 Total: 5 hours
 
 # Project Checklist
-- Update kanban
+- Update kanban/Prioritize tasks
 - Start highest priority task
 - Organize uncompleted tasks
 	- Clear clutter: save and close open tabs
@@ -111,7 +111,7 @@ Total: 5 hours
 
 # Process
 - Identify tasks
-- Prioritize by starting with the one you like the least
+- Start with the highest priority task you like the least
 - Block 2-4 hours for each task
 - Place todo list in a place that is easily visible and within access
 - End work day as planned so there is time for exercise/other activities

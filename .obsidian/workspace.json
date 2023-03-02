@@ -13,6 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Memory/Task Switching.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "09f3bb160d368e3a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Memory/Prevent Executive Dysfunction.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ff11b2ab603b4df9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Sports Betting/Betting Strategies (Algobet).md",
                 "mode": "source",
                 "backlinks": false,
@@ -20,7 +46,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -161,17 +188,17 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "4a0a26ce999892dc",
+  "active": "ff11b2ab603b4df9",
   "lastOpenFiles": [
+    "Projects/NBA ML/ML.md",
     "Sports Betting/Betting Strategies (Algobet).md",
+    "Memory/Task Switching.md",
+    "Memory/Prevent Executive Dysfunction.md",
+    "ML/Reinforcement Learning/Reinforcement Learning.md",
     "Sports Betting/Kelly Criterion.md",
     "Math/ML/ML.md",
     "Finance/TLAQ/Basic.md",
     "Music/Just some thoughts.md",
-    "Algos Practice/Intuition/Dynamic Programming (DP).md",
-    "Algos Practice/Intuition/Binary Search.md",
-    "Algos Practice/Intuition/Tree.md",
-    "Finance/Trading Volatility/The Second Leg Down.md",
-    "Leetcode Questions/LC-112. Path Sum.md"
+    "Algos Practice/Intuition/Dynamic Programming (DP).md"
   ]
 }

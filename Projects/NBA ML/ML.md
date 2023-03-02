@@ -1,19 +1,20 @@
 # To do
 Day 1
-- [x] Set up conda environment from environment.yaml
-- [x] Make XGB model with new data	<br>- replace odds data in old file with new 
-- [ ] Make trading simulation (backtest)
-	- [ ] Python script
-	- [ ] Show profit graph
-Day 2-5
-- [ ] RL (gym)
-- [ ] Preprocess all actions and rewards into csv
-	- [ ] how much to bet?
-		- [ ] kelly criterion
-	- [ ] penalty for not betting (under what conditions?)
-- [ ] Train RL
+- [ ] Feature engineering
+	- [ ] input 8 players per team
+		- to pick the 8 players, we can cheat a little bit  and use the post game stats of who played the most minutes
+		- for predicting, we would need roster reports, we can also run predictions for different rosters to plan for all possibilities
+		- [ ] player stats
+			- [ ] past 30 games ppg, 4 factors
+			- [ ] past 30 games avg minutes played
+			- [ ] 
+		- [ ] player fatigue - minutes played in last week
+			- [ ] factor in away minutes by 1.x
+	- [ ] team factor
 
-Day 6+
+
+
+
 Backend (Prediction API)
 
 
