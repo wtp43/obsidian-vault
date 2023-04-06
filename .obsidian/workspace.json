@@ -45,9 +45,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fa4d1a0219ce1c50",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.1.16"
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -188,7 +198,7 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "ff11b2ab603b4df9",
+  "active": "fa4d1a0219ce1c50",
   "lastOpenFiles": [
     "Projects/NBA ML/ML.md",
     "Sports Betting/Betting Strategies (Algobet).md",
