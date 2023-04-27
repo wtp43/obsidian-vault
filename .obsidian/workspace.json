@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "65aaaa5116eb522d",
+        "id": "6ccab062d58d5cac",
         "type": "tabs",
         "children": [
           {
-            "id": "4a0a26ce999892dc",
+            "id": "a545dcb256b42b31",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Memory/Task Switching.md",
+                "file": "Algos/0-1 Knapsack.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,43 +21,19 @@
             }
           },
           {
-            "id": "09f3bb160d368e3a",
+            "id": "3453a1474fea8122",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Memory/Prevent Executive Dysfunction.md",
+                "file": "Algos Practice/Intuition/Graphs.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "ff11b2ab603b4df9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sports Betting/Betting Strategies (Algobet).md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fa4d1a0219ce1c50",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.1.16"
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -123,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sports Betting/Betting Strategies (Algobet).md",
+                "file": "Algos/0-1 Knapsack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sports Betting/Betting Strategies (Algobet).md",
+                "file": "Algos/0-1 Knapsack.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sports Betting/Betting Strategies (Algobet).md"
+                "file": "Algos/0-1 Knapsack.md"
               }
             }
           },
@@ -198,12 +174,26 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "fa4d1a0219ce1c50",
+  "active": "a545dcb256b42b31",
   "lastOpenFiles": [
-    "Projects/NBA ML/ML.md",
-    "Sports Betting/Betting Strategies (Algobet).md",
+    "Algos Practice/Intuition/Graphs.md",
+    "Algos/0-1 Knapsack.md",
+    "Algos/Boyer-Moore Voting Algorithm.md",
+    "Algos Practice/Intuition/Progress.md",
+    "Algos Practice/Intuition/MISC.md",
+    "Leetcode Questions/LC-465. Optimal Account Balancing.md",
+    "Algos/Backtracking.md",
+    "Algos/Algorithms Database.md",
+    "Algos/Kosaraju's Algorithm.md",
+    "Projects/Job App.md",
+    "Projects/Job Applications.md",
+    "Code/Software Engineering/Microservices Architecture.md",
+    "Code/Devops/Terraform.md",
+    "Code/Devops",
     "Memory/Task Switching.md",
     "Memory/Prevent Executive Dysfunction.md",
+    "Sports Betting/Betting Strategies (Algobet).md",
+    "Projects/NBA ML/ML.md",
     "ML/Reinforcement Learning/Reinforcement Learning.md",
     "Sports Betting/Kelly Criterion.md",
     "Math/ML/ML.md",
