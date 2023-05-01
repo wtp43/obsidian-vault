@@ -1,8 +1,8 @@
 {
-  "accentColor": "",
-  "cssTheme": "Minimal",
+  "accentColor": "#b8d6e5",
+  "cssTheme": "Border",
   "translucency": false,
-  "theme": "obsidian",
+  "theme": "moonstone",
   "showViewHeader": true,
   "baseFontSize": 19
 }

@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a545dcb256b42b31",
+            "id": "1120a75d64f1f047",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algos/0-1 Knapsack.md",
+                "file": "Algos/Counting Sort.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,19 +21,15 @@
             }
           },
           {
-            "id": "3453a1474fea8122",
+            "id": "57f260b49fa7879e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos Practice/Intuition/Graphs.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 288
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -99,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algos/0-1 Knapsack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +111,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algos/0-1 Knapsack.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,9 +132,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Algos/0-1 Knapsack.md"
-              }
+              "state": {}
             }
           },
           {
@@ -162,8 +154,8 @@
   "left-ribbon": {
     "hiddenItems": {
       "darlal-switcher-plus:Open in Headings Mode": false,
-      "darlal-switcher-plus:Open Symbols for the active editor": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false,
       "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -174,10 +166,17 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "a545dcb256b42b31",
+  "active": "57f260b49fa7879e",
   "lastOpenFiles": [
+    "Algos/Counting Sort.md",
+    "Algos/Bucket Sort.md",
+    "Stacks.md",
+    "VIM.md",
     "Algos Practice/Intuition/Graphs.md",
+    "Monotonic Queue.md",
+    "home.md",
     "Algos/0-1 Knapsack.md",
+    "Vim",
     "Algos/Boyer-Moore Voting Algorithm.md",
     "Algos Practice/Intuition/Progress.md",
     "Algos Practice/Intuition/MISC.md",
@@ -196,9 +195,6 @@
     "Projects/NBA ML/ML.md",
     "ML/Reinforcement Learning/Reinforcement Learning.md",
     "Sports Betting/Kelly Criterion.md",
-    "Math/ML/ML.md",
-    "Finance/TLAQ/Basic.md",
-    "Music/Just some thoughts.md",
-    "Algos Practice/Intuition/Dynamic Programming (DP).md"
+    "Math/ML/ML.md"
   ]
 }
