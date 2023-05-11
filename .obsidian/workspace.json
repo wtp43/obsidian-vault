@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6ccab062d58d5cac",
+        "id": "ec793fb2d66231b2",
         "type": "tabs",
         "children": [
           {
-            "id": "1120a75d64f1f047",
+            "id": "97871235c9ccb5ae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algos/Counting Sort.md",
+                "file": "VIM.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,15 +21,45 @@
             }
           },
           {
-            "id": "57f260b49fa7879e",
+            "id": "e87e3d3c986c0402",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Books/Imperialism - The Highest Stage of Capitalism.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9ffbe979f848d626",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "History/Wars.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "007c4e2042c15d94",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Books/Vocabulary.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -79,7 +109,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288
+    "width": 288,
+    "collapsed": true
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -95,6 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "VIM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,6 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "VIM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +165,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "VIM.md"
+              }
             }
           },
           {
@@ -166,12 +201,19 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "57f260b49fa7879e",
+  "active": "97871235c9ccb5ae",
   "lastOpenFiles": [
+    "History/Wars.md",
+    "Books/Imperialism - The Highest Stage of Capitalism.md",
+    "Books/Vocabulary.md",
+    "Templates/Book.md",
+    "History",
+    "Templates/Algos.md",
+    "VIM.md",
+    "Books",
     "Algos/Counting Sort.md",
     "Algos/Bucket Sort.md",
     "Stacks.md",
-    "VIM.md",
     "Algos Practice/Intuition/Graphs.md",
     "Monotonic Queue.md",
     "home.md",
@@ -190,11 +232,6 @@
     "Code/Devops/Terraform.md",
     "Code/Devops",
     "Memory/Task Switching.md",
-    "Memory/Prevent Executive Dysfunction.md",
-    "Sports Betting/Betting Strategies (Algobet).md",
-    "Projects/NBA ML/ML.md",
-    "ML/Reinforcement Learning/Reinforcement Learning.md",
-    "Sports Betting/Kelly Criterion.md",
-    "Math/ML/ML.md"
+    "Memory/Prevent Executive Dysfunction.md"
   ]
 }

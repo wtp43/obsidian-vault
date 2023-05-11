@@ -5,5 +5,5 @@
   "attachmentFolderPath": "./attachments",
   "readableLineLength": false,
   "alwaysUpdateLinks": true,
-  "vimMode": false
+  "vimMode": true
 }

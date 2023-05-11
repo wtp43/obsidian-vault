@@ -96,5 +96,14 @@
       ],
       "key": "P"
     }
+  ],
+  "templater-obsidian:Templates/Book.md": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod"
+      ],
+      "key": "B"
+    }
   ]
 }

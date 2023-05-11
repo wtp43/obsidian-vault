@@ -40,7 +40,7 @@ def counting_sort(nums):
 	sz = max_val - min_val + 1
 	b = [0] * sz
 	for i in range(len(nums)):
-		b[nums[i] -  min_val] += 1
+		b[nums[i] - min_val] += 1
 	k = 0
 	for i in range(sz):
 		while b[i] > 0:

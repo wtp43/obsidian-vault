@@ -24,7 +24,8 @@
     "Templates/Callout.md",
     "Templates/Algos.md",
     "Templates/LC.md",
-    "Templates/Default.md"
+    "Templates/Default.md",
+    "Templates/Book.md"
   ],
   "startup_templates": [
     ""
