@@ -104,6 +104,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "1b81a5d72690bbbe",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -203,13 +211,13 @@
   },
   "active": "97871235c9ccb5ae",
   "lastOpenFiles": [
-    "History/Wars.md",
-    "Books/Imperialism - The Highest Stage of Capitalism.md",
     "Books/Vocabulary.md",
+    "History/Wars.md",
+    "VIM.md",
+    "Books/Imperialism - The Highest Stage of Capitalism.md",
     "Templates/Book.md",
     "History",
     "Templates/Algos.md",
-    "VIM.md",
     "Books",
     "Algos/Counting Sort.md",
     "Algos/Bucket Sort.md",
