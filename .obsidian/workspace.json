@@ -4,59 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "ec793fb2d66231b2",
+        "id": "1ef521e114ae80f9",
         "type": "tabs",
         "children": [
           {
-            "id": "97871235c9ccb5ae",
+            "id": "d21a2f47b1d58dee",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "VIM.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e87e3d3c986c0402",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Books/Imperialism - The Highest Stage of Capitalism.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9ffbe979f848d626",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "History/Wars.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "007c4e2042c15d94",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Books/Vocabulary.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -117,8 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288,
-    "collapsed": true
+    "width": 288
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -134,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VIM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VIM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "VIM.md"
-              }
+              "state": {}
             }
           },
           {
@@ -209,12 +160,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "97871235c9ccb5ae",
+  "active": "d21a2f47b1d58dee",
   "lastOpenFiles": [
-    "Books/Vocabulary.md",
-    "History/Wars.md",
+    "Algos/Chunked Transfer Encoding (CTE).md",
     "VIM.md",
     "Books/Imperialism - The Highest Stage of Capitalism.md",
+    "History/Wars.md",
+    "Books/Vocabulary.md",
     "Templates/Book.md",
     "History",
     "Templates/Algos.md",
@@ -239,7 +191,6 @@
     "Code/Software Engineering/Microservices Architecture.md",
     "Code/Devops/Terraform.md",
     "Code/Devops",
-    "Memory/Task Switching.md",
-    "Memory/Prevent Executive Dysfunction.md"
+    "Memory/Task Switching.md"
   ]
 }
