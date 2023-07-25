@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/A Mns.md",
+                "file": "Weight Lifting and Rehab/Wrist Rehab for TFCC tear.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Books/A Mns.md",
+                "file": "Weight Lifting and Rehab/Wrist Rehab for TFCC tear.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Books/A Mns.md",
+                "file": "Weight Lifting and Rehab/Wrist Rehab for TFCC tear.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Books/A Mns.md"
+                "file": "Weight Lifting and Rehab/Wrist Rehab for TFCC tear.md"
               }
             }
           },
@@ -171,7 +171,10 @@
   },
   "active": "d21a2f47b1d58dee",
   "lastOpenFiles": [
-    "Books/A Mns.md",
+    "Books/Man's Search for Meaning.md",
+    "Weight Lifting and Rehab/Wrist Rehab for TFCC tear.md",
+    "Weight Lifting and Rehab",
+    "Books/Untitled.md",
     "Algos/Chunked Transfer Encoding (CTE).md",
     "VIM.md",
     "Books/Imperialism - The Highest Stage of Capitalism.md",
@@ -198,8 +201,6 @@
     "Algos/Kosaraju's Algorithm.md",
     "Projects/Job App.md",
     "Projects/Job Applications.md",
-    "Code/Software Engineering/Microservices Architecture.md",
-    "Code/Devops/Terraform.md",
     "Code/Devops"
   ]
 }
