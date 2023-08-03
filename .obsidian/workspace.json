@@ -13,14 +13,23 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Weight Lifting and Rehab/Wrist Rehab for TFCC tear.md",
+                "file": "Finance/Trading Volatility/Basic Trading.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
+          },
+          {
+            "id": "39fa6b153603193f",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +103,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Weight Lifting and Rehab/Wrist Rehab for TFCC tear.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +119,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Weight Lifting and Rehab/Wrist Rehab for TFCC tear.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,9 +140,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Weight Lifting and Rehab/Wrist Rehab for TFCC tear.md"
-              }
+              "state": {}
             }
           },
           {
@@ -169,38 +174,38 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "d21a2f47b1d58dee",
+  "active": "39fa6b153603193f",
   "lastOpenFiles": [
-    "Books/Man's Search for Meaning.md",
-    "Weight Lifting and Rehab/Wrist Rehab for TFCC tear.md",
-    "Weight Lifting and Rehab",
-    "Books/Untitled.md",
-    "Algos/Chunked Transfer Encoding (CTE).md",
-    "VIM.md",
-    "Books/Imperialism - The Highest Stage of Capitalism.md",
-    "History/Wars.md",
-    "Books/Vocabulary.md",
-    "Templates/Book.md",
-    "History",
-    "Templates/Algos.md",
-    "Books",
-    "Algos/Counting Sort.md",
-    "Algos/Bucket Sort.md",
-    "Stacks.md",
-    "Algos Practice/Intuition/Graphs.md",
+    "Finance/Trading Volatility/Basic Trading.md",
+    "Projects/Todo.md",
     "Monotonic Queue.md",
-    "home.md",
-    "Algos/0-1 Knapsack.md",
+    "Stacks.md",
+    "VIM.md",
+    "To Do/Fenwick (Segment) Tree.md",
+    "To Do/Random.Choice.md",
+    "To Do/Tarjan's Strongy Connected Component Algorithm.md",
+    "To Do/Shortest and Longest Path on DAG.md",
+    "To Do/Two Pointers.md",
+    "Math/Series.md",
+    "Math/ML/ML.md",
+    "DS/Sparse Table.md",
+    "DS/Trees.md",
+    "DS/Strongly Connected Components.md",
+    "DS/Maximum Frequency Stack.md",
+    "DS/Matrix Traversals.md",
+    "DS/Linked List.md",
+    "DS/LFU Cache.md",
+    "DS/Hashmap.md",
+    "DS/Graph Structures.md",
+    "DS/Fibonacci Heap.md",
+    "DS/Dynamic Arrays.md",
+    "DS/DS.md",
+    "DS/DFS.md",
+    "DS/Connected Components.md",
+    "Weight Lifting and Rehab",
+    "History",
+    "Books",
     "Vim",
-    "Algos/Boyer-Moore Voting Algorithm.md",
-    "Algos Practice/Intuition/Progress.md",
-    "Algos Practice/Intuition/MISC.md",
-    "Leetcode Questions/LC-465. Optimal Account Balancing.md",
-    "Algos/Backtracking.md",
-    "Algos/Algorithms Database.md",
-    "Algos/Kosaraju's Algorithm.md",
-    "Projects/Job App.md",
-    "Projects/Job Applications.md",
     "Code/Devops"
   ]
 }
