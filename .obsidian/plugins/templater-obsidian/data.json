@@ -21,11 +21,12 @@
   ],
   "syntax_highlighting": true,
   "enabled_templates_hotkeys": [
+    "Templates/LC.md",
     "Templates/Callout.md",
     "Templates/Algos.md",
-    "Templates/LC.md",
     "Templates/Default.md",
-    "Templates/Book.md"
+    "Templates/Book.md",
+    "Templates/Recipe.md"
   ],
   "startup_templates": [
     ""

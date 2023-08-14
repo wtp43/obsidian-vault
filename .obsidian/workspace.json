@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1ef521e114ae80f9",
+        "id": "160277840cac13c3",
         "type": "tabs",
         "children": [
           {
-            "id": "d21a2f47b1d58dee",
+            "id": "3ce4e3bb6982d6c1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Finance/Trading Volatility/Basic Trading.md",
+                "file": "Cooking/Recipes.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,11 +21,29 @@
             }
           },
           {
-            "id": "39fa6b153603193f",
+            "id": "7c563fd6a4f42c51",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Cooking/Pepper Lunch.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bf913955713308b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cooking/Pepper Lunch.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ],
@@ -58,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Number of Islands II",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,7 +105,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288
+    "width": 288,
+    "collapsed": true
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -103,6 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Cooking/Pepper Lunch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,6 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Cooking/Pepper Lunch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +161,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Cooking/Pepper Lunch.md"
+              }
             }
           },
           {
@@ -174,9 +197,20 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "39fa6b153603193f",
+  "active": "7c563fd6a4f42c51",
   "lastOpenFiles": [
+    "Cooking/Gyudon.md",
+    "Cooking/Pepper Lunch.md",
+    "Cooking/Recipes.md",
+    "Templates/Recipe.md",
+    "Cooking/Gamjatang.md",
+    "Cooking/酸辣汤.md",
+    "Cooking/Untitled.md",
+    "Templates/Algos.md",
+    "Cooking/Meal Plan.md",
+    "Cooking/Recipe Archive.md",
     "Finance/Trading Volatility/Basic Trading.md",
+    "Cooking",
     "Projects/Todo.md",
     "Monotonic Queue.md",
     "Stacks.md",
@@ -192,16 +226,6 @@
     "DS/Trees.md",
     "DS/Strongly Connected Components.md",
     "DS/Maximum Frequency Stack.md",
-    "DS/Matrix Traversals.md",
-    "DS/Linked List.md",
-    "DS/LFU Cache.md",
-    "DS/Hashmap.md",
-    "DS/Graph Structures.md",
-    "DS/Fibonacci Heap.md",
-    "DS/Dynamic Arrays.md",
-    "DS/DS.md",
-    "DS/DFS.md",
-    "DS/Connected Components.md",
     "Weight Lifting and Rehab",
     "History",
     "Books",

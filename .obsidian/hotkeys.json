@@ -105,5 +105,14 @@
       ],
       "key": "B"
     }
+  ],
+  "templater-obsidian:Templates/Recipe.md": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod"
+      ],
+      "key": "E"
+    }
   ]
 }
