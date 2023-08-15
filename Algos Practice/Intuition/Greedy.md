@@ -3,8 +3,6 @@
 
 - [ ] Fractional Knapsack
 	- [ ] https://leetcode.com/problems/maximum-price-to-fill-a-bag/solutions/3103917/python-exchange-argument/?orderBy=most_votes
-- [ ] 01 Knapsack
-	- [ ] https://www.geeksforgeeks.org/difference-between-0-1-knapsack-problem-and-fractional-knapsack-problem/?ref=rp
 
 - [ ] https://leetcode.com/problems/increasing-triplet-subsequence/description/
 - [ ] https://leetcode.com/problems/minimum-time-to-make-rope-colorful/description/

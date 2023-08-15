@@ -1,5 +1,10 @@
 
 # Dynamic Programming
+- [ ] 01 Knapsack
+	- [ ] [[LC-2008. Maximum Earnings From]]
+
+
+
 - [ ] https://leetcode.com/problems/minimum-cost-to-split-an-array/description/
 https://leetcode.com/problems/minimum-cost-to-split-an-array/solutions/3083850/python3-dp/
 
