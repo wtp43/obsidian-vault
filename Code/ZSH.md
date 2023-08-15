@@ -1,0 +1,8 @@
+- Clear line: ctrl + u
+- End of line: ctrl + e
+- Clear screen: ctrl + l
+- Backward delete char: ctrl + h
+- Forward char: ctrl + f
+- Expand or complete: ctrl + i
+- Backward word: ctrl b
+- 

@@ -3,6 +3,7 @@ Directions
 - hl
 - j down
 - k up
+- `gg` to move to top
 
 # Exiting VIM
 Discard all changes
@@ -13,6 +14,7 @@ Discard all changes
 - `x` deletes character under cursor
 - `i` to insert text
 - `A` to append. Cursor automatically moves to end of line.
+- `shift + enter` to insert new line without leaving normal mode
 
 # Deletion Commands
 - `dw` delete word

@@ -23,9 +23,7 @@ max_depth:6
 	- Trans/Saturated: 
 - Sodium: 
 
-2lb
-
-
+https://www.hwcmagazine.com/recipe/pepper-lunch-steak-and-rice-sizzle/
 
 # Ingredients
 
@@ -43,13 +41,6 @@ max_depth:6
 ▢ ¼ cup water
 ▢ 1 teaspoon cornstarch
 
-
-# To Experiment
-- 2 tbsp soy sauce
-- 1 tbsp oyster sauce
-- 2 tbsp honey
-- 1 tsp black pepper
-- 1 tsp sesame oil
 
 ## Pepper Lunch Beef (serves 4)
 

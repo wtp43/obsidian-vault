@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3ce4e3bb6982d6c1",
+            "id": "72acfd0b43d7ca48",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cooking/Recipes.md",
+                "file": "Code/VIM.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,25 +21,12 @@
             }
           },
           {
-            "id": "7c563fd6a4f42c51",
+            "id": "59b7362f279e43bb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cooking/Pepper Lunch.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bf913955713308b8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cooking/Pepper Lunch.md",
+                "file": "Code/ZSH.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -105,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288,
-    "collapsed": true
+    "width": 288
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -122,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cooking/Pepper Lunch.md",
+                "file": "Code/ZSH.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cooking/Pepper Lunch.md",
+                "file": "Code/ZSH.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cooking/Pepper Lunch.md"
+                "file": "Code/ZSH.md"
               }
             }
           },
@@ -197,11 +183,18 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "7c563fd6a4f42c51",
+  "active": "59b7362f279e43bb",
   "lastOpenFiles": [
-    "Cooking/Gyudon.md",
-    "Cooking/Pepper Lunch.md",
+    "Algos/0-1 Knapsack.md",
+    "Code/VIM.md",
+    "home.md",
+    "Code/Shortcuts.md",
+    "Code/SwiftUI/XcoShortcuts.md",
+    "Code/ZSH.md",
+    "Algos/Maze-solving Algorithms.md",
     "Cooking/Recipes.md",
+    "Cooking/Pepper Lunch.md",
+    "Cooking/Gyudon.md",
     "Templates/Recipe.md",
     "Cooking/Gamjatang.md",
     "Cooking/酸辣汤.md",
@@ -212,20 +205,13 @@
     "Finance/Trading Volatility/Basic Trading.md",
     "Cooking",
     "Projects/Todo.md",
-    "Monotonic Queue.md",
-    "Stacks.md",
-    "VIM.md",
+    "DS/Monotonic Queue.md",
+    "DS/Stacks.md",
     "To Do/Fenwick (Segment) Tree.md",
     "To Do/Random.Choice.md",
     "To Do/Tarjan's Strongy Connected Component Algorithm.md",
     "To Do/Shortest and Longest Path on DAG.md",
     "To Do/Two Pointers.md",
-    "Math/Series.md",
-    "Math/ML/ML.md",
-    "DS/Sparse Table.md",
-    "DS/Trees.md",
-    "DS/Strongly Connected Components.md",
-    "DS/Maximum Frequency Stack.md",
     "Weight Lifting and Rehab",
     "History",
     "Books",

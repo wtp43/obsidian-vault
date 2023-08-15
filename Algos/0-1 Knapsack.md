@@ -36,7 +36,7 @@ def solve_knapsack(profits, weights, capacity):
   if capacity <= 0 or n == 0 or len(weights) != n:
     return 0
 
-  dp = [[0 for x in range(capacity+1)] for y in range(n)]
+  dp = [[0]*(c+1) for _ in range(n)]
 
   # if we have only one weight, we will take it if it is not more than the capacity
   for c in range(capacity+1):
@@ -155,5 +155,9 @@ return `dp[(n-1)%2][capacity]`
 ## Using a single row
 - We have to iterate backwards inside the inner loop 
 
+# Sorting weights does not optimize
+- We need to check all subsets or we may stop prematurely without testing the pair such as (min, max). 
+
 # Related
 https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews/RM1BDv71V60
+
