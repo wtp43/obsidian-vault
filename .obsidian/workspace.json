@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "160277840cac13c3",
+        "id": "09c791dfbac4a0b8",
         "type": "tabs",
         "children": [
           {
-            "id": "72acfd0b43d7ca48",
+            "id": "2b199728baa64235",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/VIM.md",
+                "file": "Templates/Generic.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,12 +21,20 @@
             }
           },
           {
-            "id": "59b7362f279e43bb",
+            "id": "4e5682ba3b89abb0",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "e9a8c49508f3cfe2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/ZSH.md",
+                "file": "Math/Chaos Theory.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -34,7 +42,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -92,7 +100,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288
+    "width": 288,
+    "collapsed": true
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -108,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/ZSH.md",
+                "file": "Math/Chaos Theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/ZSH.md",
+                "file": "Math/Chaos Theory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/ZSH.md"
+                "file": "Math/Chaos Theory.md"
               }
             }
           },
@@ -183,35 +192,37 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "59b7362f279e43bb",
+  "active": "e9a8c49508f3cfe2",
   "lastOpenFiles": [
-    "Algos/0-1 Knapsack.md",
+    "Math/Chaos Theory.md",
+    "Templates/Generic.md",
+    "Templates/Callout.md",
+    "Templates/LC.md",
+    "Templates/Misc.md",
+    "Templates/Recipe.md",
+    "Math/Series.md",
     "Code/VIM.md",
-    "home.md",
+    "Music/Just some thoughts.md",
+    "Weight Lifting and Rehab/Managing ADHD.md",
+    "Cooking/Meal Plan.md",
+    "Cooking/attachments/Pasted image 20230816155952.png",
+    "Cooking/attachments",
     "Code/Shortcuts.md",
-    "Code/SwiftUI/XcoShortcuts.md",
+    "Leetcode Questions/LC-2008. Maximum Earnings From.md",
+    "Algos Practice/Intuition/Dynamic Programming (DP).md",
+    "Algos Practice/Intuition/Greedy.md",
     "Code/ZSH.md",
+    "Algos/0-1 Knapsack.md",
+    "home.md",
+    "Code/SwiftUI/XcoShortcuts.md",
     "Algos/Maze-solving Algorithms.md",
     "Cooking/Recipes.md",
     "Cooking/Pepper Lunch.md",
     "Cooking/Gyudon.md",
-    "Templates/Recipe.md",
     "Cooking/Gamjatang.md",
     "Cooking/酸辣汤.md",
     "Cooking/Untitled.md",
-    "Templates/Algos.md",
-    "Cooking/Meal Plan.md",
-    "Cooking/Recipe Archive.md",
-    "Finance/Trading Volatility/Basic Trading.md",
     "Cooking",
-    "Projects/Todo.md",
-    "DS/Monotonic Queue.md",
-    "DS/Stacks.md",
-    "To Do/Fenwick (Segment) Tree.md",
-    "To Do/Random.Choice.md",
-    "To Do/Tarjan's Strongy Connected Component Algorithm.md",
-    "To Do/Shortest and Longest Path on DAG.md",
-    "To Do/Two Pointers.md",
     "Weight Lifting and Rehab",
     "History",
     "Books",

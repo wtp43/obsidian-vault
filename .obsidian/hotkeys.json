@@ -34,15 +34,6 @@
       "key": "U"
     }
   ],
-  "templater-obsidian:Templates/Default.md": [
-    {
-      "modifiers": [
-        "Ctrl",
-        "Mod"
-      ],
-      "key": "G"
-    }
-  ],
   "app:go-back": [
     {
       "modifiers": [
@@ -113,6 +104,15 @@
         "Mod"
       ],
       "key": "E"
+    }
+  ],
+  "templater-obsidian:Templates/Generic.md": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod"
+      ],
+      "key": "G"
     }
   ]
 }
