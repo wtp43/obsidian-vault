@@ -40,9 +40,56 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1af7ef86578ce301",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algos/0-1 Knapsack.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7497be14ac3526bb",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "7b4b8188d0d47323",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Leetcode Questions/LC-2008. Maximum Earnings From Taxi.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "53b294c92a72711d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Weight Lifting and Rehab/Managing ADHD.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -117,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Math/Chaos Theory.md",
+                "file": "Weight Lifting and Rehab/Managing ADHD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +181,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Math/Chaos Theory.md",
+                "file": "Weight Lifting and Rehab/Managing ADHD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Math/Chaos Theory.md"
+                "file": "Weight Lifting and Rehab/Managing ADHD.md"
               }
             }
           },
@@ -192,8 +239,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "e9a8c49508f3cfe2",
+  "active": "53b294c92a72711d",
   "lastOpenFiles": [
+    "Leetcode Questions/LC-2008. Maximum Earnings From Taxi.md",
+    "Algos/0-1 Knapsack.md",
+    "Leetcode Questions/LC-51. N-Queens.md",
     "Math/Chaos Theory.md",
     "Templates/Generic.md",
     "Templates/Callout.md",
@@ -208,11 +258,9 @@
     "Cooking/attachments/Pasted image 20230816155952.png",
     "Cooking/attachments",
     "Code/Shortcuts.md",
-    "Leetcode Questions/LC-2008. Maximum Earnings From.md",
     "Algos Practice/Intuition/Dynamic Programming (DP).md",
     "Algos Practice/Intuition/Greedy.md",
     "Code/ZSH.md",
-    "Algos/0-1 Knapsack.md",
     "home.md",
     "Code/SwiftUI/XcoShortcuts.md",
     "Algos/Maze-solving Algorithms.md",
@@ -221,7 +269,6 @@
     "Cooking/Gyudon.md",
     "Cooking/Gamjatang.md",
     "Cooking/酸辣汤.md",
-    "Cooking/Untitled.md",
     "Cooking",
     "Weight Lifting and Rehab",
     "History",

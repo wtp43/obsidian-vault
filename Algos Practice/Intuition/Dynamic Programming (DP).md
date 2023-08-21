@@ -1,7 +1,7 @@
 
 # Dynamic Programming
 - [ ] 01 Knapsack
-	- [ ] [[LC-2008. Maximum Earnings From]]
+	- [ ] [[LC-2008. Maximum Earnings From Taxi]]
 
 
 
