@@ -42,46 +42,12 @@
             }
           },
           {
-            "id": "1af7ef86578ce301",
+            "id": "fa863280a7af3f57",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algos/0-1 Knapsack.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7497be14ac3526bb",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "7b4b8188d0d47323",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Leetcode Questions/LC-2008. Maximum Earnings From Taxi.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "53b294c92a72711d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Weight Lifting and Rehab/Managing ADHD.md",
+                "file": "Weight Lifting and Rehab/Upper Cross Syndrome Rehab.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -89,7 +55,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -147,8 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288,
-    "collapsed": true
+    "width": 288
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -164,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Weight Lifting and Rehab/Managing ADHD.md",
+                "file": "Weight Lifting and Rehab/Upper Cross Syndrome Rehab.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Weight Lifting and Rehab/Managing ADHD.md",
+                "file": "Weight Lifting and Rehab/Upper Cross Syndrome Rehab.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -204,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Weight Lifting and Rehab/Managing ADHD.md"
+                "file": "Weight Lifting and Rehab/Upper Cross Syndrome Rehab.md"
               }
             }
           },
@@ -239,21 +204,26 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "53b294c92a72711d",
+  "active": "fa863280a7af3f57",
   "lastOpenFiles": [
+    "Math/Chaos Theory.md",
+    "Weight Lifting and Rehab/Upper Cross Syndrome Rehab.md",
+    "Templates/LC.md",
+    "Weight Lifting and Rehab/Upper Cross Syndrome Stretches and Strengthening.pdf",
+    "Weight Lifting and Rehab/attachments/Pasted image 20230822141059.png",
+    "Weight Lifting and Rehab/attachments/Pasted image 20230822141013.png",
+    "Weight Lifting and Rehab/attachments",
+    "Weight Lifting and Rehab/Managing ADHD.md",
     "Leetcode Questions/LC-2008. Maximum Earnings From Taxi.md",
     "Algos/0-1 Knapsack.md",
     "Leetcode Questions/LC-51. N-Queens.md",
-    "Math/Chaos Theory.md",
     "Templates/Generic.md",
     "Templates/Callout.md",
-    "Templates/LC.md",
     "Templates/Misc.md",
     "Templates/Recipe.md",
     "Math/Series.md",
     "Code/VIM.md",
     "Music/Just some thoughts.md",
-    "Weight Lifting and Rehab/Managing ADHD.md",
     "Cooking/Meal Plan.md",
     "Cooking/attachments/Pasted image 20230816155952.png",
     "Cooking/attachments",
@@ -267,8 +237,6 @@
     "Cooking/Recipes.md",
     "Cooking/Pepper Lunch.md",
     "Cooking/Gyudon.md",
-    "Cooking/Gamjatang.md",
-    "Cooking/酸辣汤.md",
     "Cooking",
     "Weight Lifting and Rehab",
     "History",
