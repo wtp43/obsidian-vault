@@ -54,8 +54,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,7 +112,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288
+    "width": 288,
+    "collapsed": true
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Weight Lifting and Rehab/Upper Cross Syndrome Rehab.md",
+                "file": "Templates/Generic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Weight Lifting and Rehab/Upper Cross Syndrome Rehab.md",
+                "file": "Templates/Generic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Weight Lifting and Rehab/Upper Cross Syndrome Rehab.md"
+                "file": "Templates/Generic.md"
               }
             }
           },
@@ -204,10 +204,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "fa863280a7af3f57",
+  "active": "2b199728baa64235",
   "lastOpenFiles": [
-    "Math/Chaos Theory.md",
+    "Cooking/Meal Plan.md",
+    "Templates/Generic.md",
     "Weight Lifting and Rehab/Upper Cross Syndrome Rehab.md",
+    "Math/Chaos Theory.md",
     "Templates/LC.md",
     "Weight Lifting and Rehab/Upper Cross Syndrome Stretches and Strengthening.pdf",
     "Weight Lifting and Rehab/attachments/Pasted image 20230822141059.png",
@@ -217,14 +219,12 @@
     "Leetcode Questions/LC-2008. Maximum Earnings From Taxi.md",
     "Algos/0-1 Knapsack.md",
     "Leetcode Questions/LC-51. N-Queens.md",
-    "Templates/Generic.md",
     "Templates/Callout.md",
     "Templates/Misc.md",
     "Templates/Recipe.md",
     "Math/Series.md",
     "Code/VIM.md",
     "Music/Just some thoughts.md",
-    "Cooking/Meal Plan.md",
     "Cooking/attachments/Pasted image 20230816155952.png",
     "Cooking/attachments",
     "Code/Shortcuts.md",
