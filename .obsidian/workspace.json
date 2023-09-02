@@ -8,50 +8,16 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e9a8c49508f3cfe2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Math/Chaos Theory.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "368eaa5124aa0f2e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Weight Lifting and Rehab/Workout Routine (Rehab).md",
+                "file": "Weight Lifting and Rehab/Health.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
-            }
-          },
-          {
-            "id": "9b3400126c67b597",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Memory/Memory Training.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c2eccfb7af4e9ed6",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           },
           {
@@ -60,15 +26,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Weight Lifting and Rehab/Managing ADHD.md",
+                "file": "Weight Lifting and Rehab/Career Planning.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -143,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Weight Lifting and Rehab/Managing ADHD.md",
+                "file": "Weight Lifting and Rehab/Health.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Weight Lifting and Rehab/Managing ADHD.md",
+                "file": "Weight Lifting and Rehab/Health.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Weight Lifting and Rehab/Managing ADHD.md"
+                "file": "Weight Lifting and Rehab/Health.md"
               }
             }
           },
@@ -218,11 +183,21 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "f971b59105855825",
+  "active": "368eaa5124aa0f2e",
   "lastOpenFiles": [
-    "Memory/Memory Training.md",
+    "Weight Lifting and Rehab/Career Planning.md",
+    "Weight Lifting and Rehab/Managing ADHD.md",
+    "Weight Lifting and Rehab/Running.md",
+    "Weight Lifting and Rehab/attachments/Pasted image 20230901135355.png",
     "Weight Lifting and Rehab/Workout Routine (Rehab).md",
+    "Cooking/Tiramisu.md",
+    "Cooking/Recipes.md",
+    "Templates/Recipe.md",
+    "Weight Lifting and Rehab/attachments/Pasted image 20230901133715.png",
+    "Weight Lifting and Rehab/Health.md",
     "Math/Chaos Theory.md",
+    "Memory/Memory Training.md",
+    "Leetcode Questions/LC-787. Cheapest Flights Within K Stops.md",
     "Weight Lifting and Rehab/Upper Cross Syndrome Rehab.md",
     "Templates/Generic.md",
     "Cooking/Meal Plan.md",
@@ -231,13 +206,11 @@
     "Weight Lifting and Rehab/attachments/Pasted image 20230822141059.png",
     "Weight Lifting and Rehab/attachments/Pasted image 20230822141013.png",
     "Weight Lifting and Rehab/attachments",
-    "Weight Lifting and Rehab/Managing ADHD.md",
     "Leetcode Questions/LC-2008. Maximum Earnings From Taxi.md",
     "Algos/0-1 Knapsack.md",
     "Leetcode Questions/LC-51. N-Queens.md",
     "Templates/Callout.md",
     "Templates/Misc.md",
-    "Templates/Recipe.md",
     "Math/Series.md",
     "Code/VIM.md",
     "Music/Just some thoughts.md",
@@ -246,12 +219,6 @@
     "Code/Shortcuts.md",
     "Algos Practice/Intuition/Dynamic Programming (DP).md",
     "Algos Practice/Intuition/Greedy.md",
-    "Code/ZSH.md",
-    "home.md",
-    "Code/SwiftUI/XcoShortcuts.md",
-    "Algos/Maze-solving Algorithms.md",
-    "Cooking/Recipes.md",
-    "Cooking/Pepper Lunch.md",
     "Cooking",
     "Weight Lifting and Rehab",
     "History",
