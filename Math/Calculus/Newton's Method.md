@@ -1,7 +1,6 @@
 ---
 title:  "Newton's Method"
 tags:
-- 
 created: 2023-01-26
 ---
 

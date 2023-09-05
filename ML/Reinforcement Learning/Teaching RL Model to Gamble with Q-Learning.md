@@ -1,7 +1,6 @@
 ---
 title:  "Teaching RL Model to Game with Q Learning"
 tags:
-- 
 created: 2023-02-04
 ---
 

@@ -1,7 +1,6 @@
 ---
 title:  "Kelly Criterion"
 tags:
-- 
 created: 2023-02-05
 ---
 

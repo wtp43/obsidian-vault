@@ -1,7 +1,7 @@
 ---
 title:  "Chaos Theory"
 tags:
-	- math
+- math
 created: 2023-08-17
 ---
 

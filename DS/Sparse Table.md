@@ -2,7 +2,6 @@
 title:  "Sparse Table"
 tags:
 - ds
-- 
 created: 2022-12-16
 ---
 
