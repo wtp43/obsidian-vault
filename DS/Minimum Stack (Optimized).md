@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 ## Unoptimized
 ```python
 min_stack = []

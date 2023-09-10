@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 I have a general rule for trading sessions: If you have a choppy morning, you have a trending afternoon. If you have a trending morning, you have a choppy afternoon. This applies to 85% of sessions; the other 5% falls under trend days where the market moves one way.
 
 

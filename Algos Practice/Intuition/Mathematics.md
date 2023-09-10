@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # Mathematics
 
 To get the number of items in a range ``[l,r]``: 

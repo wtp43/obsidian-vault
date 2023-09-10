@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Cyclic Sort"
 tags:
 - algo

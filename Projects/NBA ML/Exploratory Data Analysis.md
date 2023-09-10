@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # Underdog win percentage for underdogs with > x odds
 - graph it
 

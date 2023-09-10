@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # Breakfast
 - Two salted eggs
 ![[Pasted image 20230816155952.png]]

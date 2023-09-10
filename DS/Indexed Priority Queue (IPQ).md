@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Indexed Priority Queue"
 tags:
 - ds

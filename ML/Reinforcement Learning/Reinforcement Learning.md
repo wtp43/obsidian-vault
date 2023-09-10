@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 Agent takes an action and there is either a reward or punishment from that environment.
 
 # Challenges

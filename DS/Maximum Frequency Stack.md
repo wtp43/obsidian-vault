@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Maximum Frequency Stack"
 tags:
 - ds

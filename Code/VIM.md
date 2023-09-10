@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # Navigation
 Directions
 - hl

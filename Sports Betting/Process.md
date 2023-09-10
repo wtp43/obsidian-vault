@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 Given where you are, how can you best make money today?
 - People are often working towards a future that never arrives, which is death to pnl.
 - What can you be doing today?

@@ -11,5 +11,7 @@
   "obsidian-dynamic-toc",
   "highlightr-plugin",
   "obsidian-kanban",
-  "obsidian-vimrc-support"
+  "obsidian-vimrc-support",
+  "digitalgarden",
+  "obsidian-linter"
 ]

@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Floyd Warshall's Algorithm"
 tags:
 - algo

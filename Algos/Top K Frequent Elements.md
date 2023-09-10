@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 ## Top K Frequent Elements
 - Dictionary then sort by frequency
 - Append 

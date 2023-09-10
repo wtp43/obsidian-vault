@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # Sichuan Food
 https://www.chinasichuanfood.com/sichuan-recipes/
 - [[酸辣汤]]
@@ -15,4 +19,3 @@ https://www.hwcmagazine.com/recipe/pepper-lunch-steak-and-rice-sizzle/
 
 # Desserts
 - [[Tiramisu]]
-- 

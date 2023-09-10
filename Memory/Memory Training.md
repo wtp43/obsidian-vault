@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 Break motor training
 - Play extremely slow
 - Force yourself to interact with harmony

@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 
 # Edge Extraction
 - Where does the edge come from to use in our kelly bet criterion?
@@ -41,7 +44,6 @@ Step 1:
 	- The best trade ideas are bleeding obvious
 - Core Idea: 
 	- Underdogs are usually mispriced
-	- 
 
 
 

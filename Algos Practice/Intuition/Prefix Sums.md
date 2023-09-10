@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 Helps in subarray problems because subarrays are made up of contiguous elements
 
 Useful for sum of ranges.

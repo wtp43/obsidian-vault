@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "LFU Cache"
 tags:
 - ds

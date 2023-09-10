@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 - Keeps track of the minimum value so far but works like a queue
 
 ## Using Two Stacks 

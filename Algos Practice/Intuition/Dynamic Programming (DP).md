@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 
 # Dynamic Programming
 - [ ] 01 Knapsack

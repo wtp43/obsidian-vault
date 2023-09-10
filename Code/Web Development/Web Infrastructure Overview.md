@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # Building Blocks of a Web Application
 
 There are a few things you need to consider when building modern applications. Such as:

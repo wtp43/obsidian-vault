@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "LC 3. Longest Substring Without Repeating Characters"
 tags:
 - lc-medium

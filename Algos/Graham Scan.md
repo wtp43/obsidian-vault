@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Graham Scan"
 tags:
 - algo

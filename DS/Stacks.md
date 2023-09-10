@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # Stacks
 Problems that require a stack are generally greedy.
 Aside from scheduling which requires sorting, most of these problems take advantage of not requiring a sorted order. We input items onto a stack until we reach an item that invalidates previous entries. Pop all non-optimal items until you reach one that is optimal, then append the current item.

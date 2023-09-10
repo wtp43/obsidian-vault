@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Iterative Deepening Search (IDS)"
 tags:
 - dfs

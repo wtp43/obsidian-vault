@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Advanced Questions"
 tags:
 - lc-hard

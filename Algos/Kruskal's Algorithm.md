@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 - Greedy algorithm to finding minimum spanning trees that is more efficient on sparse graphs than Prim's algorithm
 - Kruskal's algorithm repeatedly considers the lightest remaining edge and adds it if the two vertices lie within different components (to prevent cycles)
 - Union-find can be used to store disjoint sets

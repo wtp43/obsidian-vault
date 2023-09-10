@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Quick Sort"
 tags:
 - sort

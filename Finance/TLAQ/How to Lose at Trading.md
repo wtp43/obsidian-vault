@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 
 # Incorrect Reasons
 - Not because of lousy buy and sell decision

@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "LC 2. Add Two Numbers"
 tags:
 - linked-list

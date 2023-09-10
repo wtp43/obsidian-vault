@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Types of Money"
 tags:
 - econ

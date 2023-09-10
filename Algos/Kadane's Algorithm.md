@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 ## Maximum Subarray
 - Ask interviewer "Are subarrays with length 0 valid?"
 ```python

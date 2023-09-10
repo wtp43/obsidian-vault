@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 tags:
 - graph
 - dfs
@@ -32,4 +33,3 @@ def dfs(graph, at):
 
 # Approach #2: [[Union Find (Disjoint Sets)]]
 - Union-find is more useful if the graph isn't in memory or the graph is dynamic
-- 

@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # Rectangle
 Left half: ctrl + cmd + H
 Right half: ctrl + cmd + L

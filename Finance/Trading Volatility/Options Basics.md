@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Options Basics"
 tags:
 - options

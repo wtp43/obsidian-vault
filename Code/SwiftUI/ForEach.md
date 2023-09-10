@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 https://stackoverflow.com/questions/67977092/swiftui-initialzier-requires-string-conform-to-identifiable
 
 

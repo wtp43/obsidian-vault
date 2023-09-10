@@ -4,11 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "09c791dfbac4a0b8",
+        "id": "dc1255501b70bceb",
         "type": "tabs",
         "children": [
           {
-            "id": "f971b59105855825",
+            "id": "f963256d980bc5b1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Code/Web Development/Microservices Architecture.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3f03e841b4a898d6",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -16,12 +29,25 @@
             }
           },
           {
-            "id": "3e39c6ff68ecc3f8",
+            "id": "d8db9b1d6dded0cf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/WebDev/Web Infrastructure Overview.md",
+                "file": "Weight Lifting and Rehab/Workout Routine (Rehab).md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a30a9361edc54efc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Weight Lifting and Rehab/Managing ADHD.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -29,7 +55,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -104,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/WebDev/Web Infrastructure Overview.md",
+                "file": "Weight Lifting and Rehab/Managing ADHD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/WebDev/Web Infrastructure Overview.md",
+                "file": "Weight Lifting and Rehab/Managing ADHD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/WebDev/Web Infrastructure Overview.md"
+                "file": "Weight Lifting and Rehab/Managing ADHD.md"
               }
             }
           },
@@ -176,11 +202,42 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "workspaces:Manage workspace layouts": false
+      "workspaces:Manage workspace layouts": false,
+      "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "3e39c6ff68ecc3f8",
+  "active": "a30a9361edc54efc",
   "lastOpenFiles": [
+    "Weight Lifting and Rehab/Workout Routine (Rehab).md",
+    "Weight Lifting and Rehab/Upper Cross Syndrome Rehab.md",
+    "Weight Lifting and Rehab/Running.md",
+    "Leetcode Questions/LC-684. Redundant Connection.md",
+    "Weight Lifting and Rehab/Managing ADHD.md",
+    "Memory/Prevent Executive Dysfunction.md",
+    "Sports Betting/Kelly Criterion.md",
+    "Leetcode Questions/LC-3. Longest Substring Without Repeating Characters.md",
+    "Weight Lifting and Rehab/Health.md",
+    "Algos Practice/negative weight cycles.md",
+    "Algos Practice/Range Minimum Query Problem.md",
+    "Books/Vocabulary.md",
+    "Books/Man's Search for Meaning.md",
+    "attachments/Pasted image 20221208173515.png",
+    "Crypto/Bitcoin.md",
+    "Crypto/Mastering Ethereum.md",
+    "Crypto/Web3.md",
+    "Weight Lifting and Rehab/Wrist Rehab for TFCC tear.md",
+    "2023-08-12.md",
+    "Weight Lifting and Rehab/Upper Cross Syndrome Stretches and Strengthening.pdf",
+    "Weight Lifting and Rehab/Career Planning.md",
+    "Cooking/Tiramisu.md",
+    "Cooking/Gamjatang.md",
+    "Algos/Counting Sort.md",
+    "Algos/Backtracking.md",
+    "Algos/Algorithms Database.md",
+    "Cooking/酸辣汤.md",
+    "Code/ZSH.md",
+    "obsidian icon.jpg",
+    "obsidian icon.webp",
     "content/ML/Reinforcement Learning/attachments/Pasted image 20230204154315.png",
     "content/ML/Reinforcement Learning/attachments/Pasted image 20230204154314.png",
     "content/Math/Statistics/attachments/Pasted image 20230211175247.png",
@@ -188,44 +245,14 @@
     "content/Weight Lifting and Rehab/attachments/Pasted image 20230901135355.png",
     "content/Weight Lifting and Rehab/attachments/Pasted image 20230901133715.png",
     "content/Weight Lifting and Rehab/attachments/Pasted image 20230822141059.png",
-    "content/Weight Lifting and Rehab/attachments/Pasted image 20230822141013.png",
     "content/ML/Reinforcement Learning/attachments",
-    "content/ML/Reinforcement Learning/Teaching RL Model to Gamble with Q-Learning.md",
-    "content/ML/Reinforcement Learning/Single Agent Reinforcement Learning Model.md",
-    "content/ML/Reinforcement Learning/Resources.md",
-    "content/ML/Reinforcement Learning/Reinforcement Learning.md",
-    "content/ML/Reinforcement Learning/Reinforcement Learning Environment.md",
-    "content/ML/Reinforcement Learning/Policy.md",
-    "content/Sports Betting/attachments/Pasted image 20230218160314.png",
-    "content/Projects/NBA ML/RL Model Design.md",
-    "content/Projects/NBA ML/ML.md",
-    "content/Projects/NBA ML/Exploratory Data Analysis.md",
     "content/Math/Statistics/attachments",
-    "content/Math/Statistics/Statistics Done Wrong.md",
-    "content/Math/Statistics/Sorting Betting Opportunities.md",
-    "content/Math/Statistics/Normal Distribution.md",
-    "content/Math/ML/ML.md",
-    "content/Math/Linear Algebra/Algebra.md",
-    "content/Math/Calculus/Newton's Method.md",
-    "content/Leetcode Questions/attachments/Pasted image 20230124003324.png",
-    "content/Leetcode Questions/attachments/Pasted image 20230107152902.png",
-    "content/Finance/Trading Volatility/The Second Leg Down.md",
-    "content/Finance/Trading Volatility/Options Basics.md",
-    "content/Finance/Trading Volatility/Basic Trading.md",
-    "content/Finance/TLAQ/How to Lose at Trading.md",
-    "content/Finance/TLAQ/Good Places to Find +EV.md",
-    "content/Finance/TLAQ/Basic.md",
-    "content/Finance/Economics/Central Banking 101.md",
-    "content/Finance/Economics/Types of Money.md",
-    "content/Finance/AlgoTrading/Some Basic Strategies-Implementations.md",
-    "content/Finance/AlgoTrading/DOM.md",
     "content/Algos Practice/Intuition/attachments",
     "content/Weight Lifting and Rehab/attachments",
     "content/Weight Lifting and Rehab/Upper Cross Syndrome Stretches and Strengthening.pdf",
     "content/ML/Reinforcement Learning",
     "content/Sports Betting/attachments",
     "content/Projects/NBA ML",
-    "content/Math/Statistics",
-    "content/Math/ML"
+    "content/Math/Statistics"
   ]
 }

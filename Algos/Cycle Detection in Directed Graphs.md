@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Cycle Detection in Directed Graphs"
 tags:
 - algo

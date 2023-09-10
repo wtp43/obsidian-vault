@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Bidirectional Dictionary"
 tags:
 - ds

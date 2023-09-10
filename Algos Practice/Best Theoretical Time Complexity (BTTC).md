@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 
 # Identify the Best Theoretical Time Complexity of the solution
 - The BTTC of finding the sum of numbers in array is O(n) because you have to look at every value in the array at least once

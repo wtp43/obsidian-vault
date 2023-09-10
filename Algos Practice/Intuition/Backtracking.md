@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 It's important to remember that backtracking is just DFS except we can visit a node n times. Time complexity O(n!)
 
 # Backtracking
@@ -17,7 +20,6 @@ It's important to remember that backtracking is just DFS except we can visit a n
 - [ ] [[LC-131. Palindrome Partitioning]]
 - We want to partition a string s such that every substring of the partition is a palindrome
 - When backtracking, it's important to determine if we are at a valid step. Only if we are do we proceed to the next step (continue recursing).
-- 
 # Advanced Backtracking
 [[LC-465. Optimal Account Balancing]]
 - After a given list of transactions, we want to settle all the debts
@@ -28,5 +30,4 @@ It's important to remember that backtracking is just DFS except we can visit a n
 - Time complexity: O(n!)
 - To iterate a dictionary 
 	- list(dict.keys()) or list(dict.values())
-- 
 

@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Hashmaps"
 tags:
 - ds
@@ -71,7 +72,6 @@ Reference: https://cs.stackexchange.com/questions/11029/why-is-it-best-to-use-a-
 ## Separate Chaining: 
 - Common data structures used to implement chaining include: linked list, arrays, binary trees, self balancing trees, etc
 - Disadvantage is that a lot of memory used to build linked lists could have just been to increase the table size
-- 
 > [!question]+ 
 > **How do you maintain O(1) insertion and lookup time complexity once the hashmap gets really full and linked list chains are long?** 
 > 

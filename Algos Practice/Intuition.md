@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 >[!summary]+ Contents
 >```toc
 >style: number
@@ -21,7 +24,6 @@ Here, we are interested in building our intuition. In other words, our ability t
 [[LC-14. Longest Common Prefix]]: T(O(len()))
 - Find the longest common prefix that exists among all strings
 - Update the common prefix after checking all strings in each loop
-- 
 https://leetcode.com/problems/is-subsequence/description/
 https://leetcode.com/problems/unique-email-addresses/
 https://leetcode.com/problems/distinct-subsequences/
@@ -31,7 +33,6 @@ https://leetcode.com/problems/distinct-subsequences/
 [[LC-131. Palindrome Partitioning]]
 - We want to partition a string s such that every substring of the partition is a palindrome
 - When backtracking, it's important to determine if we are at a valid step. Only if we are do we proceed to the next step (continue recursing).
-- 
 https://leetcode.com/problems/palindromic-substrings/description/
 
 https://leetcode.com/problems/robot-room-cleaner/solutions/265763/robot-room-cleaner/?orderBy=most_votes
@@ -601,4 +602,3 @@ To get the number of items in a range ``[l,r]``:
 ## Graphs
 - Can we assume there are no cycles?
 	- Not needed if structure is a tree
-- 

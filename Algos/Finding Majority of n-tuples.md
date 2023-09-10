@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Finding Majority of n tuples"
 tags:
 

@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 1. The idea is hard to back test
 2. The data is hard to acquire
 3. A known input can be transformed into something novel or hard to compute

@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # Todo
 FastAPI (finish by monday)
 IOS App + landing page

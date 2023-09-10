@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # Data Structures (Advanced)
 - [ ] [[LFU Cache]]
 - [ ] [[Fibonacci Heap]]

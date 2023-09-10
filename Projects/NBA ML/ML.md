@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # To do
 Day 1
 - [ ] Feature engineering
@@ -7,7 +10,6 @@ Day 1
 		- [ ] player stats
 			- [ ] past 30 games ppg, 4 factors
 			- [ ] past 30 games avg minutes played
-			- [ ] 
 		- [ ] player fatigue - minutes played in last week
 			- [ ] factor in away minutes by 1.x
 	- [ ] team factor

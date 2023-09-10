@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Binary Search and Bisect"
 tags:
 - algo

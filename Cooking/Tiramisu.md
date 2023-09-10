@@ -1,10 +1,7 @@
 ---
-title:  "Tiramisu"
-tags:
-- 
-created: 2023-09-01
----
+dg-publish: true
 
+---
 >[!summary]+ Contents
 >```toc
 style: number
@@ -13,8 +10,8 @@ max_depth:6
 >```
 
 
-# Tiramisu
 
+# Tiramisu
 
 # Nutritional Value
 - Calories: 

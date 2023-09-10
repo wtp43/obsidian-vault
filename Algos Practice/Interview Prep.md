@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 What is Big O notation?
 
 What is a Complete Binary Tree?

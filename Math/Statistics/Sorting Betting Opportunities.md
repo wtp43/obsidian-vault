@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Sorting Betting Opportunities"
 tags:
 - stats

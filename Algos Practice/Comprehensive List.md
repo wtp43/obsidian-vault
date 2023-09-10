@@ -1,9 +1,11 @@
+---
+dg-publish: true
+---
 
 # Implement and test 
 - [ ] Prim's Algorithm
 - [ ] Indexed Priority Queue
 - [x] Cycle detection in DAG (3 coloring) with topological sort
-- [ ] 
 # Behavioural 
 
 https://www.techinterviewhandbook.org/behavioral-interview/
@@ -115,7 +117,6 @@ https://www.techinterviewhandbook.org/behavioral-interview/
 	- [x] Merge Sort
 - [ ] Sparse Table
 	- [ ] https://cp-algorithms.com/data_structures/sparse-table.html
-	- [ ] 
 - [ ] String Matching
 	- [ ] Prefix Function: KMP: https://www.scaler.com/topics/data-structures/kmp-algorithm/
 	- [ ] https://leetcode.com/problems/palindrome-pairs/description/

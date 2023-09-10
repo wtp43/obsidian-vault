@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 Question: How can an idea be helpful?
 Process: Convince Correctness at each step
 Review: Shorten solution (Try to see whole sol. at a glance)

@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 ```swift
 #if os(iOS)
 import UIKit

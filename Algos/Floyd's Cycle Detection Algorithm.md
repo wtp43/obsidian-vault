@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Floyd's Cycle Detection Algorithm"
 tags:
 - algo

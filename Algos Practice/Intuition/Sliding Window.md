@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 
 - Sum of window and prefix sums are useful
 - <mark style="background: #FFB86CA6;">What is the state of the window we need to keep track of?</mark>

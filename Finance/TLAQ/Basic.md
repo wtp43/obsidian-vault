@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # Terminology 
 - A basis point is **one-hundredth of a percentage point**. For instance, one basis point equals 0.01%, or 0.0001. One hundred basis points equal 1%.
 

@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # UI
 https://apps.apple.com/us/app/zenti-meditation-timer/id1587887322
 - list row view 

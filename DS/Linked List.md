@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Linked LIst"
 tags:
 - ds

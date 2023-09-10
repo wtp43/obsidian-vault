@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 Max heaps
 To make a max heap, push -x for x in array onto a min heap.
 

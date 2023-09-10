@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # Trie
 - [ ] [[LC-1268. Search Suggestions System]]
 - Preorder traversal of a trie

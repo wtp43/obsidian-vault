@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 ```swift
 GroupBox {
     Text("Your account")

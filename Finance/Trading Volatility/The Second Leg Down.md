@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "The Second Leg Down"
 author: Hari Krishnan
 tags:

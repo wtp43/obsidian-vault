@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Bucket Sort"
 tags:
 - algo

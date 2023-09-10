@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "0 1 Knapsack"
 tags:
 - greedy

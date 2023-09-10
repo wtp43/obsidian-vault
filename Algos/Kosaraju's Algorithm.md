@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Kosaraju's Algorithm"
 tags:
 - algo

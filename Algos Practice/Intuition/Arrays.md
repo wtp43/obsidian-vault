@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 Number of items in an array = j-i+1
 
 # Arrays 

@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 
 
 https://bitcoin.org/bitcoin.pdf

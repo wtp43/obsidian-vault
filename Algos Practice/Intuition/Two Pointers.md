@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # Two pointers
 - [ ] TwoSum: 
 Find two elements in an array that sum to the target

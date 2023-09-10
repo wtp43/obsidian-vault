@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 - Lower the threshold to get started
 	- Prepare
 - Start with the easiest task to build momentum

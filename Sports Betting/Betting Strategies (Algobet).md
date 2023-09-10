@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 Generally if you are looking to bet the favorite, take them early. If you are looking to bet the underdog, take them later. For the most part, wherever the public is betting on will be where the line moves.
 
 
@@ -249,4 +252,3 @@ https://colab.research.google.com/drive/1FmnCJ1CI98khBu88kezLXKqvS7U8Nw_h?usp=sh
 	- spreads might be +ev
 	- we want to check movl margin^2
 - Time of game
-- 

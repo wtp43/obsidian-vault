@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Boyer Moore Voting Algorithm"
 tags:
 - algo

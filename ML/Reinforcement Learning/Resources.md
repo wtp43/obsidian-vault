@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # IMPLEMENT FIRST
 
 Teaching the Machine to gamble with Q-Learning

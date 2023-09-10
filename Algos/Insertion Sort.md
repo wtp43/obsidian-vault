@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Insertion Sort"
 tags:
 - algo

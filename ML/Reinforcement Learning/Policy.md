@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Policy"
 tags:
 created: 2023-02-05

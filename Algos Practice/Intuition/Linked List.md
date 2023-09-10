@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 Linked List
 
 - [ ] [[LC-206. Reverse Linked List]]

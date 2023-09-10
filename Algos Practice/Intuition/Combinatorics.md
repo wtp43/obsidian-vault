@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # Combinatorics
 - [x] https://leetcode.com/problems/count-collisions-of-monkeys-on-a-polygon/description/
 - There are n monkeys at pos i in an array. 

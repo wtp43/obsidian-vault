@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Maze solving Algorithms"
 tags:
 - backtracking

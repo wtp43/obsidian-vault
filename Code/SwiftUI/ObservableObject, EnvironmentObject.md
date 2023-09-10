@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 
 - Observable objects can have `@Published` properties so that changes to those variables are published to the Views
 - Changes can also be manually published by using `objectWillChange.send()`

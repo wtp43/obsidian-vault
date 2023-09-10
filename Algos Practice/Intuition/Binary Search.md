@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 
 - [ ] [[LC-1752. Check if Array Is Sorted and Rotated]] (Find the pivot if sorted array is rotated)
 - Important to note that the first and last num are connected

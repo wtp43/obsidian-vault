@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Intersection of Intervals"
 tags:
 - sweep-line

@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Indexed D ary Heap"
 tags:
 - ds

@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Bloom Filter"
 tags:
 - ds

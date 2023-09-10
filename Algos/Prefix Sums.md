@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Prefix Sums"
 tags:
 - algo

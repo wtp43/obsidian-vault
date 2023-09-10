@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 -   Dynamic arrays (double array size when out of space, copy contents to new array)
 -   Amortized complexity is O(n): Inserting n elements cost n. Doubling each array costs 2n.
 

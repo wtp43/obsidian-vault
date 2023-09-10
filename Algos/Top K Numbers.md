@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Kth Largest"
 tags:
 - algo

@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # Types of Graphs
 ## Undirected Graph 
 - Edges are bidirectional

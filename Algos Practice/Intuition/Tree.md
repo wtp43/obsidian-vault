@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # Basic
 
 - [ ] [[LC-108. Convert Sorted Array to Binary Search Tree]]
@@ -5,7 +8,6 @@
 	- Pick the middle as the root (l+r)//2
 	- Recursively build the left and right child while omitting the middle
 	- Base case: l > r
-- 
 
 - [ ] [[LC-572. Subtree of Another Tree]]
 	- Check the subtree for every node in the other tree

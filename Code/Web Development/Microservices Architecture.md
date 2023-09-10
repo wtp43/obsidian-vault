@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 title:  "Microservices Architecture"
 tags:
 - microservices

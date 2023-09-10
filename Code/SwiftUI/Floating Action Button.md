@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 ```swift
 struct FloatingButton: View {
     let action: () -> Void
