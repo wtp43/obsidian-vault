@@ -47,7 +47,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Weight Lifting and Rehab/Managing ADHD.md",
+                "file": "Entrepreneurship/Entrepreneurship Seminar - Gray Graffam.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Weight Lifting and Rehab/Managing ADHD.md",
+                "file": "Entrepreneurship/Entrepreneurship Seminar - Gray Graffam.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Weight Lifting and Rehab/Managing ADHD.md",
+                "file": "Entrepreneurship/Entrepreneurship Seminar - Gray Graffam.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Weight Lifting and Rehab/Managing ADHD.md"
+                "file": "Entrepreneurship/Entrepreneurship Seminar - Gray Graffam.md"
               }
             }
           },
@@ -208,11 +208,13 @@
   },
   "active": "a30a9361edc54efc",
   "lastOpenFiles": [
+    "Weight Lifting and Rehab/Managing ADHD.md",
+    "Entrepreneurship/Entrepreneurship Seminar - Gray Graffam.md",
+    "Entrepreneurship",
     "Weight Lifting and Rehab/Workout Routine (Rehab).md",
     "Weight Lifting and Rehab/Upper Cross Syndrome Rehab.md",
     "Weight Lifting and Rehab/Running.md",
     "Leetcode Questions/LC-684. Redundant Connection.md",
-    "Weight Lifting and Rehab/Managing ADHD.md",
     "Memory/Prevent Executive Dysfunction.md",
     "Sports Betting/Kelly Criterion.md",
     "Leetcode Questions/LC-3. Longest Substring Without Repeating Characters.md",
@@ -235,7 +237,6 @@
     "Algos/Backtracking.md",
     "Algos/Algorithms Database.md",
     "Cooking/酸辣汤.md",
-    "Code/ZSH.md",
     "obsidian icon.jpg",
     "obsidian icon.webp",
     "content/ML/Reinforcement Learning/attachments/Pasted image 20230204154315.png",
@@ -252,7 +253,6 @@
     "content/Weight Lifting and Rehab/Upper Cross Syndrome Stretches and Strengthening.pdf",
     "content/ML/Reinforcement Learning",
     "content/Sports Betting/attachments",
-    "content/Projects/NBA ML",
-    "content/Math/Statistics"
+    "content/Projects/NBA ML"
   ]
 }
