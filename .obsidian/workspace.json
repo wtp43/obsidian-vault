@@ -55,9 +55,17 @@
                 "file": "Code/Web Development/Web Development Progress.md"
               }
             }
+          },
+          {
+            "id": "942226c25b3a4aa9",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -132,7 +140,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Weight Lifting and Rehab/Managing ADHD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +156,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Weight Lifting and Rehab/Managing ADHD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,9 +177,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Weight Lifting and Rehab/Managing ADHD.md"
-              }
+              "state": {}
             }
           },
           {
@@ -218,10 +222,10 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "0bd1cd7c388d1b9d",
+  "active": "942226c25b3a4aa9",
   "lastOpenFiles": [
-    "Code/Web Development/Web Development Progress.md",
     "Weight Lifting and Rehab/Managing ADHD.md",
+    "Code/Web Development/Web Development Progress.md",
     "Code/Frontend/CSS.md",
     "Music/Just some thoughts.md",
     "Weight Lifting and Rehab/Upper Cross Syndrome Rehab.md",
