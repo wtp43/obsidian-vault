@@ -47,35 +47,40 @@
             }
           },
           {
-            "id": "708e7a260ca076c2",
+            "id": "e5ea6faa426ad1b2",
             "type": "leaf",
             "state": {
               "type": "kanban",
               "state": {
-                "file": "Code/Web Development/Web Development Progress.md"
+                "file": "Projects/Project Board.md"
               }
             }
           },
           {
-            "id": "942226c25b3a4aa9",
+            "id": "6b84dbb2969815b9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "kanban",
+              "state": {
+                "file": "Goals/Goals.md"
+              }
             }
           },
           {
-            "id": "ea83797b828fb7c1",
+            "id": "631d675e3d8c6276",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.4.14"
+                "file": "Dashboard.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -133,8 +138,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288,
-    "collapsed": true
+    "width": 288
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -150,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/Frontend/CSS.md",
+                "file": "Goals/Goals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/Frontend/CSS.md",
+                "file": "Goals/Goals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/Frontend/CSS.md"
+                "file": "Goals/Goals.md"
               }
             }
           },
@@ -236,13 +240,31 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "ea83797b828fb7c1",
+  "active": "6b84dbb2969815b9",
   "lastOpenFiles": [
-    "Weight Lifting and Rehab/Managing ADHD.md",
+    "Projects/Project Board.md",
+    "Weight Lifting and Rehab/Upper Cross Syndrome Rehab.md",
+    "Goals/Goals.md",
+    "Dashboard.md",
+    "Templates/autotracking_goal_item_template.md",
     "Code/Web Development/Web Development Progress.md",
+    "Templates/project_item_template.md",
+    "Templates/movie template.md",
+    "Templates/goal_item_template.md",
+    "Templates/New Note - Explain with AI.md",
+    "Templates/templates",
+    "views/progress/view.js",
+    "views/total-progress-bar/view.js",
+    "views/target/view.js",
+    "views/progress-bar/view.js",
+    "views/progress",
+    "views/total-progress-bar",
+    "views/target",
+    "views/progress-bar",
+    "views",
+    "Weight Lifting and Rehab/Managing ADHD.md",
     "Code/Frontend/CSS.md",
     "Music/Just some thoughts.md",
-    "Weight Lifting and Rehab/Upper Cross Syndrome Rehab.md",
     "Leetcode Questions/LC-55. Jump Game.md",
     "Code/Web Development/Microservices Architecture.md",
     "Weight Lifting and Rehab/attachments/Pasted image 20230915164029.png",
@@ -250,7 +272,6 @@
     "Code/Web Development/Web Development Path.md",
     "Entrepreneurship/Entrepreneurship Seminar - Gray Graffam.md",
     "Weight Lifting and Rehab/Workout Routine (Rehab).md",
-    "Entrepreneurship",
     "Weight Lifting and Rehab/Running.md",
     "Leetcode Questions/LC-684. Redundant Connection.md",
     "Memory/Prevent Executive Dysfunction.md",
@@ -258,16 +279,7 @@
     "Leetcode Questions/LC-3. Longest Substring Without Repeating Characters.md",
     "Weight Lifting and Rehab/Health.md",
     "Algos Practice/negative weight cycles.md",
-    "Algos Practice/Range Minimum Query Problem.md",
-    "Books/Vocabulary.md",
-    "Books/Man's Search for Meaning.md",
     "attachments/Pasted image 20221208173515.png",
-    "Crypto/Bitcoin.md",
-    "Crypto/Mastering Ethereum.md",
-    "Crypto/Web3.md",
-    "Weight Lifting and Rehab/Wrist Rehab for TFCC tear.md",
-    "2023-08-12.md",
-    "Weight Lifting and Rehab/Upper Cross Syndrome Stretches and Strengthening.pdf",
     "obsidian icon.jpg",
     "obsidian icon.webp",
     "content/ML/Reinforcement Learning/attachments/Pasted image 20230204154315.png",
@@ -275,14 +287,6 @@
     "content/Math/Statistics/attachments/Pasted image 20230211175247.png",
     "content/Algos Practice/Intuition/attachments/Pasted image 20230203202802.png",
     "content/Weight Lifting and Rehab/attachments/Pasted image 20230901135355.png",
-    "content/Weight Lifting and Rehab/attachments/Pasted image 20230901133715.png",
-    "content/ML/Reinforcement Learning/attachments",
-    "content/Math/Statistics/attachments",
-    "content/Algos Practice/Intuition/attachments",
-    "content/Weight Lifting and Rehab/attachments",
-    "content/Weight Lifting and Rehab/Upper Cross Syndrome Stretches and Strengthening.pdf",
-    "content/ML/Reinforcement Learning",
-    "content/Sports Betting/attachments",
-    "content/Projects/NBA ML"
+    "content/Weight Lifting and Rehab/attachments/Pasted image 20230901133715.png"
   ]
 }
