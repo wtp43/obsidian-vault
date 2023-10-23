@@ -14,6 +14,7 @@ kanban-plugin: basic
 
 ## In Progress
 
+- [ ] [[; LazyVim + Yabai|LazyVim + Yabai]]
 
 
 ## Completed

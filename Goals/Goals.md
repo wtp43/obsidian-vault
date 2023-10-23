@@ -4,20 +4,21 @@ kanban-plugin: basic
 
 ---
 
-## Health
+## Learn
 
 
 
-## Challenges
+## Diet
 
 
 
-## Run/Weightlift
+## Exercise
 
 
 
 ## Professional
 
+- [ ] [[2023-10-18 - Master Yabai|Master Yabai]]
 
 
 ## Wealth
@@ -29,6 +30,6 @@ kanban-plugin: basic
 
 %% kanban:settings
 ```
-{"kanban-plugin":"basic","metadata-keys":[{"metadataKey":"Progress","label":"","shouldHideLabel":false,"containsMarkdown":true},{"metadataKey":"Target","label":"","shouldHideLabel":false,"containsMarkdown":true},{"metadataKey":"Timespan","label":"","shouldHideLabel":false,"containsMarkdown":true},{"metadataKey":"Reason","label":"","shouldHideLabel":false,"containsMarkdown":true},{"metadataKey":"Bar","label":"","shouldHideLabel":true,"containsMarkdown":true},{"metadataKey":"Projects","label":"","shouldHideLabel":true,"containsMarkdown":true}]}
+{"kanban-plugin":"basic"}
 ```
 %%
