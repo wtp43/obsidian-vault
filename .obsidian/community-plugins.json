@@ -1,5 +1,4 @@
 [
-  "table-editor-obsidian",
   "obsidian-admonition",
   "obsidian-style-settings",
   "darlal-switcher-plus",
@@ -17,5 +16,7 @@
   "metaedit",
   "obsidian-contextual-typography",
   "quickadd",
-  "obsidian-tasks-plugin"
+  "obsidian-tasks-plugin",
+  "obsidian-hider",
+  "pane-relief"
 ]

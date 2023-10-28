@@ -4,17 +4,17 @@ kanban-plugin: basic
 
 ---
 
-## Todo
+## Coding Skills
+
+- [ ] **VIM**
+
+
+## Full Stack Project
 
 
 
-## Waiting
+## **In Progress**
 
-
-
-## In Progress
-
-- [ ] [[; LazyVim + Yabai|LazyVim + Yabai]]
 
 
 ## Completed

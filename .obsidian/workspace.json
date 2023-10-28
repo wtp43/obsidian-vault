@@ -8,19 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e5ea6faa426ad1b2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/; LazyVim + Yabai.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "9ffe78d062173027",
             "type": "leaf",
             "state": {
@@ -57,12 +44,48 @@
             }
           },
           {
-            "id": "471febb96e677e99",
+            "id": "22dd7575084f7967",
+            "type": "leaf",
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "Projects/Project Board.md"
+              }
+            }
+          },
+          {
+            "id": "6b565ae103e895d4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/Transforming Discomfort into Fuel for your Brain.md",
+                "file": "Projects/Master Todo List.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "174b9ee35f140f44",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Master Todo List.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "712b49677e3bcfa0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Master Todo List.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -70,7 +93,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -145,7 +168,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Books/Transforming Discomfort into Fuel for your Brain.md",
+                "file": "Projects/Project Board.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +185,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Books/Transforming Discomfort into Fuel for your Brain.md",
+                "file": "Projects/Project Board.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +208,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Books/Transforming Discomfort into Fuel for your Brain.md"
+                "file": "Projects/Project Board.md"
               }
             }
           },
@@ -208,7 +231,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -217,7 +240,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "darlal-switcher-plus:Open in Headings Mode": false,
       "darlal-switcher-plus:Open Symbols for the active editor": false,
       "templater-obsidian:Templater": false,
@@ -228,37 +250,38 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
-      "digitalgarden:Digital Garden Publication Center": false
+      "digitalgarden:Digital Garden Publication Center": false,
+      "card-board:CardBoard": false
     }
   },
-  "active": "471febb96e677e99",
+  "active": "22dd7575084f7967",
   "lastOpenFiles": [
-    "Weight Lifting and Rehab/Managing ADHD.md",
-    "Books/Transforming Discomfort into Fuel for your Brain.md",
-    "Books/Dopamine Detox.md",
-    "Books/Getting Real - The Smarter, Faster, Easier Way to Build a Web Application.md",
+    "Projects/Todo.md",
+    "Projects/Project Board.md",
+    "Projects/Master Todo List.md",
+    "Projects/Dynamic Todo App (SwiftUI).md",
+    "Projects/Untitled.md",
     "Goals/Stop Wasting Time (ADHD).md",
     "Projects/; LazyVim + Yabai.md",
+    "Dashboard.md",
+    "home.md",
+    "Books/Transforming Discomfort into Fuel for your Brain.md",
     "Goals/Goals.md",
+    "Weight Lifting and Rehab/Managing ADHD.md",
+    "Books/Dopamine Detox.md",
+    "Books/Getting Real - The Smarter, Faster, Easier Way to Build a Web Application.md",
     "Weight Lifting and Rehab/Stop Wasting Time.md",
     "Goals/2023-10-18 - Master Yabai.md",
-    "Dashboard.md",
     "Goals/2023-10-18 - Eat balanced breakfast.md",
-    "Projects/Project Board.md",
     "Templates/goal_item_template.md",
     "Templates/autotracking_goal_item_template.md",
     "Templates/New Note - Explain with AI.md",
     "Code/Frontend/CSS.md",
-    "home.md",
     "Goals/2023-10-18 - Master Yabai1.md",
     "Goals/2023-10-18 - Master Yabai2.md",
     "Weight Lifting and Rehab/Upper Cross Syndrome Rehab.md",
     "2023-10-18 - Eat balanced breakfast.md",
     "2023-10-18 - Eat balanced breakfast1.md",
-    "2023-10-18 - Eat Balanced Breakfast (Egg + fiber + fruits + oat milk).md",
-    "Code/Web Development/Web Development Progress.md",
-    "Templates/project_item_template.md",
-    "Templates/movie template.md",
     "Templates/templates",
     "views/progress/view.js",
     "views/total-progress-bar/view.js",

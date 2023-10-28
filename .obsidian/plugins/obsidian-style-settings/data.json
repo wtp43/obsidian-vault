@@ -12,7 +12,7 @@
   "Appearance-light@@color-purple-rgb@@light": "#A9AAEE",
   "Appearance-light@@color-cyan-rgb@@light": "#FFA51E",
   "Appearance-light@@color-yellow-rgb@@light": "#8E8D8D",
-  "Appearance-light@@color-red-rgb@@light": "#F70086",
+  "Appearance-light@@color-red-rgb@@light": "#D2265B",
   "Appearance-light@@color-orange-rgb@@light": "#AFFBFB",
   "Appearance-light@@color-blue-rgb@@light": "#0089FF",
   "Appearance-light@@card-layout-open-light": true,
@@ -25,5 +25,8 @@
   "Appearance-light@@background-underlying-light": "#FFFFFF",
   "Appearance-light@@card-highlight-light": true,
   "Appearance-light@@link-external-color@@light": "#77B3EB",
-  "Appearance-light@@interactive-normal@@light": "#FFFFFF"
+  "Appearance-light@@interactive-normal@@light": "#FFFFFF",
+  "Plugin@@colorful-checkbox": true,
+  "Components@@outline-enhanced": true,
+  "Components@@extra-anim-remove": true
 }

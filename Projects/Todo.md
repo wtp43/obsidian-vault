@@ -5,7 +5,7 @@ dg-publish: true
 - readme personal
 
 
-# [[Personal Website]]
+# [[Master Todo List]]
 - https://medium.com/@salecharohit/create-a-personal-blog-using-hugo-academic-netlify-b07b0902ebdf
 - `config/_default/config.yaml`: general website information
 -   `config/_default/params.yaml`: website customization
@@ -27,4 +27,5 @@ Any dynamic content I need is served with a microservice in a dockerfile that is
 - UI: https://dribbble.com/shots/15829896-Done-To-Do-List
 
 # ML App
+
 - website
