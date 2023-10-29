@@ -10,6 +10,15 @@
           {
             "id": "9ffe78d062173027",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "markdown",
               "state": {
@@ -21,8 +30,17 @@
             }
           },
           {
-            "id": "b1c00ff46f0d3a45",
+            "id": "f44ebd594259721c",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "markdown",
               "state": {
@@ -34,28 +52,233 @@
             }
           },
           {
-            "id": "151db8979b0bf5fb",
+            "id": "90cc1c50ef1c4ab0",
             "type": "leaf",
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "Goals/Goals.md"
-              }
-            }
-          },
-          {
-            "id": "22dd7575084f7967",
-            "type": "leaf",
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "Projects/Project Board.md"
-              }
-            }
-          },
-          {
-            "id": "6b565ae103e895d4",
-            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Job Applications",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Projects/Job Applications.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}}}"
+                },
+                {
+                  "title": "Master Todo List",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Projects/Master Todo List.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":14,\"ch\":17},\"to\":{\"line\":14,\"ch\":17}}}"
+                },
+                {
+                  "title": "Project Board",
+                  "icon": "lucide-trello",
+                  "state": "{\"type\":\"kanban\",\"state\":{\"file\":\"Projects/Project Board.md\"}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Master Todo List",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Projects/Master Todo List.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}}}"
+                },
+                {
+                  "title": "Todo",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Projects/Todo.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}}}"
+                },
+                {
+                  "title": "Master Todo List",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Projects/Master Todo List.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}}}"
+                },
+                {
+                  "title": "Project Board",
+                  "icon": "lucide-trello",
+                  "state": "{\"type\":\"kanban\",\"state\":{\"file\":\"Projects/Project Board.md\"}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Todo",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Projects/Todo.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":6,\"ch\":0},\"to\":{\"line\":6,\"ch\":0}}}"
+                },
+                {
+                  "title": "Project Board",
+                  "icon": "lucide-trello",
+                  "state": "{\"type\":\"kanban\",\"state\":{\"file\":\"Projects/Project Board.md\"}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Master Todo List",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Projects/Master Todo List.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}}}"
+                },
+                {
+                  "title": "Project Board",
+                  "icon": "lucide-trello",
+                  "state": "{\"type\":\"kanban\",\"state\":{\"file\":\"Projects/Project Board.md\"}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Master Todo List",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Projects/Master Todo List.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":14,\"ch\":17},\"to\":{\"line\":14,\"ch\":17}}}"
+                },
+                {
+                  "title": "Project Board",
+                  "icon": "lucide-trello",
+                  "state": "{\"type\":\"kanban\",\"state\":{\"file\":\"Projects/Project Board.md\"}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Master Todo List",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Projects/Master Todo List.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}}}"
+                },
+                {
+                  "title": "Project Board",
+                  "icon": "lucide-trello",
+                  "state": "{\"type\":\"kanban\",\"state\":{\"file\":\"Projects/Project Board.md\"}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Master Todo List",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Projects/Master Todo List.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":10,\"ch\":0},\"to\":{\"line\":10,\"ch\":0}}}"
+                },
+                {
+                  "title": "Project Board",
+                  "icon": "lucide-trello",
+                  "state": "{\"type\":\"kanban\",\"state\":{\"file\":\"Projects/Project Board.md\"}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Todo",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Projects/Todo.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}}}"
+                },
+                {
+                  "title": "2022-02-11 - Invest in startup",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Goals/2022-02-11 - Invest in startup.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Dashboard",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Dashboard.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":10,\"ch\":0},\"to\":{\"line\":10,\"ch\":0}}}"
+                },
+                {
+                  "title": "Todo",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Projects/Todo.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}}}"
+                },
+                {
+                  "title": "Project Board",
+                  "icon": "lucide-trello",
+                  "state": "{\"type\":\"kanban\",\"state\":{\"file\":\"Projects/Project Board.md\"}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Dashboard",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Dashboard.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":10,\"ch\":0},\"to\":{\"line\":10,\"ch\":0}}}"
+                },
+                {
+                  "title": "Project Board",
+                  "icon": "lucide-trello",
+                  "state": "{\"type\":\"kanban\",\"state\":{\"file\":\"Projects/Project Board.md\"}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Goals",
+                  "icon": "lucide-trello",
+                  "state": "{\"type\":\"kanban\",\"state\":{\"file\":\"Goals/Goals.md\"}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Dashboard",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Dashboard.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":10,\"ch\":0},\"to\":{\"line\":10,\"ch\":0}}}"
+                },
+                {
+                  "title": "Project Board",
+                  "icon": "lucide-trello",
+                  "state": "{\"type\":\"kanban\",\"state\":{\"file\":\"Projects/Project Board.md\"}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "VIM",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Code/VIM.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}},\"scroll\":3}"
+                },
+                {
+                  "title": "Project Board",
+                  "icon": "lucide-trello",
+                  "state": "{\"type\":\"kanban\",\"state\":{\"file\":\"Projects/Project Board.md\"}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Dashboard",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Dashboard.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":10,\"ch\":0},\"to\":{\"line\":10,\"ch\":0}}}"
+                },
+                {
+                  "title": "Project Board",
+                  "icon": "lucide-trello",
+                  "state": "{\"type\":\"kanban\",\"state\":{\"file\":\"Projects/Project Board.md\"}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Goals",
+                  "icon": "lucide-trello",
+                  "state": "{\"type\":\"kanban\",\"state\":{\"file\":\"Goals/Goals.md\"}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "2023-10-18 - Master Yabai",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Goals/2023-10-18 - Master Yabai.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Dashboard",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Dashboard.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":13,\"ch\":8},\"to\":{\"line\":13,\"ch\":8}}}"
+                },
+                {
+                  "title": "Goals",
+                  "icon": "lucide-trello",
+                  "state": "{\"type\":\"kanban\",\"state\":{\"file\":\"Goals/Goals.md\"}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "2022-02-11 - Invest in startup",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Goals/2022-02-11 - Invest in startup.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                }
+              ]
+            },
             "state": {
               "type": "markdown",
               "state": {
@@ -67,33 +290,24 @@
             }
           },
           {
-            "id": "174b9ee35f140f44",
+            "id": "08c5487163edc475",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/Master Todo List.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "712b49677e3bcfa0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/Master Todo List.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "style-settings",
+              "state": {}
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,6 +323,15 @@
           {
             "id": "602e749129210847",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "file-explorer",
               "state": {
@@ -119,10 +342,19 @@
           {
             "id": "92db9c16a9d82e93",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#prio",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -134,6 +366,15 @@
           {
             "id": "62d998da8c83e79a",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "starred",
               "state": {}
@@ -142,17 +383,26 @@
           {
             "id": "1b81a5d72690bbbe",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "bookmarks",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 288,
-    "collapsed": true
+    "width": 288
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -165,10 +415,19 @@
           {
             "id": "6bd8944ad57375a2",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/Project Board.md",
+                "file": "Projects/Master Todo List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,10 +441,19 @@
           {
             "id": "de251980df73cfeb",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/Project Board.md",
+                "file": "Projects/Master Todo List.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,6 +462,15 @@
           {
             "id": "0a8f00c4fde7f70e",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "tag",
               "state": {
@@ -205,16 +482,34 @@
           {
             "id": "f3a79918bb64f248",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/Project Board.md"
+                "file": "Projects/Master Todo List.md"
               }
             }
           },
           {
             "id": "22c7582bdb479a05",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {}
@@ -223,6 +518,15 @@
           {
             "id": "708b8864c047f8aa",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "all-properties",
               "state": {
@@ -243,35 +547,33 @@
       "darlal-switcher-plus:Open in Headings Mode": false,
       "darlal-switcher-plus:Open Symbols for the active editor": false,
       "templater-obsidian:Templater": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
-      "digitalgarden:Digital Garden Publication Center": false,
-      "card-board:CardBoard": false
+      "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "22dd7575084f7967",
+  "active": "90cc1c50ef1c4ab0",
   "lastOpenFiles": [
-    "Projects/Todo.md",
-    "Projects/Project Board.md",
+    "Books/Getting Real - The Smarter, Faster, Easier Way to Build a Web Application.md",
     "Projects/Master Todo List.md",
+    "Goals/Stop Wasting Time (ADHD).md",
+    "Projects/Job Applications.md",
+    "Projects/Project Board.md",
+    "Projects/Todo.md",
+    "Goals/2022-02-11 - Invest in startup.md",
+    "Dashboard.md",
+    "Goals/Goals.md",
+    "Code/VIM.md",
+    "Goals/2023-10-18 - Master Yabai.md",
     "Projects/Dynamic Todo App (SwiftUI).md",
     "Projects/Untitled.md",
-    "Goals/Stop Wasting Time (ADHD).md",
     "Projects/; LazyVim + Yabai.md",
-    "Dashboard.md",
     "home.md",
     "Books/Transforming Discomfort into Fuel for your Brain.md",
-    "Goals/Goals.md",
     "Weight Lifting and Rehab/Managing ADHD.md",
     "Books/Dopamine Detox.md",
-    "Books/Getting Real - The Smarter, Faster, Easier Way to Build a Web Application.md",
     "Weight Lifting and Rehab/Stop Wasting Time.md",
-    "Goals/2023-10-18 - Master Yabai.md",
     "Goals/2023-10-18 - Eat balanced breakfast.md",
     "Templates/goal_item_template.md",
     "Templates/autotracking_goal_item_template.md",
@@ -279,9 +581,6 @@
     "Code/Frontend/CSS.md",
     "Goals/2023-10-18 - Master Yabai1.md",
     "Goals/2023-10-18 - Master Yabai2.md",
-    "Weight Lifting and Rehab/Upper Cross Syndrome Rehab.md",
-    "2023-10-18 - Eat balanced breakfast.md",
-    "2023-10-18 - Eat balanced breakfast1.md",
     "Templates/templates",
     "views/progress/view.js",
     "views/total-progress-bar/view.js",

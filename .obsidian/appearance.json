@@ -4,5 +4,10 @@
   "translucency": false,
   "theme": "moonstone",
   "showViewHeader": true,
-  "baseFontSize": 19
+  "baseFontSize": 19,
+  "enabledCssSnippets": [
+    "kanban-swimlanes",
+    "custom-admonitions.0d5b30",
+    "custom-tags"
+  ]
 }

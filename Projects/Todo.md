@@ -1,11 +1,11 @@
 ---
 dg-publish: true
 ---
-# Github
+# Github #
 - readme personal
 
 
-# [[Master Todo List]]
+## Personal Website
 - https://medium.com/@salecharohit/create-a-personal-blog-using-hugo-academic-netlify-b07b0902ebdf
 - `config/_default/config.yaml`: general website information
 -   `config/_default/params.yaml`: website customization
@@ -15,7 +15,6 @@ https://matteocourthoud.github.io/post/website/
 
 
 My stack is this:
-
 Html5up.com for the template
 
 Template is modified and served on github pages as a static site.
@@ -26,6 +25,5 @@ Any dynamic content I need is served with a microservice in a dockerfile that is
 - landing page
 - UI: https://dribbble.com/shots/15829896-Done-To-Do-List
 
-# ML App
-
+## Full Stack Application 
 - website

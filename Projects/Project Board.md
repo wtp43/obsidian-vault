@@ -6,14 +6,17 @@ kanban-plugin: basic
 
 ## Coding Skills
 
-- [ ] **VIM**
+- [ ] [[VIM]]
+- [ ] Visual Mode
+- [ ] Yabai + Shortcuts
 
 
 ## Full Stack Project
 
+- [ ] Learn React
 
 
-## **In Progress**
+## **In Progress** (5)
 
 
 
