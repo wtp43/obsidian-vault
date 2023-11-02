@@ -48,3 +48,23 @@ Example:
 zmv '(*).jpeg' '$1.jpg'
 zmv '(*)-backup.(*)' 'backups/$1.$2'
 ```
+
+
+
+## zsh Functions
+- `xargs`: The `xargs` command in UNIX is a command line utility for building an execution pipeline from standard input. Whilst tools like [`grep`](https://shapeshed.com/unix-grep/) can accept standard input as a parameter, many other tools cannot. Using `xargs` allows tools like `echo` and [`rm`](https://shapeshed.com/unix-rm/) and [`mkdir`](https://shapeshed.com/unix-mkdir/) to accept standard input as arguments.    
+
+
+## Other
+
+### ls vs echo $(ls)
+https://unix.stackexchange.com/questions/283586/difference-between-ls-and-echo-ls
+When you run this command:
+`ls`
+the terminal displays the output of ls.
+When you run this command:
+`echo $(ls)`
+the shell captures the output of $(ls) and performs word splitting on it. With the default IFS, this means that all sequences of white space, including newline characters, are replaced by a single blank. That is why the output of echo $(ls) appears on one line.
+
+**Command Substitution**
+`$(...)` is command substitution ´

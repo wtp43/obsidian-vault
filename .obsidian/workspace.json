@@ -69,6 +69,28 @@
             }
           },
           {
+            "id": "6740d3a5fad025b1",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Code/ZSH.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "b593228ef54ad3c7",
             "type": "leaf",
             "pane-relief:history-v1": {
@@ -105,7 +127,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -226,7 +248,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Weight Lifting and Rehab/Managing ADHD.md",
+                "file": "Code/ZSH.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -252,7 +274,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Weight Lifting and Rehab/Managing ADHD.md",
+                "file": "Code/ZSH.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -293,7 +315,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Weight Lifting and Rehab/Managing ADHD.md"
+                "file": "Code/ZSH.md"
               }
             }
           },
@@ -352,10 +374,12 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "1f400cc3d3df8f31",
+  "active": "6740d3a5fad025b1",
   "lastOpenFiles": [
-    "Projects/Master Todo List.md",
     "Projects/Project Board.md",
+    "Code/ZSH.md",
+    "Weight Lifting and Rehab/Managing ADHD.md",
+    "Projects/Master Todo List.md",
     "Goals/Stop Wasting Time (ADHD).md",
     "Books/Getting Real - The Smarter, Faster, Easier Way to Build a Web Application.md",
     "Projects/Job Applications.md",
@@ -370,7 +394,6 @@
     "Projects/; LazyVim + Yabai.md",
     "home.md",
     "Books/Transforming Discomfort into Fuel for your Brain.md",
-    "Weight Lifting and Rehab/Managing ADHD.md",
     "Books/Dopamine Detox.md",
     "Weight Lifting and Rehab/Stop Wasting Time.md",
     "Goals/2023-10-18 - Eat balanced breakfast.md",
@@ -379,7 +402,6 @@
     "Templates/New Note - Explain with AI.md",
     "Code/Frontend/CSS.md",
     "Goals/2023-10-18 - Master Yabai1.md",
-    "Goals/2023-10-18 - Master Yabai2.md",
     "Templates/templates",
     "views/progress/view.js",
     "views/total-progress-bar/view.js",
