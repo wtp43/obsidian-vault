@@ -1,13 +1,32 @@
 ---
 dg-publish: true
 ---
-- Clear line: ctrl + u
 - End of line: ctrl + e
 - Clear screen: ctrl + l
 - Backward delete char: ctrl + h
 - Forward char: ctrl + f
 - Expand or complete: ctrl + i
 - Backward word: ctrl+ b
+
+
+## Comparisons
+
+### String Comparisons
+Spaces are significant between operators and brackets
+
+```zsh
+if [ $VAR1 == $VAR2 ]; then
+```
+### Numeric Comparisons
+Use the operator `-eq` instead of ==
+### Unquoted variables
+
+When a variable contains spaces or special characters, it is essential to quote the variable to prevent word splitting. For example:
+
+```zsh
+VAR1="Hello World"
+if [ $VAR1 == "Hello World" ]; then
+```
 
 
 https://apple.stackexchange.com/questions/361870/what-are-the-practical-differences-between-bash-and-zsh

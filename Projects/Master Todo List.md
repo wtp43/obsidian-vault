@@ -3,6 +3,7 @@ dg-publish: false
 ---
 # Interview Prep
 
+
 Todo: Time estimates per task
 ## Coding Skills 
 - [ ] VIM 
@@ -40,3 +41,10 @@ Build a NBA stats visualization website
 	- [ ] 
 
 ## Interview Prep
+
+
+# Reducing Mental Transaction costs
+- Vim
+- Yabai
+- neovim
+- work todolist (things3) + paper planner (life)

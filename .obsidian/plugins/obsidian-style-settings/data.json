@@ -35,6 +35,6 @@
   "Editor@@h1-color-select": "h1-color-customized",
   "Editor@@h1-color@@light": "#6F8CAB",
   "Editor@@h2-color@@light": "#61AFEF",
-  "Editor@@h3-size": "1.1em",
+  "Editor@@h3-size": "1em",
   "Editor@@h2-size": "1.3em"
 }
