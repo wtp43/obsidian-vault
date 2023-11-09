@@ -64,3 +64,10 @@
 	.cm-s-obsidian span.cm-hashtag[class$="project"],
 	.tag[href^="#project"]
 		{ background-color: rgba(31, 0, 107, 0.9); }
+
+
+
+		.is-popout-window .view-header-nav-buttons {
+			padding-left: 70px; /* */
+			 display: none; /* */
+		  }

@@ -86,3 +86,4 @@ The change operator is used with the same motions as delete
 # Visual Mode
 - In visual mode, the cursor can be moved around to make the selection bigger or smaller.
 - An operator can be applied to the text after
+

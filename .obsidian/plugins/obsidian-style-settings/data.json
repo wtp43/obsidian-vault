@@ -1,8 +1,8 @@
 {
-  "Components@@tab-autohide": false,
+  "Components@@tab-autohide": true,
   "Components@@Ribbon-autohide": false,
   "Components@@nav-header-autohide": false,
-  "Components@@status-bar-autohide": false,
+  "Components@@status-bar-autohide": true,
   "Components@@CTA-BTN-enable": false,
   "Components@@colorful-folder": true,
   "catppuccin-theme-settings@@catppuccin-theme-dark": "ctp-frappe",
@@ -14,7 +14,7 @@
   "Appearance-light@@color-red-rgb@@light": "#6F8CAB",
   "Appearance-light@@color-orange-rgb@@light": "#AFFBFB",
   "Appearance-light@@color-blue-rgb@@light": "#0089FF",
-  "Appearance-light@@card-layout-open-light": true,
+  "Appearance-light@@card-layout-open-light": false,
   "Components@@scrollbar-hide": true,
   "Appearance-light@@workspace-divider-transparent-light": false,
   "Appearance-light@@accent-light": "#BAC0E7",
@@ -25,7 +25,7 @@
   "Appearance-light@@link-external-color@@light": "#77B3EB",
   "Appearance-light@@interactive-normal@@light": "#FFFFFF",
   "Plugin@@colorful-checkbox": true,
-  "Components@@outline-enhanced": true,
+  "Components@@outline-enhanced": false,
   "Components@@extra-anim-remove": true,
   "Editor@@h2-divider-on": true,
   "Editor@@ul-marker-restore": true,
@@ -36,5 +36,8 @@
   "Editor@@h1-color@@light": "#6F8CAB",
   "Editor@@h2-color@@light": "#61AFEF",
   "Editor@@h3-size": "1em",
-  "Editor@@h2-size": "1.3em"
+  "Editor@@h2-size": "1.3em",
+  "Components@@icon-autohide": false,
+  "Components@@tab-title-bar-autohide": true,
+  "Components@@setting-item-title-icon-remove": false
 }

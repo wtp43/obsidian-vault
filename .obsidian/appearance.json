@@ -3,11 +3,12 @@
   "cssTheme": "Border",
   "translucency": false,
   "theme": "moonstone",
-  "showViewHeader": true,
+  "showViewHeader": false,
   "baseFontSize": 19,
   "enabledCssSnippets": [
     "kanban-swimlanes",
     "custom-admonitions.0d5b30",
     "custom-tags"
-  ]
+  ],
+  "nativeMenus": false
 }

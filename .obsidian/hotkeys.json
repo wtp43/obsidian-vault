@@ -216,5 +216,22 @@
       ],
       "key": "L"
     }
+  ],
+  "pane-relief:win-next": [],
+  "pane-relief:win-2nd": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "]"
+    }
+  ],
+  "pane-relief:win-1st": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "["
+    }
   ]
 }

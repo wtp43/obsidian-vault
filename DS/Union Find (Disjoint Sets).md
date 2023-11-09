@@ -63,7 +63,6 @@ class Union_find:
             xr, yr = yr, xr
         self.par[yr] = xr
         self.sz[xr] += self.sz[yr]
-        self.sz[yr] = self.sz[xr]
         return True
 ```
 

@@ -274,12 +274,33 @@ input tags are self closing, types: text, color, file, number, datetime-local, r
 - Split ext using `p` tags
 
 
-# CSS
+# External CSS/JS
+
+## Referencing CSS/JS
+```html
+<html>
+
+ <head>
+   <link rel="stylesheet" href="styles.css">
+ </head>
+ 
+ <body>
+   <h3>External CSS</h3>
+   <script src="myJSscript.js"></script>
+ </body>
+</html>
+```
+
+- External script references can be placed in the head or body. 
+- Imported script will behave as if it was written exactly where the `<script>` tag is located
+
+
+
 ```css
 <style>
 	.red-style {
 		color: red;
 	}
-
 </style>
 ```
+

@@ -18,6 +18,8 @@
   "quickadd",
   "obsidian-tasks-plugin",
   "obsidian-hider",
-  "pane-relief",
-  "workspaces-plus"
+  "workspaces-plus",
+  "obsidian-minimal-settings",
+  "obsidian-electron-window-tweaker",
+  "pane-relief"
 ]

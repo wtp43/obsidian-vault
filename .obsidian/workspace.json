@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "883ae9dfd68b837d",
+        "id": "532e749291a0b1ba",
         "type": "tabs",
         "children": [
           {
-            "id": "380598ba9c67d706",
+            "id": "6d15213cddc4a7b0",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -20,12 +20,12 @@
               ]
             },
             "state": {
-              "type": "empty",
+              "type": "style-settings",
               "state": {}
             }
           },
           {
-            "id": "246b641a1200918c",
+            "id": "cc7a6d40382ff7e6",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -39,7 +39,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/VIM.md",
+                "file": "Code/Frontend/CSS.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7faacfd367046ba1",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Code/Web Development/Web Infrastructure Overview.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -47,7 +69,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -167,7 +189,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/VIM.md",
+                "file": "Code/Web Development/Web Infrastructure Overview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -193,7 +215,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/VIM.md",
+                "file": "Code/Web Development/Web Infrastructure Overview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +256,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/VIM.md"
+                "file": "Code/Web Development/Web Infrastructure Overview.md"
               }
             }
           },
@@ -293,8 +315,24 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "246b641a1200918c",
+  "active": "7faacfd367046ba1",
   "lastOpenFiles": [
+    "Code/Web Development/attachments/Pasted image 20231108174314.png",
+    "Code/Frontend/CSS.md",
+    "Code/Web Development/Web Infrastructure Overview.md",
+    "Code/Web Development/attachments/Pasted image 20231108172630.png",
+    "Code/Web Development/attachments/Pasted image 20231108172329.png",
+    "Code/Web Development/attachments/Pasted image 20231108164506.png",
+    "Code/Web Development/attachments",
+    "Code/Frontend/React.md",
+    "Code/LazyVim.md",
+    "Algos Practice/Revision 1 - Nov (Week 2).md",
+    "Math/Statistics/Sorting Betting Opportunities.md",
+    "Algos Practice/Intuition.md",
+    "Algos Practice/Untitled.md",
+    "Leetcode Questions/LC-14. Longest Common Prefix.md",
+    "Leetcode Questions/LC-128. Longest Consecutive Sequence.md",
+    "DS/Union Find (Disjoint Sets).md",
     "Code/VIM.md",
     "Code/Scripting/ZSH.md",
     "Projects/Master Todo List.md",
@@ -310,18 +348,6 @@
     "Projects/Job Applications.md",
     "Projects/Todo.md",
     "Goals/2022-02-11 - Invest in startup.md",
-    "Dashboard.md",
-    "Goals/Goals.md",
-    "Goals/2023-10-18 - Master Yabai.md",
-    "Projects/Dynamic Todo App (SwiftUI).md",
-    "Projects/Untitled.md",
-    "Projects/; LazyVim + Yabai.md",
-    "home.md",
-    "Books/Transforming Discomfort into Fuel for your Brain.md",
-    "Books/Dopamine Detox.md",
-    "Weight Lifting and Rehab/Stop Wasting Time.md",
-    "Goals/2023-10-18 - Eat balanced breakfast.md",
-    "Templates/goal_item_template.md",
     "Templates/templates",
     "views/progress/view.js",
     "views/total-progress-bar/view.js",
@@ -330,16 +356,12 @@
     "views/progress",
     "views/total-progress-bar",
     "views/target",
-    "views/progress-bar",
     "Weight Lifting and Rehab/attachments/Pasted image 20230915164029.png",
     "attachments/Pasted image 20221208173515.png",
     "obsidian icon.jpg",
     "obsidian icon.webp",
     "content/ML/Reinforcement Learning/attachments/Pasted image 20230204154315.png",
     "content/ML/Reinforcement Learning/attachments/Pasted image 20230204154314.png",
-    "content/Math/Statistics/attachments/Pasted image 20230211175247.png",
-    "content/Algos Practice/Intuition/attachments/Pasted image 20230203202802.png",
-    "content/Weight Lifting and Rehab/attachments/Pasted image 20230901135355.png",
-    "content/Weight Lifting and Rehab/attachments/Pasted image 20230901133715.png"
+    "content/Math/Statistics/attachments/Pasted image 20230211175247.png"
   ]
 }
