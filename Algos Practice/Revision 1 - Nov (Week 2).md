@@ -2,20 +2,14 @@
 dg-publish: true
 ---
 ---
-title:  "Revision 1"
-tags:
 
-created: 2023-11-08
----
+Week 2 of November
 
->[!summary]+ Contents
->```toc
-style: number
-min_depth:1
-max_depth:6 
->```
+# Misc Math
+- Minimum sum path
+	- Watch out for input constraints (especially if negative numbers exist)
+	- Watch out for cycles
 
-Week 2 of november
 # Arrays 
 
 - hashmaps are generally useful for storing some kind of ordering
@@ -64,4 +58,18 @@ The optimal substructure here is that once you have solution for first `i` coi
 But when you flip the order of execution of loops, this substructure property does not hold. In this case, you are first calculating the number of ways to form amount `i` using all the coins and extending it to find the number of ways to form amount `i+1`, for which the optimal substructure property does not hold true.
 
 
-# Related
+### Path Traversal 
+https://leetcode.com/problems/minimum-path-sum/
+- 1D DP is possible, store row values
+
+### Interleaving String
+String traversal empty cases
+ - empty string should be true
+
+### Buying and selling stock 2
+**Finite State Machine**
+- with 1 day cooldown after selling
+
+# TODO
+
+- 1d DP for path traversal + interleaving string 

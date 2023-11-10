@@ -2,20 +2,6 @@
 dg-publish: true
 ---
 ---
-title:  "LazyVim"
-tags:
-
-created: 2023-11-08
----
-
->[!summary]+ Contents
->```toc
-style: number
-min_depth:1
-max_depth:6 
->```
-
-
 # LazyVim
 
 leader + 
@@ -29,6 +15,13 @@ leader +
 - 
 
 # lsp
+
+
+# Telescope
+
+
+# Leap.nvim
+
 
 ## cmdline
 - shift + :

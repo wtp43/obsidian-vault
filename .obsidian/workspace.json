@@ -25,7 +25,7 @@
             }
           },
           {
-            "id": "cc7a6d40382ff7e6",
+            "id": "cb70fb73451db93b",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -39,29 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/Frontend/CSS.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7faacfd367046ba1",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Code/Web Development/Web Infrastructure Overview.md",
+                "file": "Algos Practice/Revision 1 - Nov (Week 2).md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -69,7 +47,41 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
+      },
+      {
+        "id": "4811aba339c9e71f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "19cb086a15de3b66",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Revision 1 - Nov (Week 2)",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Algos Practice/Revision 1 - Nov (Week 2).md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":18,\"ch\":9},\"to\":{\"line\":18,\"ch\":9}},\"scroll\":3}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algos Practice/LC Template.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -189,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/Web Development/Web Infrastructure Overview.md",
+                "file": "Code/LazyVim.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -215,7 +227,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/Web Development/Web Infrastructure Overview.md",
+                "file": "Code/LazyVim.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -256,7 +268,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/Web Development/Web Infrastructure Overview.md"
+                "file": "Code/LazyVim.md"
               }
             }
           },
@@ -315,18 +327,151 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "7faacfd367046ba1",
+  "floating": {
+    "id": "fc3cd93ee108c7e7",
+    "type": "floating",
+    "children": [
+      {
+        "id": "48ac55e1b53ce929",
+        "type": "window",
+        "children": [
+          {
+            "id": "0abf0c3009583453",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "d0b4c313f508f492",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "empty",
+                  "state": {}
+                }
+              },
+              {
+                "id": "ced0cbeaab9a778b",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Code/Web Development/Web Infrastructure Overview.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "ba07cf54cfcbf63f",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Code/Frontend/React.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "5bdf2779ea4b7516",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Projects/Master Todo List.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "5509c6c45bb691fc",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Code/LazyVim.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 4
+          }
+        ],
+        "direction": "vertical",
+        "x": 2431,
+        "y": 30,
+        "width": 1403,
+        "height": 2124,
+        "maximize": false,
+        "zoom": 3
+      }
+    ]
+  },
+  "active": "5509c6c45bb691fc",
   "lastOpenFiles": [
-    "Code/Web Development/attachments/Pasted image 20231108174314.png",
-    "Code/Frontend/CSS.md",
+    "Algos Practice/Revision 1 - Nov (Week 2).md",
+    "Algos Practice/LC Template.md",
+    "Code/LazyVim.md",
+    "Projects/Master Todo List.md",
+    "Code/Frontend/React.md",
     "Code/Web Development/Web Infrastructure Overview.md",
+    "Code/Frontend/CSS.md",
+    "Code/Web Development/attachments/Pasted image 20231108174314.png",
     "Code/Web Development/attachments/Pasted image 20231108172630.png",
     "Code/Web Development/attachments/Pasted image 20231108172329.png",
     "Code/Web Development/attachments/Pasted image 20231108164506.png",
     "Code/Web Development/attachments",
-    "Code/Frontend/React.md",
-    "Code/LazyVim.md",
-    "Algos Practice/Revision 1 - Nov (Week 2).md",
     "Math/Statistics/Sorting Betting Opportunities.md",
     "Algos Practice/Intuition.md",
     "Algos Practice/Untitled.md",
@@ -335,7 +480,6 @@
     "DS/Union Find (Disjoint Sets).md",
     "Code/VIM.md",
     "Code/Scripting/ZSH.md",
-    "Projects/Master Todo List.md",
     "Code/Scripting/Command-line Utilities.md",
     "Projects/Project Board.md",
     "Weight Lifting and Rehab/Managing ADHD.md",
@@ -361,7 +505,6 @@
     "obsidian icon.jpg",
     "obsidian icon.webp",
     "content/ML/Reinforcement Learning/attachments/Pasted image 20230204154315.png",
-    "content/ML/Reinforcement Learning/attachments/Pasted image 20230204154314.png",
-    "content/Math/Statistics/attachments/Pasted image 20230211175247.png"
+    "content/ML/Reinforcement Learning/attachments/Pasted image 20230204154314.png"
   ]
 }

@@ -16,6 +16,9 @@ Todo: Time estimates per task
 	- [ ] Learn about different plugins
 
 
+## Portfolio website
+- [ ] Svelte
+
 ## Full Stack Website for Resume
 Build a NBA stats visualization website
 - Down the road: ML prediction input form
@@ -28,6 +31,7 @@ Build a NBA stats visualization website
 ### Website Components
 - [ ] Frontend
 	- [ ] React template
+	- [ ] ReactJS
 	- [ ] Tailwind css
 	- [ ] React graph library
 - [ ] Backend

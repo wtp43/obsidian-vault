@@ -15,10 +15,23 @@ There are a few things you need to consider when building modern applications. S
 - **Scalability** - how your application adapts as your team, data, and traffic grow.
 - **Developer Experience** - your team’s experience building and maintaining your application.
 
+# Frameworks
+- Used to build apps
+## MVC Architecture
+### Model
+- Stores info about content/structure of app
+- Upon receiving user input data from the Controller, it communicates any required interface updates to the View component.
+### View
+- App's front-end
+- View receives user input, communicates it to the controller for processing
+- Updates itself according to instructions from Model
+### Model
+- Receives user input from view and modifies Model 
+## Isomorphic Frameworks
+- Frameworks that support both front end and back end 
+- Lazo.js, meteor.js, Rendr
 
-# Serverless Framework
 
-# Monolithic vs Monorepos
 
 # Microservice Architecture
  Architectural style that structures an application as a collection of services that are
@@ -63,6 +76,34 @@ https://github.com/styled-components/styled-components
 	- ie: Handle connections concurrently
 - Node.js is not a programming language. Rather, it’s a runtime environment that’s used to run JavaScript outside the browser.
 - Neither is Node.js a framework (a platform for developing software applications).
+
+### How it works
+- "Single Threaded Event Loop Architecture"
+[![Nodejs-Architecture](https://kinsta.com/wp-content/uploads/2021/03/Nodejs-Architecture-1024x576.png)](https://kinsta.com/wp-content/uploads/2021/03/Nodejs-Architecture.png)
+Request -> Event Queue 
+Single threaded event loop to process event queue requests
+Event loop checks if the request requires a blocking (I/O) operation.
+Yes -> event loop assigns worker from thread pool.
+No -> 
+
+Node.js uses fewer threads than multi-threaded languages#
+When one needs to process data-intensive tasks, then using multi-threaded languages like Java makes much more sense. But for real-time applications, Node.js is the obvious choice.
+
+
+### Useful Node.js Packages
+- Express.js
+	- Web framework for node.js
+- Socket.io
+	- Real-time, bidirectional, event-based communication
+- Moment
+	- Parse dates
+- Forever
+	- CLI tool for continuously running scripts
+- Async
+	- Utility module for asynchronous JS
+- Mocha
+	- JS test framework
+
 # Rust
 ## Rocket (Web framework for Rust)
 - https://rocket.rs/

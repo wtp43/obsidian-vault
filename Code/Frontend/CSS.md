@@ -2,11 +2,6 @@
 dg-publish: true
 ---
 ---
-title:  "CSS"
-tags:
-
-created: 2023-09-20
----
 
 >[!summary]+ Contents
 >```toc
