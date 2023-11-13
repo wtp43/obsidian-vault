@@ -4,52 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "532e749291a0b1ba",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6d15213cddc4a7b0",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "style-settings",
-              "state": {}
-            }
-          },
-          {
-            "id": "cb70fb73451db93b",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos Practice/Revision 1 - Nov (Week 2).md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
         "id": "4811aba339c9e71f",
         "type": "tabs",
         "children": [
@@ -175,8 +129,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288,
-    "collapsed": true
+    "width": 288
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -201,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/LazyVim.md",
+                "file": "Weight Lifting and Rehab/Career Handbook.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -227,7 +180,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/LazyVim.md",
+                "file": "Weight Lifting and Rehab/Career Handbook.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -268,7 +221,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/LazyVim.md"
+                "file": "Weight Lifting and Rehab/Career Handbook.md"
               }
             }
           },
@@ -320,11 +273,11 @@
     "hiddenItems": {
       "darlal-switcher-plus:Open in Headings Mode": false,
       "darlal-switcher-plus:Open Symbols for the active editor": false,
-      "templater-obsidian:Templater": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
-      "digitalgarden:Digital Garden Publication Center": false
+      "digitalgarden:Digital Garden Publication Center": false,
+      "templater-obsidian:Templater": false
     }
   },
   "floating": {
@@ -332,15 +285,15 @@
     "type": "floating",
     "children": [
       {
-        "id": "48ac55e1b53ce929",
+        "id": "146f5b31c29dcaca",
         "type": "window",
         "children": [
           {
-            "id": "0abf0c3009583453",
+            "id": "37158bba1418b616",
             "type": "tabs",
             "children": [
               {
-                "id": "d0b4c313f508f492",
+                "id": "aa66a1981a86d5ae",
                 "type": "leaf",
                 "pane-relief:history-v1": {
                   "pos": 0,
@@ -357,7 +310,7 @@
                 }
               },
               {
-                "id": "ced0cbeaab9a778b",
+                "id": "9b88c4a086dba9d0",
                 "type": "leaf",
                 "pane-relief:history-v1": {
                   "pos": 0,
@@ -371,73 +324,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Code/Web Development/Web Infrastructure Overview.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "ba07cf54cfcbf63f",
-                "type": "leaf",
-                "pane-relief:history-v1": {
-                  "pos": 0,
-                  "stack": [
-                    {
-                      "state": "{}",
-                      "eState": "{}"
-                    }
-                  ]
-                },
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Code/Frontend/React.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "5bdf2779ea4b7516",
-                "type": "leaf",
-                "pane-relief:history-v1": {
-                  "pos": 0,
-                  "stack": [
-                    {
-                      "state": "{}",
-                      "eState": "{}"
-                    }
-                  ]
-                },
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Projects/Master Todo List.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "5509c6c45bb691fc",
-                "type": "leaf",
-                "pane-relief:history-v1": {
-                  "pos": 0,
-                  "stack": [
-                    {
-                      "state": "{}",
-                      "eState": "{}"
-                    }
-                  ]
-                },
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Code/LazyVim.md",
+                    "file": "Code/Frontend/CSS.md",
                     "mode": "source",
                     "backlinks": false,
                     "source": false
@@ -445,28 +332,90 @@
                 }
               }
             ],
-            "currentTab": 4
+            "currentTab": 1
           }
         ],
         "direction": "vertical",
-        "x": 2431,
+        "x": 6,
+        "y": 1095,
+        "width": 2002,
+        "height": 1059,
+        "maximize": false,
+        "zoom": 3
+      },
+      {
+        "id": "6df2ccfd56ba61bf",
+        "type": "window",
+        "children": [
+          {
+            "id": "d5b1fbd4c4eb1724",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "4d4a52660814dbbc",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "style-settings",
+                  "state": {}
+                }
+              },
+              {
+                "id": "5bbd6c75dc84da2a",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Weight Lifting and Rehab/Career Handbook.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "vertical",
+        "x": 2617,
         "y": 30,
-        "width": 1403,
-        "height": 990,
+        "width": 1217,
+        "height": 2124,
         "maximize": false,
         "zoom": 3
       }
     ]
   },
-  "active": "5509c6c45bb691fc",
+  "active": "5bbd6c75dc84da2a",
   "lastOpenFiles": [
-    "Algos Practice/Revision 1 - Nov (Week 2).md",
+    "Code/Frontend/CSS.md",
+    "Weight Lifting and Rehab/Career Handbook.md",
     "Algos Practice/LC Template.md",
+    "Leetcode Questions/LC-141. Linked List Cycle.md",
+    "Templates/Generic.md",
+    "Algos Practice/Revision 1 - Nov (Week 2).md",
     "Code/LazyVim.md",
     "Projects/Master Todo List.md",
     "Code/Frontend/React.md",
     "Code/Web Development/Web Infrastructure Overview.md",
-    "Code/Frontend/CSS.md",
     "Code/Web Development/attachments/Pasted image 20231108174314.png",
     "Code/Web Development/attachments/Pasted image 20231108172630.png",
     "Code/Web Development/attachments/Pasted image 20231108172329.png",
@@ -489,9 +438,6 @@
     "Code/Scripting",
     "Goals/Stop Wasting Time (ADHD).md",
     "Books/Getting Real - The Smarter, Faster, Easier Way to Build a Web Application.md",
-    "Projects/Job Applications.md",
-    "Projects/Todo.md",
-    "Goals/2022-02-11 - Invest in startup.md",
     "Templates/templates",
     "views/progress/view.js",
     "views/total-progress-bar/view.js",

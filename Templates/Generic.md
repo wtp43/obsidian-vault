@@ -1,5 +1,7 @@
 ---
 dg-publish: true
+tags: 
+created: ""
 ---
 <%* let title = tp.file.title
   if (title.startsWith("Untitled")) {
@@ -12,11 +14,6 @@ dg-publish: true
   result = result.charAt(0).toUpperCase() + result.slice(1);
   tR += "---"
 %>
-title:  <%* tR += "\"" + result + "\"" %>
-tags:
-<% tp.file.cursor(1) %>
-created: <% tp.date.now("YYYY-MM-DD") %>
----
 
 >[!summary]+ Contents
 >```toc
@@ -25,9 +22,8 @@ min_depth:1
 max_depth:6 
 >```
 
-
 # <%* tR += result %>
 
-
+<% tp.file.cursor(1) %>
 
 # Related
