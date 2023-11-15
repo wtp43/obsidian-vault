@@ -9,7 +9,7 @@ max_depth:6
 >```
 
 
-# HTML¢
+# HTML
 
 ## Tags
 
