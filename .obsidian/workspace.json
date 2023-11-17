@@ -34,8 +34,53 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8ee1d1b3eed971ed",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Code/LazyVim.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bb0249294905a586",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algos Practice/Revision 1 - Nov (Week 2).md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -129,7 +174,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288
+    "width": 288,
+    "collapsed": true
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -154,7 +200,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/Frontend/CSS.md",
+                "file": "Algos Practice/Revision 1 - Nov (Week 2).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,7 +226,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/Frontend/CSS.md",
+                "file": "Algos Practice/Revision 1 - Nov (Week 2).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -221,7 +267,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/Frontend/CSS.md"
+                "file": "Algos Practice/Revision 1 - Nov (Week 2).md"
               }
             }
           },
@@ -280,80 +326,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "floating": {
-    "id": "fc3cd93ee108c7e7",
-    "type": "floating",
-    "children": [
-      {
-        "id": "146f5b31c29dcaca",
-        "type": "window",
-        "children": [
-          {
-            "id": "37158bba1418b616",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "aa66a1981a86d5ae",
-                "type": "leaf",
-                "pane-relief:history-v1": {
-                  "pos": 0,
-                  "stack": [
-                    {
-                      "state": "{}",
-                      "eState": "{}"
-                    }
-                  ]
-                },
-                "state": {
-                  "type": "empty",
-                  "state": {}
-                }
-              },
-              {
-                "id": "9b88c4a086dba9d0",
-                "type": "leaf",
-                "pane-relief:history-v1": {
-                  "pos": 0,
-                  "stack": [
-                    {
-                      "state": "{}",
-                      "eState": "{}"
-                    }
-                  ]
-                },
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Code/Frontend/CSS.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              }
-            ],
-            "currentTab": 1
-          }
-        ],
-        "direction": "vertical",
-        "x": 2014,
-        "y": 30,
-        "width": 1820,
-        "height": 2124,
-        "maximize": false,
-        "zoom": 3
-      }
-    ]
-  },
-  "active": "9b88c4a086dba9d0",
+  "active": "bb0249294905a586",
   "lastOpenFiles": [
+    "Code/LazyVim.md",
     "Algos Practice/LC Template.md",
     "Code/Frontend/CSS.md",
     "Weight Lifting and Rehab/Career Handbook.md",
     "Leetcode Questions/LC-141. Linked List Cycle.md",
     "Templates/Generic.md",
     "Algos Practice/Revision 1 - Nov (Week 2).md",
-    "Code/LazyVim.md",
     "Projects/Master Todo List.md",
     "Code/Frontend/React.md",
     "Code/Web Development/Web Infrastructure Overview.md",

@@ -70,6 +70,14 @@ String traversal empty cases
 **Finite State Machine**
 - with 1 day cooldown after selling
 
+#### Maximal Square
+https://leetcode.com/problems/maximal-square/description/?envType=study-plan-v2&envId=top-interview-150
+- Square area: min(diag, left, up) of ones
+- 1d array possible: diag needs to be stored in a temp variable
+- up_j is just the current dp(j) before it is updated
+- update prev_row_j = temp at the end
+- make sure to reset/update dp(j) to 0 since we only have a 1d arrayL
+
 # TODO
 
 - 1d DP for path traversal + interleaving string 
