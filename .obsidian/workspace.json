@@ -8,56 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "19cb086a15de3b66",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                },
-                {
-                  "title": "Revision 1 - Nov (Week 2)",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Algos Practice/Revision 1 - Nov (Week 2).md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":18,\"ch\":9},\"to\":{\"line\":18,\"ch\":9}},\"scroll\":3}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos Practice/LC Template.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8ee1d1b3eed971ed",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Code/LazyVim.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "bb0249294905a586",
             "type": "leaf",
             "pane-relief:history-v1": {
@@ -79,8 +29,58 @@
               }
             }
           }
+        ]
+      },
+      {
+        "id": "b568613476013440",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "38e28fc58f6e3796",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algos Practice/Revision 1 - Nov (Week 2).md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "367dedd6ffb99ce4",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algos Practice/LC Template.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -200,7 +200,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algos Practice/Revision 1 - Nov (Week 2).md",
+                "file": "Weight Lifting and Rehab/Career Handbook.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -226,7 +226,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algos Practice/Revision 1 - Nov (Week 2).md",
+                "file": "Weight Lifting and Rehab/Career Handbook.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -267,7 +267,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algos Practice/Revision 1 - Nov (Week 2).md"
+                "file": "Weight Lifting and Rehab/Career Handbook.md"
               }
             }
           },
@@ -326,15 +326,83 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "bb0249294905a586",
+  "floating": {
+    "id": "5d668363af87db76",
+    "type": "floating",
+    "children": [
+      {
+        "id": "6b516e3ef84df01f",
+        "type": "window",
+        "children": [
+          {
+            "id": "7be86437be9c296f",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "ee8f4882e788234b",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "empty",
+                  "state": {}
+                }
+              },
+              {
+                "id": "5185c7ec6a117e06",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Weight Lifting and Rehab/Career Handbook.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "vertical",
+        "x": 2134,
+        "y": 30,
+        "width": 1700,
+        "height": 2124,
+        "maximize": false,
+        "zoom": 2
+      }
+    ]
+  },
+  "active": "5185c7ec6a117e06",
   "lastOpenFiles": [
-    "Code/LazyVim.md",
-    "Algos Practice/LC Template.md",
-    "Code/Frontend/CSS.md",
+    "Math/Statistics/Sorting Betting Opportunities.md",
     "Weight Lifting and Rehab/Career Handbook.md",
+    "Algos Practice/Revision 1 - Nov (Week 2).md",
+    "Leetcode Questions/LC-84. Largest Rectangle in Histogram.md",
+    "Algos Practice/LC Template.md",
+    "Leetcode Questions/LC-1838. Frequency of the Most Frequent Element.md",
+    "Code/LazyVim.md",
+    "Code/Frontend/CSS.md",
     "Leetcode Questions/LC-141. Linked List Cycle.md",
     "Templates/Generic.md",
-    "Algos Practice/Revision 1 - Nov (Week 2).md",
     "Projects/Master Todo List.md",
     "Code/Frontend/React.md",
     "Code/Web Development/Web Infrastructure Overview.md",
@@ -343,7 +411,6 @@
     "Code/Web Development/attachments/Pasted image 20231108172329.png",
     "Code/Web Development/attachments/Pasted image 20231108164506.png",
     "Code/Web Development/attachments",
-    "Math/Statistics/Sorting Betting Opportunities.md",
     "Algos Practice/Intuition.md",
     "Algos Practice/Untitled.md",
     "Leetcode Questions/LC-14. Longest Common Prefix.md",
@@ -358,8 +425,6 @@
     "Templates/Callout.md",
     "Code/Scripting/jq.md",
     "Code/Scripting",
-    "Goals/Stop Wasting Time (ADHD).md",
-    "Books/Getting Real - The Smarter, Faster, Easier Way to Build a Web Application.md",
     "Templates/templates",
     "views/progress/view.js",
     "views/total-progress-bar/view.js",

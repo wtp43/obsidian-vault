@@ -10,7 +10,7 @@ Week 2 of November
 	- Watch out for input constraints (especially if negative numbers exist)
 	- Watch out for cycles
 
-# Arrays 
+## Arrays 
 
 - hashmaps are generally useful for storing some kind of ordering
 
@@ -27,12 +27,43 @@ Week 2 of November
 - longest common prefix
 	- 
 
-# Union- find
+## Sliding Window
+[1838. Frequency of the Most Frequent Element](https://leetcode.com/problems/frequency-of-the-most-frequent-element/)
+
+- sort so that the next element is guaranteed to be bigger
+	- we know that we are always operating on the next biggest num
+- update current sum
+- update window if 
+```python
+def maxFrequency(self, nums: List[int], k: int) -> int:
+		# we always have to check every element
+		# sum is helpful here
+		# increase window if operations are in excess (sum + k < window size * current element to be checked)
+		# window only works here since we sorted
+        nums.sort()
+        max_freq = 0
+        L = 0
+        cur_sum = 0
+        for R in range(len(nums)):
+            cur_sum += nums[R]
+
+            # update window
+            while cur_sum + k < nums[R] * (R-L+1):
+                cur_sum -= nums[L]
+                L +=1
+            max_freq = max(max_freq, R-L+1)
+        
+        return max_freq
+
+```
+
+
+## Union- find
 - Path compression find: O(log(logn))
 - Merge parents
 
 
-# Dynamic Programming
+## Dynamic Programming
 
 Iterative DP
 - Construct array such that first row/base case aids in computation

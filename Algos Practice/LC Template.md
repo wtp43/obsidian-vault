@@ -17,6 +17,41 @@ Dp is about managing states.
 - 
 
 
+## Sliding Window
+
+### Template 1
+Keep L(left side of window) tracker 
+
+1. Remove left element if window already size k
+	1. L-R > k
+	2. Increment L
+2. Add current element
+3. Check if conditions are met
+
+Alternative way to store window
+- dictionary of {e: ind}
+
+```python
+def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
+        d = {}
+        for i, n in enumerate(nums):
+            if n in d and i - d[n] <= k:
+                return True
+            d[n] = i
+        return False
+```
+### Template 2
+Keep L tracker
+
+1. Update relevant counters
+2. Update window (while loop)
+	1. Remove left side until constraints are satisfied again
+3. Update result if needed
+
+
+
+
+
 
 
 ## Graphs
