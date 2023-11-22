@@ -12,7 +12,7 @@ https://www.techinterviewhandbook.org/behavioral-interview/
 
 # Topics
 
-- [ ] Backtracking
+- [ ] [[Backtracking]]
 	- [x] N Queen
 	- [ ] Maze Solving 
 	- [ ] Knights Tour
@@ -47,17 +47,11 @@ https://www.techinterviewhandbook.org/behavioral-interview/
 		- [ ] Cycle Detection
 	- [ ] Strongly Connected Components
 	- [ ] https://emre.me/algorithms/tarjans-algorithm/
-	- [ ] DFS (Valid path)
-		- [ ] https://leetcode.com/problems/find-if-path-exists-in-graph/solutions/2715942/find-if-path-exists-in-graph/
-		- [ ] def dfs(curr_node):
-		            if curr_node == destination:
-		                return True
-		            if not seen[curr_node]:
-		                seen[curr_node] = True
-		                for next_node in graph[curr_node]:
-		                    if dfs(next_node):
-		                        return True
-		            return False
+	- [ ] [[DFS]] 
+		- [ ] Valid path
+	- [ ] [[BFS]]
+		- [ ] Multisource BFS: processing queues in chunks
+			- [ ] [[LC-286. Walls and Gates]], [[LC-994. Rotting Oranges]]
 	- [ ] Prims
 	- [ ] Kruskals
 	- [ ] Dijkstras

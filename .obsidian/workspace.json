@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4811aba339c9e71f",
+        "id": "287623331556e573",
         "type": "tabs",
         "children": [
           {
-            "id": "bb0249294905a586",
+            "id": "a91486d9435ef57e",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -16,41 +16,37 @@
                 {
                   "state": "{}",
                   "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos Practice/Revision 1 - Nov (Week 2).md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "b568613476013440",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "38e28fc58f6e3796",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
+                },
                 {
-                  "state": "{}",
-                  "eState": "{}"
+                  "title": "Comprehensive List",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Algos Practice/Comprehensive List.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":16,\"ch\":20},\"to\":{\"line\":16,\"ch\":20}},\"scroll\":3}"
+                },
+                {
+                  "title": "Best Theoretical Time Complexity (BTTC)",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Algos Practice/Best Theoretical Time Complexity (BTTC).md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}},\"scroll\":3}"
+                },
+                {
+                  "title": "Comprehensive List",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Algos Practice/Comprehensive List.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}},\"scroll\":168.8692080378488}"
+                },
+                {
+                  "title": "Interview Prep",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Algos Practice/Interview Prep.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}}}"
                 }
               ]
             },
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algos Practice/Revision 1 - Nov (Week 2).md",
+                "file": "Algos Practice/Intuition/Backtracking.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -58,7 +54,35 @@
             }
           },
           {
-            "id": "367dedd6ffb99ce4",
+            "id": "32ba6d4244977383",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Binary Search",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Algos Practice/Intuition/Binary Search.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":7,\"ch\":0},\"to\":{\"line\":7,\"ch\":0}},\"scroll\":3}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Leetcode Questions/LC-1752. Check if Array Is Sorted and Rotated.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cbf14ad631ea671b",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -72,7 +96,58 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algos Practice/LC Template.md",
+                "file": "Weight Lifting and Rehab/Career Handbook.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "195da57656fb46e5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2e462dcf1cc39336",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algos Practice/Comprehensive List.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "77b66e92de4f23c3",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algos Practice/Review List.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -152,23 +227,6 @@
               "type": "starred",
               "state": {}
             }
-          },
-          {
-            "id": "1b81a5d72690bbbe",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "bookmarks",
-              "state": {}
-            }
           }
         ]
       }
@@ -233,45 +291,6 @@
             }
           },
           {
-            "id": "0a8f00c4fde7f70e",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "alphabetical",
-                "useHierarchy": true
-              }
-            }
-          },
-          {
-            "id": "f3a79918bb64f248",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Weight Lifting and Rehab/Career Handbook.md"
-              }
-            }
-          },
-          {
             "id": "22c7582bdb479a05",
             "type": "leaf",
             "pane-relief:history-v1": {
@@ -308,7 +327,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -321,109 +340,43 @@
       "darlal-switcher-plus:Open Symbols for the active editor": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "workspaces:Manage workspace layouts": false,
       "digitalgarden:Digital Garden Publication Center": false,
       "templater-obsidian:Templater": false
     }
   },
-  "floating": {
-    "id": "5d668363af87db76",
-    "type": "floating",
-    "children": [
-      {
-        "id": "6b516e3ef84df01f",
-        "type": "window",
-        "children": [
-          {
-            "id": "7be86437be9c296f",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "ee8f4882e788234b",
-                "type": "leaf",
-                "pane-relief:history-v1": {
-                  "pos": 0,
-                  "stack": [
-                    {
-                      "state": "{}",
-                      "eState": "{}"
-                    }
-                  ]
-                },
-                "state": {
-                  "type": "empty",
-                  "state": {}
-                }
-              },
-              {
-                "id": "5185c7ec6a117e06",
-                "type": "leaf",
-                "pane-relief:history-v1": {
-                  "pos": 0,
-                  "stack": [
-                    {
-                      "state": "{}",
-                      "eState": "{}"
-                    }
-                  ]
-                },
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Weight Lifting and Rehab/Career Handbook.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              }
-            ],
-            "currentTab": 1
-          }
-        ],
-        "direction": "vertical",
-        "x": 2134,
-        "y": 30,
-        "width": 1700,
-        "height": 2124,
-        "maximize": false,
-        "zoom": 2
-      }
-    ]
-  },
-  "active": "5185c7ec6a117e06",
+  "active": "cbf14ad631ea671b",
   "lastOpenFiles": [
-    "Math/Statistics/Sorting Betting Opportunities.md",
+    "Algos Practice/Review List.md",
     "Weight Lifting and Rehab/Career Handbook.md",
-    "Algos Practice/Revision 1 - Nov (Week 2).md",
-    "Leetcode Questions/LC-84. Largest Rectangle in Histogram.md",
-    "Algos Practice/LC Template.md",
-    "Leetcode Questions/LC-1838. Frequency of the Most Frequent Element.md",
+    "Leetcode Questions/LC-1752. Check if Array Is Sorted and Rotated.md",
+    "Algos Practice/Comprehensive List.md",
+    "Algos Practice/Intuition/Backtracking.md",
+    "Leetcode Questions/LC-153. Find Minimum in Rotated Sorted Array.md",
+    "Algos Practice/Intuition/Binary Search.md",
+    "Code/Frontend/React.md",
+    "Leetcode Questions/LC-286. Walls and Gates.md",
+    "DS/BFS.md",
+    "DS/Connected Components.md",
+    "DS/DFS.md",
+    "Algos Practice/Best Theoretical Time Complexity (BTTC).md",
+    "Algos Practice/Interview Prep.md",
+    "Code/VIM.md",
     "Code/LazyVim.md",
+    "Algos Practice/LC Template.md",
+    "Algos Practice/Revision 1 - Nov (Week 2).md",
+    "Math/Statistics/Sorting Betting Opportunities.md",
+    "Leetcode Questions/LC-84. Largest Rectangle in Histogram.md",
+    "Leetcode Questions/LC-1838. Frequency of the Most Frequent Element.md",
     "Code/Frontend/CSS.md",
     "Leetcode Questions/LC-141. Linked List Cycle.md",
     "Templates/Generic.md",
     "Projects/Master Todo List.md",
-    "Code/Frontend/React.md",
     "Code/Web Development/Web Infrastructure Overview.md",
     "Code/Web Development/attachments/Pasted image 20231108174314.png",
     "Code/Web Development/attachments/Pasted image 20231108172630.png",
     "Code/Web Development/attachments/Pasted image 20231108172329.png",
     "Code/Web Development/attachments/Pasted image 20231108164506.png",
     "Code/Web Development/attachments",
-    "Algos Practice/Intuition.md",
-    "Algos Practice/Untitled.md",
-    "Leetcode Questions/LC-14. Longest Common Prefix.md",
-    "Leetcode Questions/LC-128. Longest Consecutive Sequence.md",
-    "DS/Union Find (Disjoint Sets).md",
-    "Code/VIM.md",
-    "Code/Scripting/ZSH.md",
-    "Code/Scripting/Command-line Utilities.md",
-    "Projects/Project Board.md",
-    "Weight Lifting and Rehab/Managing ADHD.md",
-    "Leetcode Questions/LC-51. N-Queens.md",
-    "Templates/Callout.md",
-    "Code/Scripting/jq.md",
     "Code/Scripting",
     "Templates/templates",
     "views/progress/view.js",

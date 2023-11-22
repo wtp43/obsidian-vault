@@ -233,5 +233,24 @@
       ],
       "key": "["
     }
+  ],
+  "pane-relief:go-next": [],
+  "editor:insert-link": [],
+  "pane-relief:go-prev": [],
+  "editor:focus-left": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "J"
+    }
+  ],
+  "editor:focus-right": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "K"
+    }
   ]
 }

@@ -1,25 +1,20 @@
 [
-  "obsidian-admonition",
   "obsidian-style-settings",
   "darlal-switcher-plus",
-  "tag-wrangler",
   "obsidian-git",
   "templater-obsidian",
   "dataview",
   "auto-note-mover",
   "obsidian-dynamic-toc",
   "highlightr-plugin",
-  "obsidian-kanban",
   "obsidian-vimrc-support",
   "digitalgarden",
   "obsidian-linter",
   "metaedit",
   "obsidian-contextual-typography",
   "quickadd",
-  "obsidian-tasks-plugin",
   "obsidian-hider",
-  "workspaces-plus",
   "obsidian-minimal-settings",
-  "obsidian-electron-window-tweaker",
-  "pane-relief"
+  "pane-relief",
+  "obsidian-relative-line-numbers"
 ]

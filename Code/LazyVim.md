@@ -3,6 +3,26 @@ dg-publish: true
 ---
 ---
 # LazyVim
+## Todo mappings
+- 'jk' to esc
+- ctrl - d with zz
+
+## Basics
+
+### File tree
+- leader + e
+- `<C-L>`, `<C-H>` switch between neo-tree and bufferline buffers
+
+### Switch between tabs
+`<S-L>`, `<S-H>` switch between neo-tree and bufferline buffers
+### Split Window
+- open split window
+- switch between split window
+
+### Fuzzy search (telescope)
+
+### Notifications
+- `<leader>un` :	Dismiss all Notifications	
 
 leader + 
 - e: Explorer NeoTree(root dir)

@@ -22,7 +22,7 @@
   "colorfulActiveStates": false,
   "trimNames": false,
   "labeledNav": false,
-  "fullWidthMedia": true,
+  "fullWidthMedia": false,
   "bordersToggle": false,
   "minimalStatus": false,
   "focusMode": true,
@@ -30,7 +30,7 @@
   "underlineExternal": true,
   "useSystemTheme": false,
   "folding": true,
-  "lineNumbers": false,
+  "lineNumbers": true,
   "readableLineLength": false,
   "devBlockWidth": false
 }

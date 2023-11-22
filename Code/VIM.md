@@ -1,64 +1,63 @@
 ---
 dg-publish: true
 ---
-# Navigation
+# Vim 
+## Navigation
 Directions
 - hl
 - j down
 - k up
 - `gg` to move to top
+- G to move to bottom
 
-# Exiting VIM
-Discard all changes
-- ``:q!``
-- ``:wq`
 
-# Text Editing
-- `x` deletes character under cursor
-- `i` to insert text
-- `A` to append. Cursor automatically moves to end of line.
-- `shift + enter` to insert new line without leaving normal mode
+### Horizontal
+- fx/Fx
+- tx/Tx
 
-# Deletion Commands
-- `dw` delete word
-- `d$` delete to end of line
-- `dd` deletes the current line
-	- `2dd` deletes two lines
+### Vertical
+- 5jj
 
-# Motions
-- `w` until start of next word, excluding its first character
-	- `2w` moves the cursor two word forward
-- `e` to the end of the current word, including the last character
-- `E` to end of current word including punctuation
-- `b` to start of previous word
-- `B` to start of previous word including punctuation
-- `%` move to matching character (`),],}`)
+### Jump
+- `<leader> gd`: Jump to definition in the file (or function?)
+
+
+## Text Editing
+- `ci` change inside
+	- `ci"` 
+- `daw`
+- `diw`
+
+const res = await fetch(, `)
 - `^` jump to first non-blank character
 - `$` to the end of the line, including the last character
 - `0` to move to the start of the line
 
-# Find
+## find
 - `fx` jump to before next occurrence of x
-- `Fx` jump to previous occurrence of x
+- `fx` jump to previous occurrence of x
 - `;` repeat previous f,t movement
 - `,` repeat previous f,t movement backwards
 
-# Undo/Redo
+## indentation
+- `>` indent 
+- `<` indent 
+# undo/redo
 - `u` undos the last command
-- `U` restores the line to its original state
-- `CTRL-R` redos the last command
+- `u` restores the line to its original state
+- `ctrl-r` redos the last command
 
-# Put
+# put
 - `p` puts previously deleted text after the cursor
 - `rx` to replace the character at the cursor with x
 
-# Change 
-The change operator is used with the same motions as delete
+# change 
+the change operator is used with the same motions as delete
 - `ce` to change until the end of a word
 - `cc` does the same for the whole line
 - `c3w` deletes the next 3 words
 
-# Cursor Location and File Status
+# cursor location and file status
 - `CTRL-g` to show current line and and file status
 - `G` to move to bottom of file
 - `gg` to move to start of file

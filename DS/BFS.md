@@ -13,7 +13,7 @@ tags:
 
 ## Time Complexity
 O($b^d$) where $b$ is the branching factor, $d$ is the depth of the tree
-equivalen to
+equivalent to
 O(E + V)
 
 ## Space Complexity
@@ -23,7 +23,7 @@ O(E + V)
 ```python
 def bfs(graph: Dict[int, List[int]], start: int):
 	
-    q = deque([node])
+    q = deque([start])
     seen = [0]*n
     seen[start] = 1
 	prev = [-1]*n
@@ -40,9 +40,11 @@ def bfs(graph: Dict[int, List[int]], start: int):
 
 def reconstruct_path(start, end, prev):
 	path = []
-	while end != start:
+	while end != -1:
 		path.append(end)
 		end = prev[end]
+		if end == start:
+			break
 	path.reverse()
 
 	# if traversing backwards starting from end gives 
