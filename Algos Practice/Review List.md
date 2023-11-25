@@ -27,19 +27,21 @@ max_depth:6
 	- [ ] N-queens
 
 - [ ] Topological Sort 
+	- [ ] Cycle Detection
 
 ### Review 
 - 
-
-
+## Arrays
+- [ ] [[Kadane's Algorithm]]
+- 
 ## Binary Search
-- [ ] Bisect-right
-- [ ] Bisect-left
-- [ ] 
+- [x] Bisect-right
+- [x] Bisect-left
+- [x] Binary search
 
 ### Review
 - [[LC-1752. Check if Array Is Sorted and Rotated]]  
-	- Compare all neignbour elements `(a,b)` in `A`,  
+	- Compare all neighbour elements `(a,b)` in `A`,  
 		the case of `a > b` can happen at most once.
 		
 		Note that the first element and the last element are also connected.

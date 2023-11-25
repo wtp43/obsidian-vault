@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "287623331556e573",
+        "id": "d04e761c5bf55f2c",
         "type": "tabs",
         "children": [
           {
-            "id": "a91486d9435ef57e",
+            "id": "65e74b81a6133cfc",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -16,45 +16,16 @@
                 {
                   "state": "{}",
                   "eState": "{}"
-                },
-                {
-                  "title": "Comprehensive List",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Algos Practice/Comprehensive List.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":16,\"ch\":20},\"to\":{\"line\":16,\"ch\":20}},\"scroll\":3}"
-                },
-                {
-                  "title": "Best Theoretical Time Complexity (BTTC)",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Algos Practice/Best Theoretical Time Complexity (BTTC).md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}},\"scroll\":3}"
-                },
-                {
-                  "title": "Comprehensive List",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Algos Practice/Comprehensive List.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}},\"scroll\":168.8692080378488}"
-                },
-                {
-                  "title": "Interview Prep",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Algos Practice/Interview Prep.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}}}"
                 }
               ]
             },
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos Practice/Intuition/Backtracking.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
-            "id": "32ba6d4244977383",
+            "id": "73f0cdd73a09efdb",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -62,19 +33,13 @@
                 {
                   "state": "{}",
                   "eState": "{}"
-                },
-                {
-                  "title": "Binary Search",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Algos Practice/Intuition/Binary Search.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":7,\"ch\":0},\"to\":{\"line\":7,\"ch\":0}},\"scroll\":3}"
                 }
               ]
             },
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode Questions/LC-1752. Check if Array Is Sorted and Rotated.md",
+                "file": "Code/LazyVim.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -82,7 +47,29 @@
             }
           },
           {
-            "id": "cbf14ad631ea671b",
+            "id": "2862150367ba1472",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Weight Lifting and Rehab/Managing ADHD.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5693812bb6458da8",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -104,58 +91,7 @@
             }
           }
         ],
-        "currentTab": 2
-      },
-      {
-        "id": "195da57656fb46e5",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "2e462dcf1cc39336",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos Practice/Comprehensive List.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "77b66e92de4f23c3",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos Practice/Review List.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -344,13 +280,156 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "cbf14ad631ea671b",
+  "floating": {
+    "id": "d50b7a1b195b1094",
+    "type": "floating",
+    "children": [
+      {
+        "id": "60dff9da19c64962",
+        "type": "window",
+        "children": [
+          {
+            "id": "7e27b6031f9fb7f1",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "7e8ba381e61d7948",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "empty",
+                  "state": {}
+                }
+              },
+              {
+                "id": "7883994007ea40f9",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Algos Practice/Comprehensive List.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "baa6660f714c2852",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Algos Practice/Review List.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 2
+          },
+          {
+            "id": "248693a2ad014745",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "d75d39735440d44e",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Algos Practice/Comprehensive List.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "06cc39599fe84412",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Algos/Kadane's Algorithm.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "vertical",
+        "x": 6,
+        "y": 30,
+        "width": 3828,
+        "height": 2124,
+        "maximize": false,
+        "zoom": 2.5
+      }
+    ]
+  },
+  "active": "5693812bb6458da8",
   "lastOpenFiles": [
+    "Weight Lifting and Rehab/Managing ADHD.md",
+    "Code/LazyVim.md",
     "Algos Practice/Review List.md",
-    "Weight Lifting and Rehab/Career Handbook.md",
-    "Leetcode Questions/LC-1752. Check if Array Is Sorted and Rotated.md",
+    "Algos/Kadane's Algorithm.md",
     "Algos Practice/Comprehensive List.md",
+    "Algos/Binary Search and Bisect.md",
+    "laazy.md",
     "Algos Practice/Intuition/Backtracking.md",
+    "Leetcode Questions/LC-1752. Check if Array Is Sorted and Rotated.md",
+    "Weight Lifting and Rehab/Career Handbook.md",
     "Leetcode Questions/LC-153. Find Minimum in Rotated Sorted Array.md",
     "Algos Practice/Intuition/Binary Search.md",
     "Code/Frontend/React.md",
@@ -361,17 +440,12 @@
     "Algos Practice/Best Theoretical Time Complexity (BTTC).md",
     "Algos Practice/Interview Prep.md",
     "Code/VIM.md",
-    "Code/LazyVim.md",
     "Algos Practice/LC Template.md",
     "Algos Practice/Revision 1 - Nov (Week 2).md",
     "Math/Statistics/Sorting Betting Opportunities.md",
     "Leetcode Questions/LC-84. Largest Rectangle in Histogram.md",
     "Leetcode Questions/LC-1838. Frequency of the Most Frequent Element.md",
     "Code/Frontend/CSS.md",
-    "Leetcode Questions/LC-141. Linked List Cycle.md",
-    "Templates/Generic.md",
-    "Projects/Master Todo List.md",
-    "Code/Web Development/Web Infrastructure Overview.md",
     "Code/Web Development/attachments/Pasted image 20231108174314.png",
     "Code/Web Development/attachments/Pasted image 20231108172630.png",
     "Code/Web Development/attachments/Pasted image 20231108172329.png",
