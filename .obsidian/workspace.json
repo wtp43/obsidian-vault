@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d04e761c5bf55f2c",
+        "id": "f3a525688c888dde",
         "type": "tabs",
         "children": [
           {
-            "id": "65e74b81a6133cfc",
+            "id": "9667554db0515fe4",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -25,7 +25,7 @@
             }
           },
           {
-            "id": "73f0cdd73a09efdb",
+            "id": "8e28663591a703d2",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -39,51 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/LazyVim.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2862150367ba1472",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Weight Lifting and Rehab/Managing ADHD.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5693812bb6458da8",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Weight Lifting and Rehab/Career Handbook.md",
+                "file": "Electrical Engineering/Circuits.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -91,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -194,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algos Practice/Review List.md",
+                "file": "Electrical Engineering/Circuits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -220,7 +176,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algos Practice/Review List.md",
+                "file": "Electrical Engineering/Circuits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -280,152 +236,18 @@
       "templater-obsidian:Templater": false
     }
   },
-  "floating": {
-    "id": "d50b7a1b195b1094",
-    "type": "floating",
-    "children": [
-      {
-        "id": "60dff9da19c64962",
-        "type": "window",
-        "children": [
-          {
-            "id": "7e27b6031f9fb7f1",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "7e8ba381e61d7948",
-                "type": "leaf",
-                "pane-relief:history-v1": {
-                  "pos": 0,
-                  "stack": [
-                    {
-                      "state": "{}",
-                      "eState": "{}"
-                    }
-                  ]
-                },
-                "state": {
-                  "type": "empty",
-                  "state": {}
-                }
-              },
-              {
-                "id": "7883994007ea40f9",
-                "type": "leaf",
-                "pane-relief:history-v1": {
-                  "pos": 0,
-                  "stack": [
-                    {
-                      "state": "{}",
-                      "eState": "{}"
-                    }
-                  ]
-                },
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Algos Practice/Comprehensive List.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "baa6660f714c2852",
-                "type": "leaf",
-                "pane-relief:history-v1": {
-                  "pos": 0,
-                  "stack": [
-                    {
-                      "state": "{}",
-                      "eState": "{}"
-                    }
-                  ]
-                },
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Algos Practice/Review List.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              }
-            ],
-            "currentTab": 2
-          },
-          {
-            "id": "248693a2ad014745",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "d75d39735440d44e",
-                "type": "leaf",
-                "pane-relief:history-v1": {
-                  "pos": 0,
-                  "stack": [
-                    {
-                      "state": "{}",
-                      "eState": "{}"
-                    }
-                  ]
-                },
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Algos Practice/Comprehensive List.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "06cc39599fe84412",
-                "type": "leaf",
-                "pane-relief:history-v1": {
-                  "pos": 0,
-                  "stack": [
-                    {
-                      "state": "{}",
-                      "eState": "{}"
-                    }
-                  ]
-                },
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Algos/Kadane's Algorithm.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              }
-            ],
-            "currentTab": 1
-          }
-        ],
-        "direction": "vertical",
-        "x": 6,
-        "y": 30,
-        "width": 1911,
-        "height": 2124,
-        "maximize": false,
-        "zoom": 2.5
-      }
-    ]
-  },
-  "active": "baa6660f714c2852",
+  "active": "8e28663591a703d2",
   "lastOpenFiles": [
-    "Weight Lifting and Rehab/Career Handbook.md",
-    "Weight Lifting and Rehab/Managing ADHD.md",
+    "Electrical Engineering/Soldering.md",
+    "Electrical Engineering/Circuits.md",
+    "Leetcode Questions/LC-394. Decode String.md",
+    "Electrical Engineering",
     "Code/LazyVim.md",
-    "Algos Practice/Review List.md",
-    "Algos/Kadane's Algorithm.md",
+    "Weight Lifting and Rehab/Managing ADHD.md",
+    "Weight Lifting and Rehab/Career Handbook.md",
     "Algos Practice/Comprehensive List.md",
+    "Algos/Kadane's Algorithm.md",
+    "Algos Practice/Review List.md",
     "Algos/Binary Search and Bisect.md",
     "laazy.md",
     "Algos Practice/Intuition/Backtracking.md",
@@ -443,9 +265,6 @@
     "Algos Practice/LC Template.md",
     "Algos Practice/Revision 1 - Nov (Week 2).md",
     "Math/Statistics/Sorting Betting Opportunities.md",
-    "Leetcode Questions/LC-84. Largest Rectangle in Histogram.md",
-    "Leetcode Questions/LC-1838. Frequency of the Most Frequent Element.md",
-    "Code/Frontend/CSS.md",
     "Code/Web Development/attachments/Pasted image 20231108174314.png",
     "Code/Web Development/attachments/Pasted image 20231108172630.png",
     "Code/Web Development/attachments/Pasted image 20231108172329.png",
@@ -459,7 +278,6 @@
     "views/progress-bar/view.js",
     "views/progress",
     "views/total-progress-bar",
-    "views/target",
     "Weight Lifting and Rehab/attachments/Pasted image 20230915164029.png",
     "attachments/Pasted image 20221208173515.png",
     "obsidian icon.jpg",
