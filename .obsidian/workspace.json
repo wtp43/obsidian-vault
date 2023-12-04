@@ -25,7 +25,7 @@
             }
           },
           {
-            "id": "8e28663591a703d2",
+            "id": "ea2719d7e46c9a19",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -39,7 +39,52 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Electrical Engineering/Circuits.md",
+                "file": "Code/LazyVim.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0de8b21ac98106e4",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "b49086b3b647833b",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Graphs",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Algos Practice/Intuition/Graphs.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":6,\"ch\":0},\"to\":{\"line\":6,\"ch\":0}},\"scroll\":52.53608385078935}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Leetcode Questions/LC-200. Number of Islands.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -47,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -150,7 +195,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Electrical Engineering/Circuits.md",
+                "file": "Leetcode Questions/LC-200. Number of Islands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +221,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Electrical Engineering/Circuits.md",
+                "file": "Leetcode Questions/LC-200. Number of Islands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -236,13 +281,16 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "8e28663591a703d2",
+  "active": "b49086b3b647833b",
   "lastOpenFiles": [
-    "Electrical Engineering/Soldering.md",
+    "Algos Practice/Intuition/Graphs.md",
+    "DS/BFS.md",
+    "DS/DFS.md",
+    "Code/LazyVim.md",
     "Electrical Engineering/Circuits.md",
+    "Electrical Engineering/Soldering.md",
     "Leetcode Questions/LC-394. Decode String.md",
     "Electrical Engineering",
-    "Code/LazyVim.md",
     "Weight Lifting and Rehab/Managing ADHD.md",
     "Weight Lifting and Rehab/Career Handbook.md",
     "Algos Practice/Comprehensive List.md",
@@ -256,15 +304,12 @@
     "Algos Practice/Intuition/Binary Search.md",
     "Code/Frontend/React.md",
     "Leetcode Questions/LC-286. Walls and Gates.md",
-    "DS/BFS.md",
     "DS/Connected Components.md",
-    "DS/DFS.md",
     "Algos Practice/Best Theoretical Time Complexity (BTTC).md",
     "Algos Practice/Interview Prep.md",
     "Code/VIM.md",
     "Algos Practice/LC Template.md",
     "Algos Practice/Revision 1 - Nov (Week 2).md",
-    "Math/Statistics/Sorting Betting Opportunities.md",
     "Code/Web Development/attachments/Pasted image 20231108174314.png",
     "Code/Web Development/attachments/Pasted image 20231108172630.png",
     "Code/Web Development/attachments/Pasted image 20231108172329.png",

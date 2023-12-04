@@ -19,6 +19,19 @@ dg-publish: true
 ### Switch between buffers
 - `<leader> + bb` or  ```<leader> ` ``` to switch to previous buffer
 
+## Comment
+`gco` - Insert comment to the next line and enters INSERT mode
+`gcO` - Insert comment to the previous line and enters INSERT mode
+
+`gcc` - Toggles the current line using linewise comment
+`gbc` - Toggles the current line using blockwise comment
+
+`gbaf` - Toggle comment around a function (w/ LSP/treesitter support)
+`gbac` - Toggle comment around a class (w/ LSP/treesitter support)
+## Terminal
+- toggleterm config:
+https://medium.com/@shaikzahid0713/terminal-support-in-neovim-c616923e0431
+
 ## Telescope
 
 - `<leader><space>`Find Files (root dir)
