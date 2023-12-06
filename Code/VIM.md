@@ -9,7 +9,7 @@ Directions
 - k up
 - `gg` to move to top
 - G to move to bottom
-
+- `{`, `}` to jump paragraphs
 
 ### Horizontal
 - fx/Fx

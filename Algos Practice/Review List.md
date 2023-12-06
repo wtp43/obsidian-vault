@@ -39,6 +39,15 @@ max_depth:6
 - [x] Bisect-left
 - [x] Binary search
 
+## Sliding Window
+- Constructing windows [[Sliding Window]]
+	- Shrinkable/non-shrinkable approach
+
+## Sorts
+ - [[Quick Sort]]
+
+## Data Structures
+ - [[Heap]]
 ### Review
 - [[LC-1752. Check if Array Is Sorted and Rotated]]  
 	- Compare all neighbour elements `(a,b)` in `A`,  

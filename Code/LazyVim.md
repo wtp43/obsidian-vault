@@ -1,10 +1,29 @@
 ---
 dg-publish: true
 ---
+# Vim Mappings
+
+## Text Objects
+ - `di"` delete everything inside of the quotes
+
+
+
 # LazyVim
 ## Todo mappings
 - 'jk' to esc
 - ctrl - d with zz
+
+
+## Format
+Using conform
+- `<leader>mp`
+## UI
+### Clear Notifications
+- `<leader-un>`
+
+### Messages
+ - `<leader-sna>` for all messages
+ - `<leader-snl>` for last message
 
 ## Basics
 
@@ -18,7 +37,7 @@ dg-publish: true
 - `<leader> + bd` to close current buffer
 ### Switch between buffers
 - `<leader> + bb` or  ```<leader> ` ``` to switch to previous buffer
-
+- `H` or `S` to move left or right
 ## Comment
 `gco` - Insert comment to the next line and enters INSERT mode
 `gcO` - Insert comment to the previous line and enters INSERT mode
