@@ -13,7 +13,13 @@ dg-publish: true
 - 'jk' to esc
 - ctrl - d with zz
 
-
+## LSP
+- `gR` show LSP references in Telescope
+- `gD` go to declaration
+- `gd` show LSP definitions
+- `gi` show LSP implementations
+- `rn` smart rename
+- `<leader>ca` see code actions
 ## Format
 Using conform
 - `<leader>mp`

@@ -103,7 +103,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -206,6 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Code/VIM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -231,6 +232,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Code/VIM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -290,14 +292,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "aad3d2d33b123445",
+  "active": "3b8edb595304af03",
   "lastOpenFiles": [
+    "Code/LazyVim.md",
     "Algos Practice/Intuition/Heap.md",
     "DS/Heaps.md",
     "Algos Practice/Review List.md",
     "Algos Practice/Comprehensive List.md",
     "Algos Practice/Intuition/Sliding Window.md",
-    "Code/LazyVim.md",
     "Code/VIM.md",
     "Leetcode Questions/LC-200. Number of Islands.md",
     "Algos Practice/Intuition/Graphs.md",

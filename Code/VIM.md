@@ -27,6 +27,7 @@ Directions
 	- `ci"` 
 - `daw`
 - `diw`
+-  `:%d` to delete all
 
 const res = await fetch(, `)
 - `^` jump to first non-blank character
