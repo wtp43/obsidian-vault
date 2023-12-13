@@ -42,7 +42,7 @@
             }
           },
           {
-            "id": "3b8edb595304af03",
+            "id": "75787b9200e462f8",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -56,29 +56,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/VIM.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6bd3e32bff07a4ab",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Code/LazyVim.md",
+                "file": "Algos Practice/Review List.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -104,6 +82,34 @@
           }
         ],
         "currentTab": 2
+      },
+      {
+        "id": "2ebe23efca012354",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "097f90cdaa25910f",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algos Practice/Review List.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -206,7 +212,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/VIM.md",
+                "file": "Software Engineering/LazyVim.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -232,7 +238,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/VIM.md",
+                "file": "Software Engineering/LazyVim.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -292,15 +298,81 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3b8edb595304af03",
+  "floating": {
+    "id": "0797118a727b58e5",
+    "type": "floating",
+    "children": [
+      {
+        "id": "3ada25f2cf35d4ba",
+        "type": "window",
+        "children": [
+          {
+            "id": "55aa26de92c60c5a",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "af08f093e8a0e31a",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "empty",
+                  "state": {}
+                }
+              },
+              {
+                "id": "17a58d6d19c43788",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Software Engineering/LazyVim.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "vertical",
+        "x": 6,
+        "y": 30,
+        "width": 1911,
+        "height": 2124,
+        "maximize": false,
+        "zoom": 2.5
+      }
+    ]
+  },
+  "active": "17a58d6d19c43788",
   "lastOpenFiles": [
+    "Algos Practice/Review List.md",
+    "Software Engineering/LazyVim.md",
+    "Software Engineering/To be a grug.md",
+    "Software Engineering/VIM.md",
     "Weight Lifting and Rehab/Career Handbook.md",
-    "Code/VIM.md",
     "Weight Lifting and Rehab/Career Planning.md",
-    "Code/LazyVim.md",
     "Algos Practice/Intuition/Heap.md",
     "DS/Heaps.md",
-    "Algos Practice/Review List.md",
     "Algos Practice/Comprehensive List.md",
     "Algos Practice/Intuition/Sliding Window.md",
     "Leetcode Questions/LC-200. Number of Islands.md",
@@ -319,14 +391,13 @@
     "Leetcode Questions/LC-1752. Check if Array Is Sorted and Rotated.md",
     "Leetcode Questions/LC-153. Find Minimum in Rotated Sorted Array.md",
     "Algos Practice/Intuition/Binary Search.md",
-    "Code/Frontend/React.md",
-    "Leetcode Questions/LC-286. Walls and Gates.md",
-    "Code/Web Development/attachments/Pasted image 20231108174314.png",
-    "Code/Web Development/attachments/Pasted image 20231108172630.png",
-    "Code/Web Development/attachments/Pasted image 20231108172329.png",
-    "Code/Web Development/attachments/Pasted image 20231108164506.png",
-    "Code/Web Development/attachments",
-    "Code/Scripting",
+    "Software Engineering/Frontend/React.md",
+    "Software Engineering/Web Development/attachments/Pasted image 20231108174314.png",
+    "Software Engineering/Web Development/attachments/Pasted image 20231108172630.png",
+    "Software Engineering/Web Development/attachments/Pasted image 20231108172329.png",
+    "Software Engineering/Web Development/attachments/Pasted image 20231108164506.png",
+    "Software Engineering/Web Development/attachments",
+    "Software Engineering/Scripting",
     "Templates/templates",
     "views/progress/view.js",
     "views/total-progress-bar/view.js",
