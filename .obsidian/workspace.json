@@ -212,7 +212,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software Engineering/LazyVim.md",
+                "file": "Algos Practice/Review List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -238,7 +238,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software Engineering/LazyVim.md",
+                "file": "Algos Practice/Review List.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -328,7 +328,7 @@
                 }
               },
               {
-                "id": "17a58d6d19c43788",
+                "id": "c509adfec2f0ec77",
                 "type": "leaf",
                 "pane-relief:history-v1": {
                   "pos": 0,
@@ -342,7 +342,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Software Engineering/LazyVim.md",
+                    "file": "Software Engineering/Frontend/React.md",
                     "mode": "source",
                     "backlinks": false,
                     "source": false
@@ -354,17 +354,18 @@
           }
         ],
         "direction": "vertical",
-        "x": 6,
+        "x": 1729,
         "y": 30,
-        "width": 1911,
+        "width": 2105,
         "height": 2124,
         "maximize": false,
         "zoom": 2.5
       }
     ]
   },
-  "active": "17a58d6d19c43788",
+  "active": "75787b9200e462f8",
   "lastOpenFiles": [
+    "Software Engineering/Frontend/React.md",
     "Algos Practice/Review List.md",
     "Software Engineering/LazyVim.md",
     "Software Engineering/To be a grug.md",
@@ -391,7 +392,6 @@
     "Leetcode Questions/LC-1752. Check if Array Is Sorted and Rotated.md",
     "Leetcode Questions/LC-153. Find Minimum in Rotated Sorted Array.md",
     "Algos Practice/Intuition/Binary Search.md",
-    "Software Engineering/Frontend/React.md",
     "Software Engineering/Web Development/attachments/Pasted image 20231108174314.png",
     "Software Engineering/Web Development/attachments/Pasted image 20231108172630.png",
     "Software Engineering/Web Development/attachments/Pasted image 20231108172329.png",
