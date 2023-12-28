@@ -6,5 +6,5 @@ dg-publish: true
 >[!example]
 >![[Pasted image 20221208173515.png]]
 
-# Find Strongy Connected Components
+# Find Strongly Connected Components
 - [[Kosaraju's Algorithm]]

@@ -3,7 +3,7 @@ dg-publish: true
 ---
 ---
 
->[!summary]+ Contents
+>[!summary]- Contents
 >```toc
 style: number
 min_depth:1
@@ -81,6 +81,16 @@ email: 'bhepworth@sculpture.com',
 const [todos, setTodos] = useState(createInitialTodos()); 
 const [todos, setTodos] = useState(createInitialTodos); 
 ```
+
+### useEffect
+```js
+useEffect(()=>{
+		   
+}, [a,b]); // Runs again if a or b are different
+```
+- the Effect runs after the initial render and after re-renders with changed dependencies
+- if no dependencies are given, it is re-rendered every time
+- if an empty dependency array is given `[]`, it will only run after the initial render
 ## Rendering Lists
 ```javascript
 ARRAY.map(x => 
@@ -88,8 +98,21 @@ ARRAY.map(x =>
 );
 ```
 
-
 # Other
+### Promise
+- Object that represents the eventual completion/failure of an asynchronous operation and its resulting value
+### Async function and await
+- Use await in async functions. Async ensures the function returns a promise and wraps non promises in it
+- await waits until promise settles and returns its result
+
+### Async=Concurrency != Parallelism
+- blocked vs at the same time
+- 1 processor vs multiple processors
+- Why it makes more sense to use asynchronous code for web API's
+	- Many users but the serve is waiting for their not so good connection to send their requests
+	- And then waiting again for the response to come back, resulting in lots of waiting
+ - lots of waiting -> use concurrency
+ - else -> parallelism
 ### Array destructuring
 `const [x,y] = f();`
 ### Updater function
@@ -105,3 +128,7 @@ function handleClick() {
 	setAge(age => age + 1); // setAge(42 + 1)
 }
 ```
+
+
+
+

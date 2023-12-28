@@ -3,16 +3,49 @@ dg-publish: true
 tags: 
 created: ""
 ---
-- [ ] ---
+ # All Topics
 
->[!summary]+ Contents
->```toc
-style: number
-min_depth:1
-max_depth:6 
->```
+After reviewing, update applications for each algo
 
-# All Topics
+# Data Structures
+- [ ] AVL Trees
+- [ ] Binary Search Tree
+- [ ] Bloom Filter
+- [ ] Circular Queue
+	- [ ] Circular Deque
+- [ ] Connected Components
+- [x] Heap
+	- [ ] Indexed Priority Heap
+- [ ] D-ary Heap
+	- [ ] Indexed D-ary Heap *
+- [ ] Fibonacci Heap *
+- [ ] Graph Structures
+- [ ] Hash map
+- [ ] LFU Cache
+- [ ] Linked List
+- [ ] Matrix Traversals
+- [ ] Maximum Frequency Stack
+- [ ] Minimum Queue
+- [ ] Monotonic Queue
+- [ ] Sparse Table  *
+- [ ] Stacks
+	- [ ] [[LC-84. Largest Rectangle in Histogram]]
+	- [ ] [[LC-735. Asteroid Collision]]
+	- [ ] [[LC-402. Remove K Digits]]
+	- [ ] [[LC-456. 132 Pattern]]
+	- [ ] [[LC-901. Online Stock Span]]
+	- [ ] [[LC-394. Decode String]]
+	- [ ] [[LC-1209. Remove All Adjacent Duplicates in String II]]
+	- [ ] [[LC-32. Longest Valid Parentheses]]
+	- [ ] [[LC-85. Maximal Rectangle]]
+	- [ ] [[LC-739. Daily Temperatures]]
+- [ ] Trees (Todo - Incomplete notes)
+- [x] Trie
+- [x] Union Find
+
+# Algos
+- Strongly Connected Components
+	- Kosaraju's Algorithm
 
 ## Graph
 

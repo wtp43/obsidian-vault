@@ -67,10 +67,10 @@ class Union_find:
 ```
 
 ```python
-def longest_consecutive_sequence(arr):
+def longest_consecutive_sequence(nums):
 	seen = {}
 	uf = union_find(len(nums))
-	for i, num in enumerate(arr):
+	for i, num in enumerate(nums):
 		if num in d:
 			continue
 		d[num] = i
@@ -97,3 +97,14 @@ def isCyclic(edges,num_vertices):
 	return False
 
 ```
+
+We cannot use union-find to detect cycles in a directed graph. This is because a directed graph cannot be represented using the disjoint-set(the data structure on which union-find is performed).
+
+When we say 'a union b' we cannot make out the direction of edge
+
+1. is a going to b? (or)
+2. is b going to a?
+
+But, incase of undirected graphs, each connected component is equivalent to a set. So union-find can be used to detect a cycle. Whenever you try to perform union on two vertices belonging to the same connected component, we can say that cycle exists.
+
+Source: https://stackoverflow.com/questions/61167751/can-we-detect-cycles-in-directed-graph-using-union-find-data-structure

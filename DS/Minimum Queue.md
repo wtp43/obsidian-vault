@@ -37,3 +37,6 @@ class min_queue:
 				self.outbox.append([x, min_x])
 		return self.outbox.pop()
 ```
+
+
+## Using Double Ended Queue

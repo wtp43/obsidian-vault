@@ -4,28 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b198b60394fd2bb5",
+        "id": "3e8c475b5a3eb06d",
         "type": "tabs",
         "children": [
           {
-            "id": "d54e986fd4fbc31a",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "2c306fcbd94fdd5b",
+            "id": "27d62451090bd676",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -46,8 +29,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -214,7 +196,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -236,35 +220,35 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "2c306fcbd94fdd5b",
+  "active": "27d62451090bd676",
   "lastOpenFiles": [
-    "Weight Lifting and Rehab/Career Handbook.md",
-    "Weight Lifting and Rehab/Managing ADHD.md",
-    "Software Engineering/Frontend/React.md",
+    "DS/Monotonic Queue.md",
+    "DS/Stacks.md",
+    "Algos/Kosaraju's Algorithm.md",
+    "DS/Strongly Connected Components.md",
+    "DS/Union Find (Disjoint Sets).md",
+    "Software Engineering/Frontend/Javascript.md",
+    "Templates/Generic.md",
+    "Templates/Callout.md",
+    "DS/Hashmap.md",
     "Algos Practice/Review List.md",
+    "DS/Heaps.md",
+    "DS/Bidirectional Dictionary.md",
+    "DS/Linked List.md",
+    "DS/LRU Cache.md",
+    "DS/Minimum Queue.md",
+    "DS/Minimum Stack (Optimized).md",
+    "Leetcode Questions/LC-456. 132 Pattern.md",
+    "DS/Trees.md",
+    "DS/Trie.md",
+    "Algos Practice/Comprehensive List.md",
+    "Software Engineering/Frontend/React.md",
+    "Weight Lifting and Rehab/Career Handbook.md",
+    "Weight Lifting and Rehab/Career Planning.md",
+    "Weight Lifting and Rehab/Managing ADHD.md",
     "Software Engineering/LazyVim.md",
     "Software Engineering/To be a grug.md",
-    "Software Engineering/VIM.md",
-    "Weight Lifting and Rehab/Career Planning.md",
-    "Algos Practice/Intuition/Heap.md",
-    "DS/Heaps.md",
-    "Algos Practice/Comprehensive List.md",
-    "Algos Practice/Intuition/Sliding Window.md",
-    "Leetcode Questions/LC-200. Number of Islands.md",
-    "Algos Practice/Intuition/Graphs.md",
-    "DS/BFS.md",
-    "DS/DFS.md",
-    "Electrical Engineering/Circuits.md",
-    "Electrical Engineering/Soldering.md",
-    "Leetcode Questions/LC-394. Decode String.md",
     "Electrical Engineering",
-    "Algos/Kadane's Algorithm.md",
-    "Algos/Binary Search and Bisect.md",
-    "laazy.md",
-    "Algos Practice/Intuition/Backtracking.md",
-    "Leetcode Questions/LC-1752. Check if Array Is Sorted and Rotated.md",
-    "Leetcode Questions/LC-153. Find Minimum in Rotated Sorted Array.md",
-    "Algos Practice/Intuition/Binary Search.md",
     "Software Engineering/Web Development/attachments/Pasted image 20231108174314.png",
     "Software Engineering/Web Development/attachments/Pasted image 20231108172630.png",
     "Software Engineering/Web Development/attachments/Pasted image 20231108172329.png",

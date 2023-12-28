@@ -3,7 +3,7 @@ dg-publish: true
 ---
 ## Unoptimized
 ```python
-min_stack = []
+stack = []
 new_min = new_elem if not stack else min(new_elem, stack[-1][1])
 stack.append([new_elem, new_min])
 ```
@@ -21,7 +21,7 @@ class min_stack:
 		self.stack.append(x)
 		if not min_stack or self.get_min() > x:
 			self.min_stack.append([x,1])
-		elif self.get_min() == x:
+		else:
 			self.min_stack[-1][1] += 1
 
 	def pop(self, x):

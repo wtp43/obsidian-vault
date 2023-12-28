@@ -32,7 +32,7 @@ class min_heap:
 			i = p
 			
 	def sift_down(self, i):
-		while i*2 > self.size:
+		while i*2 < self.size:
 			mc = self.get_minchild():
 			if self.heap[i] > self.heap[mc]:
 				self.swap(i, mc)
