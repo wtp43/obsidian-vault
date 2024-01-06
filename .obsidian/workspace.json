@@ -28,8 +28,31 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ed801e6380576e13",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Todo.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -132,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software Engineering/Frontend/React.md",
+                "file": "Projects/Todo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +181,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software Engineering/Frontend/React.md",
+                "file": "Projects/Todo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -220,8 +243,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "27d62451090bd676",
+  "active": "ed801e6380576e13",
   "lastOpenFiles": [
+    "Software Engineering/Frontend/React.md",
     "DS/Monotonic Queue.md",
     "DS/Stacks.md",
     "Algos/Kosaraju's Algorithm.md",
@@ -242,7 +266,6 @@
     "DS/Trees.md",
     "DS/Trie.md",
     "Algos Practice/Comprehensive List.md",
-    "Software Engineering/Frontend/React.md",
     "Weight Lifting and Rehab/Career Handbook.md",
     "Weight Lifting and Rehab/Career Planning.md",
     "Weight Lifting and Rehab/Managing ADHD.md",

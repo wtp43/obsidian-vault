@@ -123,9 +123,9 @@ function handleClick() {
 	setAge(age + 1); // setAge(42 + 1)
 }
 function handleClick() {  
-	setAge(age => age + 1); // setAge(42 + 1)  
-	setAge(age => age + 1); // setAge(42 + 1)  
-	setAge(age => age + 1); // setAge(42 + 1)
+	setAge(a => a + 1); // setAge(42 + 1)  
+	setAge(a => a + 1); // setAge(43 + 1)  
+	setAge(a => a + 1); // setAge(44 + 1)
 }
 ```
 
