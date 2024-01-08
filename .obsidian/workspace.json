@@ -38,13 +38,41 @@
                 {
                   "state": "{}",
                   "eState": "{}"
+                },
+                {
+                  "title": "Todo",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Projects/Todo.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":0},\"to\":{\"line\":5,\"ch\":0}},\"scroll\":3}"
                 }
               ]
             },
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Todo.md",
+                "file": "Software Engineering/Virtual Env.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a4f149077127adf3",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software Engineering/Git.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -52,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -155,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/Todo.md",
+                "file": "Software Engineering/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +209,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/Todo.md",
+                "file": "Software Engineering/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -243,8 +271,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "ed801e6380576e13",
+  "active": "a4f149077127adf3",
   "lastOpenFiles": [
+    "Software Engineering/Virtual Env.md",
+    "Software Engineering/Git.md",
+    "Leetcode Questions/LC-402. Remove K Digits.md",
+    "Projects/Todo.md",
     "Software Engineering/Frontend/React.md",
     "DS/Monotonic Queue.md",
     "DS/Stacks.md",
@@ -267,10 +299,6 @@
     "DS/Trie.md",
     "Algos Practice/Comprehensive List.md",
     "Weight Lifting and Rehab/Career Handbook.md",
-    "Weight Lifting and Rehab/Career Planning.md",
-    "Weight Lifting and Rehab/Managing ADHD.md",
-    "Software Engineering/LazyVim.md",
-    "Software Engineering/To be a grug.md",
     "Electrical Engineering",
     "Software Engineering/Web Development/attachments/Pasted image 20231108174314.png",
     "Software Engineering/Web Development/attachments/Pasted image 20231108172630.png",
