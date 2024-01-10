@@ -1,15 +1,15 @@
 ---
-dg-publish: true
+dg-publish: false
 ---
 ---
-
-Week 2 of November
-
+ Jan 2024
 # Misc Math
 - Minimum sum path
 	- Watch out for input constraints (especially if negative numbers exist)
 	- Watch out for cycles
-
+	- 
+## Recursion 
+Tail end recursion:pass computations as function argument
 ## Arrays 
 
 - hashmaps are generally useful for storing some kind of ordering
