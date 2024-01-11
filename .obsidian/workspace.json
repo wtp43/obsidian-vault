@@ -4,127 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3e8c475b5a3eb06d",
+        "id": "f30c948e8f413f4e",
         "type": "tabs",
         "children": [
           {
-            "id": "27d62451090bd676",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software Engineering/Frontend/React.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ed801e6380576e13",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                },
-                {
-                  "title": "Todo",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Projects/Todo.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":0},\"to\":{\"line\":5,\"ch\":0}},\"scroll\":3}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software Engineering/Virtual Env.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a4f149077127adf3",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software Engineering/Git.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f84cb0cb256be5f1",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos Practice/Review List.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0f3bdba65d5d0300",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos Practice/Revision 1.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e7acb2b22ea65734",
+            "id": "dacaca898d1651b0",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -145,8 +29,7 @@
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -337,16 +220,16 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e7acb2b22ea65734",
+  "active": "dacaca898d1651b0",
   "lastOpenFiles": [
-    "Weight Lifting and Rehab/Career Handbook.md",
-    "Algos Practice/Revision 1.md",
-    "Algos Practice/Review List.md",
-    "Software Engineering/Git.md",
+    "Software Engineering/Frontend/React.md",
     "Software Engineering/Virtual Env.md",
+    "Software Engineering/Git.md",
+    "Algos Practice/Review List.md",
+    "Algos Practice/Revision 1.md",
+    "Weight Lifting and Rehab/Career Handbook.md",
     "Leetcode Questions/LC-402. Remove K Digits.md",
     "Projects/Todo.md",
-    "Software Engineering/Frontend/React.md",
     "DS/Monotonic Queue.md",
     "DS/Stacks.md",
     "Algos/Kosaraju's Algorithm.md",
