@@ -135,11 +135,60 @@ import message from "./message.js";
 ## Variable Scoping and Assignment
 
 ### Destructuring
+```js
+[a, b, ...rest] = [10, 20, 30, 40, 50];
+
+console.log(rest);
+// Expected output: Array [30, 40, 50]
+
+// Destructuring objects on the left-hand side of assignment
+const obj = { a: 1, b: 2 };
+const { a, b } = obj;
+// is equivalent to:
+// const a = obj.a;
+// const b = obj.b;
+
+//Two variables can be swapped in one destructuring expression
+const arr = [1, 2, 3];
+[arr[2], arr[1]] = [arr[1], arr[2]];
+console.log(arr); // [1, 3, 2]
+```
+
+- Destructuring an array of Length N with number of variables specified on the left hand side greater than N will result in remaining variables being undefined
+
+### Binding and Assignment
+
+```js
+//Binding pattern
+const numbers = [];
+const obj = { a: 1, b: 2 };
+//Assignment pattern, can't use with compound operators such as += or *=
+({ a: numbers[0], b: numbers[1] } = obj);
+```
+
+> [!important]+ Required Parentheses
+> `{ a, b } = { a: 1, b: 2 }`
+> is not valid stand-alone syntax, as the { a, b } on the left-hand side is considered a block and not an object literal according to the rules of expression statements. However, `({ a, b } = { a: 1, b: 2 })` is valid, as is const `{ a, b } = { a: 1, b: 2 }`.
+
 
 ### Rest Parameter
-`...`
+```js
+const [first, ...others2] = [1, 2, 3];
+console.log(others2); // [2, 3]
+
+//Inner destructuring destructures from the array created after collecting the rest elements
+//So you cannot access any properties present on the original iterable in this way
+const [a, b, ...{ length }] = [1, 2, 3];
+console.log(a, b, length); // 1 2 1
+
+const [a, b, ...[c, d]] = [1, 2, 3, 4];
+console.log(a, b, c, d); // 1 2 3 4
+
+
+```
  - Allows a function to accept an indefinite number of arguments as an array
- - function definition can only have one rest parameter and it must be the last parameter
+ - function definition can only have one rest parameter and it must be the last parameter (with no trailing comma)
+
 
 ### .apply()
 - null can be passed as the first parameter when you have no specific value you want to set this pointer to 

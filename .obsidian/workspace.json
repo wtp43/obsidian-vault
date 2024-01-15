@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "65d39fe599d31da9",
+        "id": "787219b133082005",
         "type": "tabs",
         "children": [
           {
-            "id": "f3c80dac2a275d22",
+            "id": "6bedebaf006627f0",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -220,11 +220,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f3c80dac2a275d22",
+  "active": "6bedebaf006627f0",
   "lastOpenFiles": [
+    "Weight Lifting and Rehab/Career Planning.md",
+    "Software Engineering/Frontend/Javascript.md",
+    "Software Engineering/Frontend/Next.js.md",
     "Weight Lifting and Rehab/Career Handbook.md",
-    "Weight Lifting and Rehab/Untitled.md",
+    "Software Engineering/LazyVim.md",
     "Software Engineering/Frontend/React.md",
+    "Weight Lifting and Rehab/Project Log.md",
+    "Projects/NBA ML/RL Model Design.md",
+    "Weight Lifting and Rehab/Untitled.md",
     "Software Engineering/Virtual Env.md",
     "Software Engineering/Git.md",
     "Algos Practice/Review List.md",
@@ -236,18 +242,12 @@
     "Algos/Kosaraju's Algorithm.md",
     "DS/Strongly Connected Components.md",
     "DS/Union Find (Disjoint Sets).md",
-    "Software Engineering/Frontend/Javascript.md",
     "Templates/Generic.md",
     "Templates/Callout.md",
     "DS/Hashmap.md",
     "DS/Heaps.md",
     "DS/Bidirectional Dictionary.md",
     "DS/Linked List.md",
-    "DS/LRU Cache.md",
-    "DS/Minimum Queue.md",
-    "DS/Minimum Stack (Optimized).md",
-    "Leetcode Questions/LC-456. 132 Pattern.md",
-    "DS/Trees.md",
     "Electrical Engineering",
     "Software Engineering/Web Development/attachments/Pasted image 20231108174314.png",
     "Software Engineering/Web Development/attachments/Pasted image 20231108172630.png",
