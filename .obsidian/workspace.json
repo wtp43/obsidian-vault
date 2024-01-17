@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "787219b133082005",
+        "id": "3a503b9c7319ca19",
         "type": "tabs",
         "children": [
           {
-            "id": "6bedebaf006627f0",
+            "id": "952c1ecf4db98543",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -220,14 +220,20 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "6bedebaf006627f0",
+  "active": "952c1ecf4db98543",
   "lastOpenFiles": [
-    "Weight Lifting and Rehab/Career Planning.md",
-    "Software Engineering/Frontend/Javascript.md",
     "Software Engineering/Frontend/Next.js.md",
-    "Weight Lifting and Rehab/Career Handbook.md",
-    "Software Engineering/LazyVim.md",
+    "Software Engineering/Frontend/attachments/Pasted image 20240116214420.png",
+    "Software Engineering/Frontend/attachments/Pasted image 20240116214405.png",
+    "Software Engineering/Frontend/attachments/Pasted image 20240116214404.png",
+    "Software Engineering/Frontend/attachments",
     "Software Engineering/Frontend/React.md",
+    "Software Engineering/Backend/Node.js.md",
+    "Software Engineering/Backend",
+    "Software Engineering/Frontend/Javascript.md",
+    "Weight Lifting and Rehab/Career Handbook.md",
+    "Weight Lifting and Rehab/Career Planning.md",
+    "Software Engineering/LazyVim.md",
     "Weight Lifting and Rehab/Project Log.md",
     "Projects/NBA ML/RL Model Design.md",
     "Weight Lifting and Rehab/Untitled.md",
@@ -246,8 +252,6 @@
     "Templates/Callout.md",
     "DS/Hashmap.md",
     "DS/Heaps.md",
-    "DS/Bidirectional Dictionary.md",
-    "DS/Linked List.md",
     "Electrical Engineering",
     "Software Engineering/Web Development/attachments/Pasted image 20231108174314.png",
     "Software Engineering/Web Development/attachments/Pasted image 20231108172630.png",
@@ -260,13 +264,8 @@
     "views/total-progress-bar/view.js",
     "views/target/view.js",
     "views/progress-bar/view.js",
-    "views/progress",
-    "views/total-progress-bar",
     "Weight Lifting and Rehab/attachments/Pasted image 20230915164029.png",
     "attachments/Pasted image 20221208173515.png",
-    "obsidian icon.jpg",
-    "obsidian icon.webp",
-    "content/ML/Reinforcement Learning/attachments/Pasted image 20230204154315.png",
-    "content/ML/Reinforcement Learning/attachments/Pasted image 20230204154314.png"
+    "obsidian icon.jpg"
   ]
 }

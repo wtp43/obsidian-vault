@@ -152,6 +152,45 @@ const { a, b } = obj;
 const arr = [1, 2, 3];
 [arr[2], arr[1]] = [arr[1], arr[2]];
 console.log(arr); // [1, 3, 2]
+
+//Can also take array properties
+const arr = [1, 2]
+const { 0: x, 1: y, length } = arr;
+console.log(x) // 1
+console.log(y) // 2
+console.log(length);
+
+//Object Destructuring
+const user = {
+  id: 42,
+  isVerified: true,
+};
+
+const { id: id, isVerified: isVerified } = user;
+
+console.log(id); // 42
+console.log(isVerified); // true
+
+
+//Unpacking properties from objects passed as a function paramete
+//The parameter value `{ id }` indicates that the `id` property of the object passed to the function should be unpacked into a variable with the same name, which can then be used within the function.
+const user = {
+  id: 42,
+  displayName: "jdoe",
+  fullName: {
+    firstName: "Jane",
+    lastName: "Doe",
+  },
+};
+// the variable name of the unpacked variable can be defined
+// function userId({ id: id_name })
+function userId({ id }) {
+  return id;
+}
+
+console.log(userId(user)); // 42
+
+
 ```
 
 - Destructuring an array of Length N with number of variables specified on the left hand side greater than N will result in remaining variables being undefined
@@ -324,6 +363,12 @@ function replace(obj){
 ## Try/catch
 
 # Other
+
+### Template Literals
+```js
+
+
+```
 
 ### Objects are often not instances of classes
 

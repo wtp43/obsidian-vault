@@ -10,11 +10,108 @@ min_depth:1
 max_depth:6 
 >```
 
+# Intermediate React
 
-# Pure React
+## Managing State
+https://react.dev/learn/managing-state
 
+https://react.dev/
+# Basic React
 
+## 3 React Core Concepts
+### Components
+```js
+//index.html
 
+<script type="text/jsx">
+  const app = document.getElementById("app")
+ 
+  function Header() {
+     return (<h1>Develop. Preview. Ship.</h1>)
+   }
+	function HomePage() {
+	  return (
+	    <div>
+	      {/* Nesting the Header component */}
+	      <Header />
+	    </div>
+	  );
+	}
+   
+
+  const root = ReactDOM.createRoot(app);
+  root.render(<HomePage />);
+</script>
+
+```
+
+- Modular, reusable function that **returns UI elements**
+- Capitalized functions to distinguish from plain HTML and JS
+- To render components to the DOM, they are passed through the `root.render()` method
+### Props
+#### Displaying Data with Props
+```js
+<Header title = "React" />
+
+function Header(props) {
+	console.log(title) // { title: "React"}
+}
+
+// Object destructuring
+function Header({ title }) {
+	// Add {} to allow regular JavaScript directly inside JSX markup
+	return <h1>{title}</h1>
+}
+```
+- Used to pass information as properties to React components
+- Props are passed as objects
+#### Iterating Through Lists
+```js
+function HomePage() {
+  const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+ 
+  return (
+    <div>
+      <Header title="Develop. Preview. Ship." />
+      <ul>
+        {names.map((name) => (
+          <li>{name}</li> 
+          //<li key={name}>{name}</li>
+          //key={name} is fine here because all the items in names are unique
+        ))}
+      </ul>
+    </div>
+  );
+}
+```
+
+- If you run this code, React will give us a warning about a missing `key` prop. This is because React needs something to uniquely identify items in an array so it knows which elements to update in the DOM.
+- Use item ID
+### State
+#### Interactivity with State through Event Handlers
+```js
+function HomePage() {
+  // ...
+ 
+  function handleClick() {
+    console.log("increment like count")
+  }
+ 
+  return (
+    <div>
+      {/* ... */}
+	  <button onClick={handleClick}>Like</button>
+    </div>
+     )
+   }
+```
+
+#### State and Hooks
+```js
+const [state, setState] =  React.useState(0);
+```
+
+- Hooks allow you to add additional logic such as **state** to your components
 ## React Api/Dom
 ReactDOM is needed to mount our application in the browser
 Both React and ReactDOM are available over a CDN.
