@@ -4,11 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "3a503b9c7319ca19",
+        "id": "ed0957ebf40012cd",
         "type": "tabs",
         "children": [
           {
-            "id": "952c1ecf4db98543",
+            "id": "14f3d8805415ceed",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software Engineering/Frontend/Next.js.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9557739d474bfdaa",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -29,7 +51,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -220,9 +243,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "952c1ecf4db98543",
+  "active": "9557739d474bfdaa",
   "lastOpenFiles": [
     "Software Engineering/Frontend/Next.js.md",
+    "Weight Lifting and Rehab/Career Handbook.md",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214420.png",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214405.png",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214404.png",
@@ -231,7 +255,6 @@
     "Software Engineering/Backend/Node.js.md",
     "Software Engineering/Backend",
     "Software Engineering/Frontend/Javascript.md",
-    "Weight Lifting and Rehab/Career Handbook.md",
     "Weight Lifting and Rehab/Career Planning.md",
     "Software Engineering/LazyVim.md",
     "Weight Lifting and Rehab/Project Log.md",

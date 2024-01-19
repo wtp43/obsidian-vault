@@ -101,6 +101,8 @@ export default function Page() {
 https://yudhajitadhikary.medium.com/client-side-rendering-vs-server-side-rendering-in-react-js-next-js-b74b909c7c51
 
 
+### Server Components
+- 
 
 # Javascript Essentials
 
