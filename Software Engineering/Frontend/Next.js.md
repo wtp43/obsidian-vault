@@ -31,9 +31,6 @@ components/
 		feature.tsx
 		feature.module.css
 ```
-
-
-
 ## Routing
 ![[Pasted image 20240116214405.png]]
 ![[Pasted image 20240116214420.png]]
@@ -96,12 +93,69 @@ export default function Page() {
 }
 ```
 
-
-## Server Side Rendering vs Client Side Rendering
+# Rendering
+## Server Side Rendering 
 https://yudhajitadhikary.medium.com/client-side-rendering-vs-server-side-rendering-in-react-js-next-js-b74b909c7c51
-
-
 ### Server Components
+By default, Next.js uses server components
+- **Performance**: Can be cached on server
+	- Moves data fetching to server, closer to data source (improve performance by reducing fetching time and # of requests client makes)
+- **Secure**: Keep sensitive data on server
+- **Initial Page Load and First Contentful Paint (FCP)**: Generate HTML on the server to allow users to view the page immediately instead of waiting for client to download/parse/execute JS 
+- **Streaming**: Allow rendering to be split into chunks and streamed to client as they become ready
+#### Server Components Rendering Process
+- Work is split into chunks
+- Chunk rendered in two steps:
+	- React renders server components into **React Server Component Payload(RSC Payload)**
+	- Next.js uses RSC Payload and Client Component JS instructions to render HTML on the server
+- Then on the client:
+	- HTML is used immediately to show a fast non interactive preview of the route (on initial page load only)
+	-  RSC Payload used to reconcile the Client and Server Component trees, and update DOM
+	- JS instructions are used to hydrate ("attach" React to existing HTML rendered by React in a server environment) Client Components and make app interactive
+### Static Rendering
+- Routes are rendered at **build time** or in the background after data revalidation
+- Result is cached and can be pushed to a Content Delivery Network(CDN)
+
+> [!info]+ Content Delivery Network (CDN)
+> A group of servers spread out over many locations. These servers store duplicate copies of data so that servers can fulfill data requests based on which servers are closest to the respective end-users. CDNs make for fast service less affected by high traffic.
+
+### Dynamic Rendering
+- Routes are rendered for each user at request time
+- Useful when route has data that is personalized to the user
+### Streaming
+https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming
+- Use `loading.js` and UI components with **React Suspense**
+## Client Components
+- Allow interactivity (use states, effects, event listeners)
+- Have access to browser APIs: geolocation, localStorage
+
+## Caching
+| Mechanism | What | Where | Purpose | Duration |
+| ---- | ---- | ---- | ---- | ---- |
+| [Request Memoization](https://nextjs.org/docs/app/building-your-application/caching#request-memoization) | Return values of functions | Server | Re-use data in a React Component tree | Per-request lifecycle |
+| [Data Cache](https://nextjs.org/docs/app/building-your-application/caching#data-cache) | Data | Server | Store data across user requests and deployments | Persistent (can be revalidated) |
+| [Full Route Cache](https://nextjs.org/docs/app/building-your-application/caching#full-route-cache) | HTML and RSC payload | Server | Reduce rendering cost and improve performance | Persistent (can be revalidated) |
+| [Router Cache](https://nextjs.org/docs/app/building-your-application/caching#router-cache) | RSC Payload | Client | Reduce server requests on navigation | User session or time-based |
+### Request Memoization (React Feature)
+- Extends `fetch` API
+- Allows you to call a fetch function for the same data in multiple places in a React component tree while only executing it once
+```ts
+async function getItem() {
+  // The `fetch` function is automatically memoized and the result
+  // is cached
+  const res = await fetch('https://.../item/1')
+  return res.json()
+}
+ 
+// This function is called twice, but only executed the first time
+const item = await getItem() // cache MISS
+ 
+// The second call could be anywhere in your route
+const item = await getItem() // cache HIT
+```
+
+### Request Memoization 
+
 - 
 
 # Javascript Essentials

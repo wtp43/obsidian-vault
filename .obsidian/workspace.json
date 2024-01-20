@@ -30,7 +30,7 @@
             }
           },
           {
-            "id": "9557739d474bfdaa",
+            "id": "014f97041ffedaaa",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -42,13 +42,8 @@
               ]
             },
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Weight Lifting and Rehab/Career Handbook.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "style-settings",
+              "state": {}
             }
           }
         ],
@@ -155,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Weight Lifting and Rehab/Career Handbook.md",
+                "file": "Software Engineering/Frontend/Next.js.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +176,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Weight Lifting and Rehab/Career Handbook.md",
+                "file": "Software Engineering/Frontend/Next.js.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -243,10 +238,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "9557739d474bfdaa",
+  "active": "014f97041ffedaaa",
   "lastOpenFiles": [
-    "Software Engineering/Frontend/Next.js.md",
     "Weight Lifting and Rehab/Career Handbook.md",
+    "Software Engineering/Typescript.md",
+    "Software Engineering/Frontend/Next.js.md",
+    "Software Engineering/Untitled.md",
+    "Software Engineering/Virtual Env.md",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214420.png",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214405.png",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214404.png",
@@ -254,13 +252,12 @@
     "Software Engineering/Frontend/React.md",
     "Software Engineering/Backend/Node.js.md",
     "Software Engineering/Backend",
-    "Software Engineering/Frontend/Javascript.md",
+    "Software Engineering/Javascript.md",
     "Weight Lifting and Rehab/Career Planning.md",
     "Software Engineering/LazyVim.md",
     "Weight Lifting and Rehab/Project Log.md",
     "Projects/NBA ML/RL Model Design.md",
     "Weight Lifting and Rehab/Untitled.md",
-    "Software Engineering/Virtual Env.md",
     "Software Engineering/Git.md",
     "Algos Practice/Review List.md",
     "Algos Practice/Revision 1.md",
@@ -274,7 +271,6 @@
     "Templates/Generic.md",
     "Templates/Callout.md",
     "DS/Hashmap.md",
-    "DS/Heaps.md",
     "Electrical Engineering",
     "Software Engineering/Web Development/attachments/Pasted image 20231108174314.png",
     "Software Engineering/Web Development/attachments/Pasted image 20231108172630.png",
