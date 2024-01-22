@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ed0957ebf40012cd",
+        "id": "f9b2d0b508dce239",
         "type": "tabs",
         "children": [
           {
-            "id": "14f3d8805415ceed",
+            "id": "8b1dc8b3777a698a",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -22,7 +22,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software Engineering/Frontend/Next.js.md",
+                "file": "DS/Binary Search Tree (BST).md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -30,7 +30,7 @@
             }
           },
           {
-            "id": "014f97041ffedaaa",
+            "id": "d484694a6c351235",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -42,12 +42,39 @@
               ]
             },
             "state": {
-              "type": "style-settings",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "DS/Trees.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "47ca14730068b9a2",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algos Practice/Intuition/Tree.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -150,7 +177,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software Engineering/Frontend/Next.js.md",
+                "file": "Algos Practice/Intuition/Tree.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +203,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software Engineering/Frontend/Next.js.md",
+                "file": "Algos Practice/Intuition/Tree.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -238,11 +265,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "014f97041ffedaaa",
+  "active": "47ca14730068b9a2",
   "lastOpenFiles": [
+    "DS/Trees.md",
+    "Algos Practice/Intuition/Tree.md",
+    "DS/Binary Search Tree (BST).md",
     "Weight Lifting and Rehab/Career Handbook.md",
-    "Software Engineering/Typescript.md",
+    "Weight Lifting and Rehab/Project Log.md",
+    "Algos Practice/Review List.md",
+    "Algos Practice/Comprehensive List.md",
+    "Weight Lifting and Rehab/Career Planning.md",
     "Software Engineering/Frontend/Next.js.md",
+    "Software Engineering/Frontend/React-Query.md",
+    "Software Engineering/Typescript.md",
     "Software Engineering/Untitled.md",
     "Software Engineering/Virtual Env.md",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214420.png",
@@ -253,24 +288,16 @@
     "Software Engineering/Backend/Node.js.md",
     "Software Engineering/Backend",
     "Software Engineering/Javascript.md",
-    "Weight Lifting and Rehab/Career Planning.md",
     "Software Engineering/LazyVim.md",
-    "Weight Lifting and Rehab/Project Log.md",
     "Projects/NBA ML/RL Model Design.md",
     "Weight Lifting and Rehab/Untitled.md",
     "Software Engineering/Git.md",
-    "Algos Practice/Review List.md",
     "Algos Practice/Revision 1.md",
     "Leetcode Questions/LC-402. Remove K Digits.md",
     "Projects/Todo.md",
     "DS/Monotonic Queue.md",
     "DS/Stacks.md",
     "Algos/Kosaraju's Algorithm.md",
-    "DS/Strongly Connected Components.md",
-    "DS/Union Find (Disjoint Sets).md",
-    "Templates/Generic.md",
-    "Templates/Callout.md",
-    "DS/Hashmap.md",
     "Electrical Engineering",
     "Software Engineering/Web Development/attachments/Pasted image 20231108174314.png",
     "Software Engineering/Web Development/attachments/Pasted image 20231108172630.png",

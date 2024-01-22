@@ -46,6 +46,84 @@ def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
             self.hasPathSum(root.right, targetSum-root.val)
 ```
 
+
+**Leaf-Similar Trees**
+https://leetcode.com/problems/leaf-similar-trees/description/
+```python
+def leafSimilar(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> bool:
+        def dfs(node):
+            if node: 
+                if not node.left and not node.right:
+                    yield node.val
+                yield from dfs(node.left)
+                yield from dfs(node.right)
+
+        return list(dfs(root1)) == list(dfs(root2))
+```
+
+**Iterative Traversals**
+```python
+def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        cur, stack = root, []
+        res = []
+        while cur or stack:
+            while cur:
+                res.append(cur.val)
+                stack.append(cur.right)
+                cur = cur.left
+            cur = stack.pop()
+        return res
+ def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        stack = []
+        cur = root
+        res = []
+        while cur or stack:
+            while cur:
+                stack.append(cur)
+                cur = cur.left
+            cur = stack.pop()
+            res.append(cur.val)
+            cur = cur.right
+        return res
+
+#post order traversal iteratively is very convoluted
+
+	Append right, then left because of FILO
+	Process node if it is a leaf or if it's left or right child has been visited
+	Keep track of last processed nodey
+
+def postorderTraversal(self, root: 'TreeNode'):
+        if not root:
+            return []
+        stack, res = [root], []
+        # used to record whether left or right child has been visited
+        last = None
+
+        while stack:
+            root = stack[-1]
+            # if current node has no left right child, or left child or right child has been visited, then process and pop it
+            if not root.left and not root.right or last and (root.left == last or root.right == last):
+
+                res.append(root.val)
+
+                stack.pop()
+                last = root
+            # if not, push right and left child in stack
+            else:
+                # push right first because of FILO
+                if root.right:
+                    stack.append(root.right)
+                if root.left:
+                    stack.append(root.left)
+        return res
+
+            
+
+```
+**Level Order Traversal**
+- Use queue
+- `while len(queue)>0`
+
 # Segment Trees
 https://www.reddit.com/r/leetcode/comments/wrrrq0/when_to_use_monotonic_queue/
 
