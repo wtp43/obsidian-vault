@@ -188,12 +188,20 @@ useEffect(()=>{
 - the Effect runs after the initial render and after re-renders with changed dependencies
 - if no dependencies are given, it is re-rendered every time
 - if an empty dependency array is given `[]`, it will only run after the initial render
+- uses: fetching api when search query changes
+### useContext
+- Global and not confined to a component
+- Applications include: theming, shopping carts, logged-in user data
+	- Everything else should use state
+## Transitions
+https://react-v8.holt.courses/lessons/low-priority-rerendering/transitions
 ## Rendering Lists
 ```javascript
 ARRAY.map(x => 
 	<li>{x}</li>
 );
 ```
+
 
 # Other
 ### Promise
