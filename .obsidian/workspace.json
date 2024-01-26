@@ -132,7 +132,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Weight Lifting and Rehab/Project Log.md",
+                "file": "Private/Project Log.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "31c4a27d3ecbd0fb",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software Engineering/Virtual Env.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -243,7 +265,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Weight Lifting and Rehab/Project Log.md",
+                "file": "Private/Project Log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -269,7 +291,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Weight Lifting and Rehab/Project Log.md",
+                "file": "Private/Project Log.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -333,20 +355,20 @@
   },
   "active": "da141ece1c600b2f",
   "lastOpenFiles": [
+    "Software Engineering/Virtual Env.md",
+    "Private/Project Log.md",
     "Software Engineering/Frontend/React.md",
     "Software Engineering/Frontend/React-Query.md",
     "Algos Practice/Intuition/Tree.md",
     "DS/Trees.md",
     "DS/Binary Search Tree (BST).md",
-    "Weight Lifting and Rehab/Career Handbook.md",
-    "Weight Lifting and Rehab/Project Log.md",
+    "Private/Career Handbook.md",
     "Algos Practice/Review List.md",
     "Algos Practice/Comprehensive List.md",
-    "Weight Lifting and Rehab/Career Planning.md",
+    "Private/Career Planning.md",
     "Software Engineering/Frontend/Next.js.md",
     "Software Engineering/Typescript.md",
     "Software Engineering/Untitled.md",
-    "Software Engineering/Virtual Env.md",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214420.png",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214405.png",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214404.png",
@@ -356,7 +378,7 @@
     "Software Engineering/Javascript.md",
     "Software Engineering/LazyVim.md",
     "Projects/NBA ML/RL Model Design.md",
-    "Weight Lifting and Rehab/Untitled.md",
+    "Private/Untitled.md",
     "Software Engineering/Git.md",
     "Algos Practice/Revision 1.md",
     "Leetcode Questions/LC-402. Remove K Digits.md",
@@ -376,7 +398,7 @@
     "views/total-progress-bar/view.js",
     "views/target/view.js",
     "views/progress-bar/view.js",
-    "Weight Lifting and Rehab/attachments/Pasted image 20230915164029.png",
+    "Private/attachments/Pasted image 20230915164029.png",
     "attachments/Pasted image 20221208173515.png",
     "obsidian icon.jpg"
   ]
