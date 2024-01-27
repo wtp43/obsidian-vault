@@ -1,12 +1,4 @@
 {
-  "darlal-switcher-plus:switcher-plus:open": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "L"
-    }
-  ],
   "templater-obsidian:Templates/Algos.md": [
     {
       "modifiers": [
@@ -251,6 +243,14 @@
         "Mod"
       ],
       "key": "K"
+    }
+  ],
+  "darlal-switcher-plus:switcher-plus:open": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "L"
     }
   ]
 }
