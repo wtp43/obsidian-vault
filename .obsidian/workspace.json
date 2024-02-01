@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f9b2d0b508dce239",
+        "id": "601378ba016c1cf6",
         "type": "tabs",
         "children": [
           {
-            "id": "8b1dc8b3777a698a",
+            "id": "913c40bd33c7feb1",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -20,149 +20,11 @@
               ]
             },
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DS/Binary Search Tree (BST).md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d484694a6c351235",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DS/Trees.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "47ca14730068b9a2",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos Practice/Intuition/Tree.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "182e58d92f2c551e",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software Engineering/Frontend/React-Query.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e03c2eaddb176423",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software Engineering/Frontend/React.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "da141ece1c600b2f",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Private/Project Log.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "31c4a27d3ecbd0fb",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software Engineering/Virtual Env.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -265,7 +127,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Private/Project Log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -291,7 +152,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Private/Project Log.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -353,17 +213,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "da141ece1c600b2f",
+  "active": "913c40bd33c7feb1",
   "lastOpenFiles": [
     "Software Engineering/Virtual Env.md",
-    "Private/Project Log.md",
-    "Software Engineering/Frontend/React.md",
-    "Software Engineering/Frontend/React-Query.md",
-    "Algos Practice/Intuition/Tree.md",
-    "DS/Trees.md",
     "DS/Binary Search Tree (BST).md",
-    "Private/Career Handbook.md",
+    "DS/Trees.md",
+    "Algos Practice/Intuition/Tree.md",
+    "Software Engineering/Frontend/React-Query.md",
+    "Software Engineering/Frontend/React.md",
+    "Private/Project Log.md",
     "Algos Practice/Review List.md",
+    "Private/Career Handbook.md",
     "Algos Practice/Comprehensive List.md",
     "Private/Career Planning.md",
     "Software Engineering/Frontend/Next.js.md",

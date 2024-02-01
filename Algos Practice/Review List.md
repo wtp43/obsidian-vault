@@ -95,3 +95,8 @@ After reviewing, update applications for each algo
 
 - [[LC-153. Find Minimum in Rotated Sorted Array]]
 
+# Intuition
+- Smallest difference (array, bst nodes)
+	- Sort then 1 pass: nlogn
+	- in order traversal (BST)
+	- 
