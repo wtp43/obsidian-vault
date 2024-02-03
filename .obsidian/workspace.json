@@ -20,8 +20,13 @@
               ]
             },
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Private/Project Log.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -127,6 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Private/Project Log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,6 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Private/Project Log.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
