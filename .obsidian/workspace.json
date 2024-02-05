@@ -28,8 +28,43 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b5eb42c3357bf978",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "651e38f0f2a0357a",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -132,7 +167,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Private/Project Log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +192,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Private/Project Log.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -220,15 +253,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "913c40bd33c7feb1",
+  "active": "651e38f0f2a0357a",
   "lastOpenFiles": [
+    "Private/Project Log.md",
     "Software Engineering/Virtual Env.md",
     "DS/Binary Search Tree (BST).md",
     "DS/Trees.md",
     "Algos Practice/Intuition/Tree.md",
     "Software Engineering/Frontend/React-Query.md",
     "Software Engineering/Frontend/React.md",
-    "Private/Project Log.md",
     "Algos Practice/Review List.md",
     "Private/Career Handbook.md",
     "Algos Practice/Comprehensive List.md",
