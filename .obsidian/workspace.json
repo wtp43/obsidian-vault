@@ -167,6 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Private/Project Log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -192,6 +193,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Private/Project Log.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
