@@ -63,8 +63,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -255,8 +254,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "651e38f0f2a0357a",
+  "active": "913c40bd33c7feb1",
   "lastOpenFiles": [
+    "Private/attachments/Pasted image 20240208173341.png",
+    "Private/attachments/Pasted image 20240208173333.png",
+    "Private/attachments/Pasted image 20240208173257.png",
+    "Private/attachments/Pasted image 20240208173224.png",
     "Private/Project Log.md",
     "Software Engineering/Virtual Env.md",
     "DS/Binary Search Tree (BST).md",
@@ -287,7 +290,6 @@
     "Projects/Todo.md",
     "DS/Monotonic Queue.md",
     "DS/Stacks.md",
-    "Algos/Kosaraju's Algorithm.md",
     "Electrical Engineering",
     "Software Engineering/Web Development/attachments/Pasted image 20231108174314.png",
     "Software Engineering/Web Development/attachments/Pasted image 20231108172630.png",
@@ -299,9 +301,6 @@
     "views/progress/view.js",
     "views/total-progress-bar/view.js",
     "views/target/view.js",
-    "views/progress-bar/view.js",
-    "Private/attachments/Pasted image 20230915164029.png",
-    "attachments/Pasted image 20221208173515.png",
-    "obsidian icon.jpg"
+    "views/progress-bar/view.js"
   ]
 }
