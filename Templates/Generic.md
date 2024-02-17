@@ -14,7 +14,6 @@ created: ""
   result = result.charAt(0).toUpperCase() + result.slice(1);
   tR += "---"
 %>
-
 >[!summary]- Contents
 >```toc
 style: number

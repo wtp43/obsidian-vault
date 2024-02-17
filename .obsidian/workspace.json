@@ -30,7 +30,7 @@
             }
           },
           {
-            "id": "b5eb42c3357bf978",
+            "id": "087489aa8a427e25",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -38,16 +38,63 @@
                 {
                   "state": "{}",
                   "eState": "{}"
+                },
+                {
+                  "title": "Difficult",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/Difficult.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":16,\"ch\":0},\"to\":{\"line\":16,\"ch\":0}}}"
+                },
+                {
+                  "title": "LC Hard",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/LC Hard.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":16,\"ch\":0},\"to\":{\"line\":16,\"ch\":0}}}"
+                },
+                {
+                  "title": "Solved Easily",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/Solved Easily.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":16,\"ch\":0},\"to\":{\"line\":16,\"ch\":0}}}"
+                },
+                {
+                  "title": "LC Hard",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/LC Hard.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Difficult",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/Difficult.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Solved Easily",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/Solved Easily.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":0}"
+                },
+                {
+                  "title": "Review List",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Algos Practice/Review List.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":74,\"ch\":0},\"to\":{\"line\":74,\"ch\":0}},\"scroll\":40.08311686113805}"
                 }
               ]
             },
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Interview Prep 2024/Solved Easily.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           },
           {
-            "id": "651e38f0f2a0357a",
+            "id": "35086f25c1800917",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -59,11 +106,61 @@
               ]
             },
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Interview Prep 2024/Difficult.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "36c554503409f09e",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interview Prep 2024/LC Hard.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a47ac813e12d7d9d",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Revision Feb 2024.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -166,7 +263,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Private/Project Log.md",
+                "file": "Algos Practice/Comprehensive List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -192,7 +289,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Private/Project Log.md",
+                "file": "Algos Practice/Comprehensive List.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -254,22 +351,107 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "913c40bd33c7feb1",
+  "floating": {
+    "id": "3ee594aa3201d96b",
+    "type": "floating",
+    "children": [
+      {
+        "id": "626be706036cf883",
+        "type": "window",
+        "children": [
+          {
+            "id": "7560b3ade12043d7",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "bbf7d732437c62a7",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Algos Practice/Review List.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "f5a3d67db4cca2ee",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Algos Practice/Comprehensive List.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "vertical",
+        "x": 6,
+        "y": 30,
+        "width": 1576,
+        "height": 2124,
+        "maximize": false,
+        "zoom": 2
+      }
+    ]
+  },
+  "active": "f5a3d67db4cca2ee",
   "lastOpenFiles": [
+    "Revision Feb 2024.md",
+    "Algos Practice/Comprehensive List.md",
+    "Algos Practice/Review List.md",
+    "Private/Project Log.md",
+    "Interview Prep 2024/Difficult.md",
+    "Interview Prep 2024/Solved Easily.md",
+    "Interview Prep 2024/LC Hard.md",
+    "Templates/Generic.md",
+    "Interview Prep 2024/mic.scpt",
+    "Interview Prep 2024/Retrieve UI Elements.scpt",
+    "Interview Prep 2024",
+    "Scripts copy/mic.scpt",
+    "Scripts copy/Retrieve UI Elements.scpt",
+    "Scripts copy",
+    "Algos/Scripts copy/mic.scpt",
+    "Algos/Scripts copy/Retrieve UI Elements.scpt",
+    "Algos/Scripts copy",
+    "Finance/Scripts copy/mic.scpt",
     "Private/attachments/Pasted image 20240208173341.png",
     "Private/attachments/Pasted image 20240208173333.png",
     "Private/attachments/Pasted image 20240208173257.png",
     "Private/attachments/Pasted image 20240208173224.png",
-    "Private/Project Log.md",
     "Software Engineering/Virtual Env.md",
     "DS/Binary Search Tree (BST).md",
     "DS/Trees.md",
     "Algos Practice/Intuition/Tree.md",
     "Software Engineering/Frontend/React-Query.md",
     "Software Engineering/Frontend/React.md",
-    "Algos Practice/Review List.md",
     "Private/Career Handbook.md",
-    "Algos Practice/Comprehensive List.md",
     "Private/Career Planning.md",
     "Software Engineering/Frontend/Next.js.md",
     "Software Engineering/Typescript.md",
@@ -277,30 +459,15 @@
     "Software Engineering/Frontend/attachments/Pasted image 20240116214420.png",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214405.png",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214404.png",
-    "Software Engineering/Frontend/attachments",
     "Software Engineering/Backend/Node.js.md",
-    "Software Engineering/Backend",
     "Software Engineering/Javascript.md",
     "Software Engineering/LazyVim.md",
     "Projects/NBA ML/RL Model Design.md",
     "Private/Untitled.md",
     "Software Engineering/Git.md",
     "Algos Practice/Revision 1.md",
-    "Leetcode Questions/LC-402. Remove K Digits.md",
-    "Projects/Todo.md",
-    "DS/Monotonic Queue.md",
-    "DS/Stacks.md",
-    "Electrical Engineering",
     "Software Engineering/Web Development/attachments/Pasted image 20231108174314.png",
     "Software Engineering/Web Development/attachments/Pasted image 20231108172630.png",
-    "Software Engineering/Web Development/attachments/Pasted image 20231108172329.png",
-    "Software Engineering/Web Development/attachments/Pasted image 20231108164506.png",
-    "Software Engineering/Web Development/attachments",
-    "Software Engineering/Scripting",
-    "Templates/templates",
-    "views/progress/view.js",
-    "views/total-progress-bar/view.js",
-    "views/target/view.js",
-    "views/progress-bar/view.js"
+    "Software Engineering/Web Development/attachments/Pasted image 20231108172329.png"
   ]
 }

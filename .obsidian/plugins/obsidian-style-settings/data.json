@@ -1,5 +1,5 @@
 {
-  "Components@@tab-autohide": true,
+  "Components@@tab-autohide": false,
   "Components@@Ribbon-autohide": false,
   "Components@@nav-header-autohide": false,
   "Components@@status-bar-autohide": true,
@@ -36,7 +36,7 @@
   "Editor@@h3-size": "1.1em",
   "Editor@@h2-size": "1.2em",
   "Components@@icon-autohide": false,
-  "Components@@tab-title-bar-autohide": true,
+  "Components@@tab-title-bar-autohide": false,
   "Components@@setting-item-title-icon-remove": false,
   "Editor@@h4-size": "1em",
   "Editor@@h4-color-select": "h4-color-customized",

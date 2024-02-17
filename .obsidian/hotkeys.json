@@ -165,22 +165,12 @@
     }
   ],
   "markdown:toggle-preview": [],
-  "workspace:next-tab": [
-    {
-      "modifiers": [
-        "Meta",
-        "Shift"
-      ],
-      "key": "]"
-    }
-  ],
   "workspace:previous-tab": [
     {
       "modifiers": [
-        "Meta",
-        "Shift"
+        "Ctrl"
       ],
-      "key": "["
+      "key": "U"
     }
   ],
   "workspace:goto-tab-1": [],
@@ -252,5 +242,14 @@
       ],
       "key": "L"
     }
-  ]
+  ],
+  "workspace:next-tab": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "I"
+    }
+  ],
+  "workspace:goto-last-tab": []
 }

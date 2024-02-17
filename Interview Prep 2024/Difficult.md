@@ -1,0 +1,137 @@
+---
+dg-publish: false
+tags: 
+created: ""
+---
+---
+>[!summary]- Contents
+>```toc
+style: number
+min_depth:1
+max_depth:6 
+>```
+# Arrays
+## Kadane's Algorithm
+- Keep expanding subarray until sum is  < 0, then restart 
+- It's not possible for the start of a positive sum to be a negative # greater than the current sum
+### Maximum Sum Circular Subarray
+- Maximum subarray is either 
+	- max subarray that doesn't wrap
+	- if it wraps, then it is the total - min subarray in the middle
+- Special case: take the maximum subarray if the minimum subarray is the entire array (all neg #'s)
+```python
+def maxSubarraySumCircular(self, nums: List[int]) -> int:
+	max_subarray = nums[0] 
+	min_subarray = nums[0] 
+	cur_min = 0 
+	cur_max = 0 
+	total_sum = 0
+	for x in nums:
+	  # kadane's 
+		cur_max = max(cur_max, 0) + x
+		max_subarray = max(cur_max, max_subarray)
+
+		# Min Kadane's
+		cur_min = min(cur_min, 0) + x
+		min_subarray = min(cur_min, min_subarray)
+	  
+		total_sum += x
+	if total_sum == min_subarray:
+		return max_subarray
+	return max(max_subarray, total_sum - min_subarray
+```
+https://leetcode.com/problems/house-robber-iii/description/jj
+
+# Trees
+
+## House Robber 3 (can't rob two directly linked nodes in a BT) 
+- Similar to backtrack/dp, at each node, you can choose to rob it or not, creating diverging paths
+- Bottom up recursion so we can take the max
+```python
+def rob(self, root: TreeNode) -> int:
+	def dfs(node):
+		# return [rob this node, not rob this node]
+		if not node:
+			return (0, 0)
+		left = dfs(node.left)
+		right = dfs(node.right)
+		# if we rob this node, we cannot rob its children
+		rob = node.val + left[1] + right[1]
+		# else we could choose to either rob its children or not
+		not_rob = max(left) + max(right)
+		return [rob, not_rob]
+
+	return max(dfs(root))
+```
+https://leetcode.com/problems/house-robber-iii/description/
+
+## BST delete
+- Predecessor: 1 left then loop right 
+- Successor: 1 right then loop left 
+- Bad solution: recursion and swap values
+	- Recursively return the child node
+	- If key is found, swap it with either the successor or predecessor
+	- Then continue recursively to delete the value of the successor/predecessor
+- Actually swap nodes: keep sentinel
+	- If not key is not root
+		- Delete predecessor/successor, link sentinel to predecessor/successor left/right child 
+			- Edge cases: Pred/succ is direct child of the key node (don't set the sentinel's children otherwise you lose the opposite side of the root and also create a cycle on the same side)
+		- Connect the sentinel to the new Pred/succ tree, keep track of which side the child node is one
+	- Else key is root:
+		- Return the successor/predecessor
+```python
+class Solution:
+    # One step right and then always left
+    def successor(self, root: TreeNode) -> int:
+            root = root.right
+            while root.left:
+                root = root.left
+            return root.val
+        
+    # One step left and then always right
+    def predecessor(self, root: TreeNode) -> int:
+        root = root.left
+        while root.right:
+            root = root.right
+        return root.val
+
+    def deleteNode(self, root: TreeNode, key: int) -> TreeNode:
+        if not root:
+            return None
+
+        # delete from the right subtree
+        if key > root.val:
+            root.right = self.deleteNode(root.right, key)
+        # delete from the left subtree
+        elif key < root.val:
+            root.left = self.deleteNode(root.left, key)
+        # delete the current node
+        else:
+            # the node is a leaf
+            if not (root.left or root.right):
+                root = None
+            # The node is not a leaf and has a right child
+            elif root.right:
+                root.val = self.successor(root)
+                root.right = self.deleteNode(root.right, root.val)
+            # the node is not a leaf, has no right child, and has a left child    
+            else:
+                root.val = self.predecessor(root)
+                root.left = self.deleteNode(root.left, root.val)
+                        
+        return root
+```
+https://leetcode.com/problems/delete-node-in-a-bst/
+
+# Dynamic Programming
+
+
+# Python
+- Parameters are passed by assignment which is actually a reference to the object
+- Lists passed as parameters can be mutated, .append, but not reassigned using  =
+- String is immutable, to get around this, return a new string
+
+
+
+
+
