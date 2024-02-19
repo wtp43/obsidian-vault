@@ -14,7 +14,7 @@ https://www.techinterviewhandbook.org/behavioral-interview/
 
 - [ ] [[Backtracking]]
 	- [x] N Queen
-	- [ ] Maze Solving 
+-	 [ ] Maze Solving 
 	- [ ] Knights Tour
 	- [ ] Hamiltonian Paths
 - [ ] Binary Search
