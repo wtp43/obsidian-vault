@@ -462,10 +462,10 @@
           }
         ],
         "direction": "vertical",
-        "x": 6,
-        "y": 30,
-        "width": 1762,
-        "height": 2124,
+        "x": 1923,
+        "y": 5,
+        "width": 1911,
+        "height": 2149,
         "maximize": false,
         "zoom": 2
       }
@@ -474,8 +474,8 @@
   "active": "a47ac813e12d7d9d",
   "lastOpenFiles": [
     "Algos/Bellman Ford's Algorithm.md",
-    "DS/Graph Theory.md",
     "Revision Feb 2024.md",
+    "DS/Graph Theory.md",
     "DS/Trie.md",
     "DS/Graph Structures.md",
     "Private/Health.md",
