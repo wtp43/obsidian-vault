@@ -14,7 +14,7 @@ Initial complete review of all studied concepts
 # Essentials
 
 ## Arrays
-- Kadane
+- Kadane's Algorithm
 ### Array Manipulation
 #### Ranges vs Counting
 - If range: j-i+1
