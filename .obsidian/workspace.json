@@ -8,28 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "913c40bd33c7feb1",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Private/Project Log.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "087489aa8a427e25",
             "type": "leaf",
             "pane-relief:history-v1": {
@@ -159,8 +137,7 @@
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -263,7 +240,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Revision Feb 2024.md",
+                "file": "Algos/Bellman Ford's Algorithm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -289,7 +266,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Revision Feb 2024.md",
+                "file": "Algos/Bellman Ford's Algorithm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -468,26 +445,67 @@
         "height": 2149,
         "maximize": false,
         "zoom": 2
+      },
+      {
+        "id": "b7796a1c4a5b6b62",
+        "type": "window",
+        "children": [
+          {
+            "id": "0f0a2aee70d61fa3",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "041de2c3afb8dba2",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Private/Project Log.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 6,
+        "y": 5,
+        "width": 3828,
+        "height": 2149,
+        "maximize": false,
+        "zoom": 2
       }
     ]
   },
-  "active": "a47ac813e12d7d9d",
+  "active": "6d4b6d5a2a2604b9",
   "lastOpenFiles": [
+    "Private/Project Log.md",
+    "Private/Health.md",
     "Algos/Bellman Ford's Algorithm.md",
+    "Interview Prep 2024/Solved Easily.md",
     "Revision Feb 2024.md",
     "DS/Graph Theory.md",
     "DS/Trie.md",
     "DS/Graph Structures.md",
-    "Private/Health.md",
     "Algos Practice/Comprehensive List.md",
     "Algos Practice/Untitled.md",
     "Leetcode Questions/LC-46. Permutations.md",
     "Interview Prep 2024/LC Hard.md",
     "Leetcode Questions/LC-51. N-Queens.md",
     "Algos Practice/Review List.md",
-    "Private/Project Log.md",
     "Interview Prep 2024/Difficult.md",
-    "Interview Prep 2024/Solved Easily.md",
     "Templates/Generic.md",
     "Interview Prep 2024/mic.scpt",
     "Interview Prep 2024/Retrieve UI Elements.scpt",
