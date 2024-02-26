@@ -60,36 +60,50 @@ def prim(graph, start):
 
 ## Approach #2: Adjacency List + Priority Queue (Heap)
 Complexity O(E log V)
+-  Start from an arbitrary vertex
+- Keep track of the minimum distance to every other node in a heap
+- The log V comes from 
+- Consider the vertex with the least cost that has not been visited yet
+- Implementation in python requires a modification of heapq since it does not provide a decrease-key function
+- Typically, no decrease-key function is used and instead just append and invalidate entries later on in which case, the complexity is same as Kruskal's
 
-1. Start from an arbitrary vertex
-2. Heapify all the outgoing edges from the starting vertex
-3. Get the next edge with the least cost
 
-```python
-from collections import default dict
-import heapq
-
-def prim(graph, start):
-	mst = defaultdict(set)
-	seen = set([start])
-	edges = [(cost, v1, v2) for v1, v2, cost in graph.get_edges(start)]
-	total_cost = 0
-	
-	heapq.heapify(edges)
-
-	while edges:
-		cost, v1, v2 = heapq.heappop(edges)
-		if v2 not in seen:
-			seen.add(v2)
-			mst[v1].add(v2)
-			
-			total_cost += cost
-			for v3, cost in graph.get_neighbors(v2):
-				if v3 not in visited:
-					heapq.heappush(edges,[v2,v3,cost])
-	return mst, total_cost
-	
 ```
+MST-PRIM(G, w, r)
+1  for each u ∈ G.V
+2       u.key ← ∞
+3       u.π ← NIL
+4   r.key ← 0
+5   Q ← G.V
+6   while Q ≠ Ø
+7       u ← EXTRACT-MIN(Q)
+8       for each v ∈ G.Adjacent[u]
+9           if v ∈ Q and w(u, v) < v.key
+10              v.π ← u
+11              v.key ← w(u, v)
+```
+
+**Using a Binary Heap**
+
+1. The time complexity required for one call to `EXTRACT-MIN(Q)` is `O(log V)` using a min priority queue. The while loop at line 6 is executing total V times.so `EXTRACT-MIN(Q)` is called `V` times. So the complexity of `EXTRACT-MIN(Q)` is `O(V logV)`.
+    
+2. The `for` loop at line 8 is executing total `2E` times as length of each adjacency lists is `2E` for an undirected graph. The time required to execute line 11 is `O(log v)` by using the `DECREASE_KEY` operation on the min heap. Line 11 also executes total `2E` times. So the total time required to execute line 11 is `O(2E logV) = O(E logV)`.
+    
+3. The `for` loop at line 1 will be executed `V` times. Using the procedure to perform lines 1 to 5 will require a complexity of `O(V)`.
+    
+
+Total time complexity of `MST-PRIM` is the sum of the time complexity required to execute steps 1 through 3 for a total of `O((VlogV) + (E logV) + (V)) = O(E logV)` since `|E| >= |V|`.
+
+**Using a Fibonacci Heap**
+
+1. Same as above.
+2. Executing line 11 requires `O(1)` amortized time. Line 11 executes a total of `2E` times. So the total time complexity is `O(E)`.
+3. Same as above
+
+So the total time complexity of `MST-PRIM` is the sum of executing steps 1 through 3 for a total complexity of `O(V logV + E + V)=O(E + V logV)`.
+
+## Source
+- https://stackoverflow.com/questions/20430740/time-complexity-of-prims-algorithm
 
 >[!example]
 >```python
@@ -133,7 +147,7 @@ Consider this graph
 
 ```
        5     5
-  s *-----*-----* t
+  s *-----*d-----* t
      \         /
        -------
          9

@@ -137,7 +137,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -240,7 +241,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algos/Bellman Ford's Algorithm.md",
+                "file": "Revision Feb 2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -266,7 +267,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algos/Bellman Ford's Algorithm.md",
+                "file": "Revision Feb 2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -385,28 +386,6 @@
                 }
               },
               {
-                "id": "64bca5d96078f25f",
-                "type": "leaf",
-                "pane-relief:history-v1": {
-                  "pos": 0,
-                  "stack": [
-                    {
-                      "state": "{}",
-                      "eState": "{}"
-                    }
-                  ]
-                },
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "DS/Trie.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
                 "id": "6d4b6d5a2a2604b9",
                 "type": "leaf",
                 "pane-relief:history-v1": {
@@ -433,29 +412,9 @@
                     "source": false
                   }
                 }
-              }
-            ],
-            "currentTab": 3
-          }
-        ],
-        "direction": "vertical",
-        "x": 1923,
-        "y": 5,
-        "width": 1911,
-        "height": 2149,
-        "maximize": false,
-        "zoom": 2
-      },
-      {
-        "id": "b7796a1c4a5b6b62",
-        "type": "window",
-        "children": [
-          {
-            "id": "0f0a2aee70d61fa3",
-            "type": "tabs",
-            "children": [
+              },
               {
-                "id": "041de2c3afb8dba2",
+                "id": "1f98dd0c4073090e",
                 "type": "leaf",
                 "pane-relief:history-v1": {
                   "pos": 0,
@@ -469,43 +428,69 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Private/Project Log.md",
+                    "file": "Algos/Prim's Algorithm.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "bab96d13e65a6008",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "DS/Union Find (Disjoint Sets).md",
                     "mode": "source",
                     "backlinks": false,
                     "source": false
                   }
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical",
         "x": 6,
         "y": 5,
-        "width": 3828,
+        "width": 1760,
         "height": 2149,
         "maximize": false,
         "zoom": 2
       }
     ]
   },
-  "active": "6d4b6d5a2a2604b9",
+  "active": "a47ac813e12d7d9d",
   "lastOpenFiles": [
+    "Algos Practice/Comprehensive List.md",
+    "Revision Feb 2024.md",
+    "Interview Prep 2024/Solved Easily.md",
+    "Interview Prep 2024/Difficult.md",
+    "Interview Prep 2024/LC Hard.md",
+    "Algos/Prim's Algorithm.md",
+    "DS/Union Find (Disjoint Sets).md",
+    "Algos/Kruskal's Algorithm.md",
+    "DS/Trie.md",
+    "Algos Practice/Review List.md",
+    "Algos/Bellman Ford's Algorithm.md",
     "Private/Project Log.md",
     "Private/Health.md",
-    "Algos/Bellman Ford's Algorithm.md",
-    "Interview Prep 2024/Solved Easily.md",
-    "Revision Feb 2024.md",
     "DS/Graph Theory.md",
-    "DS/Trie.md",
     "DS/Graph Structures.md",
-    "Algos Practice/Comprehensive List.md",
     "Algos Practice/Untitled.md",
     "Leetcode Questions/LC-46. Permutations.md",
-    "Interview Prep 2024/LC Hard.md",
     "Leetcode Questions/LC-51. N-Queens.md",
-    "Algos Practice/Review List.md",
-    "Interview Prep 2024/Difficult.md",
     "Templates/Generic.md",
     "Interview Prep 2024/mic.scpt",
     "Interview Prep 2024/Retrieve UI Elements.scpt",
@@ -528,9 +513,6 @@
     "Software Engineering/Frontend/React-Query.md",
     "Software Engineering/Frontend/React.md",
     "Private/Career Handbook.md",
-    "Private/Career Planning.md",
-    "Software Engineering/Frontend/Next.js.md",
-    "Software Engineering/Typescript.md",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214420.png",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214405.png",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214404.png",

@@ -14,11 +14,10 @@ Initial complete review of all studied concepts
 # Essentials
 
 ## Arrays
-- Kadane's Algorithm
-### Array Manipulation
-#### Ranges vs Counting
-- If range: j-i+1
-- else: j-1
+- If range (inclusive): j-i+1
+- If index/position difference: j-i
+### Kadane's 
+https://leetcode.com/problems/substring-with-largest-variance/solutions/2579146/weird-kadane-intuition-solution-explained/
 ## Backtracking
 ### Including or not including
 - No for loop needed in each backtrack because there is only two options
@@ -180,11 +179,19 @@ def uniquePathsIII(self, grid: List[List[int]]) -> int:
 ## Dynamic Programming
 ### String Matching
 #### Prefix Function KMP
-##### sdflkjsdf 
-sdfsdf
 #### Rabin Karp
 ## Graph Theory
 - Be smart about where valid solutions can start
+### Trees
+**Theorem**: An undirected graph is a tree iff it is minimally connected.
+The following are equivalent
+- A tree is an undirected graph G = (V, E) that is connected and acyclic.
+- All the following are equivalent:
+- G is a tree.
+- G is connected and acyclic.
+- G is minimally connected (removing any edge from G disconnects it.)
+- G is maximally acyclic (adding any edge creates a cycle)
+- G is connected and |E| = |V| - 1.
 ### Representation
 - Adjacency list: Dictionary, for sparse graphs
 - Adjacency Matrix: for dense graphs
@@ -235,17 +242,182 @@ https://leetcode.com/problems/number-of-closed-islands/description/
 - Bellman Ford/Floyd Warshall can find negative cycles
 #### Bellman Ford/Floyd Warshall
 #### Dijkstra
+- Finds the shortest path from the source node to all other nodes 
+- The result (shortest path tree) is not guaranteed to be a MST 
+- Works for both directed/undirected graphs
 
 ### Minimum Spanning Tree Algorithms
-#### Prim/Kruskal
+- MST assumes graphs are inherently undirected
+- A minimum cost tree that connects all nodes in the graph
+- Does not guarantee the shortest path between two nodes in the original graph
 
+**Theorem**: Let G be a connected, weighted graph. If all edge weights in G are distinct, G has exactly one MST
+**Theorem (Cycle Property):** If (x, y) is an edge in G and is the heaviest edge on some cycle C, then (x, y) does not belong to any MST of G. 
+**Theorem (Cut Property):** Let (S, V – S) be a nontrivial cut in G (i.e. S ≠ Ø and S ≠ V). If (u, v) is the lowest-cost edge crossing (S, V – S), then (u, v) is in every MST of G.
+#### Prim's
+Greedy Algorithm
+- Start at any vertex
+- Repeatedly add the minimum edge that connects the tree to a new vertex
+	- If each vertex has at most one edge to another vertex, then we are bounded by V here 
+- Complexity: O(E log V) with Priority Queue or  O(E + VlogV) with a Fibonacci Heap
+
+ Implementation in python requires a modification of heapq since it does not provide a decrease-key function
+- Typically, no decrease-key function is used and instead just append and invalidate entries later on in which case, the complexity is same as Kruskal's
+```python
+MST-PRIM(G, w, r)
+1  for each u ∈ G.V
+2       u.key ← ∞
+3       u.π ← NIL
+4   r.key ← 0
+5   Q ← G.V
+6   while Q ≠ Ø
+7       u ← EXTRACT-MIN(Q)
+8       for each v ∈ G.Adjacent[u]
+9           if v ∈ Q and w(u, v) < v.key
+10              v.π ← u
+11              v.key ← w(u, v)
+```
+**Using a Binary Heap**
+1. The time complexity required for one call to `EXTRACT-MIN(Q)` is `O(log V)` using a min priority queue. The while loop at line 6 is executing total V times.so `EXTRACT-MIN(Q)` is called `V` times. So the complexity of `EXTRACT-MIN(Q)` is `O(V logV)`.
+2. The `for` loop at line 8 is executing total `2E` times as length of each adjacency lists is `2E` for an undirected graph. The time required to execute line 11 is `O(log v)` by using the `DECREASE_KEY` operation on the min heap. Line 11 also executes total `2E` times. So the total time required to execute line 11 is `O(2E logV) = O(E logV)`.
+3. The `for` loop at line 1 will be executed `V` times. Using the procedure to perform lines 1 to 5 will require a complexity of `O(V)`.
+Total time complexity of `MST-PRIM` is the sum of the time complexity required to execute steps 1 through 3 for a total of `O((VlogV) + (E logV) + (V)) = O(E logV)` since `|E| >= |V|`.
+**Using a Fibonacci Heap**
+1. Same as above.
+2. Executing line 11 requires `O(1)` amortized time. Line 11 executes a total of `2E` times. So the total time complexity is `O(E)`.
+3. Same as above
+So the total time complexity of `MST-PRIM` is the sum of executing steps 1 through 3 for a total complexity of `O(V logV + E + V)=O(E + V logV)`.
+**Source**: https://stackoverflow.com/questions/20430740/time-complexity-of-prims-algorithm
+##### Implementations
+- Adjacency Matrix
+- Adjacency List + Priority Queue (Heap)
+
+```python
+from collections import default dict
+import heapq
+
+edges = [(cost, v1, v2)...]
+def prim(edges, start):
+	mst = defaultdict(set)
+	seen = set([start])
+	graph = defaultdict(list) 
+	for u,v,cost in edges:
+		graph[u].append([v,cost])
+		graph[v].append([u,cost])
+
+	total_cost = 0
+	heapq.heapify(edges)
+
+	while edges:
+		cost, u, v = heapq.heappop(edges)
+		# Important: There can be edges with visited nodes in the heap
+		if v not in seen:
+			seen.add(v)
+			mst[u].add(v)
+			
+			total_cost += cost
+			for w, ncost in graph[v]:
+				# Update new reachable edges
+				if w not in visited:
+					heapq.heappush(edges,[v,w,ncost])
+	return mst, total_cost
+```
+#### Kruskal's
+- Greedy algorithm
+- Repeatedly consider the minimum remaining edge
+	- Only add it if the two vertices lie within different trees (to avoid cycles)
+- Complexity: O(E log E) with Union-find and sorting edges
+##### Implementations
+- Union-find to store state of trees 
+```python
+def kruskal(graph):
+	mst = []
+	uf = Union_find(graph.get_vertices())
+	edges = graph.get_edges()
+	# sort edges by cost
+	edges.sort(key = lambda x: x[2])
+	for u,v,cost in edges:
+		# Only add edges that don't create a cycle
+		if uf.find(u) != uf.find(v):
+			mst.append([u,v,cost])
+			uf.union(u,v)
+	return mst
+
+mst_weight = sum(t[2] for t in mst)
+```
+- If we know the upper bound of the cost of edges C, using count sort will allow us to sort in O(E + C), reducing the time complexity to just union-find: O()
+
+#### Prim's vs Kruskal's
+- Kruskal's is more efficient on sparse graphs than Prim's algorithm 
+- Kruskal's will not provide a valid MST mid algorithm unlike Prim
+#### Enumerating all MST's 
+- Generate one MST
+- Then generate all spanning trees and then filter by cost
+	- Generating all spanning trees can be done by setting all edges to cost = 0 and using a MST algorithm
+### Tarjan's
 ### Topological Sort
 - Detecting cycles with  DFS 
 #### Directed Acyclic Graphs (DAG)
-- Topological sorting is the most important operation on DAG's
 ### Determining Connectivity
  - Bfs/dfs/union find
 #### Union Find
+- Parameters: 
+	- n: number of of elements 
+	- parent: array indicating root of component i
+		- The value stored here is the index position of the root in the element array, not the actual element itself
+	- rank: depth of each component
+- Union(x,y) succeeds if x and y are found to have different parents
+- Append higher ranked tree to lower ranked tree 
+- Optimization: Path compression when finding parents
+- No operations are performed on the actual elements
+```python
+class Union_find:
+	def __init__(self,n):
+		self.n = n
+		self.parent = list(range(n))
+		self.rank = [1]*n
+
+	#Path compression used to shorten path to parent O(loglogn)
+	def find(self,x):
+		if self.parent[x] != x:
+			self.parent[x] = self.find(self.parent[x])
+		return self.parent[x]
+
+	# Union modifies the parent array
+	def union(self, x, y):
+		px = self.find(x)
+		py = self.find(y)
+		
+		if px == py:
+			return
+		# bigger parent stays the parent
+		if self.rank[px] < self.rank[py]:
+			self.parent[px] = py 
+			self.rank[py] += self.rank[px]
+		else:
+			self.parent[py] = self.parent[px]
+			self.rank[px] += self.rank[py]
+```
+##### Union-find Applications
+- Cycle detection for undirected graphs only
+- Longest consecutive sequence: union consecutive numbers
+	- Use index of nums for union-find
+	- Keep track of seen numbers
+	- Union current current component to existing components
+```python
+def longest_consecutive_sequence(nums):
+	d = {}
+	uf = union_find(len(nums))
+	for i, num in enumerate(nums):
+		if num in d:
+			continue
+		d[num] = i
+		if num-1 in d:
+			uf.union(i, d[num-1])
+		if num+1 in d:
+			uf.union(i, d[num+1])
+	return max(uf.size) if nums else 0
+```
 ### Strongly Connected Components
 
 ### Bridges Algorithm
@@ -272,8 +444,53 @@ https://leetcode.com/problems/number-of-closed-islands/description/
 ### Quick Select
 ## Stacks
 ## Trees
-## Tries
+## Trie
+- Ex: `trie = {c: {a: {t:{WORD_KEY: 'cat' }}}}` 
+- An alternative to class objects can be to set
+	- `nodes[WORD_KEY] = word` to indicate a word 
+```python
+class TrieNode:
+    def __init__(self):
+        self.isWord = False
+        self.nodes = {}
+            
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
 
+    # Inserts a word into the trie.
+    def insert(self, word: str) -> None:
+        cur = self.root;
+        
+        for c in word:
+            if c not in cur.nodes:
+                cur.nodes[c] = TrieNode()
+            cur = cur.nodes[c]
+            
+        cur.isWord = True;
+
+    # Returns if the word is in the trie
+    def search(self, word: str) -> bool:
+        cur = self.root
+        
+        for c in word:
+            if c not in cur.nodes:
+                return False
+            cur = cur.nodes[c]
+            
+        return cur.isWord
+    # Returns if there is any word in the trie 
+    # that starts with the given prefix. */
+    def startsWith(self, prefix: str) -> bool:
+        cur = self.root
+        
+        for c in prefix:
+            if c not in cur.nodes:
+                return False
+            cur = cur.nodes[c]
+            
+        return True
+```
 ### Suffix Array/Tree
 
 ## Two Pointers
