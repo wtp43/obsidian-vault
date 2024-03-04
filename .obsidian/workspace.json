@@ -102,7 +102,7 @@
             }
           },
           {
-            "id": "5269e18dd118bc38",
+            "id": "a56e46b7e5aa417d",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -116,29 +116,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep 2024/Interview Prep.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e6d5552ba220830c",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/Algobet Todo.md",
+                "file": "Interview Prep.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -146,7 +124,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -249,7 +227,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/Algobet Todo.md",
+                "file": "Interview Prep.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -275,7 +253,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/Algobet Todo.md",
+                "file": "Interview Prep.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -337,14 +315,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e6d5552ba220830c",
+  "active": "a56e46b7e5aa417d",
   "lastOpenFiles": [
-    "Interview Prep 2024/Interview Prep.md",
     "Interview Prep 2024/System Design.md",
+    "Interview Prep 2024/Interview Prep.md",
+    "Interview Prep.md",
+    "Projects/Algobet Todo.md",
     "Interview Prep 2024/Solved Easily.md",
     "Interview Prep 2024/LC Hard.md",
     "Interview Prep 2024/Difficult.md",
-    "Projects/Algobet Todo.md",
     "Algos Practice/Review List.md",
     "Revision Feb 2024.md",
     "Algos Practice/Comprehensive List.md",
@@ -378,7 +357,6 @@
     "Software Engineering/Virtual Env.md",
     "DS/Binary Search Tree (BST).md",
     "DS/Trees.md",
-    "Algos Practice/Intuition/Tree.md",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214420.png",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214405.png",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214404.png",
