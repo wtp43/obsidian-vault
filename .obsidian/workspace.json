@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "02bfb56715f94f3b",
+        "id": "30cee2c1e06820b6",
         "type": "tabs",
         "children": [
           {
-            "id": "d46d64f3f2ba91e4",
+            "id": "5ecd45db9a62081e",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -16,85 +16,13 @@
                 {
                   "state": "{}",
                   "eState": "{}"
-                },
-                {
-                  "title": "Solved Easily",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/Solved Easily.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":0},\"to\":{\"line\":5,\"ch\":0}}}"
-                },
-                {
-                  "title": "LC Hard",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/LC Hard.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":0},\"to\":{\"line\":5,\"ch\":0}}}"
-                },
-                {
-                  "title": "Interview Prep",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/Interview Prep.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":0},\"to\":{\"line\":5,\"ch\":0}}}"
-                },
-                {
-                  "title": "Difficult",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/Difficult.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":0},\"to\":{\"line\":5,\"ch\":0}}}"
-                },
-                {
-                  "title": "Solved Easily",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/Solved Easily.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":0},\"to\":{\"line\":5,\"ch\":0}}}"
-                },
-                {
-                  "title": "System Design",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/System Design.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
-                },
-                {
-                  "title": "Solved Easily",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/Solved Easily.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":0},\"to\":{\"line\":5,\"ch\":0}}}"
-                },
-                {
-                  "title": "LC Hard",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/LC Hard.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":0},\"to\":{\"line\":5,\"ch\":0}}}"
-                },
-                {
-                  "title": "Difficult",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/Difficult.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":0},\"to\":{\"line\":5,\"ch\":0}}}"
-                },
-                {
-                  "title": "Interview Prep",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/Interview Prep.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":15,\"ch\":0},\"to\":{\"line\":15,\"ch\":0}}}"
-                },
-                {
-                  "title": "System Design",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/System Design.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
-                },
-                {
-                  "title": "Algobet Todo",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Projects/Algobet Todo.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":2},\"to\":{\"line\":5,\"ch\":2}}}"
                 }
               ]
             },
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep 2024/System Design.md",
+                "file": "Interview Prep 2024/Solved Easily.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -102,7 +30,51 @@
             }
           },
           {
-            "id": "a56e46b7e5aa417d",
+            "id": "ec864b2f2a26157e",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Revision Feb 2024.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "37138efb88092732",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interview Prep 2024/Difficult.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "012a43955a836455",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -124,7 +96,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -315,17 +287,18 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a56e46b7e5aa417d",
+  "active": "012a43955a836455",
   "lastOpenFiles": [
+    "Revision Feb 2024.md",
+    "Interview Prep.md",
+    "Interview Prep 2024/Difficult.md",
+    "attachments/Pasted image 20240304190355.png",
+    "Interview Prep 2024/Solved Easily.md",
+    "Algos Practice/Review List.md",
     "Interview Prep 2024/System Design.md",
     "Interview Prep 2024/Interview Prep.md",
-    "Interview Prep.md",
     "Projects/Algobet Todo.md",
-    "Interview Prep 2024/Solved Easily.md",
     "Interview Prep 2024/LC Hard.md",
-    "Interview Prep 2024/Difficult.md",
-    "Algos Practice/Review List.md",
-    "Revision Feb 2024.md",
     "Algos Practice/Comprehensive List.md",
     "Algos/Prim's Algorithm.md",
     "DS/Union Find (Disjoint Sets).md",
@@ -356,12 +329,10 @@
     "Private/attachments/Pasted image 20240208173224.png",
     "Software Engineering/Virtual Env.md",
     "DS/Binary Search Tree (BST).md",
-    "DS/Trees.md",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214420.png",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214405.png",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214404.png",
     "Software Engineering/Web Development/attachments/Pasted image 20231108174314.png",
-    "Software Engineering/Web Development/attachments/Pasted image 20231108172630.png",
-    "Software Engineering/Web Development/attachments/Pasted image 20231108172329.png"
+    "Software Engineering/Web Development/attachments/Pasted image 20231108172630.png"
   ]
 }

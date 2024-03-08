@@ -42,7 +42,7 @@ def maxSubarraySumCircular(self, nums: List[int]) -> int:
 ```
 https://leetcode.com/problems/house-robber-iii/description/jj
 
-# Trees
+# Binary Trees
 
 ## House Robber 3 (can't rob two directly linked nodes in a BT) 
 - Similar to backtrack/dp, at each node, you can choose to rob it or not, creating diverging paths
@@ -122,6 +122,8 @@ class Solution:
         return root
 ```
 https://leetcode.com/problems/delete-node-in-a-bst/
+
+
 
 # Dynamic Programming
 

@@ -91,9 +91,6 @@ def combine(self, n: int, k: int) -> List[List[int]]:
 
 		for j in range(i, i + available + 1):
 			combination.append(j)
-			backtrack(j+1, need-1)
-			combination.pop()
-	backtrack(1, k)
 	return res
 ```
 #### n- queens
@@ -174,6 +171,128 @@ def uniquePathsIII(self, grid: List[List[int]]) -> int:
 
 ## Binary Search
 ### Bisect left/right
+
+## Binary Trees
+### Basic Operations
+
+#### Insert 
+```python
+def insertIntoBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
+	if not root:
+		return TreeNode(val)
+	if val > root.val:
+		root.right = self.insertIntoBST(root.right, val)
+	else:
+		root.left = self.insertIntoBST(root.left, val)
+	return root
+ ```
+https://leetcode.com/problems/insert-into-a-binary-search-tree/
+#### Delete
+### Width Type Questions
+- ie: check for completeness
+- level traversal with BFS
+
+### Traversals
+#### Level Order Traversal
+- The position of the child node can be calculated with 
+	- left child: `pos*2 - 1`
+		- right child: `pos*2`
+https://leetcode.com/problems/maximum-width-of-binary-tree/description/
+
+#### Zigzag Order Traversal
+The ordering of nodes on alternating levels should be reversed
+- Use delimiter (ie: None) to indicate end of current level
+- Edge case: Empty tree, results in infinite loop
+```python
+ def zigzagLevelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+	res = []
+	level = deque([])
+	if not root:
+		return None
+	q = deque([root, None])
+	reverse = True
+	while q:
+		node = q.popleft()
+		if node:
+			if reverse:
+				level.append(node.val)
+			else:
+				level.appendleft(node.val)
+			if node.left:
+				q.append(node.left)
+			if node.right:
+				q.append(node.right)
+		else:
+			res.append(level)
+			if q:
+				q.append(None)
+			level = deque()
+			reverse = not reverse
+	return res
+```
+https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description
+#### Vertical Order Traversal
+![[Pasted image 20240304190355.png]]
+res:`[[4],[9,5],[3,0,1],[8,2],[7]]` 
+- BFS with root set to col 0
+- Left child has parent col - 1, right child has parent col + 1
+- Since there can't be null cols, we don't have to sort col indices and just 
+```python
+def verticalOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+	col = defaultdict(list)
+	if not root:
+		return []
+	q = deque([(root,0)])
+	min_col = max_col = 0
+
+	while q:
+		for i in range(len(q)):
+			node, i = q.popleft()
+			col[i].append(node.val)
+			min_col = min(min_col, i)
+			max_col = max(max_col, i)
+
+			if node.left:
+				q.append((node.left, i-1))
+			if node.right:
+				q.append((node.right, i+1))
+	# Note there cannot be null cols because of the way 
+	# col is built
+	return [col[i] for i in range(min_col, max_col+1)]
+```
+#### Vertical Order Traversal Sorted
+- A row value is used to determine order for nodes with duplicate values
+- Two types of sorting:
+	- Global Sorting: O(NlogN)
+	- Partition Sorting (Sort each column): O(Nlog(N/k))
+	
+```python
+def verticalTraversal(self, root: Optional[TreeNode]) -> List[List[int]]:
+	if root is None:
+		return []
+
+	col = defaultdict(list)
+	min_col= max_col= 0
+
+	q = deque([(root, 0, 0)])
+
+	while q:
+		node, r, c = q.popleft()
+
+		if node is not None:
+			# sort by row first
+			col[c].append((r, node.val))
+			min_col= min(min_col, c)
+			max_col= max(max_col, c)
+			q.append((node.left, r+1, c-1))
+			q.append((node.right, r+1, c+1))
+	
+	res = []
+	for c in range(min_col, max_col+ 1):
+		# partition sort
+		res.append([val for row, val in sorted(col[c])])
+	return res
+```
 ## Data Structures
 - LFU/LRU cache
 ## Dynamic Programming
