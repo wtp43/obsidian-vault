@@ -94,9 +94,31 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "3fc4a7e9ba66e48e",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interview Prep 2024/System Design.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -199,7 +221,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interview Prep.md",
+                "file": "Revision Feb 2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,7 +247,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interview Prep.md",
+                "file": "Revision Feb 2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -287,15 +309,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "012a43955a836455",
+  "active": "ec864b2f2a26157e",
   "lastOpenFiles": [
-    "Revision Feb 2024.md",
     "Interview Prep.md",
     "Interview Prep 2024/Difficult.md",
-    "attachments/Pasted image 20240304190355.png",
     "Interview Prep 2024/Solved Easily.md",
-    "Algos Practice/Review List.md",
+    "Revision Feb 2024.md",
     "Interview Prep 2024/System Design.md",
+    "attachments/Pasted image 20240304190355.png",
+    "Algos Practice/Review List.md",
     "Interview Prep 2024/Interview Prep.md",
     "Projects/Algobet Todo.md",
     "Interview Prep 2024/LC Hard.md",
