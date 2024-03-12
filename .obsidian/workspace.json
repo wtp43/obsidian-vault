@@ -96,7 +96,7 @@
             }
           },
           {
-            "id": "3fc4a7e9ba66e48e",
+            "id": "c73846cf216f6b4d",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -110,7 +110,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep 2024/System Design.md",
+                "file": "Interview Prep 2024/LC Hard.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -311,16 +311,22 @@
   },
   "active": "ec864b2f2a26157e",
   "lastOpenFiles": [
-    "Interview Prep.md",
-    "Interview Prep 2024/Difficult.md",
     "Interview Prep 2024/Solved Easily.md",
     "Revision Feb 2024.md",
+    "Interview Prep 2024/LC Hard.md",
+    "Interview Prep.md",
+    "Algos Practice/Intuition/Binary Search.md",
     "Interview Prep 2024/System Design.md",
+    "Interview Prep 2024/attachments/Pasted image 20240312065728.png",
+    "Interview Prep 2024/attachments/Pasted image 20240312063941.png",
+    "Interview Prep 2024/attachments/Pasted image 20240312060004.png",
+    "Interview Prep 2024/attachments",
+    "Interview Prep 2024/Difficult.md",
+    "Algos/Binary Search and Bisect.md",
     "attachments/Pasted image 20240304190355.png",
     "Algos Practice/Review List.md",
     "Interview Prep 2024/Interview Prep.md",
     "Projects/Algobet Todo.md",
-    "Interview Prep 2024/LC Hard.md",
     "Algos Practice/Comprehensive List.md",
     "Algos/Prim's Algorithm.md",
     "DS/Union Find (Disjoint Sets).md",
@@ -344,17 +350,11 @@
     "Algos/Scripts copy/mic.scpt",
     "Algos/Scripts copy/Retrieve UI Elements.scpt",
     "Algos/Scripts copy",
-    "Finance/Scripts copy/mic.scpt",
     "Private/attachments/Pasted image 20240208173341.png",
     "Private/attachments/Pasted image 20240208173333.png",
     "Private/attachments/Pasted image 20240208173257.png",
     "Private/attachments/Pasted image 20240208173224.png",
-    "Software Engineering/Virtual Env.md",
-    "DS/Binary Search Tree (BST).md",
     "Software Engineering/Frontend/attachments/Pasted image 20240116214420.png",
-    "Software Engineering/Frontend/attachments/Pasted image 20240116214405.png",
-    "Software Engineering/Frontend/attachments/Pasted image 20240116214404.png",
-    "Software Engineering/Web Development/attachments/Pasted image 20231108174314.png",
-    "Software Engineering/Web Development/attachments/Pasted image 20231108172630.png"
+    "Software Engineering/Frontend/attachments/Pasted image 20240116214405.png"
   ]
 }

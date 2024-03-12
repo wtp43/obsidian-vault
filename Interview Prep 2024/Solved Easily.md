@@ -94,3 +94,27 @@ Nodes do not have to be adjacent
 - Optimization: instead of saving the entire list, store the prev value and only compare adjacent values in the in order traversal
 - Update prev after processing min_diff
 https://leetcode.com/problems/minimum-distance-between-bst-nodes/description/
+
+### Cutting Ribbons (get max length of ribbon length such that there can be k cuts)
+- right bisect
+- have to check every single ribbon
+- Mininum ribbon size is not equal to smallest ribbon because the smallest ribbon can be omitted if number of ribbons > k
+```python
+def maxLength(self, ribbons: List[int], k: int) -> int:
+	if sum(ribbons) < k:
+		return 0
+	hi = max(ribbons)
+	lo = 1
+
+	while lo <= hi:
+		mid = lo + (hi-lo)//2
+		c = 0
+		for r in ribbons:
+			c += r//mid
+		if c >= k:
+			lo = mid + 1
+		else:
+			hi = mid - 1
+	return hi
+```
+https://leetcode.com/problems/cutting-ribbons/description/

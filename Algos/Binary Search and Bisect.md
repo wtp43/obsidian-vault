@@ -41,7 +41,7 @@ def bisect_left(arr, x):
 ```
 
 ## Bisect Right
-- Returns the index ¢∞of the first num > x
+- Returns the index of the first num > x
 - ``if target == arr[mid]: i = mid+1
 - `if target > arr[-1]: i = len(arr)
 - `if target < arr[0]: i = 0`

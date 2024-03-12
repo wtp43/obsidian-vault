@@ -11,6 +11,18 @@ min_depth:1
 max_depth:6 
 >```
 Initial complete review of all studied concepts
+# Structuring a Solution
+### Find a starting point
+- Where can I start building the solution
+- Can I start from the minimum element?
+	- Determine if this starting point passes edge cases
+- What algorithms and data structures can I use?
+	- 
+## Intuition
+- Find minimum chunk after k cuts/Minimum group size
+	- Binary search on group size then greedily make cuts once group reaches threshold
+- 
+
 # Essentials
 
 ## Arrays
@@ -170,8 +182,48 @@ def uniquePathsIII(self, grid: List[List[int]]) -> int:
 ### 0-1 Knapsack
 
 ## Binary Search
-### Bisect left/right
 
+> [!danger] Intuition
+> Determine whether left or right bisect is needed. This is relevant for questions where more than one 'target' or 'x' can satisfy the conditions (but do we want the biggest 'target' or smallest 'target'). The 'target' to be searched is usually found on some range (which is sorted by default).
+
+### Bisect Process
+- What is the target?
+- If the target is >= threshold, should we decrease or increase mid?
+- Do we want to return hi or lo?
+	- Depends on if we want rightmost x or leftmost x
+
+
+### Bisect left/right
+- Implementation differs only at the comparison
+```python
+#### MORE USEFUL IMPLEMENTATION than <= while
+def bisect_left(arr, x):
+	lo = 0
+	hi = len(arr)-1
+	while lo <= hi:
+		mid = lo + (hi - lo)//2
+		if arr[mid] < x:
+			lo = mid + 1
+		else:
+			hi = mid - 1
+	return lo 
+
+lo = first position where arr[lo] > x
+hi = position before lo
+def bisect_right(arr, x):
+	lo = 0
+	hi = len(arr)-1
+	while lo <= hi:
+		mid = lo + (hi - lo)//2
+		if arr[mid] <= x:
+			lo = mid + 1
+		else:
+			hi = mid - 1
+	return lo 
+```
+
+### Framework for using Binary Search to Find Minimum Group Size
+#### 
 ## Binary Trees
 ### Basic Operations
 
@@ -317,6 +369,10 @@ The following are equivalent
 ### BFS/DFS/IDS
 - Level search
 - Multi-source
+### A* Search
+> Requires a heuristic
+https://leetcode.com/problems/shortest-path-in-binary-matrix/editorial/
+
 ### Island Type Questions
 #### Closed Island
 + A closed island cannot have land on the edges of the grid
@@ -552,6 +608,29 @@ def longest_consecutive_sequence(nums):
 ## Linked List
 ### Deletion node (Recursive/Iterative)
 ### Reverse Linked List
+###  Insert Into a Sorted Circular Linked List
+- Step 1: Enumerate all cases (how can the node be inserted)
+	- At the tail, in the middle
+```python
+def insert(self, head: 'Node', insertVal: int) -> 'Node':
+	if head == None:
+		newNode = Node(insertVal, None)
+		newNode.next = newNode
+		return newNode
+
+	node = head
+	while(node.next != head):
+		if node.val <= node.next.val:
+			if insertVal >= node.val and insertVal <= node.next.val:
+				break
+		else:
+			if insertVal >= node.val or insertVal <= node.next.val:
+				break
+		node = node.next 
+	
+	node.next = Node(insertVal, node.next)
+	return head
+```
 
 ## Queue
 ### Circular Queue
@@ -616,6 +695,7 @@ class Trie:
 
 # Advanced
 - Indexed priority queue
+
 ## Combinatorics
  
 # Behavioural 

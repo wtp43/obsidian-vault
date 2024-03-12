@@ -47,6 +47,103 @@ def wordBreak(self, s: str, wordDict: List[str]) -> List[str]:
 ```
 https://leetcode.com/problems/word-break-ii/description/
 
+## Binary Search
+### Divide Chocolate
+https://leetcode.com/problems/divide-chocolate/description/
+- Divide chocolate with k cuts (k + 1 pieces)
+- Binary search + greedy
+- Return hi since we want the biggest
+```python
+def maximizeSweetness(self, sweetness: List[int], k: int) -> int:
+	#cuts can be represented by choosing a max chunk threshold
+	if k < 1:
+		return sum(sweetness)
+	k += 1
+	lo = min(sweetness)
+	hi = max(sweetness) * math.ceil(len(sweetness)/k)
+	while lo <= hi:
+		mid = lo + (hi-lo)//2
+		chunk = 0
+		count = 1
+		for s in sweetness:
+			if s + chunk < mid:
+				chunk += s
+			else:
+				count += 1
+				chunk = 0
+				if count > k:
+					break
+		if count > k:
+			lo = mid + 1
+		else:
+			hi = mid - 1
+	return hi
+def maximizeSweetness(self, sweetness: List[int], k: int) -> int:
+	#cuts can be represented by choosing a max chunk threshold
+	if k < 1:
+		return sum(sweetness)
+	k += 1
+	lo = min(sweetness)
+	# the maximum of the minimum chunk cannot be greater than the size of an even split
+	hi = math.ceil(sum(sweetness)/(k))
+	while lo <= hi:
+		mid =lo + (hi-lo)//2
+		chunk = 0
+		count = 0
+		#!!!! Update chunk after every num, not just 
+			# if number of chunks not reached (ie: last chunk is less than threshold)
+			# this means we can decrease the threshold
+		for s in sweetness:
+			chunk += s
+			if chunk >= mid:
+				count += 1
+				chunk = 0
+		# this is a left bisect
+		if count >= k:
+			lo = mid + 1
+		else:
+			hi = mid - 1
+	return hi
+```
+- We only have a chunk if the threshold is met
+- Enumerate possibilites
+	- If count > k:
+		- chunk threshold can be increased
+	- if count == k:
+		- chunk threshold can be increased
+	- if count < k:
+		- chunk threshold needs to be decreased
+- Our binary search algorithm will keep increasing threshold until the count < k
+	- Then it will decrease the chunk threshold until count == k or until hi < lo
+	- Thus, our answer lies within lo - 1 = hi
+### Split Array Largest Sum(Minimized)
+- Minimize largest array after splitting array into k subarrays
+- Key: count does not have to be to equal to k since we can have the last subarray to be smaller than the threshold
+- Right Bisect on count - 1
+- We want the first threshold such that count < k. In other words, the threshold is only too small if count = k - 2
+- How to construct this: what happens if count >= k: (we have too many subarrays, threshold must be increased)
+```python
+def splitArray(self, nums: List[int], k: int) -> int:
+	lo = max(nums)
+	hi = max(nums) * math.ceil(len(nums)/k)
+	while lo <= hi:
+		mid = lo + (hi-lo)//2
+		cur = 0
+		count = 0
+		for x in nums:
+			cur += x
+			if cur > mid:
+				cur = x
+				count += 1
+		if count >= k:
+			lo = mid + 1
+		else:
+			hi = mid - 1
+	return lo
+```
+- the array threshold is increased until count < k
+- the array threshold is then decreased until count == k
+- since the answer is still valid if we have count = k - 1, which means the last subarray was just not added cause it didn't reach the threshold, we want to return lo
 ## Trie
 
 ```python
