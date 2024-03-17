@@ -118,7 +118,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -221,7 +221,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Revision Feb 2024.md",
+                "file": "Interview Prep 2024/Difficult.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -247,7 +247,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Revision Feb 2024.md",
+                "file": "Interview Prep 2024/Difficult.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -309,19 +309,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "ec864b2f2a26157e",
+  "active": "37138efb88092732",
   "lastOpenFiles": [
-    "Interview Prep 2024/Solved Easily.md",
-    "Revision Feb 2024.md",
     "Interview Prep 2024/LC Hard.md",
     "Interview Prep.md",
+    "Interview Prep 2024/Difficult.md",
+    "Revision Feb 2024.md",
+    "Interview Prep 2024/Solved Easily.md",
     "Algos Practice/Intuition/Binary Search.md",
     "Interview Prep 2024/System Design.md",
     "Interview Prep 2024/attachments/Pasted image 20240312065728.png",
     "Interview Prep 2024/attachments/Pasted image 20240312063941.png",
     "Interview Prep 2024/attachments/Pasted image 20240312060004.png",
     "Interview Prep 2024/attachments",
-    "Interview Prep 2024/Difficult.md",
     "Algos/Binary Search and Bisect.md",
     "attachments/Pasted image 20240304190355.png",
     "Algos Practice/Review List.md",

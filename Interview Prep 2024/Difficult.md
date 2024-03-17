@@ -127,6 +127,22 @@ https://leetcode.com/problems/delete-node-in-a-bst/
 
 # Dynamic Programming
 
+# Data Structures
+## LRU Cache
+ - Hashmap: store key, value. Value can be a node
+ - Doubly linked list to store LRU nodes
+ - Get:
+	 - Remove node
+	 - Add node
+- Put:
+	- Add node
+	- If over capacity, remove LRU 
+- Remove:
+	- Get node from hashmap
+	- Update prev.next and next.prev
+## LFU Cache
+- Two hashmaps + doubly linked list: (freq, doubly linked list) and (key, value)
+## Suffix Tree
 
 # Python
 - Parameters are passed by assignment which is actually a reference to the object
