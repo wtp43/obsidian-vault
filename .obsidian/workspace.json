@@ -30,7 +30,7 @@
             }
           },
           {
-            "id": "ec864b2f2a26157e",
+            "id": "a4f62c4f48af83ca",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -38,13 +38,25 @@
                 {
                   "state": "{}",
                   "eState": "{}"
+                },
+                {
+                  "title": "Interview Prep",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Private/Interview Prep.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":0},\"to\":{\"line\":5,\"ch\":0}},\"scroll\":5}"
+                },
+                {
+                  "title": "Revision Feb 2024",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Revision Feb 2024.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":383,\"ch\":30},\"to\":{\"line\":383,\"ch\":30}},\"scroll\":378.146133877395}"
                 }
               ]
             },
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Revision Feb 2024.md",
+                "file": "Private/Emotional Intelligence.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -88,7 +100,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep.md",
+                "file": "Private/Interview Prep.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -118,7 +130,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -221,7 +233,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interview Prep 2024/Difficult.md",
+                "file": "Interview Prep 2024/LC Hard.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -247,7 +259,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interview Prep 2024/Difficult.md",
+                "file": "Interview Prep 2024/LC Hard.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -309,13 +321,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "37138efb88092732",
+  "active": "c73846cf216f6b4d",
   "lastOpenFiles": [
+    "Private/Emotional Intelligence.md",
     "Interview Prep 2024/LC Hard.md",
-    "Interview Prep.md",
-    "Interview Prep 2024/Difficult.md",
-    "Revision Feb 2024.md",
     "Interview Prep 2024/Solved Easily.md",
+    "Private/Interview Prep.md",
+    "Revision Feb 2024.md",
+    "Interview Prep 2024/Difficult.md",
     "Algos Practice/Intuition/Binary Search.md",
     "Interview Prep 2024/System Design.md",
     "Interview Prep 2024/attachments/Pasted image 20240312065728.png",
