@@ -108,7 +108,29 @@
             }
           },
           {
-            "id": "c73846cf216f6b4d",
+            "id": "5be52c6a9c80ad97",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Books/HBR Critical Thinking.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5c663e0fee1a4cab",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -118,107 +140,17 @@
                   "eState": "{}"
                 },
                 {
-                  "title": "HBR Critical Thinking",
+                  "title": "HBR on Lifelong Learning",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Books/HBR Critical Thinking.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":16,\"ch\":0},\"to\":{\"line\":16,\"ch\":0}}}"
-                },
-                {
-                  "title": "Imperialism - The Highest Stage of Capitalism",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Books/Imperialism - The Highest Stage of Capitalism.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":11,\"ch\":0},\"to\":{\"line\":11,\"ch\":0}}}"
-                },
-                {
-                  "title": "Vocabulary",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Books/Vocabulary.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}}}"
-                },
-                {
-                  "title": "Imperialism - The Highest Stage of Capitalism",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Books/Imperialism - The Highest Stage of Capitalism.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":11,\"ch\":0},\"to\":{\"line\":11,\"ch\":0}}}"
-                },
-                {
-                  "title": "Man's Search for Meaning",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Books/Man's Search for Meaning.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}},\"scroll\":3}"
-                },
-                {
-                  "title": "Transforming Discomfort into Fuel for your Brain",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Books/Transforming Discomfort into Fuel for your Brain.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}},\"scroll\":5.9168013809739355}"
-                },
-                {
-                  "title": "Man's Search for Meaning",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Books/Man's Search for Meaning.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}}}"
-                },
-                {
-                  "title": "Imperialism - The Highest Stage of Capitalism",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Books/Imperialism - The Highest Stage of Capitalism.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":11,\"ch\":0},\"to\":{\"line\":11,\"ch\":0}},\"scroll\":11}"
-                },
-                {
-                  "title": "Dopamine Detox",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Books/Dopamine Detox.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}},\"scroll\":29.49157046941183}"
-                },
-                {
-                  "title": "HBR Critical Thinking",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Books/HBR Critical Thinking.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":0}"
-                },
-                {
-                  "title": "Imperialism - The Highest Stage of Capitalism",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Books/Imperialism - The Highest Stage of Capitalism.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":11,\"ch\":0},\"to\":{\"line\":11,\"ch\":0}}}"
-                },
-                {
-                  "title": "Man's Search for Meaning",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Books/Man's Search for Meaning.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}}}"
-                },
-                {
-                  "title": "Transforming Discomfort into Fuel for your Brain",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Books/Transforming Discomfort into Fuel for your Brain.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}},\"scroll\":3}"
-                },
-                {
-                  "title": "Vocabulary",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Books/Vocabulary.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":0},\"to\":{\"line\":3,\"ch\":0}}}"
-                },
-                {
-                  "title": "HBR Critical Thinking",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Books/HBR Critical Thinking.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":0}"
-                },
-                {
-                  "title": "LC Hard",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/LC Hard.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":86,\"ch\":84},\"to\":{\"line\":86,\"ch\":84}},\"scroll\":82.64374179706581}"
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Books/HBR on Lifelong Learning.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":40,\"ch\":16},\"to\":{\"line\":40,\"ch\":16}},\"scroll\":10.29759983109999}"
                 }
               ]
             },
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/Dopamine Detox.md",
+                "file": "Finance/Historical Performance.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -226,7 +158,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -303,7 +235,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288
+    "width": 288,
+    "collapsed": true
   },
   "right": {
     "id": "2b3a55884ce239a9",
@@ -328,7 +261,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Books/Dopamine Detox.md",
+                "file": "Finance/Historical Performance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -354,7 +287,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Books/Dopamine Detox.md",
+                "file": "Finance/Historical Performance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -401,10 +334,19 @@
           {
             "id": "0bddfe6b80d346fa",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "outline",
               "state": {
-                "file": "Books/Dopamine Detox.md"
+                "file": "Finance/Historical Performance.md"
               }
             }
           }
@@ -427,29 +369,37 @@
       "graph:Open graph view": false
     }
   },
-  "active": "c73846cf216f6b4d",
+  "active": "5c663e0fee1a4cab",
   "lastOpenFiles": [
+    "Books/HBR on Lifelong Learning.md",
+    "Finance/Historical Performance.md",
+    "Interview Prep 2024/System Design.md",
+    "Interview Prep 2024/attachments/Pasted image 20240322143537.png",
+    "Interview Prep 2024/attachments/Pasted image 20240322143142.png",
+    "Interview Prep 2024/attachments/Pasted image 20240322142555.png",
+    "Interview Prep 2024/attachments/Pasted image 20240322142431.png",
+    "Interview Prep 2024/attachments/Pasted image 20240322142406.png",
+    "Interview Prep 2024/attachments/Pasted image 20240322142306.png",
+    "Interview Prep 2024/attachments/Pasted image 20240322142254.png",
     "Books/HBR Critical Thinking.md",
+    "Private/Interview Prep.md",
+    "Books/Dopamine Detox.md",
     "Books/Imperialism - The Highest Stage of Capitalism.md",
     "Books/Vocabulary.md",
     "Books/Man's Search for Meaning.md",
     "Books/Transforming Discomfort into Fuel for your Brain.md",
-    "Books/Dopamine Detox.md",
     "Books/Getting Real - The Smarter, Faster, Easier Way to Build a Web Application.md",
     "Interview Prep 2024/LC Hard.md",
     "Private/Emotional Intelligence.md",
     "Interview Prep 2024/Solved Easily.md",
-    "Private/Interview Prep.md",
     "Revision Feb 2024.md",
     "Interview Prep 2024/Difficult.md",
     "Algos Practice/Intuition/Binary Search.md",
-    "Interview Prep 2024/System Design.md",
     "Interview Prep 2024/attachments/Pasted image 20240312065728.png",
     "Interview Prep 2024/attachments/Pasted image 20240312063941.png",
     "Interview Prep 2024/attachments/Pasted image 20240312060004.png",
     "Interview Prep 2024/attachments",
     "Algos/Binary Search and Bisect.md",
-    "attachments/Pasted image 20240304190355.png",
     "Algos Practice/Review List.md",
     "Interview Prep 2024/Interview Prep.md",
     "Projects/Algobet Todo.md",
@@ -458,8 +408,6 @@
     "DS/Union Find (Disjoint Sets).md",
     "Algos/Kruskal's Algorithm.md",
     "DS/Trie.md",
-    "Algos/Bellman Ford's Algorithm.md",
-    "Private/Project Log.md",
     "Interview Prep 2024/mic.scpt",
     "Interview Prep 2024/Retrieve UI Elements.scpt",
     "Interview Prep 2024",
@@ -468,12 +416,6 @@
     "Scripts copy",
     "Algos/Scripts copy/mic.scpt",
     "Algos/Scripts copy/Retrieve UI Elements.scpt",
-    "Algos/Scripts copy",
-    "Private/attachments/Pasted image 20240208173341.png",
-    "Private/attachments/Pasted image 20240208173333.png",
-    "Private/attachments/Pasted image 20240208173257.png",
-    "Private/attachments/Pasted image 20240208173224.png",
-    "Software Engineering/Frontend/attachments/Pasted image 20240116214420.png",
-    "Software Engineering/Frontend/attachments/Pasted image 20240116214405.png"
+    "Algos/Scripts copy"
   ]
 }

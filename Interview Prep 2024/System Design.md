@@ -189,7 +189,7 @@ We will only estimate media storage here.
 - Precision is not expected, round numbers and approximate to your advantage
 ## Framework for System Design Interviews
 Avoid over-engineering, being narrow minded, stubborn
-### Step 1: Understand the problem and establish design scope
+### Step 1: Understand the problem and establish design scope (3-10 mins)
 Don't be afraid to ask questions to help you make the right assumptions
 - What specific features are we going to build?
 - How many users does the product have?
@@ -201,7 +201,91 @@ Don't be afraid to ask questions to help you make the right assumptions
 Design a news feed system
 - Q: is this a mobile app or web app or both?
 - Q: What are the most important features for the product?: Ability to make a post and see friend's feed
-### Propose high-level design and get buy-in
+### Step 2: Propose high-level design and get buy-in(10-15 mins)
+- Come up with initial blueprint and ask for feedback
+- Draw box diagrams with key components
+- Do back of the envelope calculations to evaluate that blueprint fits the scale constraints
+### Step 3: Design Deep Dive (10-25 mins)
+- Work with interviewer
+- Try not to get into unnecessary details
+- Investigate important use cases
+### Wrap up (3-5 mins)
+- Identify bottlenecks and potential improvements
+- Error cases and how they would be handles
+- Operation issues: how to monitor metrics error logs, deploy
+- How to handle next scale curve
+- Propose refinements you need if you had more time
+
+## Rate Limiter
+>Controls rate of traffic sent by client
+- Reduces cost, prevents DDoS 
+- Prevent server overload
+
+### Understand the Problem
+What kind of rate limiter are we going to design?
+- Client-side vs server-side API limiter
+Does the limiter throttle API requests based on IP, user ID, or Other Properties?
+- It should be flexible 
+What is the scale of the system? Start up or big company?
+- Should handle large # requests
+**Distributed rate limiting**
+Will system work in distributed environment?
+- The rate limiter can be shared across multiple servers or processes
+Is the rate limiter a separate service or should be implemented in application code?
+**Exception Handling**
+Do we need to inform users who are throttled?
+
+### High-level design
+- Client-side implementation is generally unreliable, client requests can be forged, we also don't always have control over client implementation
+- Rate limiter can be either on the api server or implemented as a middleware (API gateway)
+	- Takes time to build own rate limiting service vs using commercial API gateway
+	- Full control of algorithm if implementing own service
+#### Rate Limiting Algorithms
+##### Token Bucket 
+>Memory efficient, allows burst of traffic for short periods, but challenging to tune bucket size/refill rate properly
+- Container with pre-defined capacity
+- Tokens refilled at preset rates periodically
+- Generally necessary to have different buckets for different API endpoints
+	- If we need to throttle requests based on IP addresses, each IP address requires a bucket
+![[Pasted image 20240322142254.png]]
+##### Leaking Bucket
+>Requests processed at fixed rate
+>But bursts of traffic can fill up queue with old requests and if they are not processed in time, recent requests will be rate limited
+- Requests added to queue if not full, else dropped
+- Requests pulled from queue and processed at regular intervals
+- **Bucket size**
+- **Outflow rate**: how many requests can be processed at a fixed rate
+![[Pasted image 20240322142406.png]]
+##### Fixed Window Counter
+- Divides timeline into fix-sized time windows
+- Assign counter for each window
+- Each request increments counter by one
+- Once counter reaches predefined threshold, new requests are dropped until a new time window starts
+![[Pasted image 20240322142431.png]]
+**Potential Problem**
+- Burst of traffic at edges of time windows can cause more requests than
+- Ex: 1 minute windows are allowed 5 requests, but there is 10 allowed here in 1 minute
+![[Pasted image 20240322142555.png]]
+##### Sliding Window Log
+- Keep track of request timestamps (cached in sorted sets of Redis)
+- When new request comes in, remove all outdated timestamps (any timestamps not within the current window)
+- Add timestamp of request to log
+- Reject request (still keep it's timestamp in log) if log size is greater than allowed count
+- Requires a lot of memory to store timestamps 
+- Rate limiting very accurate, any rolling window will not exceed rate limit
+![[Pasted image 20240322143142.png]]
+
+##### Sliding Window Counter
+- Requests in current window + requests in the previous window * overlap percentage of
+the rolling window and previous window
+![[Pasted image 20240322143537.png]]
+#### High-level Architecture
+- Store counter in cache
+- Redis offers INCR and EXPIRE (sets timeout for counter, automatically deleted after)
+
+### Design Deep Dive
+#### Rate limiting rules
+pg 64
 
 # Overview
 ## Scaling System
