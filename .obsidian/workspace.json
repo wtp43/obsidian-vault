@@ -30,40 +30,6 @@
             }
           },
           {
-            "id": "a4f62c4f48af83ca",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                },
-                {
-                  "title": "Interview Prep",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Private/Interview Prep.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":0},\"to\":{\"line\":5,\"ch\":0}},\"scroll\":5}"
-                },
-                {
-                  "title": "Revision Feb 2024",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Revision Feb 2024.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":383,\"ch\":30},\"to\":{\"line\":383,\"ch\":30}},\"scroll\":378.146133877395}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Private/Emotional Intelligence.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "37138efb88092732",
             "type": "leaf",
             "pane-relief:history-v1": {
@@ -130,7 +96,29 @@
             }
           },
           {
-            "id": "5c663e0fee1a4cab",
+            "id": "9c2dbc180af6076f",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Revision Feb 2024.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "eb37a2cc550a3426",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -140,17 +128,17 @@
                   "eState": "{}"
                 },
                 {
-                  "title": "HBR on Lifelong Learning",
+                  "title": "Dijkstra's Shortest Path Algorithm",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Books/HBR on Lifelong Learning.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":40,\"ch\":16},\"to\":{\"line\":40,\"ch\":16}},\"scroll\":10.29759983109999}"
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Algos/Dijkstra's Shortest Path Algorithm.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":8,\"ch\":101},\"to\":{\"line\":8,\"ch\":101}},\"scroll\":7}"
                 }
               ]
             },
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Finance/Historical Performance.md",
+                "file": "To Do/Shortest and Longest Path on DAG.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -158,7 +146,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -261,7 +249,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Finance/Historical Performance.md",
+                "file": "Interview Prep 2024/Difficult.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -287,7 +275,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Finance/Historical Performance.md",
+                "file": "Interview Prep 2024/Difficult.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -346,7 +334,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Finance/Historical Performance.md"
+                "file": "Interview Prep 2024/Difficult.md"
               }
             }
           }
@@ -369,10 +357,20 @@
       "graph:Open graph view": false
     }
   },
-  "active": "5c663e0fee1a4cab",
+  "active": "37138efb88092732",
   "lastOpenFiles": [
-    "Books/HBR on Lifelong Learning.md",
+    "Revision Feb 2024.md",
+    "To Do/Shortest and Longest Path on DAG.md",
+    "Private/Interview Prep.md",
+    "Books/HBR Critical Thinking.md",
+    "Algos/Dijkstra's Shortest Path Algorithm.md",
+    "Algos/Bellman Ford's Algorithm.md",
     "Finance/Historical Performance.md",
+    "Algos/Floyd-Warshall's Algorithm.md",
+    "Algos/Topological Sort.md",
+    "Interview Prep 2024/Solved Easily.md",
+    "Private/Emotional Intelligence.md",
+    "Books/HBR on Lifelong Learning.md",
     "Interview Prep 2024/System Design.md",
     "Interview Prep 2024/attachments/Pasted image 20240322143537.png",
     "Interview Prep 2024/attachments/Pasted image 20240322143142.png",
@@ -381,8 +379,6 @@
     "Interview Prep 2024/attachments/Pasted image 20240322142406.png",
     "Interview Prep 2024/attachments/Pasted image 20240322142306.png",
     "Interview Prep 2024/attachments/Pasted image 20240322142254.png",
-    "Books/HBR Critical Thinking.md",
-    "Private/Interview Prep.md",
     "Books/Dopamine Detox.md",
     "Books/Imperialism - The Highest Stage of Capitalism.md",
     "Books/Vocabulary.md",
@@ -390,9 +386,6 @@
     "Books/Transforming Discomfort into Fuel for your Brain.md",
     "Books/Getting Real - The Smarter, Faster, Easier Way to Build a Web Application.md",
     "Interview Prep 2024/LC Hard.md",
-    "Private/Emotional Intelligence.md",
-    "Interview Prep 2024/Solved Easily.md",
-    "Revision Feb 2024.md",
     "Interview Prep 2024/Difficult.md",
     "Algos Practice/Intuition/Binary Search.md",
     "Interview Prep 2024/attachments/Pasted image 20240312065728.png",
@@ -403,11 +396,6 @@
     "Algos Practice/Review List.md",
     "Interview Prep 2024/Interview Prep.md",
     "Projects/Algobet Todo.md",
-    "Algos Practice/Comprehensive List.md",
-    "Algos/Prim's Algorithm.md",
-    "DS/Union Find (Disjoint Sets).md",
-    "Algos/Kruskal's Algorithm.md",
-    "DS/Trie.md",
     "Interview Prep 2024/mic.scpt",
     "Interview Prep 2024/Retrieve UI Elements.scpt",
     "Interview Prep 2024",

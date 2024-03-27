@@ -415,12 +415,87 @@ https://leetcode.com/problems/number-of-closed-islands/description/
 ### Shortest Path Algorithms
 - BFS can be used if weights are the same
 - Bellman Ford/Floyd Warshall can find negative cycles
-#### Bellman Ford/Floyd Warshall
+#### Bellman Ford
+- SSSP (single source shortest path)
+- Works for negative weights
+- Relax all edges V-1 times
+```python
+def bellman_ford(graph, start):
+	num_vertices = len(graph.get_vertices())
+	edges = graph.get_edges()
+
+	dist = [math.inf for i in range(num_vertices)]
+	prev = [None for i in range(num_vertices)]
+
+	dist[start] = 0
+	#relax edges |V| - 1 times
+	for _ in range(num_vertices - 1):
+		for u, v, w in edges:
+			new_dist = dist[u] + w
+			if new_dist < dist[v]:
+				dist[v] = new_dist
+				prev[v] = u
+
+	#detect negative cycles
+	for u,v,w in edges:
+		if dist[u] + w < dist[v]:
+			raise NegativeWeightCycleError()
+	return dist, prev
+```
+#### Floyd Warshall
+- Shortest path algorithm from any vertex to all other vertices
+- Works for negative weights and cycles
+```python
+def floyd(G):
+    dis = [[math.inf] * n for _ in range(n)]
+        for i, j, w in edges:
+            dis[i][j] = dis[j][i] = w
+        for i in range(n):
+            dis[i][i] = 0
+        for k in range(n):
+            for i in range(n):
+                for j in range(n):
+                    dis[i][j] = min(dis[i][j], dis[i][k] + dis[k][j])
+```
 #### Dijkstra
+- SSSP
 - Finds the shortest path from the source node to all other nodes 
 - The result (shortest path tree) is not guaranteed to be a MST 
 - Works for both directed/undirected graphs
+- Does not work for negative weights
+- Works for graphs with cycles
+- O(ElogV)
+```python
+import heapq
 
+def lazy_dijkstra(self, start):
+	n = len(self.get_vertices())
+	dist = [math.inf] * n
+	prev = [None] * n
+	dist[start] = 0
+	seen = [0] * n
+	pq = [(start, 0)]
+	heapq.heapify(pq)
+	while pq:
+		min_value, index = heapq.heappop(pq)
+		if dist[index] < min_value:
+			continue
+		seen.add(index)
+		for u,v,w in self.get_edges(index):
+			if seen[v]: 
+				continue
+			new_dist = dist[index] + w
+			if new_dist < dist[v]:
+				dist[v] = new_dist
+				prev[v] = u
+				heapq.heappush(pq, (new_dist, v))
+	return dist, prev
+```
+### Longest Path DAG
+- In general, this is NP-Hard, but on a DAG this problem is solvable in O(V+E)
+- Topological sort
+- Process ordering sequentially
+- Multiply edges values by -1 and find shortest path
 ### Minimum Spanning Tree Algorithms
 - MST assumes graphs are inherently undirected
 - A minimum cost tree that connects all nodes in the graph
@@ -493,8 +568,8 @@ def prim(edges, start):
 			total_cost += cost
 			for w, ncost in graph[v]:
 				# Update new reachable edges
-				if w not in visited:
-					heapq.heappush(edges,[v,w,ncost])
+				if w not in seen:
+					heapq.heappush(edges,[ncost,v,w])
 	return mst, total_cost
 ```
 #### Kruskal's
@@ -532,7 +607,64 @@ mst_weight = sum(t[2] for t in mst)
 ### Tarjan's
 ### Topological Sort
 - Detecting cycles with  DFS 
-#### Directed Acyclic Graphs (DAG)
+- Only exists for Directed Acyclic Graphs (DAG)
+- An ordering such that for all edges(u,v) u comes before v
+#### Modified DFS
+- DFS and add nodes in reverse order (append left with deque)
+- 3 color nodes: 0 = not visited, 1 = processing, 2 = processing complete
+- If a node is visited during processing (not all of it's neighbors have completed processing), this means there is a cycle
+```python
+def topsort(self,graph):
+	vis = defaultdict(lambda: 0)
+	ordering = deque()
+	for node in graph.get_vertices():
+		self.dfs_topsort(graph, node, vis, ordering)
+	return ordering
+
+def dfs_topsort(self, graph, node, vis, ordering):
+	if vis[node] == 2:
+		return 
+	if vis[node] == 1:
+		raise CycleError
+	vis[node] = 1
+	for nbor in graph.get_neighbors(node):
+		self.dfs_topsort(graph, nbor, vis, ordering)
+	ordering.appendleft(node)
+	vis[node] = 2
+```
+#### Kahn's Topological Sort
+Find vertices with no incoming edges and removing all outgoing edges from these vertices.
+
+Maintain in-degree information of all graph vertices.
+Removing an edge from u to v will decrement ``indegree[u]`` by 1.
+
+If a cycle exists, then not all vertices will be able to achieve an indegree of 0. If the top_order does not have a length of n, then we must have encountered a cycle.
+```python
+def topsort(edges, n):
+	top_order = deque()
+	indegree = [0] * n
+	adj_list = [[] for _ in range(n)]
+	for u,v in edges:
+		adj_list[u].append(v)
+		indegree[v] += 1
+
+	# Store all the nodes with no incoming edges
+	q = deque([i for i in range(n) if indegree[i] == 0])
+	while q:
+		# extract front of queue
+		u = q.popleft()
+		# add the current vertex to the tail of the ordering
+		top_order.append(u)
+		for v in adj_list[u]:
+			indegree[v] -= 1
+			if indegree[v] == 0:
+				q.append(v)
+				
+	if len(top_order) != n:
+		print('Cycle Exists')
+	return top_order
+```
+
 ### Determining Connectivity
  - Bfs/dfs/union find
 #### Union Find
@@ -566,12 +698,13 @@ class Union_find:
 		if px == py:
 			return
 		# bigger parent stays the parent
-		if self.rank[px] < self.rank[py]:
+		if self.rank[px] == self.rank[py]:
+			self.parent[px] = py
+			self.rank[py] += 1
+		elif self.rank[px] < self.rank[py]:
 			self.parent[px] = py 
-			self.rank[py] += self.rank[px]
 		else:
-			self.parent[py] = self.parent[px]
-			self.rank[px] += self.rank[py]
+			SElf.rank[py] = self.rank[px]
 ```
 ##### Union-find Applications
 - Cycle detection for undirected graphs only
@@ -600,6 +733,22 @@ def longest_consecutive_sequence(nums):
 ### Graph Theory Intuition
 ## Greedy 
 ## Intervals
+### Merge Intervals
+```python
+ def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+	#sort by start
+	intervals.sort()
+	merged = [intervals[0]]
+
+	for start, end in intervals:
+		prev_end = merged[-1][1]
+		if start <= prev_end:
+			merged[-1][1] = max(end, prev_end)
+		else:
+			merged.append([start, end])
+	return merged
+```
+
 ## Hashing
 ## Heaps
 
@@ -647,6 +796,14 @@ def insert(self, head: 'Node', insertVal: int) -> 'Node':
 - An alternative to class objects can be to set
 	- `nodes[WORD_KEY] = word` to indicate a word 
 ```python
+
+def trieDictionary(words):
+	trie = {}
+	for w in words:
+		node = trie
+		for ch in w:
+			node = node.setdefault(ch,{})
+
 class TrieNode:
     def __init__(self):
         self.isWord = False

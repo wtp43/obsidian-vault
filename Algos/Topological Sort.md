@@ -59,7 +59,7 @@ def topsort(self,graph):
 	vis = defaultdict(lambda: 0)
 	ordering = deque()
 	for node in graph.get_vertices():
-		self.dfs_topsort(node, vis, ordering)
+		self.dfs_topsort(graph, node, vis, ordering)
 	return ordering
 
 def dfs_topsort(self, graph, node, vis, ordering):
@@ -68,8 +68,8 @@ def dfs_topsort(self, graph, node, vis, ordering):
 	if vis[node] == 1:
 		raise CycleError
 	vis[node] = 1
-	for neighbor in graph.get_neighbors(node):
-		self.dfs_topsort(neighbor, vis, ordering)
+	for nbor in graph.get_neighbors(node):
+		self.dfs_topsort(graph, nbor, vis, ordering)
 	ordering.appendleft(node)
 	vis[node] = 2
 ```
@@ -105,7 +105,7 @@ def topsort(edges, n):
 		# extract front of queue
 		u = q.popleft()
 		# add the current vertex to the tail of the ordering
-		top_order.append(n)
+		top_order.append(u)
 		for v in adj_list[u]:
 			indegree[v] -= 1
 			if indegree[v] == 0:

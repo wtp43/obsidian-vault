@@ -144,6 +144,15 @@ https://leetcode.com/problems/delete-node-in-a-bst/
 - Two hashmaps + doubly linked list: (freq, doubly linked list) and (key, value)
 ## Suffix Tree
 
+
+# Graph
+## Topological Sort
+### Longest Increasing Path in a Matrix
+- Starting point must have indegree = 0
+- DFS times out here if not using dp because nodes are revisited multiple times in different paths
+- Topological sort(bfs with kahn's) only appends the current node if indegree = 0, in other words, all nodes that can traverse to this node have already done so.
+https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/
+
 # Python
 - Parameters are passed by assignment which is actually a reference to the object
 - Lists passed as parameters can be mutated, .append, but not reassigned using  =
