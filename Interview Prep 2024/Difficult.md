@@ -153,6 +153,33 @@ https://leetcode.com/problems/delete-node-in-a-bst/
 - Topological sort(bfs with kahn's) only appends the current node if indegree = 0, in other words, all nodes that can traverse to this node have already done so.
 https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/
 
+# Sliding Window
+## Subarrays with K Different Integers
+https://leetcode.com/problems/subarrays-with-k-different-integers/?envType=daily-question&envId=2024-03-30
+```python
+def subarraysWithKDistinct(self, nums: List[int], k: int) -> int:
+	return self.slidingWindowAtMost(nums, k) - self.slidingWindowAtMost(nums, k - 1)
+
+def slidingWindowAtMost(self, nums: List[int], distinctK: int) -> int:
+	freq_map = defaultdict(int)
+	left = 0
+	total_count  = 0
+
+	for right in range(len(nums)):
+		freq_map[nums[right]] += 1
+
+		# If the number of distinct elements in the window exceeds k,
+		# we shrink the window from the left until we have at most k distinct elements.
+		while len(freq_map) > distinctK:
+			freq_map[nums[left]] -= 1
+			if freq_map[nums[left]] == 0:
+				del freq_map[nums[left]]
+			left += 1
+
+		# Update the total count by adding the length of the current subarray.
+		total_count  += right - left + 1
+	return total_count 
+```
 # Python
 - Parameters are passed by assignment which is actually a reference to the object
 - Lists passed as parameters can be mutated, .append, but not reassigned using  =

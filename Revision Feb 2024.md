@@ -191,8 +191,6 @@ def uniquePathsIII(self, grid: List[List[int]]) -> int:
 - If the target is >= threshold, should we decrease or increase mid?
 - Do we want to return hi or lo?
 	- Depends on if we want rightmost x or leftmost x
-
-
 ### Bisect left/right
 - Implementation differs only at the comparison
 ```python
@@ -210,7 +208,6 @@ def bisect_left(arr, x):
 
 lo = first position where arr[lo] > x
 hi = position before lo
-def bisect_right(arr, x):
 	lo = 0
 	hi = len(arr)-1
 	while lo <= hi:
@@ -223,6 +220,39 @@ def bisect_right(arr, x):
 ```
 
 ### Framework for using Binary Search to Find Minimum Group Size
+### Replacing DP
+#### Minimize Maximum Difference of Pairs
+- we don't need dp here because the minimum difference between two pairs occur next to each in a sorted array
+- DP solution:
+- Binary search
+	- Sort (differences will be minimized)
+	- Binary search the maximum difference on range (0, max difference of all pairs)
+```python
+def minimizeMax(self, nums: List[int], p: int) -> int:
+	nums.sort()
+	lo = 0
+	hi = nums[-1]-nums[0]
+	n = len(nums)
+	while lo <= hi:
+		mid = lo + (hi-lo)//2
+		cnt = i = 0
+		while i < n-1:   
+			if nums[i+1] - nums[i] <= mid:
+				cnt += 1
+				## skip the 2nd num used in the pair
+				i += 1
+			i += 1
+		if cnt < p:
+			lo = mid+1
+		else:
+			hi = mid-1
+	return lo 
+	# nLogV + nlogn, V = maximum difference in array,
+	# in each step of the binary search (total logV steps)
+	# we have to determine how many pairs are valid (n steps)
+```
+
+
 #### 
 ## Binary Trees
 ### Basic Operations
@@ -245,6 +275,32 @@ https://leetcode.com/problems/insert-into-a-binary-search-tree/
 - level traversal with BFS
 
 ### Traversals
+#### In Order Traversal to Balance BST
+- Create sorted array with in order traversal
+- Add middle node recursively
+```python
+class Solution:
+    def balanceBST(self, root: TreeNode) -> TreeNode:
+        sortedArr = []
+        def inorderTraversal(root):
+            if not root:
+                return None
+            inorderTraversal(root.left)
+            sortedArr.append(root)
+            inorderTraversal(root.right)
+
+        def sortedArrToBST(left, right):
+            if left > right:
+                return None
+            
+            mid = (right+left)//2 ## ceil of this also returns another valid balanced tree
+            new_root = sortedArr[mid] 
+            new_root.left =  sortedArrToBST(left, mid-1)
+            new_root.right = sortedArrToBST(mid+1, right) 
+            return new_root
+        inorderTraversal(root)
+        return sortedArrToBST(0, len(sortedArr)-1)
+```
 #### Level Order Traversal
 - The position of the child node can be calculated with 
 	- left child: `pos*2 - 1`
@@ -345,12 +401,58 @@ def verticalTraversal(self, root: Optional[TreeNode]) -> List[List[int]]:
 		res.append([val for row, val in sorted(col[c])])
 	return res
 ```
+#### N-ary Tree Level Order
+```python
+"""
+# Definition for a Node.
+class Node:
+    def __init__(self, val=None, children=None):
+        self.val = val
+        self.children = children
+"""
+
+class Solution:
+    def levelOrder(self, root: 'Node') -> List[List[int]]:
+        if not root:
+            return []
+        traversal = []
+        q = [root]
+        while q:
+            current_layer = []
+            traversal.append([])
+            for node in q:
+                traversal[-1].append(node.val)
+                current_layer.extend(node.children)
+            q = current_layer
+        return traversal
+```
 ## Data Structures
 - LFU/LRU cache
 ## Dynamic Programming
-### String Matching
-#### Prefix Function KMP
-#### Rabin Karp
+
+- Subsequence (the answer contains non adjacent elements) almost always requires DP
+```python
+def longestPalindromeSubseq(self, s: str) -> int:
+	# current letter + longest palindrome subsequence of array of size 1 smaller
+	# how to make a palindrome with the current letter:
+	# find letter equal to current letter in a[0:i] 
+	# dp will be 2 + a[start+1:end-1] or max of subproblems(prefix and suffix with length of 1 smaller)
+
+	n = len(s) 
+
+	dp = [[0]*n for _ in range(n)]
+
+	for end in range(n):
+		dp[end][end] = 1
+		for start in range(end-1, -1, -1):
+			if s[start] == s[end]:
+				dp[start][end] =  2 + dp[start+1][end-1]
+			else:
+				dp[start][end] =max(dp[start][end-1], dp[start+1][end])
+
+	return dp[0][-1]
+```
+
 ## Graph Theory
 - Be smart about where valid solutions can start
 ### Trees
@@ -698,8 +800,8 @@ class Union_find:
 		if px == py:
 			return
 		# bigger parent stays the parent
-		if self.rank[px] == self.rank[py]:
-			self.parent[px] = py
+		if self.rank[px] == self.rank[py]:gg
+			self.parent[px] = pygg
 			self.rank[py] += 1
 		elif self.rank[px] < self.rank[py]:
 			self.parent[px] = py 
@@ -790,6 +892,59 @@ def insert(self, head: 'Node', insertVal: int) -> 'Node':
 ### Quick Sort
 ### Quick Select
 ## Stacks
+## String
+### Pattern Matching
+#### Maximal Boundaries
+- Maximal boundary is longest prefix that is also a suffix
+- F is an array of maximal boundaries for every substring `s[0:i] for i in range(len(s))`
+```python
+def maximum_border_length(w):
+	n = len(w)
+	f = [0] * n # init f[0] = 0
+	k = 0 # current longest border length
+	for i in range(1, n): # compute f[i]
+		while w[k] != w[i] and k > 0:
+			k = f[k - 1] # mismatch: try the next border
+		if w[k] == w[i]: # last characters match
+			k += 1 # we can increment the border length
+			f[i] = k # we found the maximal border of w[:i + 1]
+	return f
+```
+
+#### KMP
+- Search t in s
+```python
+def KMP(s, t):
+	w = t + "#" + s
+	n = len(w)
+	f = [0] * n # init f[0] = 0
+	k = 0 # current longest border length
+	for i in range(1, n): # compute f[i]
+		while w[k] != w[i] and k > 0:
+			k = f[k - 1] # mismatch: try the next border
+		if w[k] == w[i]: # last characters match
+			k += 1 # we can increment the border length
+			f[i] = k # we found the maximal border of w[:i + 1]
+			if f[i] == n:
+				return i - 2*n #2n accounts for the searched word, -1 omitted for the separator used
+	return f
+```
+Space/Time Complexity: O(m + n)
+
+### Isomorphic Strings (Mapping)
+```python
+def isIsomorphic(self, s: str, t: str) -> bool:
+	map_s = {}
+	map_t = {}
+	for c1, c2 in zip(s,t):
+		if c1 not in map_s and c2 not in map_t:
+			map_s[c1] = c2
+			map_t[c2] = c1
+		elif map_s.get(c1) != c2 or map_t.get(c2) != c1:
+			return False
+	return True
+```
+
 ## Trees
 ## Trie
 - Ex: `trie = {c: {a: {t:{WORD_KEY: 'cat' }}}}` 
