@@ -180,6 +180,12 @@ def slidingWindowAtMost(self, nums: List[int], distinctK: int) -> int:
 		total_count  += right - left + 1
 	return total_count 
 ```
+
+
+## DP
+https://leetcode.com/problems/partition-array-for-maximum-sum/description/
+https://leetcode.com/problems/palindrome-partitioning-ii/description/
+https://leetcode.com/problems/number-of-great-partitions/description/
 # Python
 - Parameters are passed by assignment which is actually a reference to the object
 - Lists passed as parameters can be mutated, .append, but not reassigned using  =

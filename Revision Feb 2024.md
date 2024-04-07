@@ -576,12 +576,13 @@ def lazy_dijkstra(self, start):
 	prev = [None] * n
 	dist[start] = 0
 	seen = [0] * n
-	pq = [(start, 0)]
+	pq = [(0, start)]
 	heapq.heapify(pq)
 	while pq:
 		min_value, index = heapq.heappop(pq)
 		if dist[index] < min_value:
 			continue
+		dist[index] = min_value
 		seen.add(index)
 		for u,v,w in self.get_edges(index):
 			if seen[v]: 
