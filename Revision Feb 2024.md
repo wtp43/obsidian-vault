@@ -836,7 +836,15 @@ def longest_consecutive_sequence(nums):
 ### Graph Theory Intuition
 ## Greedy 
 ## Intervals
+1. Sort intervals/pairs in increasing order of the start position.
+2. Scan the sorted intervals, and maintain an "active set" for overlapping intervals. At most times, we do not need to use an explicit set to store them. Instead, we just need to maintain several key parameters, e.g. the number of overlapping intervals (count), the minimum ending point among all overlapping intervals (minEnd).
+3. If the interval that we are currently checking overlaps with the active set, which can be characterized by cur.start > minEnd, we need to renew those key parameters or change some states.
+4. If the current interval does not overlap with the active set, we just drop current active set, record some parameters, and create a new active set that contains the current interval.
+> [!hint]+ Using Heaps
+> Heaps may be helpful in keeping track of interval with earliest end
+
 ### Merge Intervals
+- Sort by start
 ```python
  def merge(self, intervals: List[List[int]]) -> List[List[int]]:
 	#sort by start
@@ -851,7 +859,23 @@ def longest_consecutive_sequence(nums):
 			merged.append([start, end])
 	return merged
 ```
+### Max Overlapping Intervals
+- Sort by start
+- Keep heap of ends in current overlapping range
+```python
+def minMeetingRooms(self, intervals: List[List[int]]) -> int:
+	intervals.sort()
+	rooms = [intervals[0][1]]
 
+	for start, end in intervals[1:]:
+		if start >= rooms[0]:
+			heappop(rooms)
+		heappush(rooms, end)
+	return len(rooms)
+```
+
+### Scheduling Max Activities
+- Sort by end
 ## Hashing
 ## Heaps
 
@@ -946,6 +970,7 @@ def isIsomorphic(self, s: str, t: str) -> bool:
 	return True
 ```
 
+## Sweep Line
 ## Trees
 ## Trie
 - Ex: `trie = {c: {a: {t:{WORD_KEY: 'cat' }}}}` 
