@@ -884,6 +884,16 @@ def minMeetingRooms(self, intervals: List[List[int]]) -> int:
 ## Linked List
 ### Deletion node (Recursive/Iterative)
 ### Reverse Linked List
+```python
+def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+	prev, cur = None, head
+	while cur:
+		next_tmp = cur.next
+		cur.next = prev
+		prev = cur
+		cur = next_tmp
+	return prev
+```
 ###  Insert Into a Sorted Circular Linked List
 - Step 1: Enumerate all cases (how can the node be inserted)
 	- At the tail, in the middle
