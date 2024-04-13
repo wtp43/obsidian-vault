@@ -153,6 +153,38 @@ https://leetcode.com/problems/delete-node-in-a-bst/
 - Topological sort(bfs with kahn's) only appends the current node if indegree = 0, in other words, all nodes that can traverse to this node have already done so.
 https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/
 
+# Queue
+> Always check that the q is non empty before any other condition
+- Key: think about what (key) determines the simulation and keep it in a queue
+	- what is being manipulated in the simulation (ie: elements or indices)
+## Queue Simulation
+>You will do the following steps repeatedly until all cards are revealed.
+>1. Take the top card of the deck, reveal it, and take it out of the deck.
+>2. If there are still cards in the deck then put the next top card of the deck at the bottom of the deck.
+>3. If there are still unrevealed cards, go back to step 1. Otherwise, stop.
+- Simulate the queue of indices ("no need to work backwards")
+- The resulting simulation will be the order in which numbers are printed
+	- Then assign the sorted numbers to this sequence
+- key: the indices determine the order of sorted numbers
+Return an ordering of the deck that would reveal the cards in increasing order.
+```python
+def deckRevealedIncreasing(self, deck: List[int]) -> List[int]:
+	deck.sort()
+	q = deque()
+	# queue of indices
+	for i in range(len(deck)):
+		q.append(i)
+
+	res = [0]*len(deck)
+	for card in deck:
+		# set the cards in sorted order
+		# the index of this card will be at the start of the q
+		res[q.popleft()] = card
+		if q:
+			q.append(q.popleft())
+
+	return res
+```
 # Sliding Window
 ## Subarrays with K Different Integers
 https://leetcode.com/problems/subarrays-with-k-different-integers/?envType=daily-question&envId=2024-03-30
