@@ -253,7 +253,11 @@ def minimizeMax(self, nums: List[int], p: int) -> int:
 ```
 
 
-#### 
+### Median of Two Sorted Arrays
+https://leetcode.com/problems/median-of-two-sorted-arrays/description/
+- O(m+n): Merge both arrays and then binary search
+- O(log(m + n)): smart binary search
+	https://leetcode.com/problems/median-of-two-sorted-arrays/editorial/
 ## Binary Trees
 ### Basic Operations
 
@@ -270,6 +274,17 @@ def insertIntoBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode
  ```
 https://leetcode.com/problems/insert-into-a-binary-search-tree/
 #### Delete
+#### Closest BST Value to Target
+- Specify key for min function
+- Traverse to left child if target is smaller than root.val, else go right
+```python
+def closestValue(self, root: TreeNode, target: float) -> int:
+	closest = root.val
+	while root:
+		closest = min(root.val, closest, key = lambda x: abs(target - x))
+		root = root.left if target < root.val else root.right
+	return closes
+```
 ### Width Type Questions
 - ie: check for completeness
 - level traversal with BFS
@@ -426,6 +441,34 @@ class Solution:
             q = current_layer
         return traversal
 ```
+
+### Verify Preorder
+https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/editorial/?envType=weekly-question&envId=2024-04-08
+- Mono dec. stack
+- We can add a smaller number to the stack if we are the left side of the subtree
+- Once we reach the right side of the subtree (number is greater than last one on the stack), we need to keep track of the value of the parent
+	- New nodes on the right side of the subtree of cannot be smaller than the parent (since we are on the right side)
+```python
+def verifyPreorder(self, preorder: List[int]) -> bool:
+	min_limit = -inf
+	stack = []
+	
+	for num in preorder:
+		while stack and stack[-1] < num:
+			min_limit = stack.pop()
+			
+		if num <= min_limit:
+			return False
+		
+		stack.append(num)
+	
+	return True
+```
+- Verifying in order is easy: list must be sorted
+- Verifying post order: iterate list in reverse
+	- pop from stack if we encounter a smaller number than top of stack
+		- This means we are now on the left side of the tree, new nodes cannot be greater than this parent value
+	- add to stack if we encounter numbers greater than the current (we are in the right side of the tree)
 ## Data Structures
 - LFU/LRU cache
 ## Dynamic Programming
@@ -593,6 +636,31 @@ def lazy_dijkstra(self, start):
 				prev[v] = u
 				heapq.heappush(pq, (new_dist, v))
 	return dist, prev
+```
+##### Minimum Time to Visit Disappearing Nodes
+https://leetcode.com/problems/minimum-time-to-visit-disappearing-nodes/
+```python
+def minimumTime(self, n: int, edges: List[List[int]], disappear: List[int]) -> List[int]:
+	ans = [math.inf]*n
+	pq = [(0,0)]
+	graph = defaultdict(list)
+
+	for u,v,w in edges:
+		graph[u].append((v,w))
+		graph[v].append((u,w))
+	while pq:
+		u,time = heappop(pq)
+		if time >= ans[u]:
+			continue
+		ans[u] = time
+		for v,w in graph[u]:
+			if ans[v] < time+w or disappear[v] <= time+w:
+				continue
+			heappush(pq,(v,time+w))
+	for i,x in enumerate(ans):
+		if x == math.inf:
+			ans[i] = -1
+	return ans
 ```
 ### Longest Path DAG
 - In general, this is NP-Hard, but on a DAG this problem is solvable in O(V+E)
@@ -845,6 +913,7 @@ def longest_consecutive_sequence(nums):
 
 ### Merge Intervals
 - Sort by start
+- Take the max of each end in the current overlapping interval
 ```python
  def merge(self, intervals: List[List[int]]) -> List[List[int]]:
 	#sort by start
@@ -860,8 +929,11 @@ def longest_consecutive_sequence(nums):
 	return merged
 ```
 ### Max Overlapping Intervals
+https://leetcode.com/problems/meeting-rooms-ii/description/
 - Sort by start
-- Keep heap of ends in current overlapping range
+- Keep min heap of ending times in current overlapping range
+- Pop one room (replace the meeting that is ending first, with the newest meeting, if it is ending),
+	- otherwise a new room is needed
 ```python
 def minMeetingRooms(self, intervals: List[List[int]]) -> int:
 	intervals.sort()
@@ -874,8 +946,32 @@ def minMeetingRooms(self, intervals: List[List[int]]) -> int:
 	return len(rooms)
 ```
 
-### Scheduling Max Activities
-- Sort by end
+### Scheduling Max Activities/Maximum Number of Events that can be Attended
+https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/description/
+- Sort by end and take the activity with the earliest end time
+- Only add activity to the priority queue if day >= start_time 
+	- Sort by start days
+	- Take the activity ending on the earliest day from a pool of activities with the same start day
+	- Increment day by one after each activity
+```python
+def maxEvents(self, events: List[List[int]]) -> int:
+	sorted_events = deque(sorted(events))
+	pq = []
+	res = day = 0 
+
+	while sorted_events or pq:
+		if not pq: 
+			day = sorted_events[0][0]
+		while sorted_events and sorted_events[0][0] == day:
+			heappush(pq, sorted_events.popleft()[1])
+		heappop(pq)
+		res += 1
+		day += 1
+		while pq and pq[0]<day:
+			heappop(pq)
+	return res
+```
+
 ## Hashing
 ## Heaps
 
@@ -917,7 +1013,55 @@ def insert(self, head: 'Node', insertVal: int) -> 'Node':
 	node.next = Node(insertVal, node.next)
 	return head
 ```
+### Reverse Nodes in k-Group
+https://leetcode.com/problems/reverse-nodes-in-k-group/description/
+- Reverse k nodes at a time 
+- Count number of k groups first
+	- Store the ptr for the last node of group 1
+	- This is used to set the next node for the last node of the first group (original root), so that the linked list doesn't break after the first group
+- Keep a ptr for the previous node of the group 
+- Reverse k nodes
+	- Point the previous of the group at the head of the k reversed nodes
+	- Point the last node of the current group to the saved tmp(cur.next)
+```python
+def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
+	cur = head
+	groups = 0
+	c = 0
+	first_k = None
+	# Find number of groups of size k
+	while cur:
+		c += 1
+		if c == k:
+			c = 0
+			groups += 1
+			if not first_k:
+				first_k = cur.next
 
+		cur = cur.next
+
+	cur = head
+	dummy =ListNode() 
+	group_prev = dummy
+	prev = first_k
+
+	while groups > 0:
+		c = k
+		last_node = cur
+		while c > 0:
+			tmp = cur.next
+			cur.next = prev
+			prev = cur
+			cur = tmp
+			c -= 1
+		groups -= 1
+	
+		group_prev.next = prev
+		group_prev = last_node
+		last_node.next = tmp
+		cur = tmp
+	return dummy.next
+```
 ## Queue
 ### Circular Queue
 ## Sliding Window
@@ -926,7 +1070,91 @@ def insert(self, head: 'Node', insertVal: int) -> 'Node':
 ### Cyclic Sort
 ### Quick Sort
 ### Quick Select
-## Stacks
+## Stacks/Monotonic Stacks
+>Mono Increasing:
+>`while stack and (i == n or arr[i] <) `
+- Figure out if a larger or smaller `arr[i]` will invalidate the current sum
+- If larger element invalidates stack:
+	- mono dec. stack
+- else:
+	- mono inc. stack
+### Monotonically Increasing Stack
+- The area of the rectangle with height at `stack[-1]` cannot grow if the current bar is smaller
+	- Thus, a mono. increasing stack is required
+#### Largest Rectangle in Histogram
+https://leetcode.com/problems/largest-rectangle-in-histogram/description/
+- Trick: Append index -1 to the start of the stack for the left border of the 0th bar
+```python
+ def largestRectangleArea(self, heights: List[int]) -> int:
+	stack = [-1]
+	area = 0
+	n = len(heights)
+	# monotonically increasing stack
+	for i in range(n+1):
+		# when the stack is empty (left boundary is -1), this means that every previous
+		# bar was taller than this one
+		while stack[-1] != -1 and (i == n or heights[i] <= heights[stack[-1]]):
+			# height of the last bar in the stack
+			h = heights[stack.pop()]
+			# stack[-1] is the left boundary, the next highest bar in the stack
+			# before the bar with height = h
+			w = i-stack[-1] - 1
+			area = max(area, h*w)
+		if i < n:
+			stack.append(i)
+	return area
+```
+### Monotonically Decreasing Stack
+
+#### Sliding Window Maximum
+- Mono dec. stack while invalidating the max
+- Invalidate the max (which is at `q[0]`) if it is not within the k sized window
+- Invalidate elements on the stack smaller than the current element (since they will never be used)
+```python
+def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
+	q = deque([])
+
+	# what would invalidate the ans
+	# the maximum value is out of range
+	# if the current number is not the max, 
+	# it will never be used
+	i = 0
+	n = len(nums)
+	ans = []
+		
+	for i in range(k-1):
+		while q and nums[i] > nums[q[-1]]:
+			q.pop()
+		q.append(i)
+	for i in range(k-1, n):
+		# invalidate stack
+		while q and nums[i] > nums[q[-1]]:
+			q.pop()
+		while q and i-k >= q[0]:
+			q.popleft()
+		q.append(i)
+		ans.append(nums[q[0]])
+	return ans
+```
+
+#### Number of Subarrays where Boundary Elements are Maximum
+https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/
+- Stack is invalidated if a greater element is encountered
+```python
+def numberOfSubarrays(self, nums: List[int]) -> int:
+	ans = 0
+	stack = []
+	n = len(nums)
+	d = defaultdict(int)
+	for i in range(n):
+		while stack and nums[i] > nums[stack[-1]]:
+			d[nums[stack[-1]]] -= 1
+			stack.pop()
+		ans += d[nums[i]]
+		stack.append(i)
+		d[nums[i]] += 1
+	return ans + n
+```
 ## String
 ### Pattern Matching
 #### Maximal Boundaries
