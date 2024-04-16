@@ -186,6 +186,9 @@ def uniquePathsIII(self, grid: List[List[int]]) -> int:
 > [!danger] Intuition
 > Determine whether left or right bisect is needed. This is relevant for questions where more than one 'target' or 'x' can satisfy the conditions (but do we want the biggest 'target' or smallest 'target'). The 'target' to be searched is usually found on some range (which is sorted by default).
 
+### Search for "X" on a Range
+
+
 ### Bisect Process
 - What is the target?
 - If the target is >= threshold, should we decrease or increase mid?
@@ -218,7 +221,6 @@ hi = position before lo
 			hi = mid - 1
 	return lo 
 ```
-
 ### Framework for using Binary Search to Find Minimum Group Size
 ### Replacing DP
 #### Minimize Maximum Difference of Pairs
@@ -258,6 +260,7 @@ https://leetcode.com/problems/median-of-two-sorted-arrays/description/
 - O(m+n): Merge both arrays and then binary search
 - O(log(m + n)): smart binary search
 	https://leetcode.com/problems/median-of-two-sorted-arrays/editorial/
+
 ## Binary Trees
 ### Basic Operations
 
@@ -558,8 +561,9 @@ def closedIsland(self, grid: List[List[int]]) -> int:
 ```
 https://leetcode.com/problems/number-of-closed-islands/description/
 ### Shortest Path Algorithms
-- BFS can be used if weights are the same
-- Bellman Ford/Floyd Warshall can find negative cycles
+- No weights: Use bfs
+- Weights: use Dijkstra
+- Negative weights/cycles: Bellman Ford (single source), Floyd Warshall (multi-source) 
 #### Bellman Ford
 - SSSP (single source shortest path)
 - Works for negative weights
