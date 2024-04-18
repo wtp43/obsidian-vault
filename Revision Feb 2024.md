@@ -22,7 +22,33 @@ Initial complete review of all studied concepts
 - Find minimum chunk after k cuts/Minimum group size
 	- Binary search on group size then greedily make cuts once group reaches threshold
 - 
+## Recursion
+- Update answer at a valid state
+```python
+def smallestFromLeaf(self, root: Optional[TreeNode]) -> str:
+	ans = ""
+	def dfs(root, cur_str):
+		nonlocal ans
+		if not root:
+			return 
+		cur_str = chr(root.val+ord("a")) + cur_str
+		# easier to update answer at a valid state
+		# instead of min(left, right) and then having
+		# to determine if left or right is valid
+		if not root.left and not root.right:
+			if not ans or cur_str < ans:
+				ans = cur_str 
 
+		if root.left:
+			dfs(root.left, cur_str)
+		if root.right:
+			dfs(root.right, cur_str) 
+	dfs(root, "")
+	return ans
+```
+
+## DP Tricks
+- Memoizing with dictionary by using sets/lists as keys  
 # Essentials
 
 ## Arrays
@@ -511,12 +537,50 @@ The following are equivalent
 - G is minimally connected (removing any edge from G disconnects it.)
 - G is maximally acyclic (adding any edge creates a cycle)
 - G is connected and |E| = |V| - 1.
+### DAG
+- Acyclic
+- Topological sort (Kahn's algorithm (in-degrees), DFS 3 color)
 ### Representation
 - Adjacency list: Dictionary, for sparse graphs
 - Adjacency Matrix: for dense graphs
 ### BFS/DFS/IDS
 - Level search
 - Multi-source
+### DFS 
+#### Number of Increasing Paths in a Grid
+https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/description/
+- Build `dp[i][j]` from all neighbouring cells with DFS
+- We don't have to start from the smallest valued cells since results are cached
+```python
+def countPaths(self, grid: List[List[int]]) -> int:
+	# strictly increasing
+	# compared 4-directionally
+
+	m, n = len(grid), len(grid[0])
+	mod = 10 ** 9 +7
+	directions = [[0, 1], [0, -1], [1, 0], [-1, 0]]
+	
+	dp = [[-1] * n for _ in range(m)]
+	
+	def dfs(i, j):
+		# If dp[i][j] is non-zero, it means we have got the value of dfs(i, j),
+		if dp[i][j] != -1:
+			return dp[i][j]
+
+		answer = 1
+
+		# Check its four neighbor cells, if a neighbor cell grid[prevI][prevJ] has a
+		# smaller value, we move to this cell and solve the subproblem: dfs(prevI, prevJ).
+		for di, dj in directions:
+			prev_i, prev_j = i + di, j + dj
+			if 0 <= prev_i < m and 0 <= prev_j < n and grid[prev_i][prev_j] < grid[i][j]:
+				answer += dfs(prev_i, prev_j) % mod
+		
+		dp[i][j] = answer
+		return answer
+	
+	return sum(dfs(i, j) for i in range(m) for j in range(n)) % mod
+```
 ### A* Search
 > Requires a heuristic
 https://leetcode.com/problems/shortest-path-in-binary-matrix/editorial/
@@ -666,6 +730,42 @@ def minimumTime(self, n: int, edges: List[List[int]], disappear: List[int]) -> L
 			ans[i] = -1
 	return ans
 ```
+
+##### Number of Shortest Paths 
+https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/description/
+- Only push neighbour to heap if cost is lower through the current node
+	- Set the # of paths to v, to be equal to # of paths to u
+- If the cost to get to the neighbour is equal to its current cost, we have found another route through u.
+	- Append the # of paths from u onto v
+```python
+def countPaths(self, n: int, roads: List[List[int]]) -> int:
+	pq = [[0,0]]
+	min_time = math.inf
+	paths = [0]*n
+	paths[0] = 1
+	time = [math.inf]*n
+	graph = defaultdict(list)
+	MOD = 10**9+7
+	for u,v,t in roads:
+		graph[u].append([v,t])
+		graph[v].append([u,t])
+	while pq:
+		t,u = heappop(pq)
+		if time[u] < t:
+			continue
+		for v, cost in graph[u]:
+			# only add neighbor to q if we have
+			# a shorter path 
+			if t + cost < time[v]:
+				# must set time here and not at the start
+				paths[v] = paths[u]
+				time[v] = t+cost
+				heappush(pq, [time[v], v])  
+			elif t + cost == time[v]:
+				paths[v] = (paths[v] + paths[u]) % MOD
+	return paths[-1]
+```
+
 ### Longest Path DAG
 - In general, this is NP-Hard, but on a DAG this problem is solvable in O(V+E)
 - Topological sort

@@ -74,73 +74,7 @@
             }
           },
           {
-            "id": "145ac137291b2fb0",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos Practice/Intuition/Intervals.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d11bd3070c30bf28",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos/Intersection of Intervals.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5be52c6a9c80ad97",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Books/HBR Critical Thinking.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9c2dbc180af6076f",
+            "id": "0bb1d14c5640222b",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -162,7 +96,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -209,7 +143,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#prio",
+                "query": "dijk",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -239,7 +173,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288,
+    "width": 200,
     "collapsed": true
   },
   "right": {
@@ -373,22 +307,22 @@
       "graph:Open graph view": false
     }
   },
-  "active": "9c2dbc180af6076f",
+  "active": "0bb1d14c5640222b",
   "lastOpenFiles": [
+    "Interview Prep 2024/Solved Easily.md",
     "Interview Prep 2024/Difficult.md",
+    "Private/Interview Prep.md",
+    "Algos/Intersection of Intervals.md",
+    "Algos Practice/Intuition/Intervals.md",
     "Revision Feb 2024.md",
     "Books/HBR Critical Thinking.md",
-    "Algos/Intersection of Intervals.md",
     "Leetcode Questions/LC-986. Interval List Intersections.md",
     "To Do/Shortest and Longest Path on DAG.md",
-    "Algos Practice/Intuition/Intervals.md",
-    "Private/Interview Prep.md",
     "Algos/Dijkstra's Shortest Path Algorithm.md",
     "Algos/Bellman Ford's Algorithm.md",
     "Finance/Historical Performance.md",
     "Algos/Floyd-Warshall's Algorithm.md",
     "Algos/Topological Sort.md",
-    "Interview Prep 2024/Solved Easily.md",
     "Private/Emotional Intelligence.md",
     "Books/HBR on Lifelong Learning.md",
     "Interview Prep 2024/System Design.md",
