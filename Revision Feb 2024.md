@@ -1,88 +1,116 @@
 ---
-dg-publish: true
-tags: 
+id: Revision Feb 2024
+aliases: []
+tags: []
 created: ""
+dg-publish: true
 ---
+
 ---
->[!summary]- Contents
->```toc
-style: number
-min_depth:1
-max_depth:6 
->```
-Initial complete review of all studied concepts
+
+> [!summary]- Contents
+>
+> ```toc
+> style: number
+> min_depth:1
+> max_depth:6
+> ```
+>
+> Initial complete review of all studied concepts
+
 # Structuring a Solution
+
 ### Find a starting point
+
 - Where can I start building the solution
 - Can I start from the minimum element?
-	- Determine if this starting point passes edge cases
+  - Determine if this starting point passes edge cases
 - What algorithms and data structures can I use?
-	- 
+  -
+
 ## Intuition
+
 - Find minimum chunk after k cuts/Minimum group size
-	- Binary search on group size then greedily make cuts once group reaches threshold
-- 
+  - Binary search on group size then greedily make cuts once group reaches threshold
+-
+
 ## Recursion
+
 - Update answer at a valid state
+
 ```python
 def smallestFromLeaf(self, root: Optional[TreeNode]) -> str:
 	ans = ""
 	def dfs(root, cur_str):
 		nonlocal ans
 		if not root:
-			return 
+			return
 		cur_str = chr(root.val+ord("a")) + cur_str
 		# easier to update answer at a valid state
 		# instead of min(left, right) and then having
 		# to determine if left or right is valid
 		if not root.left and not root.right:
 			if not ans or cur_str < ans:
-				ans = cur_str 
+				ans = cur_str
 
 		if root.left:
 			dfs(root.left, cur_str)
 		if root.right:
-			dfs(root.right, cur_str) 
+			dfs(root.right, cur_str)
 	dfs(root, "")
 	return ans
 ```
 
 ## DP Tricks
-- Memoizing with dictionary by using sets/lists as keys  
+
+- Memoizing with dictionary by using sets/lists as keys
+
 # Essentials
 
 ## Arrays
+
 - If range (inclusive): j-i+1
 - If index/position difference: j-i
-### Kadane's 
+
+### Kadane's
+
 https://leetcode.com/problems/substring-with-largest-variance/solutions/2579146/weird-kadane-intuition-solution-explained/
+
 ## Backtracking
+
 ### Including or not including
+
 - No for loop needed in each backtrack because there is only two options
-	- Take i or don't take i compared to take or don't take for each of remaining numbers
+  - Take i or don't take i compared to take or don't take for each of remaining numbers
+
 #### Power Set
+
 ```python
 def subsets(self, nums: List[int]) -> List[List[int]]:
 	res = []
 	n = len(nums)
-	subset = [] 
+	subset = []
 	def backtrack(i):
 		if i == n:
-			res.append(subset.copy()) 
+			res.append(subset.copy())
 			return
 		subset.append(nums[i])
 		backtrack(i+1)
 		subset.pop()
 		backtrack(i+1)
 	backtrack(0)
-	return res  
+	return res
 ```
-### Picking the element for the current position 
+
+### Picking the element for the current position
+
 #### Permutations
+
 - Swap first num with all nums after it and backtrack (equivalent to choosing a num for every single position)
+
 ```python
 def permute(self, nums: List[int]) -> List[List[int]]:ķ        res = []
-	n = len(nums) 
+	n = len(nums)
 	def backtrack(i):
 		if i == n-1:
 			res.append(nums.copy())
@@ -91,7 +119,7 @@ def permute(self, nums: List[int]) -> List[List[int]]:ķ        res = []
 			nums[i], nums[j] = nums[j], nums[i]
 			backtrack(i+1)
 			nums[i], nums[j] = nums[j], nums[i]
-	backtrack(0) 
+	backtrack(0)
 	return res
 def permuteUnique(self, nums: List[int]) -> List[List[int]]:
 	res = []
@@ -104,17 +132,20 @@ def permuteUnique(self, nums: List[int]) -> List[List[int]]:
 		for j in range(i, n):
 			if nums[j] in starting_num:
 				continue
-			nums[i], nums[j] = nums[j], nums[i]     
+			nums[i], nums[j] = nums[j], nums[i]
 			backtrack(i+1)
-			nums[i], nums[j] = nums[j], nums[i]     
+			nums[i], nums[j] = nums[j], nums[i]
 			starting_num.add(nums[j])
 
 	backtrack(0)
 	return res
 ```
+
 #### Combinations
+
 - build combination by picking a number from (i,n)
 - keep track of how many numbers are needed (only backtrack if available numbers is enough for remaining numbers needed)
+
 ```python
 def combine(self, n: int, k: int) -> List[List[int]]:
 	combination, res = [], []
@@ -123,16 +154,19 @@ def combine(self, n: int, k: int) -> List[List[int]]:
 		if need==0:
 			res.append(combination.copy())
 			return
-		
-		remain = (n+1) - i  
+
+		remain = (n+1) - i
 		available = remain-need
 
 		for j in range(i, i + available + 1):
 			combination.append(j)
 	return res
 ```
+
 #### n- queens
+
 - Sets: col, row, neg diag, pos diag
+
 ```python
  def solveNQueens(self, n: int) -> List[List[str]]:
 	res = []
@@ -161,12 +195,15 @@ def combine(self, n: int, k: int) -> List[List[int]]:
 			negDiag.remove(r - c)
 			board[r][c] = "."
 
-		
+
 	backtrack(0)
 	return res
 ```
+
 ### Paths
-- Manhattan Distance: abs distance between start and destination 
+
+- Manhattan Distance: abs distance between start and destination
+
 ```python
 def uniquePathsIII(self, grid: List[List[int]]) -> int:
 	m,n = len(grid), len(grid[0])
@@ -187,12 +224,12 @@ def uniquePathsIII(self, grid: List[List[int]]) -> int:
 		i,j = pos
 		if pos == end:
 			paths += 1
-			return 
+			return
 		for x,y in [[0,1], [0,-1], [1,0], [-1,0]]:
 			new_x = j+x
 			new_y = i+y
 			new_pos = (new_y, new_x)
-			if new_pos in visited or new_x < 0 or new_x >= n or new_y < 0 or new_y >= m or grid[new_y][new_x] == -1: 
+			if new_pos in visited or new_x < 0 or new_x >= n or new_y < 0 or new_y >= m or grid[new_y][new_x] == -1:
 				continue
 			if new_pos == end and squares > 0:
 				continue
@@ -202,9 +239,10 @@ def uniquePathsIII(self, grid: List[List[int]]) -> int:
 			visited.add(new_pos)
 			backtrack(new_pos, squares-1)
 			visited.remove(new_pos)
-	backtrack(start, squares) 
+	backtrack(start, squares)
 	return paths
 ```
+
 ### 0-1 Knapsack
 
 ## Binary Search
@@ -214,14 +252,17 @@ def uniquePathsIII(self, grid: List[List[int]]) -> int:
 
 ### Search for "X" on a Range
 
-
 ### Bisect Process
+
 - What is the target?
 - If the target is >= threshold, should we decrease or increase mid?
 - Do we want to return hi or lo?
-	- Depends on if we want rightmost x or leftmost x
+  - Depends on if we want rightmost x or leftmost x
+
 ### Bisect left/right
+
 - Implementation differs only at the comparison
+
 ```python
 #### MORE USEFUL IMPLEMENTATION than <= while
 def bisect_left(arr, x):
@@ -233,7 +274,7 @@ def bisect_left(arr, x):
 			lo = mid + 1
 		else:
 			hi = mid - 1
-	return lo 
+	return lo
 
 lo = first position where arr[lo] > x
 hi = position before lo
@@ -245,16 +286,21 @@ hi = position before lo
 			lo = mid + 1
 		else:
 			hi = mid - 1
-	return lo 
+	return lo
 ```
+
 ### Framework for using Binary Search to Find Minimum Group Size
+
 ### Replacing DP
+
 #### Minimize Maximum Difference of Pairs
+
 - we don't need dp here because the minimum difference between two pairs occur next to each in a sorted array
 - DP solution:
 - Binary search
-	- Sort (differences will be minimized)
-	- Binary search the maximum difference on range (0, max difference of all pairs)
+  - Sort (differences will be minimized)
+  - Binary search the maximum difference on range (0, max difference of all pairs)
+
 ```python
 def minimizeMax(self, nums: List[int], p: int) -> int:
 	nums.sort()
@@ -264,7 +310,7 @@ def minimizeMax(self, nums: List[int], p: int) -> int:
 	while lo <= hi:
 		mid = lo + (hi-lo)//2
 		cnt = i = 0
-		while i < n-1:   
+		while i < n-1:
 			if nums[i+1] - nums[i] <= mid:
 				cnt += 1
 				## skip the 2nd num used in the pair
@@ -274,23 +320,26 @@ def minimizeMax(self, nums: List[int], p: int) -> int:
 			lo = mid+1
 		else:
 			hi = mid-1
-	return lo 
+	return lo
 	# nLogV + nlogn, V = maximum difference in array,
 	# in each step of the binary search (total logV steps)
 	# we have to determine how many pairs are valid (n steps)
 ```
 
-
 ### Median of Two Sorted Arrays
+
 https://leetcode.com/problems/median-of-two-sorted-arrays/description/
+
 - O(m+n): Merge both arrays and then binary search
 - O(log(m + n)): smart binary search
-	https://leetcode.com/problems/median-of-two-sorted-arrays/editorial/
+  https://leetcode.com/problems/median-of-two-sorted-arrays/editorial/
 
 ## Binary Trees
+
 ### Basic Operations
 
-#### Insert 
+#### Insert
+
 ```python
 def insertIntoBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
 	if not root:
@@ -300,12 +349,17 @@ def insertIntoBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode
 	else:
 		root.left = self.insertIntoBST(root.left, val)
 	return root
- ```
+```
+
 https://leetcode.com/problems/insert-into-a-binary-search-tree/
+
 #### Delete
+
 #### Closest BST Value to Target
+
 - Specify key for min function
 - Traverse to left child if target is smaller than root.val, else go right
+
 ```python
 def closestValue(self, root: TreeNode, target: float) -> int:
 	closest = root.val
@@ -314,14 +368,19 @@ def closestValue(self, root: TreeNode, target: float) -> int:
 		root = root.left if target < root.val else root.right
 	return closes
 ```
+
 ### Width Type Questions
+
 - ie: check for completeness
 - level traversal with BFS
 
 ### Traversals
+
 #### In Order Traversal to Balance BST
+
 - Create sorted array with in order traversal
 - Add middle node recursively
+
 ```python
 class Solution:
     def balanceBST(self, root: TreeNode) -> TreeNode:
@@ -336,25 +395,28 @@ class Solution:
         def sortedArrToBST(left, right):
             if left > right:
                 return None
-            
+
             mid = (right+left)//2 ## ceil of this also returns another valid balanced tree
-            new_root = sortedArr[mid] 
+            new_root = sortedArr[mid]
             new_root.left =  sortedArrToBST(left, mid-1)
-            new_root.right = sortedArrToBST(mid+1, right) 
+            new_root.right = sortedArrToBST(mid+1, right)
             return new_root
         inorderTraversal(root)
         return sortedArrToBST(0, len(sortedArr)-1)
 ```
+
 #### Level Order Traversal
-- The position of the child node can be calculated with 
-	- left child: `pos*2 - 1`
-		- right child: `pos*2`
-https://leetcode.com/problems/maximum-width-of-binary-tree/description/
+
+- The position of the child node can be calculated with - left child: `pos*2 - 1` - right child: `pos*2`
+  https://leetcode.com/problems/maximum-width-of-binary-tree/description/
 
 #### Zigzag Order Traversal
+
 The ordering of nodes on alternating levels should be reversed
+
 - Use delimiter (ie: None) to indicate end of current level
 - Edge case: Empty tree, results in infinite loop
+
 ```python
  def zigzagLevelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
 	res = []
@@ -382,13 +444,18 @@ The ordering of nodes on alternating levels should be reversed
 			reverse = not reverse
 	return res
 ```
+
 https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description
+
 #### Vertical Order Traversal
+
 ![[Pasted image 20240304190355.png]]
-res:`[[4],[9,5],[3,0,1],[8,2],[7]]` 
+res:`[[4],[9,5],[3,0,1],[8,2],[7]]`
+
 - BFS with root set to col 0
 - Left child has parent col - 1, right child has parent col + 1
-- Since there can't be null cols, we don't have to sort col indices and just 
+- Since there can't be null cols, we don't have to sort col indices and just
+
 ```python
 def verticalOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
 	col = defaultdict(list)
@@ -408,16 +475,18 @@ def verticalOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
 				q.append((node.left, i-1))
 			if node.right:
 				q.append((node.right, i+1))
-	# Note there cannot be null cols because of the way 
+	# Note there cannot be null cols because of the way
 	# col is built
 	return [col[i] for i in range(min_col, max_col+1)]
 ```
+
 #### Vertical Order Traversal Sorted
+
 - A row value is used to determine order for nodes with duplicate values
 - Two types of sorting:
-	- Global Sorting: O(NlogN)
-	- Partition Sorting (Sort each column): O(Nlog(N/k))
-	
+  - Global Sorting: O(NlogN)
+  - Partition Sorting (Sort each column): O(Nlog(N/k))
+
 ```python
 def verticalTraversal(self, root: Optional[TreeNode]) -> List[List[int]]:
 	if root is None:
@@ -438,14 +507,16 @@ def verticalTraversal(self, root: Optional[TreeNode]) -> List[List[int]]:
 			max_col= max(max_col, c)
 			q.append((node.left, r+1, c-1))
 			q.append((node.right, r+1, c+1))
-	
+
 	res = []
 	for c in range(min_col, max_col+ 1):
 		# partition sort
 		res.append([val for row, val in sorted(col[c])])
 	return res
 ```
+
 #### N-ary Tree Level Order
+
 ```python
 """
 # Definition for a Node.
@@ -472,45 +543,53 @@ class Solution:
 ```
 
 ### Verify Preorder
+
 https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/editorial/?envType=weekly-question&envId=2024-04-08
+
 - Mono dec. stack
 - We can add a smaller number to the stack if we are the left side of the subtree
 - Once we reach the right side of the subtree (number is greater than last one on the stack), we need to keep track of the value of the parent
-	- New nodes on the right side of the subtree of cannot be smaller than the parent (since we are on the right side)
+  - New nodes on the right side of the subtree of cannot be smaller than the parent (since we are on the right side)
+
 ```python
 def verifyPreorder(self, preorder: List[int]) -> bool:
 	min_limit = -inf
 	stack = []
-	
+
 	for num in preorder:
 		while stack and stack[-1] < num:
 			min_limit = stack.pop()
-			
+
 		if num <= min_limit:
 			return False
-		
+
 		stack.append(num)
-	
+
 	return True
 ```
+
 - Verifying in order is easy: list must be sorted
 - Verifying post order: iterate list in reverse
-	- pop from stack if we encounter a smaller number than top of stack
-		- This means we are now on the left side of the tree, new nodes cannot be greater than this parent value
-	- add to stack if we encounter numbers greater than the current (we are in the right side of the tree)
+  - pop from stack if we encounter a smaller number than top of stack
+    - This means we are now on the left side of the tree, new nodes cannot be greater than this parent value
+  - add to stack if we encounter numbers greater than the current (we are in the right side of the tree)
+
 ## Data Structures
+
 - LFU/LRU cache
+
 ## Dynamic Programming
 
 - Subsequence (the answer contains non adjacent elements) almost always requires DP
+
 ```python
 def longestPalindromeSubseq(self, s: str) -> int:
 	# current letter + longest palindrome subsequence of array of size 1 smaller
 	# how to make a palindrome with the current letter:
-	# find letter equal to current letter in a[0:i] 
+	# find letter equal to current letter in a[0:i]
 	# dp will be 2 + a[start+1:end-1] or max of subproblems(prefix and suffix with length of 1 smaller)
 
-	n = len(s) 
+	n = len(s)
 
 	dp = [[0]*n for _ in range(n)]
 
@@ -526,10 +605,14 @@ def longestPalindromeSubseq(self, s: str) -> int:
 ```
 
 ## Graph Theory
+
 - Be smart about where valid solutions can start
+
 ### Trees
+
 **Theorem**: An undirected graph is a tree iff it is minimally connected.
 The following are equivalent
+
 - A tree is an undirected graph G = (V, E) that is connected and acyclic.
 - All the following are equivalent:
 - G is a tree.
@@ -537,20 +620,31 @@ The following are equivalent
 - G is minimally connected (removing any edge from G disconnects it.)
 - G is maximally acyclic (adding any edge creates a cycle)
 - G is connected and |E| = |V| - 1.
+
 ### DAG
+
 - Acyclic
 - Topological sort (Kahn's algorithm (in-degrees), DFS 3 color)
+
 ### Representation
+
 - Adjacency list: Dictionary, for sparse graphs
 - Adjacency Matrix: for dense graphs
+
 ### BFS/DFS/IDS
+
 - Level search
 - Multi-source
-### DFS 
+
+### DFS
+
 #### Number of Increasing Paths in a Grid
+
 https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/description/
+
 - Build `dp[i][j]` from all neighbouring cells with DFS
 - We don't have to start from the smallest valued cells since results are cached
+
 ```python
 def countPaths(self, grid: List[List[int]]) -> int:
 	# strictly increasing
@@ -559,9 +653,9 @@ def countPaths(self, grid: List[List[int]]) -> int:
 	m, n = len(grid), len(grid[0])
 	mod = 10 ** 9 +7
 	directions = [[0, 1], [0, -1], [1, 0], [-1, 0]]
-	
+
 	dp = [[-1] * n for _ in range(m)]
-	
+
 	def dfs(i, j):
 		# If dp[i][j] is non-zero, it means we have got the value of dfs(i, j),
 		if dp[i][j] != -1:
@@ -575,20 +669,25 @@ def countPaths(self, grid: List[List[int]]) -> int:
 			prev_i, prev_j = i + di, j + dj
 			if 0 <= prev_i < m and 0 <= prev_j < n and grid[prev_i][prev_j] < grid[i][j]:
 				answer += dfs(prev_i, prev_j) % mod
-		
+
 		dp[i][j] = answer
 		return answer
-	
+
 	return sum(dfs(i, j) for i in range(m) for j in range(n)) % mod
 ```
-### A* Search
+
+### A\* Search
+
 > Requires a heuristic
-https://leetcode.com/problems/shortest-path-in-binary-matrix/editorial/
+> https://leetcode.com/problems/shortest-path-in-binary-matrix/editorial/
 
 ### Island Type Questions
+
 #### Closed Island
-+ A closed island cannot have land on the edges of the grid
-+ Invalidate the island if any of it's squares on on the edge of a grid
+
+- A closed island cannot have land on the edges of the grid
+- Invalidate the island if any of it's squares on on the edge of a grid
+
 ```python
 def closedIsland(self, grid: List[List[int]]) -> int:
 	seen=set()
@@ -607,11 +706,11 @@ def closedIsland(self, grid: List[List[int]]) -> int:
 			#if (row,col) in seen:
 			#    continue
 			#seen.add((row,col))
-			# can't exit early otherwise not all 0's are marked 
+			# can't exit early otherwise not all 0's are marked
 			#if not dfs(row,col):
 			#    return False
 			water &= dfs(row,col)
-		return water 
+		return water
 	for r in range(1,len(grid)-1):
 		for c in range(1,len(grid[0])-1):
 			# be smart about where to start dfs, corner zeros cannot build a valid island
@@ -620,18 +719,24 @@ def closedIsland(self, grid: List[List[int]]) -> int:
 				#seen.add((r,c))
 				if dfs(r,c):
 					res += 1
-				
+
 	return res
 ```
+
 https://leetcode.com/problems/number-of-closed-islands/description/
+
 ### Shortest Path Algorithms
+
 - No weights: Use bfs
 - Weights: use Dijkstra
-- Negative weights/cycles: Bellman Ford (single source), Floyd Warshall (multi-source) 
+- Negative weights/cycles: Bellman Ford (single source), Floyd Warshall (multi-source)
+
 #### Bellman Ford
+
 - SSSP (single source shortest path)
 - Works for negative weights
 - Relax all edges V-1 times
+
 ```python
 def bellman_ford(graph, start):
 	num_vertices = len(graph.get_vertices())
@@ -655,9 +760,12 @@ def bellman_ford(graph, start):
 			raise NegativeWeightCycleError()
 	return dist, prev
 ```
+
 #### Floyd Warshall
+
 - Shortest path algorithm from any vertex to all other vertices
 - Works for negative weights and cycles
+
 ```python
 def floyd(G):
     dis = [[math.inf] * n for _ in range(n)]
@@ -670,14 +778,17 @@ def floyd(G):
                 for j in range(n):
                     dis[i][j] = min(dis[i][j], dis[i][k] + dis[k][j])
 ```
+
 #### Dijkstra
+
 - SSSP
-- Finds the shortest path from the source node to all other nodes 
-- The result (shortest path tree) is not guaranteed to be a MST 
+- Finds the shortest path from the source node to all other nodes
+- The result (shortest path tree) is not guaranteed to be a MST
 - Works for both directed/undirected graphs
 - Does not work for negative weights
 - Works for graphs with cycles
 - O(ElogV)
+
 ```python
 import heapq
 
@@ -696,7 +807,7 @@ def lazy_dijkstra(self, start):
 		dist[index] = min_value
 		seen.add(index)
 		for u,v,w in self.get_edges(index):
-			if seen[v]: 
+			if seen[v]:
 				continue
 			new_dist = dist[index] + w
 			if new_dist < dist[v]:
@@ -705,8 +816,11 @@ def lazy_dijkstra(self, start):
 				heapq.heappush(pq, (new_dist, v))
 	return dist, prev
 ```
+
 ##### Minimum Time to Visit Disappearing Nodes
+
 https://leetcode.com/problems/minimum-time-to-visit-disappearing-nodes/
+
 ```python
 def minimumTime(self, n: int, edges: List[List[int]], disappear: List[int]) -> List[int]:
 	ans = [math.inf]*n
@@ -731,12 +845,15 @@ def minimumTime(self, n: int, edges: List[List[int]], disappear: List[int]) -> L
 	return ans
 ```
 
-##### Number of Shortest Paths 
+##### Number of Shortest Paths
+
 https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/description/
+
 - Only push neighbour to heap if cost is lower through the current node
-	- Set the # of paths to v, to be equal to # of paths to u
+  - Set the # of paths to v, to be equal to # of paths to u
 - If the cost to get to the neighbour is equal to its current cost, we have found another route through u.
-	- Append the # of paths from u onto v
+  - Append the # of paths from u onto v
+
 ```python
 def countPaths(self, n: int, roads: List[List[int]]) -> int:
 	pq = [[0,0]]
@@ -755,39 +872,47 @@ def countPaths(self, n: int, roads: List[List[int]]) -> int:
 			continue
 		for v, cost in graph[u]:
 			# only add neighbor to q if we have
-			# a shorter path 
+			# a shorter path
 			if t + cost < time[v]:
 				# must set time here and not at the start
 				paths[v] = paths[u]
 				time[v] = t+cost
-				heappush(pq, [time[v], v])  
+				heappush(pq, [time[v], v])
 			elif t + cost == time[v]:
 				paths[v] = (paths[v] + paths[u]) % MOD
 	return paths[-1]
 ```
 
 ### Longest Path DAG
+
 - In general, this is NP-Hard, but on a DAG this problem is solvable in O(V+E)
 - Topological sort
 - Process ordering sequentially
 - Multiply edges values by -1 and find shortest path
+
 ### Minimum Spanning Tree Algorithms
+
 - MST assumes graphs are inherently undirected
 - A minimum cost tree that connects all nodes in the graph
 - Does not guarantee the shortest path between two nodes in the original graph
 
 **Theorem**: Let G be a connected, weighted graph. If all edge weights in G are distinct, G has exactly one MST
-**Theorem (Cycle Property):** If (x, y) is an edge in G and is the heaviest edge on some cycle C, then (x, y) does not belong to any MST of G. 
+**Theorem (Cycle Property):** If (x, y) is an edge in G and is the heaviest edge on some cycle C, then (x, y) does not belong to any MST of G.
 **Theorem (Cut Property):** Let (S, V – S) be a nontrivial cut in G (i.e. S ≠ Ø and S ≠ V). If (u, v) is the lowest-cost edge crossing (S, V – S), then (u, v) is in every MST of G.
+
 #### Prim's
+
 Greedy Algorithm
+
 - Start at any vertex
 - Repeatedly add the minimum edge that connects the tree to a new vertex
-	- If each vertex has at most one edge to another vertex, then we are bounded by V here 
-- Complexity: O(E log V) with Priority Queue or  O(E + VlogV) with a Fibonacci Heap
+  - If each vertex has at most one edge to another vertex, then we are bounded by V here
+- Complexity: O(E log V) with Priority Queue or O(E + VlogV) with a Fibonacci Heap
 
- Implementation in python requires a modification of heapq since it does not provide a decrease-key function
+Implementation in python requires a modification of heapq since it does not provide a decrease-key function
+
 - Typically, no decrease-key function is used and instead just append and invalidate entries later on in which case, the complexity is same as Kruskal's
+
 ```python
 MST-PRIM(G, w, r)
 1  for each u ∈ G.V
@@ -802,18 +927,22 @@ MST-PRIM(G, w, r)
 10              v.π ← u
 11              v.key ← w(u, v)
 ```
+
 **Using a Binary Heap**
+
 1. The time complexity required for one call to `EXTRACT-MIN(Q)` is `O(log V)` using a min priority queue. The while loop at line 6 is executing total V times.so `EXTRACT-MIN(Q)` is called `V` times. So the complexity of `EXTRACT-MIN(Q)` is `O(V logV)`.
 2. The `for` loop at line 8 is executing total `2E` times as length of each adjacency lists is `2E` for an undirected graph. The time required to execute line 11 is `O(log v)` by using the `DECREASE_KEY` operation on the min heap. Line 11 also executes total `2E` times. So the total time required to execute line 11 is `O(2E logV) = O(E logV)`.
 3. The `for` loop at line 1 will be executed `V` times. Using the procedure to perform lines 1 to 5 will require a complexity of `O(V)`.
-Total time complexity of `MST-PRIM` is the sum of the time complexity required to execute steps 1 through 3 for a total of `O((VlogV) + (E logV) + (V)) = O(E logV)` since `|E| >= |V|`.
-**Using a Fibonacci Heap**
-1. Same as above.
-2. Executing line 11 requires `O(1)` amortized time. Line 11 executes a total of `2E` times. So the total time complexity is `O(E)`.
-3. Same as above
-So the total time complexity of `MST-PRIM` is the sum of executing steps 1 through 3 for a total complexity of `O(V logV + E + V)=O(E + V logV)`.
-**Source**: https://stackoverflow.com/questions/20430740/time-complexity-of-prims-algorithm
+   Total time complexity of `MST-PRIM` is the sum of the time complexity required to execute steps 1 through 3 for a total of `O((VlogV) + (E logV) + (V)) = O(E logV)` since `|E| >= |V|`.
+   **Using a Fibonacci Heap**
+4. Same as above.
+5. Executing line 11 requires `O(1)` amortized time. Line 11 executes a total of `2E` times. So the total time complexity is `O(E)`.
+6. Same as above
+   So the total time complexity of `MST-PRIM` is the sum of executing steps 1 through 3 for a total complexity of `O(V logV + E + V)=O(E + V logV)`.
+   **Source**: https://stackoverflow.com/questions/20430740/time-complexity-of-prims-algorithm
+
 ##### Implementations
+
 - Adjacency Matrix
 - Adjacency List + Priority Queue (Heap)
 
@@ -825,7 +954,7 @@ edges = [(cost, v1, v2)...]
 def prim(edges, start):
 	mst = defaultdict(set)
 	seen = set([start])
-	graph = defaultdict(list) 
+	graph = defaultdict(list)
 	for u,v,cost in edges:
 		graph[u].append([v,cost])
 		graph[v].append([u,cost])
@@ -839,7 +968,7 @@ def prim(edges, start):
 		if v not in seen:
 			seen.add(v)
 			mst[u].add(v)
-			
+
 			total_cost += cost
 			for w, ncost in graph[v]:
 				# Update new reachable edges
@@ -847,13 +976,18 @@ def prim(edges, start):
 					heapq.heappush(edges,[ncost,v,w])
 	return mst, total_cost
 ```
+
 #### Kruskal's
+
 - Greedy algorithm
 - Repeatedly consider the minimum remaining edge
-	- Only add it if the two vertices lie within different trees (to avoid cycles)
+  - Only add it if the two vertices lie within different trees (to avoid cycles)
 - Complexity: O(E log E) with Union-find and sorting edges
+
 ##### Implementations
-- Union-find to store state of trees 
+
+- Union-find to store state of trees
+
 ```python
 def kruskal(graph):
 	mst = []
@@ -870,24 +1004,34 @@ def kruskal(graph):
 
 mst_weight = sum(t[2] for t in mst)
 ```
+
 - If we know the upper bound of the cost of edges C, using count sort will allow us to sort in O(E + C), reducing the time complexity to just union-find: O()
 
 #### Prim's vs Kruskal's
-- Kruskal's is more efficient on sparse graphs than Prim's algorithm 
+
+- Kruskal's is more efficient on sparse graphs than Prim's algorithm
 - Kruskal's will not provide a valid MST mid algorithm unlike Prim
-#### Enumerating all MST's 
+
+#### Enumerating all MST's
+
 - Generate one MST
 - Then generate all spanning trees and then filter by cost
-	- Generating all spanning trees can be done by setting all edges to cost = 0 and using a MST algorithm
+  - Generating all spanning trees can be done by setting all edges to cost = 0 and using a MST algorithm
+
 ### Tarjan's
+
 ### Topological Sort
-- Detecting cycles with  DFS 
+
+- Detecting cycles with DFS
 - Only exists for Directed Acyclic Graphs (DAG)
 - An ordering such that for all edges(u,v) u comes before v
+
 #### Modified DFS
+
 - DFS and add nodes in reverse order (append left with deque)
 - 3 color nodes: 0 = not visited, 1 = processing, 2 = processing complete
 - If a node is visited during processing (not all of it's neighbors have completed processing), this means there is a cycle
+
 ```python
 def topsort(self,graph):
 	vis = defaultdict(lambda: 0)
@@ -898,7 +1042,7 @@ def topsort(self,graph):
 
 def dfs_topsort(self, graph, node, vis, ordering):
 	if vis[node] == 2:
-		return 
+		return
 	if vis[node] == 1:
 		raise CycleError
 	vis[node] = 1
@@ -907,13 +1051,16 @@ def dfs_topsort(self, graph, node, vis, ordering):
 	ordering.appendleft(node)
 	vis[node] = 2
 ```
+
 #### Kahn's Topological Sort
+
 Find vertices with no incoming edges and removing all outgoing edges from these vertices.
 
 Maintain in-degree information of all graph vertices.
-Removing an edge from u to v will decrement ``indegree[u]`` by 1.
+Removing an edge from u to v will decrement `indegree[u]` by 1.
 
 If a cycle exists, then not all vertices will be able to achieve an indegree of 0. If the top_order does not have a length of n, then we must have encountered a cycle.
+
 ```python
 def topsort(edges, n):
 	top_order = deque()
@@ -934,24 +1081,28 @@ def topsort(edges, n):
 			indegree[v] -= 1
 			if indegree[v] == 0:
 				q.append(v)
-				
+
 	if len(top_order) != n:
 		print('Cycle Exists')
 	return top_order
 ```
 
 ### Determining Connectivity
- - Bfs/dfs/union find
+
+- Bfs/dfs/union find
+
 #### Union Find
-- Parameters: 
-	- n: number of of elements 
-	- parent: array indicating root of component i
-		- The value stored here is the index position of the root in the element array, not the actual element itself
-	- rank: depth of each component
+
+- Parameters:
+  - n: number of of elements
+  - parent: array indicating root of component i
+    - The value stored here is the index position of the root in the element array, not the actual element itself
+  - rank: depth of each component
 - Union(x,y) succeeds if x and y are found to have different parents
-- Append higher ranked tree to lower ranked tree 
+- Append higher ranked tree to lower ranked tree
 - Optimization: Path compression when finding parents
 - No operations are performed on the actual elements
+
 ```python
 class Union_find:
 	def __init__(self,n):
@@ -969,7 +1120,7 @@ class Union_find:
 	def union(self, x, y):
 		px = self.find(x)
 		py = self.find(y)
-		
+
 		if px == py:
 			return
 		# bigger parent stays the parent
@@ -977,16 +1128,19 @@ class Union_find:
 			self.parent[px] = pygg
 			self.rank[py] += 1
 		elif self.rank[px] < self.rank[py]:
-			self.parent[px] = py 
+			self.parent[px] = py
 		else:
 			SElf.rank[py] = self.rank[px]
 ```
+
 ##### Union-find Applications
+
 - Cycle detection for undirected graphs only
 - Longest consecutive sequence: union consecutive numbers
-	- Use index of nums for union-find
-	- Keep track of seen numbers
-	- Union current current component to existing components
+  - Use index of nums for union-find
+  - Keep track of seen numbers
+  - Union current current component to existing components
+
 ```python
 def longest_consecutive_sequence(nums):
 	d = {}
@@ -1001,23 +1155,31 @@ def longest_consecutive_sequence(nums):
 			uf.union(i, d[num+1])
 	return max(uf.size) if nums else 0
 ```
+
 ### Strongly Connected Components
 
 ### Bridges Algorithm
+
 ### Network Flow: Max Flow Algorithms
+
 ### Graph Theory Intuition
-## Greedy 
+
+## Greedy
+
 ## Intervals
+
 1. Sort intervals/pairs in increasing order of the start position.
 2. Scan the sorted intervals, and maintain an "active set" for overlapping intervals. At most times, we do not need to use an explicit set to store them. Instead, we just need to maintain several key parameters, e.g. the number of overlapping intervals (count), the minimum ending point among all overlapping intervals (minEnd).
 3. If the interval that we are currently checking overlaps with the active set, which can be characterized by cur.start > minEnd, we need to renew those key parameters or change some states.
 4. If the current interval does not overlap with the active set, we just drop current active set, record some parameters, and create a new active set that contains the current interval.
-> [!hint]+ Using Heaps
-> Heaps may be helpful in keeping track of interval with earliest end
+   > [!hint]+ Using Heaps
+   > Heaps may be helpful in keeping track of interval with earliest end
 
 ### Merge Intervals
+
 - Sort by start
 - Take the max of each end in the current overlapping interval
+
 ```python
  def merge(self, intervals: List[List[int]]) -> List[List[int]]:
 	#sort by start
@@ -1032,12 +1194,16 @@ def longest_consecutive_sequence(nums):
 			merged.append([start, end])
 	return merged
 ```
+
 ### Max Overlapping Intervals
+
 https://leetcode.com/problems/meeting-rooms-ii/description/
+
 - Sort by start
 - Keep min heap of ending times in current overlapping range
 - Pop one room (replace the meeting that is ending first, with the newest meeting, if it is ending),
-	- otherwise a new room is needed
+  - otherwise a new room is needed
+
 ```python
 def minMeetingRooms(self, intervals: List[List[int]]) -> int:
 	intervals.sort()
@@ -1051,20 +1217,23 @@ def minMeetingRooms(self, intervals: List[List[int]]) -> int:
 ```
 
 ### Scheduling Max Activities/Maximum Number of Events that can be Attended
+
 https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/description/
+
 - Sort by end and take the activity with the earliest end time
-- Only add activity to the priority queue if day >= start_time 
-	- Sort by start days
-	- Take the activity ending on the earliest day from a pool of activities with the same start day
-	- Increment day by one after each activity
+- Only add activity to the priority queue if day >= start_time
+  - Sort by start days
+  - Take the activity ending on the earliest day from a pool of activities with the same start day
+  - Increment day by one after each activity
+
 ```python
 def maxEvents(self, events: List[List[int]]) -> int:
 	sorted_events = deque(sorted(events))
 	pq = []
-	res = day = 0 
+	res = day = 0
 
 	while sorted_events or pq:
-		if not pq: 
+		if not pq:
 			day = sorted_events[0][0]
 		while sorted_events and sorted_events[0][0] == day:
 			heappush(pq, sorted_events.popleft()[1])
@@ -1077,13 +1246,19 @@ def maxEvents(self, events: List[List[int]]) -> int:
 ```
 
 ## Hashing
+
 ## Heaps
 
-### Top K 
+### Top K
+
 #### Top K Frequent Elements
+
 ## Linked List
+
 ### Deletion node (Recursive/Iterative)
+
 ### Reverse Linked List
+
 ```python
 def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
 	prev, cur = None, head
@@ -1094,9 +1269,12 @@ def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
 		cur = next_tmp
 	return prev
 ```
-###  Insert Into a Sorted Circular Linked List
+
+### Insert Into a Sorted Circular Linked List
+
 - Step 1: Enumerate all cases (how can the node be inserted)
-	- At the tail, in the middle
+  - At the tail, in the middle
+
 ```python
 def insert(self, head: 'Node', insertVal: int) -> 'Node':
 	if head == None:
@@ -1112,21 +1290,25 @@ def insert(self, head: 'Node', insertVal: int) -> 'Node':
 		else:
 			if insertVal >= node.val or insertVal <= node.next.val:
 				break
-		node = node.next 
-	
+		node = node.next
+
 	node.next = Node(insertVal, node.next)
 	return head
 ```
+
 ### Reverse Nodes in k-Group
+
 https://leetcode.com/problems/reverse-nodes-in-k-group/description/
-- Reverse k nodes at a time 
+
+- Reverse k nodes at a time
 - Count number of k groups first
-	- Store the ptr for the last node of group 1
-	- This is used to set the next node for the last node of the first group (original root), so that the linked list doesn't break after the first group
-- Keep a ptr for the previous node of the group 
+  - Store the ptr for the last node of group 1
+  - This is used to set the next node for the last node of the first group (original root), so that the linked list doesn't break after the first group
+- Keep a ptr for the previous node of the group
 - Reverse k nodes
-	- Point the previous of the group at the head of the k reversed nodes
-	- Point the last node of the current group to the saved tmp(cur.next)
+  - Point the previous of the group at the head of the k reversed nodes
+  - Point the last node of the current group to the saved tmp(cur.next)
+
 ```python
 def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
 	cur = head
@@ -1145,7 +1327,7 @@ def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
 		cur = cur.next
 
 	cur = head
-	dummy =ListNode() 
+	dummy =ListNode()
 	group_prev = dummy
 	prev = first_k
 
@@ -1159,35 +1341,52 @@ def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
 			cur = tmp
 			c -= 1
 		groups -= 1
-	
+
 		group_prev.next = prev
 		group_prev = last_node
 		last_node.next = tmp
 		cur = tmp
 	return dummy.next
 ```
+
 ## Queue
+
 ### Circular Queue
+
 ## Sliding Window
+
 ## Sorts
+
 ### Bucket/Count Sort
+
 ### Cyclic Sort
+
 ### Quick Sort
+
 ### Quick Select
+
 ## Stacks/Monotonic Stacks
->Mono Increasing:
->`while stack and (i == n or arr[i] <) `
+
+> Mono Increasing:
+> `while stack and (i == n or arr[i] <) `
+
 - Figure out if a larger or smaller `arr[i]` will invalidate the current sum
 - If larger element invalidates stack:
-	- mono dec. stack
+  - mono dec. stack
 - else:
-	- mono inc. stack
+  - mono inc. stack
+
 ### Monotonically Increasing Stack
+
 - The area of the rectangle with height at `stack[-1]` cannot grow if the current bar is smaller
-	- Thus, a mono. increasing stack is required
+  - Thus, a mono. increasing stack is required
+
 #### Largest Rectangle in Histogram
+
 https://leetcode.com/problems/largest-rectangle-in-histogram/description/
+
 - Trick: Append index -1 to the start of the stack for the left border of the 0th bar
+
 ```python
  def largestRectangleArea(self, heights: List[int]) -> int:
 	stack = [-1]
@@ -1208,24 +1407,27 @@ https://leetcode.com/problems/largest-rectangle-in-histogram/description/
 			stack.append(i)
 	return area
 ```
+
 ### Monotonically Decreasing Stack
 
 #### Sliding Window Maximum
+
 - Mono dec. stack while invalidating the max
 - Invalidate the max (which is at `q[0]`) if it is not within the k sized window
 - Invalidate elements on the stack smaller than the current element (since they will never be used)
+
 ```python
 def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
 	q = deque([])
 
 	# what would invalidate the ans
 	# the maximum value is out of range
-	# if the current number is not the max, 
+	# if the current number is not the max,
 	# it will never be used
 	i = 0
 	n = len(nums)
 	ans = []
-		
+
 	for i in range(k-1):
 		while q and nums[i] > nums[q[-1]]:
 			q.pop()
@@ -1242,8 +1444,11 @@ def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
 ```
 
 #### Number of Subarrays where Boundary Elements are Maximum
+
 https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/
+
 - Stack is invalidated if a greater element is encountered
+
 ```python
 def numberOfSubarrays(self, nums: List[int]) -> int:
 	ans = 0
@@ -1259,11 +1464,16 @@ def numberOfSubarrays(self, nums: List[int]) -> int:
 		d[nums[i]] += 1
 	return ans + n
 ```
+
 ## String
+
 ### Pattern Matching
+
 #### Maximal Boundaries
+
 - Maximal boundary is longest prefix that is also a suffix
 - F is an array of maximal boundaries for every substring `s[0:i] for i in range(len(s))`
+
 ```python
 def maximum_border_length(w):
 	n = len(w)
@@ -1279,7 +1489,9 @@ def maximum_border_length(w):
 ```
 
 #### KMP
+
 - Search t in s
+
 ```python
 def KMP(s, t):
 	w = t + "#" + s
@@ -1296,9 +1508,11 @@ def KMP(s, t):
 				return i - 2*n #2n accounts for the searched word, -1 omitted for the separator used
 	return f
 ```
+
 Space/Time Complexity: O(m + n)
 
 ### Isomorphic Strings (Mapping)
+
 ```python
 def isIsomorphic(self, s: str, t: str) -> bool:
 	map_s = {}
@@ -1313,11 +1527,15 @@ def isIsomorphic(self, s: str, t: str) -> bool:
 ```
 
 ## Sweep Line
+
 ## Trees
+
 ## Trie
-- Ex: `trie = {c: {a: {t:{WORD_KEY: 'cat' }}}}` 
+
+- Ex: `trie = {c: {a: {t:{WORD_KEY: 'cat' }}}}`
 - An alternative to class objects can be to set
-	- `nodes[WORD_KEY] = word` to indicate a word 
+  - `nodes[WORD_KEY] = word` to indicate a word
+
 ```python
 
 def trieDictionary(words):
@@ -1331,7 +1549,7 @@ class TrieNode:
     def __init__(self):
         self.isWord = False
         self.nodes = {}
-            
+
 class Trie:
     def __init__(self):
         self.root = TrieNode()
@@ -1339,45 +1557,47 @@ class Trie:
     # Inserts a word into the trie.
     def insert(self, word: str) -> None:
         cur = self.root;
-        
+
         for c in word:
             if c not in cur.nodes:
                 cur.nodes[c] = TrieNode()
             cur = cur.nodes[c]
-            
+
         cur.isWord = True;
 
     # Returns if the word is in the trie
     def search(self, word: str) -> bool:
         cur = self.root
-        
+
         for c in word:
             if c not in cur.nodes:
                 return False
             cur = cur.nodes[c]
-            
+
         return cur.isWord
-    # Returns if there is any word in the trie 
+    # Returns if there is any word in the trie
     # that starts with the given prefix. */
     def startsWith(self, prefix: str) -> bool:
         cur = self.root
-        
+
         for c in prefix:
             if c not in cur.nodes:
                 return False
             cur = cur.nodes[c]
-            
+
         return True
 ```
+
 ### Suffix Array/Tree
 
 ## Two Pointers
 
 # Advanced
+
 - Indexed priority queue
 
 ## Combinatorics
- 
-# Behavioural 
+
+# Behavioural
 
 https://www.techinterviewhandbook.org/behavioral-interview/
