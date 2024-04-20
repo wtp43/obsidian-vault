@@ -25,8 +25,7 @@ dg-publish: true
 - Where can I start building the solution
 - Can I start from the minimum element?
   - Determine if this starting point passes edge cases
-- What algorithms and data structures can I use?
-  -
+- ## What algorithms and data structures can I use?
 
 ## Intuition
 
