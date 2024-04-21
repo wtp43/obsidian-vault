@@ -1364,6 +1364,27 @@ def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
 
 ### Quick Select
 
+```python
+# Find kth smallest element in array
+def quickSelect(self, nums: List[int], left: int, right: int, k: int) -> int:
+  if left == right:
+    return nums[left]
+  # select pivotIndex between right and left
+  pivotInd = parti
+
+# Std partition process for Quick Sort
+# Move all smaller elements to left of pivot and greater elements to right
+def partition(arr,l,r):
+  x = arr[r]
+  i = l
+  for j in range(l,r):
+    if arr[j] <= x:
+      arr[i], arr[j] = arr[j], arr[i]
+      i += 1
+  arr[i], arr[r] = arr[r], arr[i]
+  return i
+```
+
 ## Stacks/Monotonic Stacks
 
 > Mono Increasing:
