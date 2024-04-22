@@ -333,6 +333,11 @@ https://leetcode.com/problems/median-of-two-sorted-arrays/description/
 - O(log(m + n)): smart binary search
   https://leetcode.com/problems/median-of-two-sorted-arrays/editorial/
 
+### Advanced Binary Search
+
+- Binary search can be used when f(x) is monotonic
+- This is particularly efficient when searching for some f(x) on a range (a,b) where b-a is very large
+
 ## Binary Trees
 
 ### Basic Operations
@@ -1358,30 +1363,74 @@ def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
 
 ### Bucket/Count Sort
 
+- Non-comparison stable sorting algorithm
+- Stableness is only guaranteed if we iterate the unsorted array backwards
+- Store freq of each element in `count`
+- Store cumulative sum of elements from `count`
+- Find index of each element of original array.
+- Place it in the correct position and decrease its count by one
+- Some modification needed if range includes negative numbers
+- Separate pos and neg and do count sort on each, negate negative signs, build cumulative sum in reverse
+
+```python
+def countSort(self, arr: List[int]) -> List[int]:
+  min_v = min(arr)
+  max_v = max(arr)
+  n = max_v - min_v + 1
+  count = [0] * (n)
+  size = len(arr)
+  ans = [0]*size
+  # Store count of every elem
+  for i in range(size):
+    count[arr[i]-min_v] += 1
+  # Store cumulative count
+  for i in range(1, n):
+    count[i] += count[i-1]
+
+  # Find index of each element of original array in count array
+  for i in range(len(arr)-1, -1, -1):
+    # cumulative sum stores the amount of numbers <= current number
+    ans[count[arr[i]]-1] = arr[i]
+    count[arr[i]] -= 1
+  return ans
+```
+
+- Count sort can b used to find the kth greatest element in an array
+- Iterate backwards in cumulative sum array (count) for k decrements
+
 ### Cyclic Sort
 
 ### Quick Sort
 
 ### Quick Select
 
+> Repeatedly partition about half the remaining relevant array until pivot index = k-1
+
+- kth-largest = qselect(arr, 0, len(arr)-1, len(arr)-k)
+  - Alternatively: heappush first k elements, then heappop and heappush nums[i] if nums[i] > pq[0]
+  - (keep k largest elements on heap)
+- kth-smallest = qselect(arr, 0, len(arr)-1, k-1)
+
 ```python
-# Find kth smallest element in array
-def quickSelect(self, nums: List[int], left: int, right: int, k: int) -> int:
-  if left == right:
-    return nums[left]
-  # select pivotIndex between right and left
-  pivotInd = parti
+def qselect(self, arr: List[int], left: int, right: int, k: int) -> int:
+  p = partition(arr, l, r)
+  if p < k:
+    return qselect(arr, p+1, r, k)
+  if p > k:
+    return qselect(arr, l, p-1, k)
+  return arr[p]
 
 # Std partition process for Quick Sort
-# Move all smaller elements to left of pivot and greater elements to right
+# i = ind of first element greater than pivot
 def partition(arr,l,r):
-  x = arr[r]
+  # can be randomly picked or using median of medians, the worst case can be improved to O(n) with a large constant
+  pivot = arr[r]
   i = l
-  for j in range(l,r):
-    if arr[j] <= x:
+  for j in range(l, r):
+    if arr[l] <= pivot:
       arr[i], arr[j] = arr[j], arr[i]
       i += 1
-  arr[i], arr[r] = arr[r], arr[i]
+    arr[i], arr[r] = arr[r], arr[i]
   return i
 ```
 
