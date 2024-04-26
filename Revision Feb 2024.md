@@ -37,6 +37,8 @@ dg-publish: true
 
 - Update answer at a valid state
 
+https://leetcode.com/problems/smallest-string-starting-from-leaf/description/
+
 ```python
 def smallestFromLeaf(self, root: Optional[TreeNode]) -> str:
 	ans = ""
@@ -338,6 +340,117 @@ https://leetcode.com/problems/median-of-two-sorted-arrays/description/
 - Binary search can be used when f(x) is monotonic
 - This is particularly efficient when searching for some f(x) on a range (a,b) where b-a is very large
 
+#### Kth Smallest Amount With Single Denomination Combination
+
+https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/
+
+```python
+    def findKthSmallest(self, coins: List[int], k: int) -> int:
+        n = len(coins)
+        d = defaultdict(list)
+        # lcm of all combinations: O(2**n)
+        for i in range(1, n+1):
+            for comb in itertools.combinations(coins, i):
+                d[len(comb)].append(math.lcm(*comb))
+
+        def count(d, target):
+            ans = 0
+            for i in range(1, n+1):
+                for lcm in d[i]:
+                    ans += target // lcm * pow(-1, i+1)
+            return ans
+        start, end = min(coins), min(coins) * k
+        while start<= end:
+            mid = (start + end) // 2
+            c = count(d, mid)
+            if c >= k:
+                # continue iterating until we find a valid number
+                end = mid -1
+            else:
+                start = mid+ 1
+        if count(d, start) >= k:
+            return start
+        else:
+            return end
+```
+
+### Kth Smallest Pair Distance
+
+https://leetcode.com/problems/find-k-th-smallest-pair-distance
+
+```python
+    def smallestDistancePair(self, nums: List[int], k: int) -> int:
+        start = 0
+        end = max(nums)
+        n = len(nums)
+        # sort to calc min distances iteratively
+        nums.sort()
+        # how many pairs have less distance than cur
+        def count(nums, dist):
+            ans = i = j = 0
+            while i < n or j < n:
+                while j < n and nums[j] - nums[i] <= dist:
+                    j += 1
+                ans += j-i-1
+                i += 1
+            return ans
+
+        while start <= end:
+            mid = start + (end-start)//2
+            if count(nums,mid) < k:
+                start = mid + 1
+            else:
+                end = mid - 1
+        return start
+```
+
+#### Largest Subarray Sum After K Splits
+
+https://leetcode.com/problems/split-array-largest-sum/description/
+
+```python
+def splitArray(self, nums: List[int], k: int) -> int:
+        def count(nums, limit):
+            ans = 1
+            cur = 0
+            for x in nums:
+                if cur + x > limit:
+                    ans += 1
+                    cur = 0
+                cur += x
+            return ans
+
+        start, end = max(nums), sum(nums)
+        while start <= end:
+            mid = start + (end-start)//2
+            if count(nums, mid) <=  k:
+                end = mid-1
+            else:
+                start = mid+1
+        return start
+```
+
+#### Kth Smallest Number in Multiplication Table
+
+https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/description/
+
+```python
+    def findKthNumber(self, m: int, n: int, k: int) -> int:
+        def count(x):
+            ans = 0
+            for i in range(1, m+1):
+                ans += min(x//i, n)
+            return ans
+        lo, hi = 1, m*n
+        while lo <= hi:
+            mid = (lo + hi)//2
+            if count(mid) < k:
+                lo = mid+1
+            else:
+                hi = mid-1
+        return lo
+```
+
 ## Binary Trees
 
 ### Basic Operations
@@ -578,6 +691,25 @@ def verifyPreorder(self, preorder: List[int]) -> bool:
     - This means we are now on the left side of the tree, new nodes cannot be greater than this parent value
   - add to stack if we encounter numbers greater than the current (we are in the right side of the tree)
 
+## Bit Operations
+
+```
+& AND
+| OR
+^ XOR
+~ NOT
+<< Bitwise left shift
+>> Bitwise right shift
+
+Bitmask
+Check if ith bit is set
+mask & 1 << i
+
+Unset ith bit
+mask ^= 1 << node
+
+```
+
 ## Data Structures
 
 - LFU/LRU cache
@@ -585,6 +717,33 @@ def verifyPreorder(self, preorder: List[int]) -> bool:
 ## Dynamic Programming
 
 - Subsequence (the answer contains non adjacent elements) almost always requires DP
+
+##### Longest Increasing Subsequence (LIS)
+
+- DP: 0(n^2)
+- Build LIS, binary search for first position cur num is smaller than `sequence[i]`
+
+```python
+def lengthOfLIS(self, nums: List[int]) -> int:
+        if not nums:
+            return 0
+        n = len(nums)
+        dp = [1] * n
+        for i in range(n):
+            for j in range(i):
+                if nums[i] > nums[j]:
+                    dp[i] = max(dp[i], 1+dp[j])
+        return max(dp)
+def lengthOfLIS(self, nums: List[int]) -> int:
+        seq = []
+        for i in range(len(nums)):
+            if not seq or nums[i] > seq[-1]:
+                seq.append(nums[i])
+            else:
+                ind = bisect_left(seq, nums[i])
+                seq[ind] = nums[i]
+        return len(seq)
+```
 
 ```python
 def longestPalindromeSubseq(self, s: str) -> int:
@@ -629,6 +788,45 @@ The following are equivalent
 
 - Acyclic
 - Topological sort (Kahn's algorithm (in-degrees), DFS 3 color)
+
+### DAG Scheduling
+
+https://leetcode.com/problems/parallel-courses-ii/description/
+
+```python
+class Solution:
+    def minNumberOfSemesters(self, n: int, relations: List[List[int]], k: int) -> int:
+        in_degrees = [0]*n
+        graph = defaultdict(list)
+        for u,v in relations:
+            in_degrees[v-1] += 1
+            graph[u-1].append(v-1)
+
+        @lru_cache(None)
+        def dfs(mask, in_degrees):
+            if not mask:
+                return 0
+            # nodes that can be taken (if bit is 1)
+            nodes = [i for i in range(n) if mask & 1 << i and in_degrees[i] == 0]
+            ans = math.inf
+            # Check all combinations with size k
+            for k_nodes in combinations(nodes, min(k, len(nodes))):
+                new_mask, new_in_degrees = mask, list(in_degrees)
+                # set bit for all nodes in combination
+                for node in k_nodes:
+                    new_mask ^= 1 << node
+                    for child in graph[node]:
+                        new_in_degrees[child] -= 1
+                # recurse
+                ans = min(ans, 1+dfs(new_mask, tuple(new_in_degrees)))
+            return ans
+        return dfs((1<<n)-1, tuple(in_degrees))
+```
+
+#### Parallel Courses II
+
+- Without the requirement `k`, this would be a topological problem
+- Why do we need DP? There is no optimal subproblem on which course should be taken first.
 
 ### Representation
 
@@ -793,6 +991,13 @@ def floyd(G):
 - Works for graphs with cycles
 - O(ElogV)
 
+### Lazy Version of Dijkstra
+
+- This version keeps a priority queue with Space Complexity O(E+V)
+- Time Complexity: O(ElogE) vs O(ElogV) for "non-lazy"
+  https://stackoverflow.com/questions/68977036/do-indexed-priority-queues-actually-speed-up-dijkstra
+- This version works for negative weights as long as there is no negatively weighted cycle
+
 ```python
 import heapq
 
@@ -917,6 +1122,8 @@ Implementation in python requires a modification of heapq since it does not prov
 
 - Typically, no decrease-key function is used and instead just append and invalidate entries later on in which case, the complexity is same as Kruskal's
 
+- IMPORTANT: It does not matter which vertex you start at. There can be multiple MST's. This is because we are always choosing the lowest-cost edge for the current vertex
+
 ```python
 MST-PRIM(G, w, r)
 1  for each u ∈ G.V
@@ -957,15 +1164,18 @@ import heapq
 edges = [(cost, v1, v2)...]
 def prim(edges, start):
 	mst = defaultdict(set)
-	seen = set([start])
+	seen = set()
 	graph = defaultdict(list)
 	for u,v,cost in edges:
 		graph[u].append([v,cost])
 		graph[v].append([u,cost])
 
 	total_cost = 0
-	heapq.heapify(edges)
 
+  # start at any vertex
+  # cost,u,v
+  edges = [[0,1,2]]
+  # Note: must call heapify(edges) if edges contain more than one initially
 	while edges:
 		cost, u, v = heapq.heappop(edges)
 		# Important: There can be edges with visited nodes in the heap
@@ -1021,6 +1231,69 @@ mst_weight = sum(t[2] for t in mst)
 - Generate one MST
 - Then generate all spanning trees and then filter by cost
   - Generating all spanning trees can be done by setting all edges to cost = 0 and using a MST algorithm
+
+### Find Critical and Pseudo-Critical Edges in MST
+
+> Critical edge: An edge that if removed from the graph, would increase the MST weight. (Critical edges appear in every MST)
+> Pseudo-Critical edge: An edge that appears only in some MSTs
+
+- Use Kruskal to calculate MST weight
+- For each edge:
+
+  - Check if it is critical (calculate MST while ignoring the edge). If weight is higher, the edge is critical.
+  - If it is not critical, force the edge. If the weight is same as before, it is pseudo-critical.
+
+  ```python
+    class UnionFind:
+        def __init__(self, n):
+            self.size = [1]*n
+            self.parent = list(range(n))
+
+        def find(self, x):
+            if self.parent[x] != x:
+                self.parent[x] = self.find(self.parent[x])
+            return self.parent[x]
+
+        def union(self, x, y):
+            px = self.find(x)
+            py = self.find(y)
+            if px == py:
+                return False
+            if self.size[px] < self.size[py]:
+                px, py = py,px
+            self.parent[py] = px
+            self.size[px] += self.size[py]
+            return True
+
+    def findCriticalAndPseudoCriticalEdges(self, n: int, edges: List[List[int]]) -> List[List[int]]:
+        edges = [e+[i] for i,e in enumerate(edges)]
+        edges.sort(key = lambda x:x[2])
+        UF = self.UnionFind(n)
+        std_weight = 0
+        for u,v,w, _ in edges:
+            if UF.union(u,v):
+                std_weight += w
+        critical = []
+        pseudo_critical = []
+        for u,v,w,i in edges:
+            UF_ignore = self.UnionFind(n)
+            ignore_weight = 0
+            for x,y,w_ignore, j in edges:
+                if i != j and UF_ignore.union(x, y):
+                    ignore_weight += w_ignore
+            if max(UF_ignore.size) < n or ignore_weight > std_weight:
+                critical.append(i)
+            else:
+                UF_force = self.UnionFind(n)
+                force_weight = w
+                UF_force.union(u,v)
+                for x,y,w_force, j in edges:
+                    if i!=j and UF_force.union(x,y):
+                        force_weight += w_force
+                if force_weight == std_weight:
+                    pseudo_critical.append(i)
+        return [critical,pseudo_critical]
+  ```
 
 ### Tarjan's
 
@@ -1089,6 +1362,43 @@ def topsort(edges, n):
 	if len(top_order) != n:
 		print('Cycle Exists')
 	return top_order
+```
+
+### Finding Nodes in a Graph with Minimum Height
+
+- Topological Sort then start with queue of leaf nodes (lowest indegree nodes)
+- Pop leaf nodes and remove edges from neighbors
+- Append neighbor to queue if indegree is 0
+
+##### Simplified Version for Trees
+
+```python
+def findMinHeightTrees(self, n: int, edges: List[List[int]]) -> List[int]:
+        if n <= 2:
+            return [i for i in range(n)]
+        graph = defaultdict(set)
+        for u,v in edges:
+            graph[u].add(v)
+            graph[v].add(u)
+        leaves = []
+        for i in range(n):
+            if len(graph[i]) == 1:
+                leaves.append(i)
+        while n > 2:
+            n -= len(leaves)
+            new_leaves = []
+
+            while leaves:
+                leaf = leaves.pop()
+                neighbor = graph[leaf].pop()
+                # because it's a leaf node, it only has one neighbor
+                # otherwise, a loop is needed to remove edges from
+                # all it's neighbors
+                graph[neighbor].remove(leaf)
+                if len(graph[neighbor]) == 1:
+                    new_leaves.append(neighbor)
+            leaves = new_leaves
+        return leaves
 ```
 
 ### Determining Connectivity
@@ -1259,6 +1569,13 @@ def maxEvents(self, events: List[List[int]]) -> int:
 
 ## Linked List
 
+### Cycle Detection
+
+- Floyd's Algorithm (Tortoise and Hare) to find start of cycle
+- Hare initially travels twice as fast a Tortoise
+- Stop meeting point
+- Start tortoise at starting position and hare at meeting point while moving at the same speed
+
 ### Deletion node (Recursive/Iterative)
 
 ### Reverse Linked List
@@ -1358,6 +1675,9 @@ def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
 ### Circular Queue
 
 ## Sliding Window
+
+- Sliding Window works on the assumption window only grows in one direction. -> Only works for positive numbers
+- If negative numbers (window is bidirectional), try hashmap or DP
 
 ## Sorts
 
@@ -1660,6 +1980,22 @@ class Trie:
 ### Suffix Array/Tree
 
 ## Two Pointers
+
+## Math
+
+### Principle of Inclusion and Exclusion
+
+- |A ∪ B| = |A| + |B|−|A ∩ B| and |A ∪ B ∪ C| = |A| + |B| + |C|−|A ∩ B|−|A ∩ C|−|B ∩ C| + |A ∩ B ∩ C|.
+- Add all intersections with odd size, subtract all intersections with even size
+- Building a sequence of multiples for some set of nums
+- Divide products of pairs by their gcd
+
+```python
+  ab = a*b//gcd(a, b)
+  bc = b*c//gcd(b, c)
+  ca = c*a//gcd(c, a)
+  abc = ab*c//gcd(ab, c)
+```
 
 # Advanced
 
