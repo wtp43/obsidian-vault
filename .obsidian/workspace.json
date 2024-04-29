@@ -82,13 +82,25 @@
                 {
                   "state": "{}",
                   "eState": "{}"
+                },
+                {
+                  "title": "Dijkstra's Shortest Path Algorithm",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Algos/Dijkstra's Shortest Path Algorithm.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":34,\"ch\":9},\"to\":{\"line\":34,\"ch\":9}},\"scroll\":16.149253731343283}"
+                },
+                {
+                  "title": "Revision Feb 2024",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Revision Feb 2024.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":795,\"ch\":0},\"to\":{\"line\":795,\"ch\":0}},\"scroll\":786.2015924719508}"
                 }
               ]
             },
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Revision Feb 2024.md",
+                "file": "DS/DFS.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -199,7 +211,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Revision Feb 2024.md",
+                "file": "DS/DFS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,7 +237,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Revision Feb 2024.md",
+                "file": "DS/DFS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -284,7 +296,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Revision Feb 2024.md"
+                "file": "DS/DFS.md"
               }
             }
           }
@@ -298,28 +310,29 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "darlal-switcher-plus:Open in Headings Mode": false,
-      "darlal-switcher-plus:Open Symbols for the active editor": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "digitalgarden:Digital Garden Publication Center": false,
+      "graph:Open graph view": false,
+      "darlal-switcher-plus:Open in Headings Mode": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false,
       "templater-obsidian:Templater": false,
-      "graph:Open graph view": false
+      "digitalgarden:Digital Garden Publication Center": false,
+      "float-search:Search Obsidian In Modal": false
     }
   },
   "active": "0bb1d14c5640222b",
   "lastOpenFiles": [
+    "Algos/Dijkstra's Shortest Path Algorithm.md",
+    "Revision Feb 2024.md",
     "Revision Feb 2024.md~",
     "Interview Prep 2024/Solved Easily.md",
     "Interview Prep 2024/Difficult.md",
     "Private/Interview Prep.md",
     "Algos/Intersection of Intervals.md",
     "Algos Practice/Intuition/Intervals.md",
-    "Revision Feb 2024.md",
     "Books/HBR Critical Thinking.md",
     "Leetcode Questions/LC-986. Interval List Intersections.md",
     "To Do/Shortest and Longest Path on DAG.md",
-    "Algos/Dijkstra's Shortest Path Algorithm.md",
     "Algos/Bellman Ford's Algorithm.md",
     "Finance/Historical Performance.md",
     "Algos/Floyd-Warshall's Algorithm.md",
@@ -353,7 +366,6 @@
     "Scripts copy/Retrieve UI Elements.scpt",
     "Scripts copy",
     "Algos/Scripts copy/mic.scpt",
-    "Algos/Scripts copy/Retrieve UI Elements.scpt",
-    "Algos/Scripts copy"
+    "Algos/Scripts copy/Retrieve UI Elements.scpt"
   ]
 }

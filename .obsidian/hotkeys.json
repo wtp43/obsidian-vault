@@ -251,5 +251,13 @@
       "key": "I"
     }
   ],
-  "workspace:goto-last-tab": []
+  "workspace:goto-last-tab": [],
+  "float-search:search-in-current-file": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "S"
+    }
+  ]
 }

@@ -1364,6 +1364,56 @@ def topsort(edges, n):
 	return top_order
 ```
 
+### Collect Coins in a Tree (Topsort)
+
+https://leetcode.com/problems/collect-coins-in-a-tree/
+
+- Collect all coins at a distance of at most 2 from the current vertex
+- Move to any adjacent vertex
+- Return minimum number of edges needed to go through
+- Note: The minimum number of edges is is always 2\*(n_vertices-1) in the pruned tree
+- Topsort to remove all leaves with 0 coins
+- Remove all leaves
+- Remove again all any new leaves that may have been created because we can get coins from two vertices away
+
+```python
+def collectTheCoins(self, coins: List[int], edges: List[List[int]]) -> int:
+        if not edges:
+            return 0
+        leaves = []
+
+        graph = defaultdict(set)
+        for u,v in edges:
+            graph[u].add(v)
+            graph[v].add(u)
+
+        for u in graph:
+            if len(graph[u]) == 1:
+                leaves.append(u)
+
+        for u in leaves:
+            while len(graph[u]) == 1 and coins[u] == 0:
+                v = graph[u].pop()
+                del graph[u]
+                graph[v].remove(u)
+                u = v
+        # two iterations since removing a leaf
+        # can cause neighboring node to become a leaf
+        # remove last leaf with coins
+        # then remove it's parent if the parent becomes a leaf node
+        # since we can get coins from 2 nodes away
+        for _ in range(2):
+            leaves = [u for u in graph if len(graph[u]) == 1]
+            for u in leaves:
+                p = graph[u].pop()
+                del graph[u]
+                graph[p].remove(u)
+                if len(graph)<2:
+                    return 0
+        # return 2 * number of edges left
+        return 2*(len(graph)-1)
+```
+
 ### Finding Nodes in a Graph with Minimum Height
 
 - Topological Sort then start with queue of leaf nodes (lowest indegree nodes)
@@ -1982,6 +2032,53 @@ class Trie:
 ## Two Pointers
 
 ## Math
+
+### Multiplication Tricks
+
+#### By 11
+
+- ab x 11 = 100a + 10(a+b) + b
+- extrapolate for every adjacent pair in abc...z
+
+#### ab x ac with 10 = b + c
+
+- ans: (a x (a+1)) concat (b x c)
+- 34 x 36 = 1224
+
+#### Difference of squares: bc x de where d = b+1 and e = 10-c
+
+- bc+e is the number between bc and de which is divisible by 10
+- 13 x 27 = (bc+e)^2 - e^2
+
+#### x^2
+
+- x^2 = a x b + c^2
+- where a = x+c and b = x-c
+- 108^2 = 116 x 100 + 8^2
+
+#### By 5
+
+- Let x = a5 and y = b5
+- If a + b is even: z = ab+(a+b)/2, xy = z25
+- If a + b is odd: z = ab+(a+b)/2, xy = integer(z)25
+- 15 x 25 = 375
+- 45 x 125 = 5625
+
+#### Other Tips
+
+- Multiplying by 4 for a large number is equivalent to multiplying it by 2, twice
+
+#### Division with fractions
+
+- 374/25 = 374x2x2 / 100
+
+#### Subtracting without borrowing
+
+- Subtract pairs of digits instead of one to avoid borrowing
+
+#### Fun fact: The remained of an integer n divided by 9 is the same as the sum of the digits of n mod 9
+
+- This does not prove that the answer is correct however
 
 ### Principle of Inclusion and Exclusion
 
