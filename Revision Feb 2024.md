@@ -31,7 +31,8 @@ dg-publish: true
 
 - Find minimum chunk after k cuts/Minimum group size
   - Binary search on group size then greedily make cuts once group reaches threshold
--
+- Can the target we are optimizing be simplified?
+  - Compute some `cost[i] = s[i] - t[i]`
 
 ## Recursion
 
@@ -73,9 +74,91 @@ def smallestFromLeaf(self, root: Optional[TreeNode]) -> str:
 - If range (inclusive): j-i+1
 - If index/position difference: j-i
 
+#### Prefix/Suffix Sum/Max
+
+##### Sum of Distances
+
+https://leetcode.com/problems/sum-of-distances/description/
+
+- Store occurences/indices in dictionary
+- Iterate all indices of each key in the dictionary
+- Build prefix and suffix sum for each key
+- Complexity: O(n) for each number + O(n) to sum
+
+```python
+def distance(self, nums: List[int]) -> List[int]:
+        d = defaultdict(list)
+        for i,x in enumerate(nums):
+            d[x].append(i)
+
+        arr = [0]*len(nums)
+        for x in d:
+            prefix = 0
+            suffix = sum(d[x])
+            n = len(d[x])
+            p = 0
+            for i in d[x]:
+                arr[i] = i*p-prefix + suffix-i*(n-p)
+                p += 1
+                prefix += i
+                suffix -= i
+        return arr
+```
+
+#### Max Partitions Allowed to Make Sorted Array
+
+- Split arr into maxiumum number of individually sorted partitions such that concatenated array is also sorted
+- A partition is only possible if the maximum prefix is less than the minimum suffix
+
+```python
+def maxChunksToSorted(self, arr: List[int]) -> int:
+        # a partition can be made if
+        # max[:i+1] < min[i+1:]
+
+        n = len(arr)
+        minSuffix = [math.inf]*(n+1)
+        for i in range(n-1, 0, -1):
+            minSuffix[i] = min(arr[i], minSuffix[i+1])
+
+        maxPrefix = 0
+        partition = 0
+        for i in range(n):
+            maxPrefix = max(maxPrefix, arr[i])
+            if maxPrefix <= minSuffix[i+1]:
+                partition += 1
+        return partition
+```
+
 ### Kadane's
 
+> Used to find max subarray (contiguous array)
+
 https://leetcode.com/problems/substring-with-largest-variance/solutions/2579146/weird-kadane-intuition-solution-explained/
+
+### Maximum Array after swapping equal length subarray
+
+- Kadane's can be used to find the maximum subarray.
+- INTUITION: We are trying to maximum the sum of the subarray after the swap. This is the same as precomputing a cost array for swapping the ith element.
+
+```python
+    def maximumsSplicedArray(self, nums1: List[int], nums2: List[int]) -> int:
+        n = len(nums1)
+        arr = [0]*n
+        # compute cost (of swapping ith element) array
+        for i in range(n):
+            arr[i] = nums2[i] - nums1[i]
+        # Run Kadane's twice
+        cur = max_s = 0
+        for i in range(n):
+            cur = max(cur+arr[i], 0)
+            max_s = max(max_s,cur)
+        cur = max_t = 0
+        for i in range(n):
+            cur = max(cur-arr[i], 0)
+            max_t = max(max_t, cur)
+        return max(max_s+sum(nums1), max_t+sum(nums2))
+
+```
 
 ## Backtracking
 
@@ -710,6 +793,57 @@ mask ^= 1 << node
 
 ```
 
+### Subtraction under modulo 2
+
+- XOR operator is equivalent to subtraction under modulo 2
+- Useful for storing prefix of a binary
+
+### Binary Prefix
+
+- XOR current mask = `str[:i+1]` and some `prefix[:j]` to determine f(i)
+- Prefix masks can be stored in a hash map
+
+##### Longest Substring with At Most One Character with Odd Count
+
+https://leetcode.com/problems/find-longest-awesome-substring/description
+
+```python
+def longestAwesome(self, s: str) -> int:
+        prefix = defaultdict(int)
+        prefix[0] = -1
+        mask = res = 0
+        for i in range(len(s)):
+            mask ^= 1 << int(s[i])
+
+            # even length palindrome
+            if mask in prefix:
+                res = max(res, i-prefix[mask])
+            else:
+                prefix[mask] = i
+
+            # odd length palindrome
+            # fix one char to be the odd one
+            for j in range(10):
+                cur = mask ^ (1 << j)
+                if cur in prefix:
+                    res = max(res, i-prefix[cur])
+        return res
+```
+
+#### Hamming Distance
+
+```python
+x.bit_count()
+bin(x).count('1')
+
+# get rightmost bit every loop
+while x:
+  count += x%2
+  x//2
+```
+
+##
+
 ## Data Structures
 
 - LFU/LRU cache
@@ -721,7 +855,8 @@ mask ^= 1 << node
 ##### Longest Increasing Subsequence (LIS)
 
 - DP: 0(n^2)
-- Build LIS, binary search for first position cur num is smaller than `sequence[i]`
+- Approach 1: Build LIS
+- Approach 2: Binary search for first position cur num is smaller than `sequence[i]`
 
 ```python
 def lengthOfLIS(self, nums: List[int]) -> int:
@@ -734,6 +869,7 @@ def lengthOfLIS(self, nums: List[int]) -> int:
                 if nums[i] > nums[j]:
                     dp[i] = max(dp[i], 1+dp[j])
         return max(dp)
+
 def lengthOfLIS(self, nums: List[int]) -> int:
         seq = []
         for i in range(len(nums)):
@@ -767,6 +903,14 @@ def longestPalindromeSubseq(self, s: str) -> int:
 	return dp[0][-1]
 ```
 
+### Subsequences
+
+- It's only necessary to store the result of the subsequence
+- ie: `dp[i][j]` is not the result of the array `[i:j]`
+-
+
+#### Length of Longest Subsequence that Sums to Target
+
 ## Graph Theory
 
 - Be smart about where valid solutions can start
@@ -783,6 +927,12 @@ The following are equivalent
 - G is minimally connected (removing any edge from G disconnects it.)
 - G is maximally acyclic (adding any edge creates a cycle)
 - G is connected and |E| = |V| - 1.
+
+#### Rerooting Tree
+
+##### Sum of Distances in Tree
+
+https://leetcode.com/problems/sum-of-distances-in-tree/description/
 
 ### DAG
 
@@ -876,6 +1026,45 @@ def countPaths(self, grid: List[List[int]]) -> int:
 		return answer
 
 	return sum(dfs(i, j) for i in range(m) for j in range(n)) % mod
+```
+
+### Bipartite Graph
+
+- Thm: A graph is bipartite iff it contains no odd cycles
+
+#### Bipartite Grouping
+
+https://leetcode.com/problems/possible-bipartition/
+
+- If a neighbor has the same color as the current node: no bipartite matching is possible
+- Two color dfs: color all neighbors the opposite of the current node's color
+  - Impossible if a neighbor has the same color as the current node
+- Union Find: Union the first neighbor of U with all the other neighbors
+
+```python
+ def possibleBipartition(self, n: int, dislikes: List[List[int]]) -> bool:
+        # -1 is useful as the unvisited state
+        # since 1,0 and can easily inversed
+        state = [-1]*(n+1)
+        graph = defaultdict(list)
+        for u,v in dislikes:
+            graph[u].append(v)
+            graph[v].append(u)
+        def dfs(u,col):
+            state[u] = col
+            for v in graph[u]:
+                if state[u] == state[v]:
+                    return False
+                if state[v] == -1:
+                    if not dfs(v,1-col):
+                        return False
+            return True
+
+        for i in range(1,n+1):
+            if state[i] == -1:
+                if not dfs(i,0):
+                    return False
+        return True
 ```
 
 ### A\* Search
@@ -1967,8 +2156,6 @@ def isIsomorphic(self, s: str, t: str) -> bool:
 
 ## Sweep Line
 
-## Trees
-
 ## Trie
 
 - Ex: `trie = {c: {a: {t:{WORD_KEY: 'cat' }}}}`
@@ -2031,7 +2218,40 @@ class Trie:
 
 ## Two Pointers
 
+## Python
+
+- reverse a substring = `word[:i+1][::-1]`
+
 ## Math
+
+#### Misc
+
+- To check if a number is a palindrome without string conversion:
+- Use reverse number
+- To get the first digit of a number, we can also do x // 10\*\*int(log10(x))
+
+```python
+def isPalindrome(self, x: int) -> bool:
+        if x < 0 or (x%10 == 0 and x != 0):
+            return False
+        reverseX = 0
+        y = x
+        while y:
+            reverseX = reverseX * 10 + y%10
+            y //= 10
+
+        # reverse can contain the middle number
+        return reverseX == x or x == reverseX//1
+```
+
+### Absolute Value Rules
+
+|–a| = |a|
+|a| ≥ 0.
+Products: |ab| = |a||b|
+Quotients: |a / b| = |a| / |b|
+Powers: |an| = |a|n
+Triangle Inequality: |a + b| ≤ |a| + |b|
 
 ### Multiplication Tricks
 
@@ -2097,6 +2317,32 @@ class Trie:
 # Advanced
 
 - Indexed priority queue
+
+## Counting
+
+### Greedy Counting
+
+##### Maximum Alternating Elements
+
+> Decrement 1 from a different element each loop. How many iterations is possible?
+> https://leetcode.com/problems/maximum-number-of-weeks-for-which-you-can-work/description/
+
+- Wrong approach: use heap and take the two biggest and decrement by smaller number
+- Consider `[100,100,100]`. Answer is 300 but using the above approach gives 201
+- Intuition: We should match smaller numbers with the biggest
+- If the biggest number is larger than the sum of all other numbers, we can only decrement max_element \* 2 + 1
+- If it is smaller or equal to the rest, we can always match a smaller element to it and decrement everything
+
+### Two Sum
+
+- Always check constraints
+
+#### Count Pairs that Sum to a Power of 2
+
+- 0 is not a power of 2...
+- Since there is a constraint on `arr[i]` <= 2\*\*20, we only need to check 21 powers of 2
+- For every power, for every x, check if the complement (p-x) is in the hash map
+- Edge case: x == p/2, instead of `d[x] * d[p-x]`, increment by `d[x]` choose 2
 
 ## Combinatorics
 
