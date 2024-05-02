@@ -76,6 +76,8 @@ def smallestFromLeaf(self, root: Optional[TreeNode]) -> str:
 
 #### Prefix/Suffix Sum/Max
 
+- Useful for subarrays not subsequences
+
 ##### Sum of Distances
 
 https://leetcode.com/problems/sum-of-distances/description/
@@ -348,7 +350,6 @@ def uniquePathsIII(self, grid: List[List[int]]) -> int:
 - Implementation differs only at the comparison
 
 ```python
-#### MORE USEFUL IMPLEMENTATION than <= while
 def bisect_left(arr, x):
 	lo = 0
 	hi = len(arr)-1
@@ -910,6 +911,36 @@ def longestPalindromeSubseq(self, s: str) -> int:
 -
 
 #### Length of Longest Subsequence that Sums to Target
+
+https://leetcode.com/problems/length-of-the-longest-subsequence-that-sums-to-target/
+
+- Similar to coin change problem
+- Base case: sum 0 has subsequence length 0
+- Iterate over nums, update dp for num to target
+
+```python
+def lengthOfLongestSubsequence(self, nums: List[int], target: int) -> int:
+        res = 0
+        n = len(nums)
+        dp = [-math.inf]*(target+1)
+        dp[0] = 0
+        for num in nums:
+            for i in range(target, num-1, -1):
+                dp[i] = max(dp[i], dp[i-num]+1)
+        return dp[target] if dp[target] != -math.inf else -
+
+# Coin Change
+def coinChange(self, coins: List[int], amount: int) -> int:
+        dp = [math.inf]*(amount+1)
+        dp[0] = 0
+        for i in range(1, amount+1):
+            for c in coins:
+                if c > i:
+                    continue
+                dp[i] =  min(dp[i], dp[i-c] + 1)
+        return dp[-1] if dp[-1] != math.inf else -
+
+```
 
 ## Graph Theory
 
@@ -2218,9 +2249,56 @@ class Trie:
 
 ## Two Pointers
 
+- Usually requires the array to be sorted
+- We need some comparison function
+
+- Common questions: count the number of pairs such that f() is true
+- Make sure to always rearrange/substitute terms in f()
+
+### Count Pairs in Two Arrays
+
+https://leetcode.com/problems/count-pairs-in-two-arrays/description/
+
+- Question gives: `nums1[i] + nums1[j] > nums2[i] + nums2[j]`
+- Intuition: Reorganize terms so that i and j are on the same side -> `nums1[i] - nums2[i] > nums2[j] - nums1[j]`
+- We also recognize that -LHS = RHS, therefore the largest RHS would be at the smallest LHS
+- Sort a new array of LHS
+- Let i = index of -RHS term = 0
+- Let j = index of largest LHS term = 0
+- We want to start at the largest RHS term and largest LHS term, then we can take all pairs in between
+
+```python
+    def countPairs(self, nums1: List[int], nums2: List[int]) -> int:
+        n = len(nums1)
+        a = [nums1[i] - nums2[i] for i in range(n)]
+        a.sort()
+        ans = 0
+        i = 0
+        j = n-1
+        while i < j:
+            if a[j] > -a[i]:
+                ans += j-i
+                j -= 1
+            else:
+                i += 1
+        return an
+```
+
 ## Python
 
 - reverse a substring = `word[:i+1][::-1]`
+
+- Sorting dictionary
+
+```python
+# Suppose we have a dictionary
+{'A': [1, 0, 0, 'A'], 'B': [0, -2, 0, 'B'], 'C': [0, 0, 0, 'C']}
+
+# Even though each list has nums and strings, we can sort using
+sorted(d.key(),key=d.get)
+# This returns the keys in sorted order and uses the last letter as alphabetical tie breaker
+
+```
 
 ## Math
 
@@ -2345,6 +2423,44 @@ Triangle Inequality: |a + b| ≤ |a| + |b|
 - Edge case: x == p/2, instead of `d[x] * d[p-x]`, increment by `d[x]` choose 2
 
 ## Combinatorics
+
+## Miscellaneous
+
+### Boyer-Moore Voting Algorithm
+
+- There can be at most k-1 majority elements which appear more than n//(k) in an array
+- Keep count of candidates, increment if seen
+- Decrement all candidates if current number is not any of the candidates
+- Once count of any candidate is 0 (check from most likely candidate to least likely candidate), set the candidate to the current number and increment
+- Do a second pass and count all candidates to check if they appear more than n//(k) times
+
+```python
+def majorityElement(self, nums: List[int]) -> List[int]:
+        # 1st pass
+        count1, count2, candidate1, candidate2 = 0, 0, None, None
+        for n in nums:
+            if candidate1 == n:
+                count1 += 1
+            elif candidate2 == n:
+                count2 += 1
+            elif count1 == 0:
+                candidate1 = n
+                count1 += 1
+            elif count2 == 0:
+                candidate2 = n
+                count2 += 1
+            else:
+                count1 -= 1
+                count2 -= 1
+
+        # 2nd pass
+        result = []
+        for c in [candidate1, candidate2]:
+            if nums.count(c) > len(nums)//3:
+                result.append(c)
+
+        return result
+```
 
 # Behavioural
 
