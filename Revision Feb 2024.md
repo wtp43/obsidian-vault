@@ -77,6 +77,8 @@ def smallestFromLeaf(self, root: Optional[TreeNode]) -> str:
 #### Prefix/Suffix Sum/Max
 
 - Useful for subarrays not subsequences
+- Hint: When question requires you to find a pair of indices that satisfies k
+  - Store prefix sum in hashmap with `nums[i]` as key
 
 ##### Sum of Distances
 
