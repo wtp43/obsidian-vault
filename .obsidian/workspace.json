@@ -94,9 +94,31 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a05c2d74d6a4a555",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Feel Good Productivity.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -199,7 +221,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Revision Feb 2024.md",
+                "file": "Feel Good Productivity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,7 +247,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Revision Feb 2024.md",
+                "file": "Feel Good Productivity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -284,7 +306,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Revision Feb 2024.md"
+                "file": "Feel Good Productivity.md"
               }
             }
           }
@@ -308,12 +330,13 @@
       "float-search:Search Obsidian In Modal": false
     }
   },
-  "active": "a871db174d015123",
+  "active": "a05c2d74d6a4a555",
   "lastOpenFiles": [
+    "Feel Good Productivity.md",
+    "Revision Feb 2024.md",
     "Private/Interview Prep.md",
     "DS/DFS.md",
     "Algos/Dijkstra's Shortest Path Algorithm.md",
-    "Revision Feb 2024.md",
     "Revision Feb 2024.md~",
     "Interview Prep 2024/Solved Easily.md",
     "Interview Prep 2024/Difficult.md",
@@ -343,7 +366,6 @@
     "Books/Transforming Discomfort into Fuel for your Brain.md",
     "Books/Getting Real - The Smarter, Faster, Easier Way to Build a Web Application.md",
     "Interview Prep 2024/LC Hard.md",
-    "Algos Practice/Intuition/Binary Search.md",
     "Interview Prep 2024/attachments/Pasted image 20240312065728.png",
     "Interview Prep 2024/attachments/Pasted image 20240312063941.png",
     "Interview Prep 2024/attachments/Pasted image 20240312060004.png",
