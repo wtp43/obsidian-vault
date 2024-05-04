@@ -796,6 +796,11 @@ mask ^= 1 << node
 
 ```
 
+### Detect Power of Two
+
+- Set most significant bit to zero and compare result to zero
+  `x & (x-1) == 0`
+
 ### Subtraction under modulo 2
 
 - XOR operator is equivalent to subtraction under modulo 2
@@ -845,7 +850,37 @@ while x:
   x//2
 ```
 
-##
+### Rolling Hash
+
+- Remove most significant bit, add least significant bit
+
+```python
+val = ((val<<1) & all_one) | last_digit_of_new_hash
+# all_one is a binary string of length k with all 1's
+ex: k = 4, all_one = 1111
+val = 1010, next_digit = 1
+val<<1 & all_one = 0100
+new_val = 0101
+```
+
+#### Check if A string Contains All Binary Codes of Size K
+
+```python
+def hasAllCodes(self, s: str, k: int) -> bool:
+        need = 1<<k
+        seen = [False]*need
+        all_one = need-1
+        hash_val = 0
+        for i in range(len(s)):
+            hash_val = ((hash_val<<1)&all_one) | int(s[i])
+            if i >= k-1 and not seen[hash_val]:
+                seen[hash_val] = True
+                need -= 1
+                if need == 0:
+                    return True
+
+        return False
+```
 
 ## Data Structures
 
@@ -1314,6 +1349,8 @@ def countPaths(self, n: int, roads: List[List[int]]) -> int:
 	return paths[-1]
 ```
 
+### Johnson's Algorithm (Modified Dijkstra) that works for negative weights (acyclic)
+
 ### Longest Path DAG
 
 - In general, this is NP-Hard, but on a DAG this problem is solvable in O(V+E)
@@ -1518,6 +1555,36 @@ mst_weight = sum(t[2] for t in mst)
   ```
 
 ### Tarjan's
+
+### Ternary Search
+
+- When the function is not monotonic by but unimodal (there exists only one strict local maximum point m such that f is monotonically increasing for x <= m and monotonically decreasing for x >= m)
+- More efficient than binary search for unimodal functions but still O(logn)
+
+```python
+    def peakIndexInMountainArray(self, arr: List[int]) -> int:
+        l = 0
+        r = len(arr)-1
+        while l < r:
+            m1 = l + (r-l)//3
+            m2 = r - (r-l)//3
+
+            if arr[m1] < arr[m2]:
+                l = m1 + 1
+            else:
+                r = m2 - 1
+        return l
+
+    # This can still be solved with binary search
+        while l < r:
+            mid = l + (r-l)//2
+            if arr[mid] < arr[mid+1]:
+                l = mid + 1
+            else:
+                r = mid
+
+        return l
+```
 
 ### Topological Sort
 
@@ -2302,7 +2369,42 @@ sorted(d.key(),key=d.get)
 
 ```
 
+- Comparing min/max of two arrays with different lengths
+  - Loop range of max(lenA, lenB)
+  - Set comparison value to some default if past the max ind
+
+```python
+  for i in range(max(n1, n2)):
+            i1 = int(v1[i]) if i < n1 else 0
+            i2 = int(v2[i]) if i < n2 else
+```
+
 ## Math
+
+### Sieve of Eratosthenes
+
+```python
+def SieveOfEratosthenes(n):
+
+    prime = [True for i in range(n+1)]
+    p = 2
+    while (p * p <= n):
+        if (prime[p] == True):
+            # Update all multiples of p
+            for i in range(p * p, n+1, p):
+                prime[i] = False
+        p += 1
+
+def PrimePairsWithTargetSum(n):
+    for p in range(2, n+1):
+      if prime[i] and prime[n-i] and i<= n-i:
+        res.append([i,n-i])
+```
+
+### Matrix Exponentiation
+
+https://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/
+https://www.geeksforgeeks.org/matrix-exponentiation/
 
 #### Misc
 
