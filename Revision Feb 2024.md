@@ -33,6 +33,31 @@ dg-publish: true
   - Binary search on group size then greedily make cuts once group reaches threshold
 - Can the target we are optimizing be simplified?
   - Compute some `cost[i] = s[i] - t[i]`
+- What does a valid solution/representation of f() look like?
+  - Suppose we need to the minimum number of swaps to group all 1's in an array together
+  - Then the result of this is a k sized window
+
+### Minimum Deletions to Make Character Frequencies Unique
+
+- https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/description/
+- Sort descending and keep track of max_freq_allowed that does not
+- Initially set max_freq_allowed to 0
+- Set max_freq_allowed to current valid freq -1
+
+```python
+def minDeletions(self, s: str) -> int:
+        freq = Counter(s)
+        freq = sorted(freq.values(), reverse=True)
+        max_freq_allowed = len(s)
+        res = 0
+        for f in freq:
+            if f > max_freq_allowed:
+                res += f-max_freq_allowed
+                f = max_freq_allowed
+
+            max_freq_allowed = max(0, f-1)
+        return res
+```
 
 ## Recursion
 
@@ -1592,6 +1617,10 @@ mst_weight = sum(t[2] for t in mst)
 - Only exists for Directed Acyclic Graphs (DAG)
 - An ordering such that for all edges(u,v) u comes before v
 
+#### Applications
+
+- Find minimum number of vertices to reach all nodes: return all vertices whose indegree = 0
+
 #### Modified DFS
 
 - DFS and add nodes in reverse order (append left with deque)
@@ -1809,6 +1838,13 @@ def longest_consecutive_sequence(nums):
 	return max(uf.size) if nums else 0
 ```
 
+### Connected Components
+
+- Union Find
+- Set all nodes to unvisited
+- Start DFS at the next unvisited node
+  - Increment decrement components by one, update visited nodes
+
 ### Strongly Connected Components
 
 ### Bridges Algorithm
@@ -2017,6 +2053,30 @@ def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
 
 - Sliding Window works on the assumption window only grows in one direction. -> Only works for positive numbers
 - If negative numbers (window is bidirectional), try hashmap or DP
+
+### Sliding Window Grouping
+
+- Sliding window is useful when you require looking at fixed size groups
+  https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/description/
+
+#### Minimum Swaps to Group All 1's Together
+
+- Sliding window of size k
+
+```python
+ def minSwaps(self, data: List[int]) -> int:
+        zeros = sum(data)
+        if not zeros:
+            return 0
+        res = math.inf
+        cur = 0
+        for j in range(len(data)):
+            cur += data[j]
+            if j >= zeros-1:
+                res = min(res, zeros-cur)
+                cur -= data[j-(zeros-1)]
+        return res
+```
 
 ## Sorts
 
@@ -2381,6 +2441,41 @@ sorted(d.key(),key=d.get)
 
 ## Math
 
+### GCD for a List of Numbers
+
+Basic Euclidean Algorithm for GCD:
+
+The algorithm is based on the below facts.
+
+    If we subtract a smaller number from a larger one (we reduce a larger number), GCD doesn’t change. So if we keep subtracting repeatedly the larger of two, we end up with GCD.
+    Now instead of subtraction, if we divide the smaller number, the algorithm stops when we find the remainder 0.
+
+gcd(a, b, c) = gcd(a, gcd(b, c))
+= gcd(gcd(a, b), c)
+= gcd(gcd(a, c), b)
+
+```python
+# Euclidean algorithm to find H.C.F of two numbers
+def find_gcd(x, y):
+
+    while(y):
+        x, y = y, x % y
+
+    return x
+
+# Some arbitrary list of numbers
+l = [2, 4, 6, 8, 16]
+
+num1 = l[0]
+num2 = l[1]
+gcd = find_gcd(num1, num2)
+
+for i in range(2, len(l)):
+    gcd = find_gcd(gcd, l[i])
+
+print(gcd)
+```
+
 ### Sieve of Eratosthenes
 
 ```python
@@ -2512,7 +2607,7 @@ Triangle Inequality: |a + b| ≤ |a| + |b|
 - Wrong approach: use heap and take the two biggest and decrement by smaller number
 - Consider `[100,100,100]`. Answer is 300 but using the above approach gives 201
 - Intuition: We should match smaller numbers with the biggest
-- If the biggest number is larger than the sum of all other numbers, we can only decrement max_element \* 2 + 1
+- If the biggest number is larger than the sum of all other numbers, we can only decrement rest \* 2 + 1
 - If it is smaller or equal to the rest, we can always match a smaller element to it and decrement everything
 
 ### Two Sum
