@@ -36,6 +36,9 @@ dg-publish: true
 - What does a valid solution/representation of f() look like?
   - Suppose we need to the minimum number of swaps to group all 1's in an array together
   - Then the result of this is a k sized window
+- What operations can bring us to the target?
+  - https://leetcode.com/problems/merge-triplets-to-form-target-triplet/
+  - Think about which elements are valid/can be used in a operation
 
 ### Minimum Deletions to Make Character Frequencies Unique
 
@@ -2080,6 +2083,8 @@ def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
 
 ## Sorts
 
+### Cycle Sort
+
 ### Bucket/Count Sort
 
 - Non-comparison stable sorting algorithm
@@ -2118,6 +2123,32 @@ def countSort(self, arr: List[int]) -> List[int]:
 - Iterate backwards in cumulative sum array (count) for k decrements
 
 ### Cyclic Sort
+
+- Cycle decomposition
+- Sort that results in the least memory operations/swaps
+- Unstable because of swaps
+
+```python
+def cyclic_sort(nums):
+  for i in range(len(nums)):
+    while nums[i] != i:
+      correct_ind = nums[i]
+      nums[i], nums[correct_ind] = nums[correct_ind], nums[i]
+
+# To find minimum swaps in an arbitrary array
+def cyclic_sort(arr):
+    pos = {x:i for i,x in enumerate(sorted(arr))}
+    swaps = 0
+    for i in range(len(arr)):
+        while i != pos[arr[i]]:
+      # This line is crucial for the actual swap to work
+      # Index must be stored since arr[i] is being modified
+            ind = pos[arr[i]]
+            arr[i], arr[ind] = arr[ind], arr[i]
+            swaps += 1
+    return swaps
+
+```
 
 ### Quick Sort
 
