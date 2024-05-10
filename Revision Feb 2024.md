@@ -839,6 +839,26 @@ mask ^= 1 << node
 - XOR current mask = `str[:i+1]` and some `prefix[:j]` to determine f(i)
 - Prefix masks can be stored in a hash map
 
+#### Count Substrings Without Repeating Characters
+
+- Sliding window
+- Bitmask or hashmap
+- Reduce window size if count of 2 is reached
+- Setting i to the next position of where the previous s[j] occurred does not guarantee that the window has no repeating characters
+
+```python
+def numberOfSpecialSubstrings(self, s: str) -> int:
+        i = mask = res = 0
+        for j in range(len(s)):
+            ind = ord(s[j])-ord("a")
+            while i < j and mask & 1<<ind:
+                mask ^= 1 << (ord(s[i]) - ord('a'))
+                i += 1
+            res += j-i+1
+            mask ^= 1 << ind
+        return res
+```
+
 ##### Longest Substring with At Most One Character with Odd Count
 
 https://leetcode.com/problems/find-longest-awesome-substring/description
@@ -1083,6 +1103,42 @@ class Solution:
 
 - Level search
 - Multi-source
+
+### BFS
+
+```python
+def bfs(graph: Dict[int, List[int]], start: int):
+
+    q = deque([start])
+    seen = [0]*n
+    seen[start] = 1
+	prev = [-1]*n
+
+    while q:
+        cur = q.popleft()
+        for next in graph[cur]:
+            if next in seen:
+                continue
+            q.append(next)
+            seen[next] = 1
+            prev[next] = cur
+    return prev
+
+def reconstruct_path(start, end, prev):
+	path = []
+	while end != -1:
+		path.append(end)
+		end = prev[end]
+		if end == start:
+			break
+	path.reverse()
+
+	# if traversing backwards starting from end gives
+	# us the starting node, there exists a path
+	if path[0] == s:
+		return path
+	return []
+```
 
 ### DFS
 
@@ -2156,6 +2212,8 @@ def cyclic_sort(arr):
 
 > Repeatedly partition about half the remaining relevant array until pivot index = k-1
 
+- not stable because of swaps
+
 - kth-largest = qselect(arr, 0, len(arr)-1, len(arr)-k)
   - Alternatively: heappush first k elements, then heappop and heappush nums[i] if nums[i] > pq[0]
   - (keep k largest elements on heap)
@@ -2177,10 +2235,10 @@ def partition(arr,l,r):
   pivot = arr[r]
   i = l
   for j in range(l, r):
-    if arr[l] <= pivot:
+    if arr[j] <= pivot:
       arr[i], arr[j] = arr[j], arr[i]
       i += 1
-    arr[i], arr[r] = arr[r], arr[i]
+  arr[i], arr[r] = arr[r], arr[i]
   return i
 ```
 
