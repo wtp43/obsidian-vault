@@ -385,6 +385,7 @@ def bisect_left(arr, x):
 	hi = len(arr)-1
 	while lo <= hi:
 		mid = lo + (hi - lo)//2
+    # in bisect left, to return lo, the condition must be strictly > or strictly <
 		if arr[mid] < x:
 			lo = mid + 1
 		else:
@@ -807,7 +808,9 @@ def verifyPreorder(self, preorder: List[int]) -> bool:
 
 ## Bit Operations
 
-```
+- Largest bit will be greater than all other bits combined
+
+```python
 & AND
 | OR
 ^ XOR
@@ -815,12 +818,52 @@ def verifyPreorder(self, preorder: List[int]) -> bool:
 << Bitwise left shift
 >> Bitwise right shift
 
-Bitmask
-Check if ith bit is set
+#Bitmask
+#Check if ith bit is set
 mask & 1 << i
 
-Unset ith bit
-mask ^= 1 << node
+#Flip ith bit
+mask ^ 1 << node
+
+#Clear ith bit
+mask & ~(1 << i)
+
+#Check if number is divisible by 2 to the power of k
+mask & (1<<k -1) == 0
+
+#Check if an integer is a power of 2
+mask and not (mask & (mask-1))
+
+#Clear the right-most set bit
+n & (n-1)
+This works because n-1 flips all bits after the rightmost set bit of n
+
+#Clear all trailing ones
+n & (n+1)
+
+#Set the last cleared bit
+n | (n+1)
+
+#Extract last set bit
+n & -n
+
+```
+
+### Brian Kernighan's Algorithm
+
+- Count bits
+
+```c++
+int countSetBits(int n)
+{
+  int count = 0;
+  while (n)
+  {
+    n = n & (n-1);
+    count++;
+  }
+  return count;
+}
 
 ```
 
