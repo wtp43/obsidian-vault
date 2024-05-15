@@ -378,6 +378,12 @@ def uniquePathsIII(self, grid: List[List[int]]) -> int:
 ### Bisect left/right
 
 - Implementation differs only at the comparison
+- Bisect left:
+	- If condition is met:
+		- always decrease right
+-  Bisect right
+	- If condition is met:
+		- always increase left
 
 ```python
 def bisect_left(arr, x):
@@ -814,7 +820,7 @@ def verifyPreorder(self, preorder: List[int]) -> bool:
 & AND
 | OR
 ^ XOR
-~ NOT
+~ NOT (equivalent to n-1 which flips all bits)
 << Bitwise left shift
 >> Bitwise right shift
 
@@ -823,13 +829,13 @@ def verifyPreorder(self, preorder: List[int]) -> bool:
 mask & 1 << i
 
 #Flip ith bit
-mask ^ 1 << node
+mask ^ 1 << i 
 
 #Clear ith bit
 mask & ~(1 << i)
 
 #Check if number is divisible by 2 to the power of k
-mask & (1<<k -1) == 0
+mask & (1<<k-1) == 0
 
 #Check if an integer is a power of 2
 mask and not (mask & (mask-1))
@@ -867,6 +873,8 @@ int countSetBits(int n)
 
 ```
 
+### Mod 3 with XOR (Mimic hash map with multiple masks)
+https://leetcode.com/problems/single-number-ii/description/?envType=study-plan-v2&envId=top-interview-150
 ### Detect Power of Two
 
 - Set most significant bit to zero and compare result to zero
@@ -1146,7 +1154,9 @@ class Solution:
 
 - Level search
 - Multi-source
-
+### BFS vs DFS
+- Space Complexity of DFS is only O(depth) while BFS is O(n) = O(|v|)
+- BFS can guarantee shortest path
 ### BFS
 
 ```python
@@ -1395,6 +1405,8 @@ def lazy_dijkstra(self, start):
 	heapq.heapify(pq)
 	while pq:
 		min_value, index = heapq.heappop(pq)
+		# This must be a strict equality
+	# If the cost is equal, we may not have updated it's neighbors yet
 		if dist[index] < min_value:
 			continue
 		dist[index] = min_value
@@ -1410,6 +1422,39 @@ def lazy_dijkstra(self, start):
 	return dist, prev
 ```
 
+##### Minimum Cost to Buy Apples from n Cities
+https://leetcode.com/problems/minimum-cost-to-buy-apples/description
+- Modified dijkstra
+- Instead of start dijkstra at every city, start at the min city and expand out while updating dist
+- Start with heap of buying apple at the ith city without traveling
+- Expand outwards from min city
+```python
+ def minCost(
+        self, n: int, roads: List[List[int]], appleCost: List[int], k: int
+    ) -> List[int]:
+        graph = [[] for _ in range(n)]
+
+        for city_a, city_b, cost in roads:
+            graph[city_a - 1].append((city_b - 1, cost))
+            graph[city_b - 1].append((city_a - 1, cost))
+
+        result = list(appleCost)
+
+
+        heap = [(apple_cost, start_city) 
+                 for start_city, apple_cost in enumerate(appleCost)]
+        heapify(heap)
+
+        while heap:
+            total_cost, curr_city = heapq.heappop(heap)
+            if result[curr_city] < total_cost:
+                continue
+            for neighbor, cost in graph[curr_city]:
+                if result[neighbor] > result[curr_city] + (k + 1) * cost:
+                    result[neighbor] = result[curr_city] + (k + 1) * cost
+                    heapq.heappush(heap, (result[neighbor], neighbor))
+        return result       
+```
 ##### Minimum Time to Visit Disappearing Nodes
 
 https://leetcode.com/problems/minimum-time-to-visit-disappearing-nodes/
@@ -2050,8 +2095,8 @@ def maxEvents(self, events: List[List[int]]) -> int:
 
 - Floyd's Algorithm (Tortoise and Hare) to find start of cycle
 - Hare initially travels twice as fast a Tortoise
-- Stop meeting point
-- Start tortoise at starting position and hare at meeting point while moving at the same speed
+- Stop at meeting point
+- Reset tortoise to starting position while hare stays at meeting point. Move both until at same speed until they meet again (at the entrance of the cycle) 
 
 ### Deletion node (Recursive/Iterative)
 
@@ -2146,6 +2191,19 @@ def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
 		cur = tmp
 	return dummy.next
 ```
+
+## Hungarian Algorithm
+- For solving the assignment problem
+- Also known as Kuhn-Mankres Algorithm
+### Assignment Problem Statement
+- There are n jobs and n workers. Each worker can be assigned to only one job. Assign jobs to workers in a way that minimizes total cost.
+- Given n x n matrix: Select one number from each row such that exactly one number is chosen from each column and the sum of the selected numbers is minimized.
+- Given n x n matrix A:  Find permutation p of length n such that $\sum A[i][p[i]]$ is minimized
+- Consider a complete bipartite graph with n vertices per part, where each edge is assigned a weight. Find a perfect matching with the minimum total weight
+To modify for n x m matrix, pad with rows/columns with zero or infinite values.
+
+### $O(n^4)$ Implementation
+i
 
 ## Queue
 
@@ -2573,6 +2631,9 @@ sorted(d.key(),key=d.get)
 
 ## Math
 
+### Arithmetic Sequence Sum
+$sum = (A[1] + A[n]) * n/2$ where `A[1], A[n]` are the first and last terms of the sequence and `n` is the length of the sequence
+
 ### GCD for a List of Numbers
 
 Basic Euclidean Algorithm for GCD:
@@ -2588,13 +2649,12 @@ gcd(a, b, c) = gcd(a, gcd(b, c))
 
 ```python
 # Euclidean algorithm to find H.C.F of two numbers
+# Time complexity of O(log min(x,y)) since larger number is reduced by at least half on each iteration of the algorithm
 def find_gcd(x, y):
-
     while(y):
         x, y = y, x % y
-
     return x
-
+ 
 # Some arbitrary list of numbers
 l = [2, 4, 6, 8, 16]
 
@@ -2607,6 +2667,17 @@ for i in range(2, len(l)):
 
 print(gcd)
 ```
+
+### LCM
+```python
+def lcm(x,y):
+	return x / gcd(x,y) * y  # divide first to avoid integer overflow
+```
+
+### Binary Exponentiation 
+- Exponentiation by squaring allows calculating $a^n$ with only $O(logn)$ multiplications instead of $O(n)$ multiplications required by the naive approach
+- Split the work using binary representation of the exponent
+#### Number of Paths of Length k in a Graph
 
 ### Sieve of Eratosthenes
 
@@ -2754,6 +2825,20 @@ Triangle Inequality: |a + b| ≤ |a| + |b|
 - Edge case: x == p/2, instead of `d[x] * d[p-x]`, increment by `d[x]` choose 2
 
 ## Combinatorics
+
+### Stars and Bars
+- Count the number of ways to group n identical objects into k groups
+	- $x_1 + x_2 + ... + x_k = n$
+- Sol: ${n+k-1}\choose{n}$
+#### Ex: Number of Positive Integer Sums
+- $x_1 + x_2 + ... + x_k = n$, with $x_i >= 1$
+- Sol: $n-1 \choose k-1$
+- Prevent two bars from being placed next to each other. n-1 is the number of gaps between stars
+#### Number of Lower-bound Integer Sums
+- Extended to integer sums with different lower bounds
+- $x_1 + x_2 + ... + x_k = n$, with $x_i >= a_i$
+- Substitute $x'_i := x_i -a_i$ 
+- $(x'_1 + a_i)+(x'_2 + a_2) + ... + (x'_k + a_k)\iff x'_1 + x'_2 + ... + x'_k = n-a_1 -a_2-...-a_k$ with $x_i >= 0$
 
 ## Miscellaneous
 

@@ -16,13 +16,19 @@
                 {
                   "state": "{}",
                   "eState": "{}"
+                },
+                {
+                  "title": "Solved Easily",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/Solved Easily.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":12,\"ch\":8},\"to\":{\"line\":12,\"ch\":8}}}"
                 }
               ]
             },
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep 2024/Solved Easily.md",
+                "file": "Revision Feb 2024.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -38,13 +44,53 @@
                 {
                   "state": "{}",
                   "eState": "{}"
+                },
+                {
+                  "title": "Interview Prep",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Algos Practice/Interview Prep.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":7,\"ch\":7},\"to\":{\"line\":7,\"ch\":7}},\"scroll\":3}"
+                },
+                {
+                  "title": "BFS",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DS/BFS.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":74,\"ch\":0},\"to\":{\"line\":74,\"ch\":0}},\"scroll\":28.624301735598912}"
+                },
+                {
+                  "title": "Difficult",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/Difficult.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":0},\"to\":{\"line\":5,\"ch\":0}}}"
                 }
               ]
             },
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep 2024/Difficult.md",
+                "file": "DS/BFS.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "880bc33a63ecdc37",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DS/DFS.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -74,34 +120,6 @@
             }
           },
           {
-            "id": "a871db174d015123",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                },
-                {
-                  "title": "Revision Feb 2024",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Revision Feb 2024.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":20,\"ch\":24},\"to\":{\"line\":20,\"ch\":24}}}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DS/BFS.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "a05c2d74d6a4a555",
             "type": "leaf",
             "pane-relief:history-v1": {
@@ -123,8 +141,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -227,7 +244,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DS/BFS.md",
+                "file": "Revision Feb 2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -253,7 +270,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DS/BFS.md",
+                "file": "Revision Feb 2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -312,7 +329,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DS/BFS.md"
+                "file": "Revision Feb 2024.md"
               }
             }
           }
@@ -336,14 +353,16 @@
       "float-search:Search Obsidian In Modal": false
     }
   },
-  "active": "a871db174d015123",
+  "active": "5ecd45db9a62081e",
   "lastOpenFiles": [
+    "DS/BFS.md",
+    "DS/DFS.md",
+    "Algos Practice/Interview Prep.md",
+    "Interview Prep 2024/Difficult.md",
     "Revision Feb 2024.md",
     "Interview Prep 2024/Solved Easily.md",
-    "Interview Prep 2024/Difficult.md",
     "Private/Interview Prep.md",
     "Feel Good Productivity.md",
-    "DS/DFS.md",
     "Algos/Dijkstra's Shortest Path Algorithm.md",
     "Revision Feb 2024.md~",
     "Algos/Intersection of Intervals.md",
@@ -370,8 +389,6 @@
     "Books/Vocabulary.md",
     "Books/Man's Search for Meaning.md",
     "Books/Transforming Discomfort into Fuel for your Brain.md",
-    "Books/Getting Real - The Smarter, Faster, Easier Way to Build a Web Application.md",
-    "Interview Prep 2024/LC Hard.md",
     "Interview Prep 2024/attachments/Pasted image 20240312065728.png",
     "Interview Prep 2024/attachments/Pasted image 20240312063941.png",
     "Interview Prep 2024/attachments/Pasted image 20240312060004.png",

@@ -7,7 +7,6 @@ tags:
 ## Pros vs BFS
 - Space complexity O(depth) nodes compared to O(|V|) = O(n) for BFS
 
-
 ## Time Complexity
 
 ## Space Complexity
