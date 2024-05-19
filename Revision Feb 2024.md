@@ -1506,13 +1506,15 @@ def countPaths(self, n: int, roads: List[List[int]]) -> int:
 		graph[v].append([u,t])
 	while pq:
 		t,u = heappop(pq)
+		# we don't skip if time[u] == t since
+		# it's neighbors might not have been updated yet 
 		if time[u] < t:
 			continue
 		for v, cost in graph[u]:
 			# only add neighbor to q if we have
 			# a shorter path
 			if t + cost < time[v]:
-				# must set time here and not at the start
+				# must set time here and not after heappop
 				paths[v] = paths[u]
 				time[v] = t+cost
 				heappush(pq, [time[v], v])
