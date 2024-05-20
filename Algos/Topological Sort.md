@@ -1,8 +1,8 @@
 ---
 dg-publish: true
-title:  "Topological Sort"
+title: Topological Sort
 tags:
-
+  - graph
 created: 2022-12-10
 ---
 
