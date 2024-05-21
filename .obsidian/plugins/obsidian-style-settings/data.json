@@ -2,7 +2,7 @@
   "Components@@tab-autohide": false,
   "Components@@Ribbon-autohide": false,
   "Components@@nav-header-autohide": false,
-  "Components@@status-bar-autohide": true,
+  "Components@@status-bar-autohide": false,
   "Components@@CTA-BTN-enable": false,
   "Components@@colorful-folder": true,
   "catppuccin-theme-settings@@catppuccin-theme-dark": "ctp-frappe",

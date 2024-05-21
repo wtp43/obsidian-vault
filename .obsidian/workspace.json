@@ -8,40 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5ecd45db9a62081e",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                },
-                {
-                  "title": "Revision Feb 2024",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Revision Feb 2024.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":7,\"ch\":0},\"to\":{\"line\":7,\"ch\":0}},\"scroll\":7}"
-                },
-                {
-                  "title": "Solved Easily",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Interview Prep 2024/Solved Easily.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":12,\"ch\":8},\"to\":{\"line\":12,\"ch\":8}}}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algos/Topological Sort.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "37138efb88092732",
             "type": "leaf",
             "pane-relief:history-v1": {
@@ -75,6 +41,28 @@
               "type": "markdown",
               "state": {
                 "file": "DS/BFS.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8f3f5257d0ea6dbf",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interview Prep 2024/System Design.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -146,8 +134,53 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6e7ccdd5fc0272cd",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algos Practice/Intuition.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3c4f3f70683cc79f",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algos Practice/Revision 1.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -250,7 +283,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algos/Topological Sort.md",
+                "file": "Interview Prep 2024/System Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -276,7 +309,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algos/Topological Sort.md",
+                "file": "Interview Prep 2024/System Design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -335,7 +368,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algos/Topological Sort.md"
+                "file": "Interview Prep 2024/System Design.md"
               }
             }
           }
@@ -359,16 +392,21 @@
       "float-search:Search Obsidian In Modal": false
     }
   },
-  "active": "5ecd45db9a62081e",
+  "active": "8f3f5257d0ea6dbf",
   "lastOpenFiles": [
-    "Revision Feb 2024.md",
     "DS/BFS.md",
+    "Algos/Topological Sort.md",
+    "Math/Statistics/attachments/Pasted image 20230211175247.png",
+    "Interview Prep 2024/System Design.md",
+    "Algos Practice/Revision 1.md",
+    "Algos Practice/Intuition.md",
+    "Private/Interview Prep.md",
+    "Feel Good Productivity.md",
+    "Revision Feb 2024.md",
     "DS/DFS.md",
     "Algos Practice/Interview Prep.md",
     "Interview Prep 2024/Difficult.md",
     "Interview Prep 2024/Solved Easily.md",
-    "Private/Interview Prep.md",
-    "Feel Good Productivity.md",
     "Algos/Dijkstra's Shortest Path Algorithm.md",
     "Revision Feb 2024.md~",
     "Algos/Intersection of Intervals.md",
@@ -379,10 +417,8 @@
     "Algos/Bellman Ford's Algorithm.md",
     "Finance/Historical Performance.md",
     "Algos/Floyd-Warshall's Algorithm.md",
-    "Algos/Topological Sort.md",
     "Private/Emotional Intelligence.md",
     "Books/HBR on Lifelong Learning.md",
-    "Interview Prep 2024/System Design.md",
     "Interview Prep 2024/attachments/Pasted image 20240322143537.png",
     "Interview Prep 2024/attachments/Pasted image 20240322143142.png",
     "Interview Prep 2024/attachments/Pasted image 20240322142555.png",
@@ -392,12 +428,8 @@
     "Interview Prep 2024/attachments/Pasted image 20240322142254.png",
     "Books/Dopamine Detox.md",
     "Books/Imperialism - The Highest Stage of Capitalism.md",
-    "Books/Vocabulary.md",
-    "Books/Man's Search for Meaning.md",
-    "Books/Transforming Discomfort into Fuel for your Brain.md",
     "Interview Prep 2024/attachments/Pasted image 20240312065728.png",
     "Interview Prep 2024/attachments/Pasted image 20240312063941.png",
-    "Interview Prep 2024/attachments/Pasted image 20240312060004.png",
     "Interview Prep 2024/attachments",
     "Interview Prep 2024/mic.scpt",
     "Interview Prep 2024/Retrieve UI Elements.scpt",
